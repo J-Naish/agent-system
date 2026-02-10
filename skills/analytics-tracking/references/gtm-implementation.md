@@ -1,26 +1,26 @@
-# Google Tag Manager Implementation Reference
+# Google Tag Manager 実装リファレンス
 
-Detailed guide for implementing tracking via Google Tag Manager.
+Google Tag Manager 経由でトラッキングを実装するための詳細ガイド。
 
-## Container Structure
+## コンテナ構造
 
-### Tags
+### タグ
 
-Tags are code snippets that execute when triggered.
+タグは、トリガーされたときに実行されるコードスニペットです。
 
-**Common tag types:**
-- GA4 Configuration (base setup)
-- GA4 Event (custom events)
+**一般的なタグタイプ:**
+- GA4 Configuration（基本設定）
+- GA4 Event（カスタムイベント）
 - Google Ads Conversion
 - Facebook Pixel
 - LinkedIn Insight Tag
-- Custom HTML (for other pixels)
+- Custom HTML（他ピクセル向け）
 
-### Triggers
+### トリガー
 
-Triggers define when tags fire.
+トリガーはタグが発火する条件を定義します。
 
-**Built-in triggers:**
+**組み込みトリガー:**
 - Page View: All Pages, DOM Ready, Window Loaded
 - Click: All Elements, Just Links
 - Form Submission
@@ -28,21 +28,21 @@ Triggers define when tags fire.
 - Timer
 - Element Visibility
 
-**Custom triggers:**
-- Custom Event (from dataLayer)
-- Trigger Groups (multiple conditions)
+**カスタムトリガー:**
+- Custom Event（dataLayer 由来）
+- Trigger Groups（複数条件）
 
-### Variables
+### 変数
 
-Variables capture dynamic values.
+変数は動的な値を取得します。
 
-**Built-in (enable as needed):**
+**組み込み（必要に応じて有効化）:**
 - Click Text, Click URL, Click ID, Click Classes
 - Page Path, Page URL, Page Hostname
 - Referrer
 - Form Element, Form ID
 
-**User-defined:**
+**ユーザー定義:**
 - Data Layer variables
 - JavaScript variables
 - Lookup tables
@@ -51,9 +51,9 @@ Variables capture dynamic values.
 
 ---
 
-## Naming Conventions
+## 命名規則
 
-### Recommended Format
+### 推奨フォーマット
 
 ```
 [Type] - [Description] - [Detail]
@@ -78,15 +78,15 @@ LT - Campaign Source Map
 
 ---
 
-## Data Layer Patterns
+## Data Layer パターン
 
-### Basic Structure
+### 基本構造
 
 ```javascript
-// Initialize (in <head> before GTM)
+// 初期化（GTM より前、<head> 内）
 window.dataLayer = window.dataLayer || [];
 
-// Push event
+// イベント送信
 dataLayer.push({
   'event': 'event_name',
   'property1': 'value1',
@@ -94,10 +94,10 @@ dataLayer.push({
 });
 ```
 
-### Page Load Data
+### ページロードデータ
 
 ```javascript
-// Set on page load (before GTM container)
+// ページ読み込み時に設定（GTM コンテナより前）
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   'pageType': 'product',
@@ -110,7 +110,7 @@ dataLayer.push({
 });
 ```
 
-### Form Submission
+### フォーム送信
 
 ```javascript
 document.querySelector('#contact-form').addEventListener('submit', function() {
@@ -122,7 +122,7 @@ document.querySelector('#contact-form').addEventListener('submit', function() {
 });
 ```
 
-### Button Click
+### ボタンクリック
 
 ```javascript
 document.querySelector('.cta-button').addEventListener('click', function() {
@@ -134,11 +134,11 @@ document.querySelector('.cta-button').addEventListener('click', function() {
 });
 ```
 
-### E-commerce Events
+### E コマースイベント
 
 ```javascript
-// Product view
-dataLayer.push({ ecommerce: null }); // Clear previous
+// 商品閲覧
+dataLayer.push({ ecommerce: null }); // 前回データをクリア
 dataLayer.push({
   'event': 'view_item',
   'ecommerce': {
@@ -152,7 +152,7 @@ dataLayer.push({
   }
 });
 
-// Add to cart
+// カート追加
 dataLayer.push({ ecommerce: null });
 dataLayer.push({
   'event': 'add_to_cart',
@@ -166,7 +166,7 @@ dataLayer.push({
   }
 });
 
-// Purchase
+// 購入
 dataLayer.push({ ecommerce: null });
 dataLayer.push({
   'event': 'purchase',
@@ -188,31 +188,31 @@ dataLayer.push({
 
 ---
 
-## Common Tag Configurations
+## よくあるタグ設定
 
-### GA4 Configuration Tag
+### GA4 Configuration タグ
 
 **Tag Type:** Google Analytics: GA4 Configuration
 
-**Settings:**
+**設定:**
 - Measurement ID: G-XXXXXXXX
-- Send page view: Checked (for pageviews)
-- User Properties: Add any user-level dimensions
+- Send page view: チェック（ページビュー用）
+- User Properties: 必要なユーザー単位ディメンションを追加
 
 **Trigger:** All Pages
 
-### GA4 Event Tag
+### GA4 Event タグ
 
 **Tag Type:** Google Analytics: GA4 Event
 
-**Settings:**
-- Configuration Tag: Select your config tag
-- Event Name: {{DL - event_name}} or hardcode
-- Event Parameters: Add parameters from dataLayer
+**設定:**
+- Configuration Tag: 設定タグを選択
+- Event Name: {{DL - event_name}} または固定値
+- Event Parameters: dataLayer からパラメータを追加
 
-**Trigger:** Custom Event with event name match
+**Trigger:** イベント名一致の Custom Event
 
-### Facebook Pixel - Base
+### Facebook Pixel - 基本
 
 **Tag Type:** Custom HTML
 
@@ -233,7 +233,7 @@ dataLayer.push({
 
 **Trigger:** All Pages
 
-### Facebook Pixel - Event
+### Facebook Pixel - イベント
 
 **Tag Type:** Custom HTML
 
@@ -249,79 +249,79 @@ dataLayer.push({
 
 ---
 
-## Preview and Debug
+## プレビューとデバッグ
 
-### Preview Mode
+### プレビューモード
 
-1. Click "Preview" in GTM
-2. Enter site URL
-3. GTM debug panel opens at bottom
+1. GTM で「Preview」をクリック
+2. サイト URL を入力
+3. 画面下に GTM デバッグパネルが表示
 
-**What to check:**
-- Tags fired on this event
-- Tags not fired (and why)
-- Variables and their values
-- Data layer contents
+**確認ポイント:**
+- このイベントで発火したタグ
+- 発火しなかったタグ（理由付き）
+- 変数と値
+- Data Layer の内容
 
-### Debug Tips
+### デバッグのコツ
 
-**Tag not firing:**
-- Check trigger conditions
-- Verify data layer push
-- Check tag sequencing
+**タグが発火しない:**
+- トリガー条件を確認
+- dataLayer.push を確認
+- タグシーケンスを確認
 
-**Wrong variable value:**
-- Check data layer structure
-- Verify variable path (nested objects)
-- Check timing (data may not exist yet)
+**変数値が誤っている:**
+- dataLayer 構造を確認
+- 変数パス（ネスト）を確認
+- タイミングを確認（まだデータがない可能性）
 
-**Multiple firings:**
-- Check trigger uniqueness
-- Look for duplicate tags
-- Check tag firing options
-
----
-
-## Workspaces and Versioning
-
-### Workspaces
-
-Use workspaces for team collaboration:
-- Default workspace for production
-- Separate workspaces for large changes
-- Merge when ready
-
-### Version Management
-
-**Best practices:**
-- Name every version descriptively
-- Add notes explaining changes
-- Review changes before publish
-- Keep production version noted
-
-**Version notes example:**
-```
-v15: Added purchase conversion tracking
-- New tag: GA4 - Event - Purchase
-- New trigger: Custom Event - purchase
-- New variables: DL - transaction_id, DL - value
-- Tested: Chrome, Safari, Mobile
-```
+**複数回発火する:**
+- トリガーの一意性を確認
+- 重複タグを確認
+- タグ発火オプションを確認
 
 ---
 
-## Consent Management
+## ワークスペースとバージョン管理
 
-### Consent Mode Integration
+### ワークスペース
+
+チーム開発ではワークスペースを活用:
+- 本番運用はデフォルトワークスペース
+- 大きな変更は専用ワークスペース
+- 準備できたらマージ
+
+### バージョン管理
+
+**ベストプラクティス:**
+- すべてのバージョンに分かりやすい名前を付ける
+- 変更内容をノートに残す
+- 公開前に変更をレビュー
+- 本番版を明確に記録
+
+**バージョンノート例:**
+```
+v15: 購入コンバージョントラッキングを追加
+- 新規タグ: GA4 - Event - Purchase
+- 新規トリガー: Custom Event - purchase
+- 新規変数: DL - transaction_id, DL - value
+- テスト: Chrome, Safari, Mobile
+```
+
+---
+
+## 同意管理
+
+### Consent Mode 連携
 
 ```javascript
-// Default state (before consent)
+// デフォルト状態（同意前）
 gtag('consent', 'default', {
   'analytics_storage': 'denied',
   'ad_storage': 'denied'
 });
 
-// Update on consent
+// 同意時に更新
 function grantConsent() {
   gtag('consent', 'update', {
     'analytics_storage': 'granted',
@@ -332,47 +332,47 @@ function grantConsent() {
 
 ### GTM Consent Overview
 
-1. Enable Consent Overview in Admin
-2. Configure consent for each tag
-3. Tags respect consent state automatically
+1. 管理画面で Consent Overview を有効化
+2. 各タグの同意設定を構成
+3. タグが同意状態を自動で尊重
 
 ---
 
-## Advanced Patterns
+## 高度なパターン
 
-### Tag Sequencing
+### タグシーケンス
 
-**Setup tags to fire in order:**
+**タグを順番に発火させる設定:**
 Tag Configuration > Advanced Settings > Tag Sequencing
 
-**Use cases:**
-- Config tag before event tags
-- Pixel initialization before tracking
-- Cleanup after conversion
+**ユースケース:**
+- イベントタグより先に設定タグ
+- トラッキング前にピクセル初期化
+- コンバージョン後のクリーンアップ
 
-### Exception Handling
+### 例外処理
 
-**Trigger exceptions** - Prevent tag from firing:
-- Exclude certain pages
-- Exclude internal traffic
-- Exclude during testing
+**Trigger exceptions** - タグ発火を防ぐ:
+- 特定ページを除外
+- 内部トラフィックを除外
+- テスト中は除外
 
-### Custom JavaScript Variables
+### カスタム JavaScript 変数
 
 ```javascript
-// Get URL parameter
+// URL パラメータ取得
 function() {
   var params = new URLSearchParams(window.location.search);
   return params.get('campaign') || '(not set)';
 }
 
-// Get cookie value
+// Cookie 値取得
 function() {
   var match = document.cookie.match('(^|;) ?user_id=([^;]*)(;|$)');
   return match ? match[2] : null;
 }
 
-// Get data from page
+// ページ要素から値取得
 function() {
   var el = document.querySelector('.product-price');
   return el ? parseFloat(el.textContent.replace('$', '')) : 0;

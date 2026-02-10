@@ -1,10 +1,10 @@
-# Content Architecture for Competitor Pages
+# 競合ページ向けコンテンツ設計
 
-How to structure and maintain competitor data for scalable comparison pages.
+比較ページをスケーラブルに運用するための、競合データの構造化と維持方法。
 
-## Centralized Competitor Data
+## 一元化された競合データ
 
-Create a single source of truth for each competitor:
+競合ごとに単一の正しい情報源を作成する:
 
 ```
 competitor_data/
@@ -16,31 +16,31 @@ competitor_data/
 
 ---
 
-## Competitor Data Template
+## 競合データテンプレート
 
-Per competitor, document:
+競合ごとに、以下を記録:
 
 ```yaml
 name: Notion
 website: notion.so
-tagline: "The all-in-one workspace"
+tagline: "オールインワンのワークスペース"
 founded: 2016
 headquarters: San Francisco
 
-# Positioning
-primary_use_case: "docs + light databases"
-target_audience: "teams wanting flexible workspace"
-market_position: "premium, feature-rich"
+# ポジショニング
+primary_use_case: "ドキュメント + 軽量データベース"
+target_audience: "柔軟なワークスペースを求めるチーム"
+market_position: "高機能・プレミアム"
 
-# Pricing
+# 価格
 pricing_model: per-seat
 free_tier: true
-free_tier_limits: "limited blocks, 1 user"
+free_tier_limits: "ブロック数制限あり、1ユーザー"
 starter_price: $8/user/month
 business_price: $15/user/month
 enterprise: custom
 
-# Features (rate 1-5 or describe)
+# 機能（1-5で評価または説明）
 features:
   documents: 5
   databases: 4
@@ -51,171 +51,171 @@ features:
   offline_mode: 2
   api: 4
 
-# Strengths (be honest)
+# 強み（正直に）
 strengths:
-  - Extremely flexible and customizable
-  - Beautiful, modern interface
-  - Strong template ecosystem
-  - Active community
+  - 非常に柔軟でカスタマイズ性が高い
+  - 美しくモダンなインターフェース
+  - 強力なテンプレートエコシステム
+  - 活発なコミュニティ
 
-# Weaknesses (be fair)
+# 弱み（公平に）
 weaknesses:
-  - Can be slow with large databases
-  - Learning curve for advanced features
-  - Limited automations compared to dedicated tools
-  - Offline mode is limited
+  - 大規模データベースで遅くなりやすい
+  - 高度機能には学習コストがある
+  - 専用ツールに比べ自動化が限定的
+  - オフラインモードが限定的
 
-# Best for
+# 向いているケース
 best_for:
-  - Teams wanting all-in-one workspace
-  - Content-heavy workflows
-  - Documentation-first teams
-  - Startups and small teams
+  - オールインワン環境を求めるチーム
+  - コンテンツ中心のワークフロー
+  - ドキュメント中心で進めるチーム
+  - スタートアップや小規模チーム
 
-# Not ideal for
+# 向いていないケース
 not_ideal_for:
-  - Complex project management needs
-  - Large databases (1000s of rows)
-  - Teams needing robust offline
-  - Enterprise with strict compliance
+  - 複雑なプロジェクト管理が必要
+  - 非常に大きなデータベース（数千行）
+  - 強力なオフライン運用が必要
+  - 厳格なコンプライアンス要件のある大企業
 
-# Common complaints (from reviews)
+# よくある不満（レビュー由来）
 common_complaints:
-  - "Gets slow with lots of content"
-  - "Hard to find things as workspace grows"
-  - "Mobile app is clunky"
+  - "コンテンツが増えると遅くなる"
+  - "ワークスペースが大きくなると探しにくい"
+  - "モバイルアプリが使いづらい"
 
-# Migration notes
+# 移行メモ
 migration_from:
   difficulty: medium
   data_export: "Markdown, CSV, HTML"
-  what_transfers: "Pages, databases"
-  what_doesnt: "Automations, integrations setup"
-  time_estimate: "1-3 days for small team"
+  what_transfers: "ページ、データベース"
+  what_doesnt: "自動化設定、連携設定"
+  time_estimate: "小規模チームで1-3日"
 ```
 
 ---
 
-## Your Product Data
+## 自社プロダクトデータ
 
-Same structure for yourself—be honest:
+同じ構造で自社データも管理する。正直さを保つ:
 
 ```yaml
 name: [Your Product]
 # ... same fields
 
 strengths:
-  - [Your real strengths]
+  - [実際の強み]
 
 weaknesses:
-  - [Your honest weaknesses]
+  - [正直な弱み]
 
 best_for:
-  - [Your ideal customers]
+  - [理想顧客]
 
 not_ideal_for:
-  - [Who should use something else]
+  - [他ツールを選ぶべきケース]
 ```
 
 ---
 
-## Page Generation
+## ページ生成
 
-Each page pulls from centralized data:
+各ページは一元化データから取得する:
 
-- **[Competitor] Alternative page**: Pulls competitor data + your data
-- **[Competitor] Alternatives page**: Pulls competitor data + your data + other alternatives
-- **You vs [Competitor] page**: Pulls your data + competitor data
-- **[A] vs [B] page**: Pulls both competitor data + your data
+- **[Competitor] Alternative ページ**: 競合データ + 自社データを使用
+- **[Competitor] Alternatives ページ**: 競合データ + 自社データ + 他代替候補を使用
+- **You vs [Competitor] ページ**: 自社データ + 競合データを使用
+- **[A] vs [B] ページ**: 両競合データ + 自社データを使用
 
-**Benefits**:
-- Update competitor pricing once, updates everywhere
-- Add new feature comparison once, appears on all pages
-- Consistent accuracy across pages
-- Easier to maintain at scale
+**利点**:
+- 競合価格を1回更新すれば全ページに反映
+- 機能比較を1回追加すれば全ページに表示
+- ページ間の精度を一貫して維持
+- 大規模運用での保守が容易
 
 ---
 
-## Index Page Structure
+## インデックスページ構造
 
-### Alternatives Index
+### Alternatives インデックス
 
-**URL**: `/alternatives` or `/alternatives/index`
+**URL**: `/alternatives` または `/alternatives/index`
 
-**Purpose**: Lists all "[Competitor] Alternative" pages
+**目的**: すべての "[Competitor] Alternative" ページを一覧化
 
-**Page structure**:
-1. Headline: "[Your Product] as an Alternative"
-2. Brief intro on why people switch to you
-3. List of all alternative pages with:
-   - Competitor name/logo
-   - One-line summary of key differentiator vs. that competitor
-   - Link to full comparison
-4. Common reasons people switch (aggregated)
+**ページ構成**:
+1. 見出し: "[Your Product] as an Alternative"
+2. 乗り換え理由の短い導入
+3. すべての代替ページ一覧:
+   - 競合名/ロゴ
+   - その競合に対する主要差別化要素の1行要約
+   - 詳細比較へのリンク
+4. 乗り換え理由の共通項（集約）
 5. CTA
 
-**Example**:
+**例**:
 ```markdown
-## Explore [Your Product] as an Alternative
+## [Your Product] を代替として比較する
 
-Looking to switch? See how [Your Product] compares to the tools you're evaluating:
+乗り換えを検討中ですか？ 比較中のツールに対して [Your Product] がどう違うか確認してください:
 
-- **[Notion Alternative](/alternatives/notion)** — Better for teams who need [X]
-- **[Airtable Alternative](/alternatives/airtable)** — Better for teams who need [Y]
-- **[Monday Alternative](/alternatives/monday)** — Better for teams who need [Z]
+- **[Notion Alternative](/alternatives/notion)** — [X] が必要なチームに適している
+- **[Airtable Alternative](/alternatives/airtable)** — [Y] が必要なチームに適している
+- **[Monday Alternative](/alternatives/monday)** — [Z] が必要なチームに適している
 ```
 
 ---
 
-### Vs Comparisons Index
+### Vs 比較インデックス
 
-**URL**: `/vs` or `/compare`
+**URL**: `/vs` または `/compare`
 
-**Purpose**: Lists all "You vs [Competitor]" and "[A] vs [B]" pages
+**目的**: すべての "You vs [Competitor]" と "[A] vs [B]" ページを一覧化
 
-**Page structure**:
-1. Headline: "Compare [Your Product]"
-2. Section: "[Your Product] vs Competitors" — list of direct comparisons
-3. Section: "Head-to-Head Comparisons" — list of [A] vs [B] pages
-4. Brief methodology note
+**ページ構成**:
+1. 見出し: "[Your Product] を比較する"
+2. セクション: "[Your Product] vs Competitors" - 直接比較一覧
+3. セクション: "Head-to-Head Comparisons" - [A] vs [B] 一覧
+4. 簡単な評価方法の注記
 5. CTA
 
 ---
 
-### Index Page Best Practices
+### インデックスページのベストプラクティス
 
-**Keep them updated**: When you add a new comparison page, add it to the relevant index.
+**常に最新化**: 新しい比較ページを追加したら、該当インデックスにも追加する。
 
-**Internal linking**:
-- Link from index → individual pages
-- Link from individual pages → back to index
-- Cross-link between related comparisons
+**内部リンク**:
+- インデックス → 個別ページ
+- 個別ページ → インデックス
+- 関連比較ページ同士を相互リンク
 
-**SEO value**:
-- Index pages can rank for broad terms like "project management tool comparisons"
-- Pass link equity to individual comparison pages
-- Help search engines discover all comparison content
+**SEO 価値**:
+- インデックスページは "project management tool comparisons" のような広い語でも上位化可能
+- 個別比較ページへリンク評価を配分できる
+- 検索エンジンが比較コンテンツ全体を発見しやすくなる
 
-**Sorting options**:
-- By popularity (search volume)
-- Alphabetically
-- By category/use case
-- By date added (show freshness)
+**並び替えオプション**:
+- 人気順（検索ボリューム）
+- アルファベット順
+- カテゴリ/ユースケース順
+- 追加日順（鮮度表示）
 
-**Include on index pages**:
-- Last updated date for credibility
-- Number of pages/comparisons available
-- Quick filters if you have many comparisons
+**インデックスに含める要素**:
+- 信頼性向上のための最終更新日
+- 提供中ページ/比較数
+- 比較数が多い場合の簡易フィルタ
 
 ---
 
-## Footer Navigation
+## フッターナビゲーション
 
-The site footer appears on all marketing pages, making it a powerful internal linking opportunity for competitor pages.
+サイトフッターは全マーケティングページに表示されるため、競合ページへの強力な内部リンク機会となる。
 
-### Option 1: Link to Index Pages (Minimum)
+### Option 1: インデックスページへのリンク（最小構成）
 
-At minimum, add links to your comparison index pages in the footer:
+最低限、フッターに比較インデックスへのリンクを追加:
 
 ```
 Footer
@@ -224,11 +224,11 @@ Footer
 │   └── Comparisons →  /vs
 ```
 
-This ensures every marketing page passes link equity to your comparison content hub.
+これにより、全マーケティングページから比較コンテンツハブへリンク評価を渡せる。
 
-### Option 2: Footer Columns by Format (Recommended for SEO)
+### Option 2: 形式別フッター列（SEO 推奨）
 
-For stronger internal linking, create dedicated footer columns for each format you've built, linking directly to your top competitors:
+より強い内部リンクのため、作成済み形式ごとに専用列を設け、主要競合へ直接リンク:
 
 ```
 Footer
@@ -242,22 +242,22 @@ Footer
 │   └── View all →             │   └── View all →             │
 ```
 
-**Guidelines**:
-- Include up to 8 links per column (top competitors by search volume)
-- Add "View all" link to the full index page
-- Only create columns for formats you've actually built pages for
-- Prioritize competitors with highest search volume
+**ガイドライン**:
+- 1列あたり最大 8 リンク（検索ボリューム上位競合）
+- フルインデックスページへの "View all" を追加
+- 実際にページがある形式だけ列を作る
+- 検索ボリュームが高い競合を優先する
 
-### Why Footer Links Matter
+### フッターリンクが重要な理由
 
-1. **Sitewide distribution**: Footer links appear on every marketing page, passing link equity from your entire site to comparison content
-2. **Crawl efficiency**: Search engines discover all comparison pages quickly
-3. **User discovery**: Visitors evaluating your product can easily find comparisons
-4. **Competitive positioning**: Signals to search engines that you're a key player in the space
+1. **サイト全体への分配**: フッターリンクは全マーケティングページに出るため、サイト全体から比較コンテンツへリンク評価を渡せる
+2. **クロール効率**: 検索エンジンが全比較ページを素早く発見できる
+3. **ユーザー発見性**: 比較検討中の訪問者が関連ページを見つけやすい
+4. **競争上の位置づけ**: その領域の主要プレイヤーであることを検索エンジンに示せる
 
-### Implementation Notes
+### 実装メモ
 
-- Update footer when adding new high-priority comparison pages
-- Keep footer clean—don't list every comparison, just the top ones
-- Match column headers to your URL structure (e.g., "vs" column → `/vs/` URLs)
-- Consider mobile: columns may stack, so order by priority
+- 優先度の高い比較ページ追加時にフッター更新
+- フッターは簡潔に保ち、全ページを羅列しない
+- 列見出しを URL 構造に合わせる（例: "vs" 列 → `/vs/`）
+- モバイル表示を考慮（列が積み上がるため優先順に配置）

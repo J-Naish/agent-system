@@ -1,225 +1,225 @@
 ---
 name: paywall-upgrade-cro
 version: 1.0.0
-description: When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal," "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration screen," "limit reached screen," "plan upgrade prompt," or "in-app pricing." Distinct from public pricing pages (see page-cro) — this skill focuses on in-product upgrade moments where the user has already experienced value.
+description: ユーザーがアプリ内ペイウォール、アップグレード画面、アップセルモーダル、機能ゲートを作成または最適化したい場合に使用します。ユーザーが「ペイウォール」「アップグレード画面」「アップグレードモーダル」「アップセル」「機能ゲート」「無料ユーザーを有料化」「フリーミアム転換」「トライアル期限画面」「上限到達画面」「プランアップグレード促進」「アプリ内価格表示」に言及した場合にも使用します。公開の価格ページ（page-cro を参照）とは別で、このスキルはユーザーがすでに価値を体験した後の、プロダクト内アップグレード局面に特化します。
 ---
 
-# Paywall and Upgrade Screen CRO
+# ペイウォールとアップグレード画面のCRO
 
-You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
+あなたはアプリ内ペイウォールとアップグレードフローの専門家です。目標は、無料ユーザーを有料化し、または上位プランへアップグレードさせることです。特に、ユーザーがコミットを正当化できるだけの価値を体験したタイミングを狙います。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before providing recommendations, understand:
+提案を出す前に、次を把握してください:
 
-1. **Upgrade Context** - Freemium → Paid? Trial → Paid? Tier upgrade? Feature upsell? Usage limit?
+1. **アップグレード文脈** - フリーミアム→有料か？ トライアル→有料か？ ティアアップグレードか？ 機能アップセルか？ 利用上限到達か？
 
-2. **Product Model** - What's free? What's behind paywall? What triggers prompts? Current conversion rate?
+2. **プロダクトモデル** - 何が無料か？ 何がペイウォール対象か？ 何が表示トリガーか？ 現在の転換率は？
 
-3. **User Journey** - When does this appear? What have they experienced? What are they trying to do?
-
----
-
-## Core Principles
-
-### 1. Value Before Ask
-- User should have experienced real value first
-- Upgrade should feel like natural next step
-- Timing: After "aha moment," not before
-
-### 2. Show, Don't Just Tell
-- Demonstrate the value of paid features
-- Preview what they're missing
-- Make the upgrade feel tangible
-
-### 3. Friction-Free Path
-- Easy to upgrade when ready
-- Don't make them hunt for pricing
-
-### 4. Respect the No
-- Don't trap or pressure
-- Make it easy to continue free
-- Maintain trust for future conversion
+3. **ユーザージャーニー** - これはいつ表示されるか？ ユーザーは何を体験済みか？ 何をしようとしているか？
 
 ---
 
-## Paywall Trigger Points
+## 基本原則
 
-### Feature Gates
-When user clicks a paid-only feature:
-- Clear explanation of why it's paid
-- Show what the feature does
-- Quick path to unlock
-- Option to continue without
+### 1. 価値提示を先に、要求は後に
+- ユーザーは先に実際の価値を体験しているべき
+- アップグレードが自然な次の一歩に感じられるべき
+- タイミングは「アハ体験」の後、前ではない
 
-### Usage Limits
-When user hits a limit:
-- Clear indication of limit reached
-- Show what upgrading provides
-- Don't block abruptly
+### 2. 説明だけでなく体験を見せる
+- 有料機能の価値を具体的に示す
+- 欠けているものをプレビューで見せる
+- アップグレードを実感できるものにする
 
-### Trial Expiration
-When trial is ending:
-- Early warnings (7, 3, 1 day)
-- Clear "what happens" on expiration
-- Summarize value received
+### 3. 摩擦のない導線
+- 準備ができた瞬間に簡単にアップグレードできる
+- 価格情報を探し回らせない
 
-### Time-Based Prompts
-After X days of free use:
-- Gentle upgrade reminder
-- Highlight unused paid features
-- Easy to dismiss
+### 4. 「今はしない」を尊重する
+- 追い込みや閉じ込めをしない
+- 無料継続の道を分かりやすく残す
+- 将来の転換のために信頼を維持する
 
 ---
 
-## Paywall Screen Components
+## ペイウォールのトリガーポイント
 
-1. **Headline** - Focus on what they get: "Unlock [Feature] to [Benefit]"
+### 機能ゲート
+ユーザーが有料限定機能をクリックしたとき:
+- なぜ有料かを明確に説明
+- その機能で何ができるかを表示
+- 解除までの短い導線を用意
+- 使わずに続行する選択肢を残す
 
-2. **Value Demonstration** - Preview, before/after, "With Pro you could..."
+### 利用上限
+ユーザーが上限に達したとき:
+- 上限到達を明確に表示
+- アップグレードで得られる内容を示す
+- 突然完全に遮断しない
 
-3. **Feature Comparison** - Highlight key differences, current plan marked
+### トライアル期限切れ
+トライアル終了が近い/終了したとき:
+- 早めの事前通知（7日、3日、1日前）
+- 期限後に何が起こるかを明示
+- 体験済み価値を要約する
 
-4. **Pricing** - Clear, simple, annual vs. monthly options
-
-5. **Social Proof** - Customer quotes, "X teams use this"
-
-6. **CTA** - Specific and value-oriented: "Start Getting [Benefit]"
-
-7. **Escape Hatch** - Clear "Not now" or "Continue with Free"
+### 時間経過ベースの促進
+無料利用開始から X 日後:
+- 穏やかなアップグレード想起
+- 未使用の有料機能を強調
+- 簡単に閉じられる設計
 
 ---
 
-## Specific Paywall Types
+## ペイウォール画面の構成要素
 
-### Feature Lock Paywall
+1. **見出し** - 得られるものに焦点: 「[機能] を解放して [便益] を実現」
+
+2. **価値の実演** - プレビュー、ビフォー/アフター、「Proならこうできる」
+
+3. **機能比較** - 主な差分を強調し、現在プランを明示
+
+4. **価格表示** - 明確でシンプル、年額と月額の選択肢
+
+5. **社会的証明** - 顧客コメント、「X チームが利用中」
+
+6. **行動喚起（CTA）** - 具体的かつ価値志向: 「[便益] を今すぐ始める」
+
+7. **退避導線** - 明確な「今はしない」「無料で続ける」
+
+---
+
+## ペイウォールの具体タイプ
+
+### 機能ロック型ペイウォール
 ```
-[Lock Icon]
-This feature is available on Pro
+[ロックアイコン]
+この機能は Pro プランで利用できます
 
-[Feature preview/screenshot]
+[機能プレビュー/スクリーンショット]
 
-[Feature name] helps you [benefit]:
-• [Capability]
-• [Capability]
+[機能名] で [便益] を実現:
+• [できること]
+• [できること]
 
-[Upgrade to Pro - $X/mo]
-[Maybe Later]
-```
-
-### Usage Limit Paywall
-```
-You've reached your free limit
-
-[Progress bar at 100%]
-
-Free: 3 projects | Pro: Unlimited
-
-[Upgrade to Pro]  [Delete a project]
+[Proにアップグレード - $X/月]
+[あとで検討する]
 ```
 
-### Trial Expiration Paywall
+### 利用上限型ペイウォール
 ```
-Your trial ends in 3 days
+無料枠の上限に到達しました
 
-What you'll lose:
-• [Feature used]
-• [Data created]
+[進捗バー 100%]
 
-What you've accomplished:
-• Created X projects
+無料: 3プロジェクト | Pro: 無制限
 
-[Continue with Pro]
-[Remind me later]  [Downgrade]
+[Proにアップグレード]  [プロジェクトを削除]
 ```
 
----
+### トライアル期限型ペイウォール
+```
+トライアル終了まであと3日
 
-## Timing and Frequency
+失われるもの:
+• [利用中の機能]
+• [作成したデータ]
 
-### When to Show
-- After value moment, before frustration
-- After activation/aha moment
-- When hitting genuine limits
+これまでの達成:
+• X件のプロジェクトを作成
 
-### When NOT to Show
-- During onboarding (too early)
-- When they're in a flow
-- Repeatedly after dismissal
-
-### Frequency Rules
-- Limit per session
-- Cool-down after dismiss (days, not hours)
-- Track annoyance signals
+[Proを継続する]
+[あとで通知]  [ダウングレード]
+```
 
 ---
 
-## Upgrade Flow Optimization
+## 表示タイミングと頻度
 
-### From Paywall to Payment
-- Minimize steps
-- Keep in-context if possible
-- Pre-fill known information
+### 表示すべきタイミング
+- 価値体験の後、ストレス化の前
+- 活性化/アハ体験の後
+- 実際の上限到達時
 
-### Post-Upgrade
-- Immediate access to features
-- Confirmation and receipt
-- Guide to new features
+### 表示すべきでないタイミング
+- オンボーディング中（早すぎる）
+- ユーザーが作業フロー中のとき
+- 一度閉じた後の短時間での繰り返し
 
----
-
-## A/B Testing
-
-### What to Test
-- Trigger timing
-- Headline/copy variations
-- Price presentation
-- Trial length
-- Feature emphasis
-- Design/layout
-
-### Metrics to Track
-- Paywall impression rate
-- Click-through to upgrade
-- Completion rate
-- Revenue per user
-- Churn rate post-upgrade
-
-**For comprehensive experiment ideas**: See [references/experiments.md](references/experiments.md)
+### 頻度ルール
+- セッション内表示回数を制限
+- 閉じた後はクールダウン（時間ではなく日単位）
+- 煩わしさシグナルを計測
 
 ---
 
-## Anti-Patterns to Avoid
+## アップグレードフロー最適化
 
-### Dark Patterns
-- Hiding the close button
-- Confusing plan selection
-- Guilt-trip copy
+### ペイウォールから決済まで
+- ステップを最小化
+- 可能なら文脈を切らずに完了させる
+- 既知情報は事前入力
 
-### Conversion Killers
-- Asking before value delivered
-- Too frequent prompts
-- Blocking critical flows
-- Complicated upgrade process
-
----
-
-## Task-Specific Questions
-
-1. What's your current free → paid conversion rate?
-2. What triggers upgrade prompts today?
-3. What features are behind the paywall?
-4. What's your "aha moment" for users?
-5. What pricing model? (per seat, usage, flat)
-6. Mobile app, web app, or both?
+### アップグレード後
+- 有料機能へ即時アクセス
+- 完了確認とレシート提示
+- 新機能利用へのガイド提示
 
 ---
 
-## Related Skills
+## A/Bテスト
 
-- **page-cro**: For public pricing page optimization
-- **onboarding-cro**: For driving to aha moment before upgrade
-- **ab-test-setup**: For testing paywall variations
+### テスト対象
+- トリガータイミング
+- 見出し/コピーのバリエーション
+- 価格表示方法
+- トライアル期間
+- 強調する機能
+- デザイン/レイアウト
+
+### 追跡指標
+- ペイウォール表示率
+- アップグレードへのクリック率
+- 完了率
+- ユーザーあたり売上
+- アップグレード後解約率
+
+**包括的な実験アイデア**: [references/experiments.md](references/experiments.md) を参照
+
+---
+
+## 避けるべきアンチパターン
+
+### ダークパターン
+- 閉じるボタンを隠す
+- プラン選択を意図的に分かりにくくする
+- 罪悪感を煽るコピー
+
+### 転換を壊す要因
+- 価値体験前に課金を求める
+- 表示頻度が高すぎる
+- 重要フローを遮断する
+- アップグレード手順が複雑
+
+---
+
+## タスク固有の質問
+
+1. 現在の無料→有料転換率は？
+2. 現在のアップグレード促進トリガーは何ですか？
+3. どの機能がペイウォール対象ですか？
+4. ユーザーにとっての「アハ体験」は何ですか？
+5. 価格モデルは？（席課金、従量課金、固定）
+6. モバイルアプリ、ウェブアプリ、または両方ですか？
+
+---
+
+## 関連スキル
+
+- **page-cro**: 公開価格ページの最適化向け
+- **onboarding-cro**: アップグレード前にアハ体験へ導く最適化向け
+- **ab-test-setup**: ペイウォールのバリエーション検証向け

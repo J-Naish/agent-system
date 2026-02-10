@@ -1,163 +1,163 @@
-# Platform-Specific Strategy Guide
+# プラットフォーム別戦略ガイド
 
-Detailed strategies for each major social platform.
+主要ソーシャルプラットフォームごとの詳細戦略です。
 
 ## LinkedIn
 
-**Best for:** B2B, thought leadership, professional networking, recruiting
-**Audience:** Professionals, decision-makers, job seekers
-**Posting frequency:** 3-5x per week
-**Best times:** Tuesday-Thursday, 7-8am, 12pm, 5-6pm
+**向いている用途:** B2B、思想リーダーシップ、プロフェッショナルネットワーク、採用
+**オーディエンス:** ビジネス層、意思決定者、求職者
+**投稿頻度:** 週3〜5回
+**最適時間:** 火〜木、7-8時、12時、17-18時
 
-**What works:**
-- Personal stories with business lessons
-- Contrarian takes on industry topics
-- Behind-the-scenes of building a company
-- Data and original insights
-- Carousel posts (document format)
-- Polls that spark discussion
+**機能しやすいもの:**
+- ビジネスの学びを含む個人ストーリー
+- 業界トピックへの逆張り視点
+- 会社づくりの舞台裏
+- データと独自インサイト
+- カルーセル投稿（ドキュメント形式）
+- 議論を生むアンケート
 
-**What doesn't:**
-- Overly promotional content
-- Generic motivational quotes
-- Links in the main post (kills reach)
-- Corporate speak without personality
+**機能しにくいもの:**
+- 宣伝色が強すぎる投稿
+- 汎用的なモチベーション名言
+- 投稿本文内のリンク（リーチ低下）
+- 人間味のない企業口調
 
-**Format tips:**
-- First line is everything (hook before "see more")
-- Use line breaks for readability
-- 1,200-1,500 characters performs well
-- Put links in comments, not post body
-- Tag people sparingly and genuinely
+**フォーマットのコツ:**
+- 1行目が最重要（「もっと見る」前にフック）
+- 改行を使って可読性を上げる
+- 1,200〜1,500 文字が機能しやすい
+- リンクは本文ではなくコメント欄に置く
+- 人のタグ付けは少量かつ自然に
 
-**Algorithm tips:**
-- First hour engagement matters most
-- Comments > reactions > clicks
-- Dwell time (people reading) signals quality
-- No external links in post body
-- Document posts (carousels) get strong reach
-- Polls drive engagement but don't build authority
+**アルゴリズムのコツ:**
+- 最初の1時間の反応が最重要
+- コメント > リアクション > クリック
+- 滞在時間（読まれる時間）が品質シグナル
+- 本文内の外部リンクは避ける
+- ドキュメント投稿（カルーセル）はリーチが強い
+- アンケートは反応を得やすいが権威形成には直結しにくい
 
 ---
 
 ## Twitter/X
 
-**Best for:** Tech, media, real-time commentary, community building
-**Audience:** Tech-savvy, news-oriented, niche communities
-**Posting frequency:** 3-10x per day (including replies)
-**Best times:** Varies by audience; test and measure
+**向いている用途:** テック、メディア、リアルタイム解説、コミュニティ形成
+**オーディエンス:** テック親和層、ニュース志向層、ニッチコミュニティ
+**投稿頻度:** 1日3〜10回（返信含む）
+**最適時間:** オーディエンス依存。検証して計測する
 
-**What works:**
-- Hot takes and opinions
-- Threads that teach something
-- Behind-the-scenes moments
-- Engaging with others' content
-- Memes and humor (if on-brand)
-- Real-time commentary on events
+**機能しやすいもの:**
+- ホットテイクと意見
+- 学びを与えるスレッド
+- 舞台裏の瞬間
+- 他者コンテンツへの反応
+- ミームやユーモア（ブランドに合う場合）
+- イベントへのリアルタイム解説
 
-**What doesn't:**
-- Pure self-promotion
-- Threads without a strong hook
-- Ignoring replies and mentions
-- Scheduling everything (no real-time presence)
+**機能しにくいもの:**
+- 自己宣伝だけの投稿
+- フックが弱いスレッド
+- 返信やメンションの放置
+- すべて予約投稿（リアルタイム性欠如）
 
-**Format tips:**
-- Tweets under 100 characters get more engagement
-- Threads: Hook in tweet 1, promise value, deliver
-- Quote tweets with added insight beat plain retweets
-- Use visuals to stop the scroll
+**フォーマットのコツ:**
+- 100文字未満の投稿は反応が伸びやすい
+- スレッドは1投稿目でフックし、価値を約束し、最後まで届ける
+- ただのリツイートより、引用付きで視点を足した方が強い
+- ビジュアルでスクロールを止める
 
-**Algorithm tips:**
-- Replies and quote tweets build authority
-- Threads keep people on platform (rewarded)
-- Images and video get more reach
-- Engagement in first 30 min matters
-- Twitter Blue/Premium may boost reach
+**アルゴリズムのコツ:**
+- 返信と引用投稿が権威形成につながる
+- スレッドは滞在を生みやすく評価されやすい
+- 画像と動画はリーチが伸びやすい
+- 最初の30分の反応が重要
+- Twitter Blue/Premium は表示到達に影響する可能性がある
 
 ---
 
 ## Instagram
 
-**Best for:** Visual brands, lifestyle, e-commerce, younger demographics
-**Audience:** 18-44, visual-first consumers
-**Posting frequency:** 1-2 feed posts per day, 3-10 Stories per day
-**Best times:** 11am-1pm, 7-9pm
+**向いている用途:** ビジュアルブランド、ライフスタイル、EC、若年〜中堅層
+**オーディエンス:** 18-44歳、ビジュアル重視の消費者
+**投稿頻度:** フィード1日1〜2回、ストーリー1日3〜10回
+**最適時間:** 11-13時、19-21時
 
-**What works:**
-- High-quality visuals
-- Behind-the-scenes Stories
-- Reels (short-form video)
-- Carousels with value
-- User-generated content
-- Interactive Stories (polls, questions)
+**機能しやすいもの:**
+- 高品質ビジュアル
+- 舞台裏ストーリー
+- リール（ショート動画）
+- 価値提供カルーセル
+- ユーザー生成コンテンツ
+- 参加型ストーリー（投票、質問）
 
-**What doesn't:**
-- Low-quality images
-- Too much text in images
-- Ignoring Stories and Reels
-- Only promotional content
+**機能しにくいもの:**
+- 低品質画像
+- 画像内テキスト過多
+- ストーリー/リールを使わない運用
+- 宣伝投稿のみの構成
 
-**Format tips:**
-- Reels get 2x reach of static posts
-- First frame of Reels must hook
-- Carousels: 10 slides with educational content
-- Use all Story features (polls, links, etc.)
+**フォーマットのコツ:**
+- リールは静止投稿の約2倍リーチを得やすい
+- リールは最初の1フレームで引きを作る
+- カルーセルは教育的内容で10枚構成が有効
+- ストーリー機能（投票、リンクなど）を活用する
 
-**Algorithm tips:**
-- Reels heavily prioritized over static posts
-- Saves and shares > likes
-- Stories keep you top of feed
-- Consistency matters more than perfection
-- Use all features (polls, questions, etc.)
+**アルゴリズムのコツ:**
+- 静止投稿よりリールが優先されやすい
+- 保存とシェア > いいね
+- ストーリー運用でフィード上位に残りやすい
+- 完璧さより継続性が重要
+- 機能を幅広く使う（投票、質問など）
 
 ---
 
 ## TikTok
 
-**Best for:** Brand awareness, younger audiences, viral potential
-**Audience:** 16-34, entertainment-focused
-**Posting frequency:** 1-4x per day
-**Best times:** 7-9am, 12-3pm, 7-11pm
+**向いている用途:** 認知拡大、若年層、バズの可能性
+**オーディエンス:** 16-34歳、エンタメ志向
+**投稿頻度:** 1日1〜4回
+**最適時間:** 7-9時、12-15時、19-23時
 
-**What works:**
-- Native, unpolished content
-- Trending sounds and formats
-- Educational content in entertaining wrapper
-- POV and day-in-the-life content
-- Responding to comments with videos
-- Duets and stitches
+**機能しやすいもの:**
+- ネイティブで作り込みすぎない動画
+- 流行音源と流行フォーマット
+- エンタメ性をまとった教育コンテンツ
+- 主観視点・一日密着系コンテンツ
+- コメント返信を動画化する運用
+- デュエットとステッチ
 
-**What doesn't:**
-- Overly produced content
-- Ignoring trends
-- Hard selling
-- Repurposed horizontal video
+**機能しにくいもの:**
+- 作り込み過多の映像
+- トレンド無視
+- 強い売り込み
+- 横長動画の使い回し
 
-**Format tips:**
-- Hook in first 1-2 seconds
-- Keep it under 30 seconds to start
-- Vertical only (9:16)
-- Use trending sounds
-- Post consistently to train algorithm
+**フォーマットのコツ:**
+- 最初の1〜2秒でフックする
+- まずは30秒未満を中心に
+- 縦型のみ（9:16）
+- 流行音源を使う
+- 継続投稿でアルゴリズムに学習させる
 
 ---
 
 ## Facebook
 
-**Best for:** Communities, local businesses, older demographics, groups
-**Audience:** 25-55+, community-oriented
-**Posting frequency:** 1-2x per day
-**Best times:** 1-4pm weekdays
+**向いている用途:** コミュニティ、ローカルビジネス、高年齢層、グループ運用
+**オーディエンス:** 25-55歳以上、コミュニティ志向
+**投稿頻度:** 1日1〜2回
+**最適時間:** 平日13-16時
 
-**What works:**
-- Facebook Groups (community)
-- Native video
-- Live video
-- Local content and events
-- Discussion-prompting questions
+**機能しやすいもの:**
+- Facebookグループ（コミュニティ）
+- ネイティブ動画
+- ライブ配信
+- 地域密着コンテンツとイベント
+- 議論を促す質問投稿
 
-**What doesn't:**
-- Links to external sites (reach killer)
-- Pure promotional content
-- Ignoring comments
-- Cross-posting from other platforms without adaptation
+**機能しにくいもの:**
+- 外部サイトへのリンク（リーチ低下）
+- 宣伝のみの投稿
+- コメント放置
+- 他プラットフォーム投稿の無調整クロスポスト

@@ -1,506 +1,506 @@
-# Email Types Reference
+# メールタイプ リファレンス
 
-A comprehensive guide to lifecycle and campaign emails. Use this as an audit checklist and implementation reference.
+ライフサイクルメールとキャンペーンメールの包括ガイド。監査チェックリストおよび実装参照として使用してください。
 
-## Onboarding Emails
+## オンボーディングメール
 
-### New Users Series
-**Trigger**: User signs up (free or trial)
-**Goal**: Activate user, drive to aha moment
-**Typical sequence**: 5-7 emails over 14 days
+### 新規ユーザーシリーズ
+**トリガー**: ユーザーが登録（無料またはトライアル）
+**目標**: ユーザー活性化、価値実感ポイント到達
+**標準シーケンス**: 14 日で 5〜7 通
 
-- Email 1: Welcome + single next step (immediate)
-- Email 2: Quick win / getting started (day 1)
-- Email 3: Key feature highlight (day 3)
-- Email 4: Success story / social proof (day 5)
-- Email 5: Check-in + offer help (day 7)
-- Email 6: Advanced tip (day 10)
-- Email 7: Upgrade prompt or next milestone (day 14)
+- メール 1: ウェルカム + 次の1アクション（即時）
+- メール 2: クイックウィン / 開始支援（1 日目）
+- メール 3: 主要機能ハイライト（3 日目）
+- メール 4: 成功事例 / 社会的証明（5 日目）
+- メール 5: チェックイン + 支援提案（7 日目）
+- メール 6: 上級ヒント（10 日目）
+- メール 7: アップグレード提案または次のマイルストーン（14 日目）
 
-**Key metrics**: Activation rate, feature adoption
-
----
-
-### New Customers Series
-**Trigger**: User converts to paid
-**Goal**: Reinforce purchase decision, drive adoption, reduce early churn
-**Typical sequence**: 3-5 emails over 14 days
-
-- Email 1: Thank you + what's next (immediate)
-- Email 2: Getting full value — setup checklist (day 2)
-- Email 3: Pro tips for paid features (day 5)
-- Email 4: Success story from similar customer (day 7)
-- Email 5: Check-in + introduce support resources (day 14)
-
-**Key point**: Different from new user series—they've committed. Focus on reinforcement and expansion, not conversion.
+**主要指標**: 活性化率、機能採用率
 
 ---
 
-### Key Onboarding Step Reminder
-**Trigger**: User hasn't completed critical setup step after X time
-**Goal**: Nudge completion of high-value action
-**Format**: Single email or 2-3 email mini-sequence
+### 新規顧客シリーズ
+**トリガー**: ユーザーが有料へ転換
+**目標**: 購入判断の強化、利用促進、初期チャーン抑制
+**標準シーケンス**: 14 日で 3〜5 通
 
-**Example triggers**:
-- Hasn't connected integration after 48 hours
-- Hasn't invited team member after 3 days
-- Hasn't completed profile after 24 hours
+- メール 1: お礼 + 次にやること（即時）
+- メール 2: 価値を最大化する設定チェックリスト（2 日目）
+- メール 3: 有料機能の活用ヒント（5 日目）
+- メール 4: 類似顧客の成功事例（7 日目）
+- メール 5: チェックイン + サポート導線紹介（14 日目）
 
-**Copy approach**:
-- Remind them what they started
-- Explain why this step matters
-- Make it easy (direct link to complete)
-- Offer help if stuck
+**重要点**: 新規ユーザーシリーズとは別。すでに契約済みなので、転換ではなく定着と拡張を重視する。
 
 ---
 
-### New User Invite
-**Trigger**: Existing user invites teammate
-**Goal**: Activate the invited user
-**Recipient**: The person being invited
+### 重要オンボーディングステップのリマインド
+**トリガー**: 重要な設定ステップが一定時間内に完了していない
+**目標**: 価値の高い行動の完了を後押し
+**形式**: 単発メールまたは 2〜3 通のミニシーケンス
 
-- Email 1: You've been invited (immediate)
-- Email 2: Reminder if not accepted (day 2)
-- Email 3: Final reminder (day 5)
+**トリガー例**:
+- 48 時間経っても連携未接続
+- 3 日経ってもチームメンバー未招待
+- 24 時間経ってもプロフィール未完了
 
-**Copy approach**:
-- Personalize with inviter's name
-- Explain what they're joining
-- Single CTA to accept invite
-- Social proof optional
-
----
-
-## Retention Emails
-
-### Upgrade to Paid
-**Trigger**: Free user shows engagement, or trial ending
-**Goal**: Convert free to paid
-**Typical sequence**: 3-5 emails
-
-**Trigger options**:
-- Time-based (trial day 10, 12, 14)
-- Behavior-based (hit usage limit, used premium feature)
-- Engagement-based (highly active free user)
-
-**Sequence structure**:
-- Value summary: What they've accomplished
-- Feature comparison: What they're missing
-- Social proof: Who else upgraded
-- Urgency: Trial ending, limited offer
-- Final: Last chance + easy path
+**コピー方針**:
+- 何を始めたかを思い出させる
+- なぜこのステップが重要かを説明
+- 完了を簡単にする（完了先への直リンク）
+- 行き詰まり時の支援導線を示す
 
 ---
 
-### Upgrade to Higher Plan
-**Trigger**: User approaching plan limits or using features available on higher tier
-**Goal**: Upsell to next tier
-**Format**: Single email or 2-3 email sequence
+### 新規ユーザー招待
+**トリガー**: 既存ユーザーがチームメイトを招待
+**目標**: 招待されたユーザーの活性化
+**受信者**: 招待された本人
 
-**Trigger examples**:
-- 80% of seat limit reached
-- 90% of storage/usage limit
-- Tried to use higher-tier feature
-- Power user behavior patterns
+- メール 1: 招待のお知らせ（即時）
+- メール 2: 未承諾時のリマインド（2 日目）
+- メール 3: 最終リマインド（5 日目）
 
-**Copy approach**:
-- Acknowledge their growth (positive framing)
-- Show what next tier unlocks
-- Quantify value vs. cost
-- Easy upgrade path
+**コピー方針**:
+- 招待者名を使ってパーソナライズ
+- 何に参加するのか明確化
+- 承諾への単一行動喚起
+- 社会的証明は任意
 
 ---
 
-### Ask for Review
-**Trigger**: Customer milestone (30/60/90 days, key achievement, support resolution)
-**Goal**: Generate social proof on G2, Capterra, app stores
-**Format**: Single email
+## 継続利用メール
 
-**Best timing**:
-- After positive support interaction
-- After achieving measurable result
-- After renewal
-- NOT after billing issues or bugs
+### 有料プランへのアップグレード
+**トリガー**: 無料ユーザーの高エンゲージ、またはトライアル終了接近
+**目標**: 無料から有料へ転換
+**標準シーケンス**: 3〜5 通
 
-**Copy approach**:
-- Thank them for being a customer
-- Mention specific value/milestone if possible
-- Explain why reviews matter (help others decide)
-- Direct link to review platform
-- Keep it short—this is an ask
+**トリガー候補**:
+- 時間起点（トライアル 10/12/14 日目）
+- 行動起点（利用上限到達、有料機能利用）
+- エンゲージ起点（高アクティブ無料ユーザー）
 
----
-
-### Offer Support Proactively
-**Trigger**: Signs of struggle (drop in usage, failed actions, error encounters)
-**Goal**: Save at-risk user, improve experience
-**Format**: Single email
-
-**Trigger examples**:
-- Usage dropped significantly week-over-week
-- Multiple failed attempts at action
-- Viewed help docs repeatedly
-- Stuck at same onboarding step
-
-**Copy approach**:
-- Genuine concern tone
-- Specific: "I noticed you..." (if data allows)
-- Offer direct help (not just link to docs)
-- Personal from support or CSM
-- No sales pitch—pure help
+**シーケンス構成**:
+- 価値要約: 何を達成できたか
+- 機能比較: 何を取りこぼしているか
+- 社会的証明: ほかのアップグレード事例
+- 緊急性: トライアル終了、限定オファー
+- 最終案内: 最後の機会 + 簡単な導線
 
 ---
 
-### Product Usage Report
-**Trigger**: Time-based (weekly, monthly, quarterly)
-**Goal**: Demonstrate value, drive engagement, reduce churn
-**Format**: Single email, recurring
+### 上位プランへのアップグレード
+**トリガー**: プラン上限接近、または上位機能の利用意図
+**目標**: 次ティアへのアップセル
+**形式**: 単発または 2〜3 通
 
-**What to include**:
-- Key metrics/activity summary
-- Comparison to previous period
-- Achievements/milestones
-- Suggestions for improvement
-- Light CTA to explore more
+**トリガー例**:
+- シート上限の 80% 到達
+- ストレージ/利用上限の 90% 到達
+- 上位プラン機能を使おうとした
+- パワーユーザー行動パターン
 
-**Examples**:
-- "You saved X hours this month"
-- "Your team completed X projects"
-- "You're in the top X% of users"
-
-**Key point**: Make them feel good and remind them of value delivered.
+**コピー方針**:
+- 成長を肯定的に認識する
+- 上位プランで開放される価値を示す
+- 価値とコストを定量比較
+- 簡単なアップグレード導線
 
 ---
 
-### NPS Survey
-**Trigger**: Time-based (quarterly) or event-based (post-milestone)
-**Goal**: Measure satisfaction, identify promoters and detractors
-**Format**: Single email
+### レビュー依頼
+**トリガー**: 顧客マイルストーン（30/60/90 日、成果達成、サポート解決）
+**目標**: G2、Capterra、アプリストアでの社会的証明獲得
+**形式**: 単発
 
-**Best practices**:
-- Keep it simple: Just the NPS question initially
-- Follow-up form for "why" based on score
-- Personal sender (CEO, founder, CSM)
-- Tell them how you'll use feedback
+**最適タイミング**:
+- サポート体験が良かった直後
+- 測定可能な成果達成後
+- 更新直後
+- 請求トラブルや不具合直後は避ける
 
-**Follow-up based on score**:
-- Promoters (9-10): Thank + ask for review/referral
-- Passives (7-8): Ask what would make it a 10
-- Detractors (0-6): Personal outreach to understand issues
-
----
-
-### Referral Program
-**Trigger**: Customer milestone, promoter NPS score, or campaign
-**Goal**: Generate referrals
-**Format**: Single email or periodic reminders
-
-**Good timing**:
-- After positive NPS response
-- After customer achieves result
-- After renewal
-- Seasonal campaigns
-
-**Copy approach**:
-- Remind them of their success
-- Explain the referral offer clearly
-- Make sharing easy (unique link)
-- Show what's in it for them AND referee
+**コピー方針**:
+- 顧客でいてくれることへの感謝
+- 可能なら具体成果/節目に触れる
+- レビュー意義を説明（他者の意思決定支援）
+- レビューページへの直リンク
+- 短くする（依頼メール）
 
 ---
 
-## Billing Emails
+### 先回りサポート提案
+**トリガー**: 苦戦の兆候（利用低下、失敗行動、エラー）
+**目標**: 離脱リスクユーザーの救済、体験改善
+**形式**: 単発
 
-### Switch to Annual
-**Trigger**: Monthly subscriber at renewal time or campaign
-**Goal**: Convert monthly to annual (improve LTV, reduce churn)
-**Format**: Single email or 2-email sequence
+**トリガー例**:
+- 週次で利用量が大きく低下
+- 同一行動の失敗が複数回
+- ヘルプ記事の反復閲覧
+- 同じオンボーディング手順で停滞
 
-**Value proposition**:
-- Calculate exact savings
-- Additional benefits (if any)
-- Lock in current price messaging
-- Easy one-click switch
-
-**Best timing**:
-- Around monthly renewal date
-- End of year / new year
-- After 3-6 months of loyalty
-- Price increase announcement (lock in old rate)
-
----
-
-### Failed Payment Recovery
-**Trigger**: Payment fails
-**Goal**: Recover revenue, retain customer
-**Typical sequence**: 3-4 emails over 7-14 days
-
-**Sequence structure**:
-- Email 1 (Day 0): Friendly notice, update payment link
-- Email 2 (Day 3): Reminder, service may be interrupted
-- Email 3 (Day 7): Urgent, account will be suspended
-- Email 4 (Day 10-14): Final notice, what they'll lose
-
-**Copy approach**:
-- Assume it's an accident (card expired, etc.)
-- Clear, direct, no guilt
-- Single CTA to update payment
-- Explain what happens if not resolved
-
-**Key metrics**: Recovery rate, time to recovery
+**コピー方針**:
+- 本気の気遣いトーン
+- 可能なら具体化: 「〜の状況を確認しました」
+- ドキュメントリンクだけでなく直接支援を提示
+- サポート担当またはカスタマーサクセスマネージャー名義
+- 売り込みなし、支援に専念
 
 ---
 
-### Cancellation Survey
-**Trigger**: User cancels subscription
-**Goal**: Learn why, opportunity to save
-**Format**: Single email (immediate)
+### プロダクト利用レポート
+**トリガー**: 時間起点（週次、月次、四半期）
+**目標**: 価値実感、エンゲージ向上、チャーン抑制
+**形式**: 単発、定期配信
 
-**Options**:
-- In-app survey at cancellation (better completion)
-- Follow-up email if they skip in-app
-- Personal outreach for high-value accounts
+**含める内容**:
+- 主要指標/活動要約
+- 前期間比較
+- 達成した節目
+- 改善提案
+- 深掘りへの軽い行動喚起
 
-**Questions to ask**:
-- Primary reason for cancelling
-- What could we have done better
-- Would anything change your mind
-- Can we help with transition
+**例**:
+- 「今月 X 時間を削減しました」
+- 「チームで X 件のプロジェクトを完了しました」
+- 「あなたは上位 X% の利用者です」
 
-**Winback opportunity**: Based on reason, offer targeted save (discount, pause, downgrade, training).
-
----
-
-### Upcoming Renewal Reminder
-**Trigger**: X days before renewal (14 or 30 days typical)
-**Goal**: No surprise charges, opportunity to expand
-**Format**: Single email
-
-**What to include**:
-- Renewal date and amount
-- What's included in renewal
-- How to update payment/plan
-- Changes to pricing/features (if any)
-- Optional: Upsell opportunity
-
-**Required for**: Annual subscriptions, high-value contracts
+**重要点**: 価値を実感させ、得られた成果を思い出させること。
 
 ---
 
-## Usage Emails
+### 顧客推奨度（NPS）調査
+**トリガー**: 時間起点（四半期）またはイベント起点（節目後）
+**目標**: 満足度測定、推奨者・批判者の把握
+**形式**: 単発
 
-### Daily/Weekly/Monthly Summary
-**Trigger**: Time-based
-**Goal**: Drive engagement, demonstrate value
-**Format**: Single email, recurring
+**ベストプラクティス**:
+- 最初はシンプルに顧客推奨度（NPS）質問のみ
+- スコアに応じて理由の追跡質問
+- 個人名義の送信者（最高経営責任者、創業者、カスタマーサクセスマネージャー）
+- フィードバック活用方法を明示
 
-**Content by frequency**:
-- **Daily**: Notifications, quick stats (for high-engagement products)
-- **Weekly**: Activity summary, highlights, suggestions
-- **Monthly**: Comprehensive report, achievements, ROI if calculable
-
-**Structure**:
-- Key metrics at a glance
-- Notable achievements
-- Activity breakdown
-- Suggestions / what to try next
-- CTA to dive deeper
-
-**Personalization**: Must be relevant to their actual usage. Empty reports are worse than no report.
+**スコア別フォローアップ**:
+- 推奨者（9〜10）: 感謝 + レビュー/紹介依頼
+- 中立者（7〜8）: 10 点にするには何が必要かを質問
+- 批判者（0〜6）: 課題把握のため個別対応
 
 ---
 
-### Key Event or Milestone Notifications
-**Trigger**: Specific achievement or event
-**Goal**: Celebrate, drive continued engagement
-**Format**: Single email per event
+### 紹介プログラム
+**トリガー**: 顧客マイルストーン、顧客推奨度（NPS）推奨者、またはキャンペーン
+**目標**: 紹介獲得
+**形式**: 単発または定期リマインド
 
-**Milestone examples**:
-- First [action] completed
-- 10th/100th [thing] created
-- Goal achieved
-- Team collaboration milestone
-- Usage streak
+**良いタイミング**:
+- 顧客推奨度（NPS）高評価直後
+- 顧客成果達成後
+- 更新後
+- 季節キャンペーン時
 
-**Copy approach**:
-- Celebration tone
-- Specific achievement
-- Context (compared to others, compared to before)
-- What's next / next milestone
-
----
-
-## Win-Back Emails
-
-### Expired Trials
-**Trigger**: Trial ended without conversion
-**Goal**: Convert or re-engage
-**Typical sequence**: 3-4 emails over 30 days
-
-**Sequence structure**:
-- Email 1 (Day 1 post-expiry): Trial ended, here's what you're missing
-- Email 2 (Day 7): What held you back? (gather feedback)
-- Email 3 (Day 14): Incentive offer (discount, extended trial)
-- Email 4 (Day 30): Final reach-out, door is open
-
-**Segmentation**: Different approach based on trial engagement level:
-- High engagement: Focus on removing friction to convert
-- Low engagement: Offer fresh start, more onboarding help
-- No engagement: Ask what happened, offer demo/call
+**コピー方針**:
+- 顧客の成功を再確認
+- 紹介特典を明確に説明
+- 共有しやすくする（固有リンク）
+- 紹介者と被紹介者の双方メリットを示す
 
 ---
 
-### Cancelled Customers
-**Trigger**: Time after cancellation (30, 60, 90 days)
-**Goal**: Win back churned customers
-**Typical sequence**: 2-3 emails spread over 90 days
+## 請求関連メール
 
-**Sequence structure**:
-- Email 1 (Day 30): What's new since you left
-- Email 2 (Day 60): We've addressed [common reason]
-- Email 3 (Day 90): Special offer to return
+### 年額への切り替え
+**トリガー**: 月額契約者の更新時、またはキャンペーン
+**目標**: 月額から年額へ転換（顧客生涯価値向上、チャーン抑制）
+**形式**: 単発または 2 通
 
-**Copy approach**:
-- No guilt, no desperation
-- Genuine updates and improvements
-- Personalize based on cancellation reason if known
-- Make return easy
+**価値提案**:
+- 正確な節約額を提示
+- 追加メリット（ある場合）
+- 現在価格を固定できる訴求
+- 1クリック切り替え導線
 
-**Key point**: They're more likely to return if their reason was addressed.
-
----
-
-## Campaign Emails
-
-### Monthly Roundup / Newsletter
-**Trigger**: Time-based (monthly)
-**Goal**: Engagement, brand presence, content distribution
-**Format**: Single email, recurring
-
-**Content mix**:
-- Product updates and tips
-- Customer stories
-- Educational content
-- Company news
-- Industry insights
-
-**Best practices**:
-- Consistent send day/time
-- Scannable format
-- Mix of content types
-- One primary CTA focus
-- Unsubscribe is okay—keeps list healthy
+**最適タイミング**:
+- 月次更新日付近
+- 年末年始
+- 3〜6 か月継続後
+- 価格改定告知時（旧価格固定）
 
 ---
 
-### Seasonal Promotions
-**Trigger**: Calendar events (Black Friday, New Year, etc.)
-**Goal**: Drive conversions with timely offer
-**Format**: Campaign burst (2-4 emails)
+### 支払い失敗の回復
+**トリガー**: 支払い失敗
+**目標**: 売上回復、顧客維持
+**標準シーケンス**: 7〜14 日で 3〜4 通
 
-**Common opportunities**:
-- New Year (fresh start, annual planning)
-- End of fiscal year (budget spending)
-- Black Friday / Cyber Monday
-- Industry-specific seasons
-- Back to school / work
+**シーケンス構成**:
+- メール 1（0 日目）: 友好的通知 + 支払い更新リンク
+- メール 2（3 日目）: リマインド + 利用制限の可能性
+- メール 3（7 日目）: 緊急通知 + アカウント停止予定
+- メール 4（10〜14 日目）: 最終通知 + 失うものの提示
 
-**Sequence structure**:
-- Announcement: Offer reveal
-- Reminder: Midway through promotion
-- Last chance: Final hours
+**コピー方針**:
+- 事故前提で伝える（カード期限切れ等）
+- 明確で直接的、責めない
+- 行動喚起は支払い更新の1つ
+- 未対応時に何が起きるか明示
 
----
-
-### Product Updates
-**Trigger**: New feature release
-**Goal**: Adoption, engagement, demonstrate momentum
-**Format**: Single email per major release
-
-**What to include**:
-- What's new (clear and simple)
-- Why it matters (benefit, not just feature)
-- How to use it (direct link)
-- Who asked for it (community acknowledgment)
-
-**Segmentation**: Consider targeting based on relevance:
-- Users who would benefit most
-- Users who requested feature
-- Power users first (for beta feel)
+**主要指標**: 回復率、回復までの時間
 
 ---
 
-### Industry News Roundup
-**Trigger**: Time-based (weekly or monthly)
-**Goal**: Thought leadership, engagement, brand value
-**Format**: Curated newsletter
+### 解約アンケート
+**トリガー**: ユーザーの解約
+**目標**: 理由把握、引き留め機会の獲得
+**形式**: 単発（即時）
 
-**Content**:
-- Curated news and links
-- Your take / commentary
-- What it means for readers
-- How your product helps
+**実施方法**:
+- 解約時アプリ内アンケート（回収率高）
+- スキップ時は追跡メール
+- 高単価アカウントは個別連絡
 
-**Best for**: B2B products where customers care about industry trends.
+**質問例**:
+- 解約の主因
+- 改善してほしかった点
+- 気持ちが変わる条件
+- 移行支援の必要性
 
----
-
-### Pricing Update
-**Trigger**: Price change announcement
-**Goal**: Transparent communication, minimize churn
-**Format**: Single email (or sequence for major changes)
-
-**Timeline**:
-- Announce 30-60 days before change
-- Reminder 14 days before
-- Final notice 7 days before
-
-**Copy approach**:
-- Clear, direct, transparent
-- Explain the why (value delivered, costs increased)
-- Grandfather if possible (lock in old rate)
-- Give options (annual lock-in, downgrade)
-
-**Important**: Honesty and advance notice build trust even when price increases.
+**復帰機会**: 理由に応じて個別オファー（割引、一時停止、ダウングレード、トレーニング）を提示。
 
 ---
 
-## Email Audit Checklist
+### 更新前リマインド
+**トリガー**: 更新 X 日前（通常 14 または 30 日）
+**目標**: 予期せぬ請求の防止、拡張機会の提示
+**形式**: 単発
 
-Use this to audit your current email program:
+**含める内容**:
+- 更新日と金額
+- 更新内容の内訳
+- 支払い/プラン更新方法
+- 価格・機能の変更点（ある場合）
+- 任意: アップセル機会
 
-### Onboarding
-- [ ] New users series
-- [ ] New customers series
-- [ ] Key onboarding step reminders
-- [ ] New user invite sequence
+**必須対象**: 年額契約、高額契約
 
-### Retention
-- [ ] Upgrade to paid sequence
-- [ ] Upgrade to higher plan triggers
-- [ ] Ask for review (timed properly)
-- [ ] Proactive support outreach
-- [ ] Product usage reports
-- [ ] NPS survey
-- [ ] Referral program emails
+---
 
-### Billing
-- [ ] Switch to annual campaign
-- [ ] Failed payment recovery sequence
-- [ ] Cancellation survey
-- [ ] Upcoming renewal reminders
+## 利用状況メール
 
-### Usage
-- [ ] Daily/weekly/monthly summaries
-- [ ] Key event notifications
-- [ ] Milestone celebrations
+### 日次/週次/月次サマリー
+**トリガー**: 時間起点
+**目標**: エンゲージメント向上、価値実感
+**形式**: 単発、定期配信
 
-### Win-Back
-- [ ] Expired trial sequence
-- [ ] Cancelled customer sequence
+**頻度別の内容**:
+- **日次**: 通知、簡易統計（高頻度利用プロダクト向け）
+- **週次**: 活動要約、ハイライト、提案
+- **月次**: 包括レポート、達成、算出可能なら投資対効果
 
-### Campaigns
-- [ ] Monthly roundup / newsletter
-- [ ] Seasonal promotion calendar
-- [ ] Product update announcements
-- [ ] Pricing update communications
+**構成**:
+- 一目で分かる主要指標
+- 重要な達成
+- 活動内訳
+- 提案 / 次に試すこと
+- 深掘りへの行動喚起
+
+**パーソナライズ**: 実際の利用データと関連していることが必須。空のレポートは配信しない方がよい。
+
+---
+
+### 重要イベント・マイルストーン通知
+**トリガー**: 特定の達成またはイベント
+**目標**: 祝福し、継続利用を促進
+**形式**: イベントごとの単発
+
+**マイルストーン例**:
+- 最初の [行動] 完了
+- [対象] の 10 回目/100 回目作成
+- 目標達成
+- チームコラボレーションの節目
+- 連続利用達成
+
+**コピー方針**:
+- 祝福トーン
+- 具体的達成の明示
+- 文脈提示（他者比較、過去比較）
+- 次に目指す節目を提示
+
+---
+
+## 復帰促進メール
+
+### 期限切れトライアル
+**トリガー**: トライアル終了後に未転換
+**目標**: 転換または再エンゲージ
+**標準シーケンス**: 30 日で 3〜4 通
+
+**シーケンス構成**:
+- メール 1（終了翌日）: トライアル終了通知 + 逃している価値
+- メール 2（7 日目）: 何が障壁だったかを確認（フィードバック収集）
+- メール 3（14 日目）: インセンティブ提案（割引、延長）
+- メール 4（30 日目）: 最終連絡、再開の扉は開いていると伝える
+
+**セグメント戦略**: トライアル時の関与度で訴求を変える:
+- 高関与: 転換摩擦の解消に集中
+- 低関与: 再スタートとオンボーディング支援を提案
+- 無関与: 何が起きたかを質問し、デモ/面談を提案
+
+---
+
+### 解約顧客
+**トリガー**: 解約後一定期間（30、60、90 日）
+**目標**: チャーン顧客の復帰
+**標準シーケンス**: 90 日間で 2〜3 通
+
+**シーケンス構成**:
+- メール 1（30 日目）: 離脱後の新機能・改善
+- メール 2（60 日目）: [よくある解約理由] への対応報告
+- メール 3（90 日目）: 復帰向け特別オファー
+
+**コピー方針**:
+- 責めない、必死すぎない
+- 本当に有益な更新情報を提示
+- 可能なら解約理由に合わせてパーソナライズ
+- 復帰導線を簡単にする
+
+**重要点**: 解約理由が解消されていれば復帰確率は上がる。
+
+---
+
+## キャンペーンメール
+
+### 月次まとめ / ニュースレター
+**トリガー**: 時間起点（月次）
+**目標**: エンゲージメント、ブランド接触、コンテンツ配布
+**形式**: 単発、定期配信
+
+**コンテンツ構成**:
+- プロダクト更新と活用ヒント
+- 顧客ストーリー
+- 学習コンテンツ
+- 企業ニュース
+- 業界示唆
+
+**ベストプラクティス**:
+- 配信曜日/時間を固定
+- スキャンしやすい形式
+- コンテンツ形式を混ぜる
+- 主要行動喚起は1つに集中
+- 配信停止は許容（リスト健全化につながる）
+
+---
+
+### 季節プロモーション
+**トリガー**: カレンダーイベント（ブラックフライデー、新年など）
+**目標**: 時宜性あるオファーで転換促進
+**形式**: 短期集中配信（2〜4 通）
+
+**よくある機会**:
+- 新年（再スタート、年次計画）
+- 会計年度末（予算消化）
+- ブラックフライデー / サイバーマンデー
+- 業界特有の季節
+- 新学期 / 新年度
+
+**シーケンス構成**:
+- 告知: オファー公開
+- リマインド: 中盤告知
+- 最終案内: 残り時間の訴求
+
+---
+
+### プロダクト更新
+**トリガー**: 新機能リリース
+**目標**: 採用促進、エンゲージ向上、成長実感の提示
+**形式**: 主要リリースごとに単発
+
+**含める内容**:
+- 新しくなった点（明確で簡潔）
+- なぜ重要か（機能説明だけでなく便益）
+- 使い方（直リンク）
+- 要望元への言及（コミュニティへの謝意）
+
+**セグメント**: 関連性に基づく配信を検討:
+- 最も効果が高い利用者
+- 該当機能を要望した利用者
+- まずパワーユーザーへ（β 感の演出）
+
+---
+
+### 業界ニュースまとめ
+**トリガー**: 時間起点（週次または月次）
+**目標**: 思想的リーダーシップ、エンゲージメント、ブランド価値
+**形式**: キュレーションニュースレター
+
+**内容**:
+- 厳選ニュースとリンク
+- 自社視点/コメント
+- 読者への意味づけ
+- 自社製品がどう役立つか
+
+**適合領域**: 顧客が業界動向を重視する B2B 製品。
+
+---
+
+### 価格改定案内
+**トリガー**: 価格変更の告知
+**目標**: 透明なコミュニケーション、チャーン最小化
+**形式**: 単発（大きい変更はシーケンス）
+
+**タイムライン**:
+- 変更 30〜60 日前に告知
+- 14 日前にリマインド
+- 7 日前に最終通知
+
+**コピー方針**:
+- 明確、直接、透明
+- 理由を説明（提供価値、コスト増など）
+- 可能なら既存価格据え置き
+- 選択肢を提示（年額固定、ダウングレード）
+
+**重要**: 値上げ時でも、誠実さと事前通知は信頼を高める。
+
+---
+
+## メール監査チェックリスト
+
+現在のメールプログラム監査に使用:
+
+### オンボーディング
+- [ ] 新規ユーザーシリーズ
+- [ ] 新規顧客シリーズ
+- [ ] 重要オンボーディングステップのリマインド
+- [ ] 新規ユーザー招待シーケンス
+
+### 継続利用
+- [ ] 有料化アップグレードシーケンス
+- [ ] 上位プランアップグレードトリガー
+- [ ] レビュー依頼（適切なタイミング）
+- [ ] 先回りサポート連絡
+- [ ] プロダクト利用レポート
+- [ ] 顧客推奨度（NPS）調査
+- [ ] 紹介プログラムメール
+
+### 請求関連
+- [ ] 年額切り替えキャンペーン
+- [ ] 支払い失敗回復シーケンス
+- [ ] 解約アンケート
+- [ ] 更新前リマインド
+
+### 利用状況
+- [ ] 日次/週次/月次サマリー
+- [ ] 重要イベント通知
+- [ ] マイルストーン祝福
+
+### 復帰促進
+- [ ] 期限切れトライアルシーケンス
+- [ ] 解約顧客向けシーケンス
+
+### キャンペーン
+- [ ] 月次まとめ / ニュースレター
+- [ ] 季節プロモーションカレンダー
+- [ ] プロダクト更新告知
+- [ ] 価格改定コミュニケーション

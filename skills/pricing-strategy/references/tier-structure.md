@@ -1,223 +1,223 @@
-# Tier Structure and Packaging
+# ティア構造とパッケージング
 
-## How Many Tiers?
+## ティア数はいくつが適切か？
 
-**2 tiers:** Simple, clear choice
-- Works for: Clear SMB vs. Enterprise split
-- Risk: May leave money on table
+**2ティア:** シンプルで選択が明確
+- 向いている場面: SMB とエンタープライズが明確に分かれる
+- リスク: 取りこぼしによる収益機会損失
 
-**3 tiers:** Industry standard
-- Good tier = Entry point
-- Better tier = Recommended (anchor to best)
-- Best tier = High-value customers
+**3ティア:** 業界標準
+- Good（入門）ティア = 入口
+- Better（推奨）ティア = 最適に見せる基準
+- Best（上位）ティア = 高価値顧客向け
 
-**4+ tiers:** More granularity
-- Works for: Wide range of customer sizes
-- Risk: Decision paralysis, complexity
-
----
-
-## Good-Better-Best Framework
-
-**Good tier (Entry):**
-- Purpose: Remove barriers to entry
-- Includes: Core features, limited usage
-- Price: Low, accessible
-- Target: Small teams, try before you buy
-
-**Better tier (Recommended):**
-- Purpose: Where most customers land
-- Includes: Full features, reasonable limits
-- Price: Your "anchor" price
-- Target: Growing teams, serious users
-
-**Best tier (Premium):**
-- Purpose: Capture high-value customers
-- Includes: Everything, advanced features, higher limits
-- Price: Premium (often 2-3x "Better")
-- Target: Larger teams, power users, enterprises
+**4ティア以上:** より細かい粒度
+- 向いている場面: 顧客規模の幅が広い
+- リスク: 意思決定麻痺、運用複雑化
 
 ---
 
-## Tier Differentiation Strategies
+## 3段階（Good-Better-Best）フレームワーク
 
-**Feature gating:**
-- Basic features in all tiers
-- Advanced features in higher tiers
-- Works when features have clear value differences
+**Good（導入）ティア:**
+- 目的: 導入障壁を下げる
+- 内容: コア機能、低い利用上限
+- 価格: 低く手が届く
+- 対象: 小規模チーム、まず試したい層
 
-**Usage limits:**
-- Same features, different limits
-- More users, storage, API calls at higher tiers
-- Works when value scales with usage
+**Better（推奨）ティア:**
+- 目的: 大半の顧客が着地する主力帯
+- 内容: 機能は十分、上限は実用的
+- 価格: 基準となるアンカー価格
+- 対象: 成長中チーム、本格利用者
 
-**Support level:**
-- Email support → Priority support → Dedicated success
-- Works for products with implementation complexity
-
-**Access and customization:**
-- API access, SSO, custom branding
-- Works for enterprise differentiation
+**Best（プレミアム）ティア:**
+- 目的: 高価値顧客から価値回収
+- 内容: 全機能、高度機能、高上限
+- 価格: プレミアム（多くは推奨ティアの2-3倍）
+- 対象: 大規模チーム、ヘビーユーザー、エンタープライズ
 
 ---
 
-## Example Tier Structure
+## ティア差別化の戦略
+
+**機能ゲーティング:**
+- 基本機能は全ティアで提供
+- 高度機能は上位ティアに配置
+- 機能価値差が明確な製品で有効
+
+**利用上限:**
+- 機能は同じで上限を変える
+- 上位ほどユーザー数、保存量、APIコール上限を拡大
+- 利用量と価値が連動する製品で有効
+
+**サポートレベル:**
+- メールサポート → 優先サポート → 専任カスタマーサクセス
+- 導入難易度が高い製品で有効
+
+**アクセス権とカスタマイズ:**
+- APIアクセス、SSO、カスタムブランディング
+- エンタープライズ差別化に有効
+
+---
+
+## ティア構造の例
 
 ```
 ┌────────────────┬─────────────────┬─────────────────┬─────────────────┐
-│                │ Starter         │ Pro             │ Business        │
-│                │ $29/mo          │ $79/mo          │ $199/mo         │
+│                │ スターター      │ プロ            │ ビジネス        │
+│                │ $29/月          │ $79/月          │ $199/月         │
 ├────────────────┼─────────────────┼─────────────────┼─────────────────┤
-│ Users          │ Up to 5         │ Up to 20        │ Unlimited       │
-│ Projects       │ 10              │ Unlimited       │ Unlimited       │
-│ Storage        │ 5 GB            │ 50 GB           │ 500 GB          │
-│ Integrations   │ 3               │ 10              │ Unlimited       │
-│ Analytics      │ Basic           │ Advanced        │ Custom          │
-│ Support        │ Email           │ Priority        │ Dedicated       │
-│ API Access     │ ✗               │ ✓               │ ✓               │
+│ ユーザー数     │ 最大5           │ 最大20          │ 無制限          │
+│ プロジェクト数 │ 10              │ 無制限          │ 無制限          │
+│ ストレージ     │ 5 GB            │ 50 GB           │ 500 GB          │
+│ 連携数         │ 3               │ 10              │ 無制限          │
+│ 分析機能       │ 基本            │ 高度            │ カスタム        │
+│ サポート       │ メール          │ 優先            │ 専任            │
+│ APIアクセス    │ ✗               │ ✓               │ ✓               │
 │ SSO            │ ✗               │ ✗               │ ✓               │
-│ Audit logs     │ ✗               │ ✗               │ ✓               │
+│ 監査ログ       │ ✗               │ ✗               │ ✓               │
 └────────────────┴─────────────────┴─────────────────┴─────────────────┘
 ```
 
 ---
 
-## Packaging for Personas
+## ペルソナ別パッケージング
 
-### Identifying Pricing Personas
+### 価格ペルソナの特定
 
-Different customers have different:
-- Willingness to pay
-- Feature needs
-- Buying processes
-- Value perception
+顧客ごとに次が異なります:
+- 支払い意思額
+- 必要機能
+- 購買プロセス
+- 価値認知
 
-**Segment by:**
-- Company size (solopreneur → SMB → enterprise)
-- Use case (marketing vs. sales vs. support)
-- Sophistication (beginner → power user)
-- Industry (different budget norms)
+**次の軸で分割:**
+- 企業規模（個人事業主 → SMB → エンタープライズ）
+- ユースケース（マーケティング、営業、サポート）
+- 習熟度（初級者 → パワーユーザー）
+- 業界（予算慣習が異なる）
 
-### Persona-Based Packaging
+### ペルソナベースのパッケージ設計
 
-**Step 1: Define personas**
+**ステップ1: ペルソナ定義**
 
-| Persona | Size | Needs | WTP | Example |
+| ペルソナ | 規模 | ニーズ | 支払い意思 | 例 |
 |---------|------|-------|-----|---------|
-| Freelancer | 1 person | Basic features | Low | $19/mo |
-| Small Team | 2-10 | Collaboration | Medium | $49/mo |
-| Growing Co | 10-50 | Scale, integrations | Higher | $149/mo |
-| Enterprise | 50+ | Security, support | High | Custom |
+| フリーランサー | 1人 | 基本機能 | 低 | $19/月 |
+| 小規模チーム | 2-10人 | コラボレーション | 中 | $49/月 |
+| 成長企業 | 10-50人 | スケール、連携 | 高 | $149/月 |
+| エンタープライズ | 50人以上 | セキュリティ、サポート | 高 | カスタム |
 
-**Step 2: Map features to personas**
+**ステップ2: 機能をペルソナへマッピング**
 
-| Feature | Freelancer | Small Team | Growing | Enterprise |
+| 機能 | フリーランサー | 小規模チーム | 成長企業 | エンタープライズ |
 |---------|------------|------------|---------|------------|
-| Core features | ✓ | ✓ | ✓ | ✓ |
-| Collaboration | — | ✓ | ✓ | ✓ |
-| Integrations | — | Limited | Full | Full |
-| API access | — | — | ✓ | ✓ |
+| コア機能 | ✓ | ✓ | ✓ | ✓ |
+| コラボ機能 | — | ✓ | ✓ | ✓ |
+| 連携機能 | — | 限定 | フル | フル |
+| APIアクセス | — | — | ✓ | ✓ |
 | SSO/SAML | — | — | — | ✓ |
-| Audit logs | — | — | — | ✓ |
-| Custom contract | — | — | — | ✓ |
+| 監査ログ | — | — | — | ✓ |
+| カスタム契約 | — | — | — | ✓ |
 
-**Step 3: Price to value for each persona**
-- Research willingness to pay per segment
-- Set prices that capture value without blocking adoption
-- Consider segment-specific landing pages
-
----
-
-## Freemium vs. Free Trial
-
-### When to Use Freemium
-
-**Freemium works when:**
-- Product has viral/network effects
-- Free users provide value (content, data, referrals)
-- Large market where % conversion drives volume
-- Low marginal cost to serve free users
-- Clear feature/usage limits for upgrade trigger
-
-**Freemium risks:**
-- Free users may never convert
-- Devalues product perception
-- Support costs for non-paying users
-- Harder to raise prices later
-
-### When to Use Free Trial
-
-**Free trial works when:**
-- Product needs time to demonstrate value
-- Onboarding/setup investment required
-- B2B with buying committees
-- Higher price points
-- Product is "sticky" once configured
-
-**Trial best practices:**
-- 7-14 days for simple products
-- 14-30 days for complex products
-- Full access (not feature-limited)
-- Clear countdown and reminders
-- Credit card optional vs. required trade-off
-
-**Credit card upfront:**
-- Higher trial-to-paid conversion (40-50% vs. 15-25%)
-- Lower trial volume
-- Better qualified leads
-
-### Hybrid Approaches
-
-**Freemium + Trial:**
-- Free tier with limited features
-- Trial of premium features
-- Example: Zoom (free 40-min, trial of Pro)
-
-**Reverse trial:**
-- Start with full access
-- After trial, downgrade to free tier
-- Example: See premium value, live with limitations until ready
+**ステップ3: 各ペルソナの価値に応じて価格設定**
+- セグメント別に支払い意思を調査
+- 導入を阻害せず価値を回収できる価格を設定
+- セグメント別ランディングページを検討
 
 ---
 
-## Enterprise Pricing
+## フリーミアムと無料トライアル
 
-### When to Add Custom Pricing
+### フリーミアムを使うべき場面
 
-Add "Contact Sales" when:
-- Deal sizes exceed $10k+ ARR
-- Customers need custom contracts
-- Implementation/onboarding required
-- Security/compliance requirements
-- Procurement processes involved
+**フリーミアムが機能しやすい条件:**
+- 製品にバイラル/ネットワーク効果がある
+- 無料ユーザーが価値を生む（コンテンツ、データ、紹介）
+- 大市場で、転換率が低くても量で成立する
+- 無料ユーザーの追加提供コストが低い
+- アップグレードを促す機能/利用上限が明確
 
-### Enterprise Tier Elements
+**フリーミアムのリスク:**
+- 無料ユーザーが有料化しない
+- 製品の価値認知が下がる
+- 非課金ユーザーのサポート負荷
+- 後から値上げしにくい
 
-**Table stakes:**
+### 無料トライアルを使うべき場面
+
+**無料トライアルが機能しやすい条件:**
+- 価値実感に時間が必要
+- オンボーディング/設定投資が必要
+- 購買委員会を伴うB2B
+- 価格水準が高い
+- 設定後にスイッチングしにくい製品
+
+**トライアルのベストプラクティス:**
+- シンプル製品は7-14日
+- 複雑製品は14-30日
+- 機能制限よりフルアクセス
+- 明確な残日数表示とリマインド
+- カード必須/任意のトレードオフを設計
+
+**カード事前登録:**
+- トライアル→有料転換率は上がる（40-50% vs 15-25%）
+- トライアル開始数は減る
+- リード品質は上がる
+
+### ハイブリッドアプローチ
+
+**フリーミアム + トライアル:**
+- 無料ティアは機能を限定
+- プレミアム機能はトライアル提供
+- 例: Zoom（無料40分、Pro機能トライアル）
+
+**リバーストライアル:**
+- 最初はフルアクセス
+- トライアル後に無料ティアへダウングレード
+- 例: 先にプレミアム価値を体験し、必要性を理解させる
+
+---
+
+## エンタープライズ価格
+
+### カスタム価格を追加するタイミング
+
+次の場合は「営業に問い合わせ」を追加:
+- 契約規模が ARR 1万ドル超
+- 顧客が個別契約を必要とする
+- 導入/オンボーディング支援が必要
+- セキュリティ/コンプライアンス要件が厳しい
+- 調達プロセスが必要
+
+### エンタープライズティアの要素
+
+**最低限必要な要素:**
 - SSO/SAML
-- Audit logs
-- Admin controls
-- Uptime SLA
-- Security certifications
+- 監査ログ
+- 管理者制御
+- 稼働率SLA
+- セキュリティ認証
 
-**Value-adds:**
-- Dedicated support/success
-- Custom onboarding
-- Training sessions
-- Custom integrations
-- Priority roadmap input
+**付加価値要素:**
+- 専任サポート/サクセス
+- カスタムオンボーディング
+- トレーニングセッション
+- カスタム連携
+- ロードマップへの優先反映
 
-### Enterprise Pricing Strategies
+### エンタープライズ価格戦略
 
-**Per-seat at scale:**
-- Volume discounts for large teams
-- Example: $15/user (standard) → $10/user (100+)
+**大規模向け席単価:**
+- 大規模チームにボリュームディスカウント
+- 例: $15/席（標準）→ $10/席（100席以上）
 
-**Platform fee + usage:**
-- Base fee for access
-- Usage-based above thresholds
-- Example: $500/mo base + $0.01 per API call
+**プラットフォーム料金 + 従量課金:**
+- 利用権として基本料金
+- 閾値超過分を従量課金
+- 例: 基本 $500/月 + APIコール $0.01/回
 
-**Value-based contracts:**
-- Price tied to customer's revenue/outcomes
-- Example: % of transactions, revenue share
+**価値連動契約:**
+- 顧客の売上/成果に連動した価格
+- 例: 取引額連動、レベニューシェア

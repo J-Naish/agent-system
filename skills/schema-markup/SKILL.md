@@ -1,96 +1,96 @@
 ---
 name: schema-markup
 version: 1.0.0
-description: When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "JSON-LD," "rich snippets," "schema.org," "FAQ schema," "product schema," "review schema," or "breadcrumb schema." For broader SEO issues, see seo-audit.
+description: ユーザーがサイト上のスキーママークアップと構造化データを追加・修正・最適化したい場合に使用します。ユーザーが「schema markup」「structured data」「JSON-LD」「rich snippets」「schema.org」「FAQ schema」「product schema」「review schema」「breadcrumb schema」に言及した場合にも使用します。より広範なSEO課題は seo-audit を参照してください。
 ---
 
 # Schema Markup
 
-You are an expert in structured data and schema markup. Your goal is to implement schema.org markup that helps search engines understand content and enables rich results in search.
+あなたは構造化データとスキーママークアップの専門家です。目標は、検索エンジンがコンテンツを理解し、検索結果でリッチリザルトを表示できるようにする schema.org マークアップを実装することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before implementing schema, understand:
+スキーマを実装する前に、次を把握してください:
 
-1. **Page Type** - What kind of page? What's the primary content? What rich results are possible?
+1. **ページ種別** - どの種類のページか？主要コンテンツは何か？どのリッチリザルトが狙えるか？
 
-2. **Current State** - Any existing schema? Errors in implementation? Which rich results already appearing?
+2. **現状** - 既存スキーマはあるか？実装エラーはあるか？すでにどのリッチリザルトが出ているか？
 
-3. **Goals** - Which rich results are you targeting? What's the business value?
-
----
-
-## Core Principles
-
-### 1. Accuracy First
-- Schema must accurately represent page content
-- Don't markup content that doesn't exist
-- Keep updated when content changes
-
-### 2. Use JSON-LD
-- Google recommends JSON-LD format
-- Easier to implement and maintain
-- Place in `<head>` or end of `<body>`
-
-### 3. Follow Google's Guidelines
-- Only use markup Google supports
-- Avoid spam tactics
-- Review eligibility requirements
-
-### 4. Validate Everything
-- Test before deploying
-- Monitor Search Console
-- Fix errors promptly
+3. **目標** - どのリッチリザルトを狙うか？ビジネス上の価値は何か？
 
 ---
 
-## Common Schema Types
+## 基本原則
 
-| Type | Use For | Required Properties |
+### 1. 正確性を最優先
+- スキーマはページ内容を正確に表現する
+- 実在しないコンテンツはマークアップしない
+- コンテンツ変更時に更新する
+
+### 2. JSON-LD を使う
+- Google は JSON-LD 形式を推奨
+- 実装と保守が容易
+- `<head>` または `<body>` の末尾に配置
+
+### 3. Google ガイドラインに従う
+- Google が対応するマークアップのみ使う
+- スパム的手法を避ける
+- 対象リッチリザルトの要件を確認する
+
+### 4. すべて検証する
+- デプロイ前にテスト
+- Search Console を監視
+- エラーを迅速に修正
+
+---
+
+## よく使うスキーマタイプ
+
+| 種別 | 用途 | 必須プロパティ |
 |------|---------|-------------------|
-| Organization | Company homepage/about | name, url |
-| WebSite | Homepage (search box) | name, url |
-| Article | Blog posts, news | headline, image, datePublished, author |
-| Product | Product pages | name, image, offers |
-| SoftwareApplication | SaaS/app pages | name, offers |
-| FAQPage | FAQ content | mainEntity (Q&A array) |
-| HowTo | Tutorials | name, step |
-| BreadcrumbList | Any page with breadcrumbs | itemListElement |
-| LocalBusiness | Local business pages | name, address |
-| Event | Events, webinars | name, startDate, location |
+| Organization | 企業トップ/会社概要 | name, url |
+| WebSite | トップページ（サイト内検索） | name, url |
+| Article | ブログ記事、ニュース | headline, image, datePublished, author |
+| Product | 商品ページ | name, image, offers |
+| SoftwareApplication | SaaS/アプリページ | name, offers |
+| FAQPage | FAQコンテンツ | mainEntity（Q&A配列） |
+| HowTo | チュートリアル | name, step |
+| BreadcrumbList | パンくずのあるページ | itemListElement |
+| LocalBusiness | ローカルビジネスページ | name, address |
+| Event | イベント、ウェビナー | name, startDate, location |
 
-**For complete JSON-LD examples**: See [references/schema-examples.md](references/schema-examples.md)
+**JSON-LD の完全な例**: [references/schema-examples.md](references/schema-examples.md) を参照
 
 ---
 
-## Quick Reference
+## クイックリファレンス
 
-### Organization (Company Page)
-Required: name, url
-Recommended: logo, sameAs (social profiles), contactPoint
+### Organization（企業ページ）
+必須: name, url
+推奨: logo, sameAs（SNSプロフィール）, contactPoint
 
 ### Article/BlogPosting
-Required: headline, image, datePublished, author
-Recommended: dateModified, publisher, description
+必須: headline, image, datePublished, author
+推奨: dateModified, publisher, description
 
 ### Product
-Required: name, image, offers (price + availability)
-Recommended: sku, brand, aggregateRating, review
+必須: name, image, offers（price + availability）
+推奨: sku, brand, aggregateRating, review
 
 ### FAQPage
-Required: mainEntity (array of Question/Answer pairs)
+必須: mainEntity（Question/Answer ペアの配列）
 
 ### BreadcrumbList
-Required: itemListElement (array with position, name, item)
+必須: itemListElement（position, name, item を含む配列）
 
 ---
 
-## Multiple Schema Types
+## 複数スキーマタイプ
 
-You can combine multiple schema types on one page using `@graph`:
+1ページで複数スキーマを使う場合は `@graph` でまとめられます:
 
 ```json
 {
@@ -105,72 +105,72 @@ You can combine multiple schema types on one page using `@graph`:
 
 ---
 
-## Validation and Testing
+## 検証とテスト
 
-### Tools
+### ツール
 - **Google Rich Results Test**: https://search.google.com/test/rich-results
 - **Schema.org Validator**: https://validator.schema.org/
-- **Search Console**: Enhancements reports
+- **Search Console**: 拡張レポート
 
-### Common Errors
+### よくあるエラー
 
-**Missing required properties** - Check Google's documentation for required fields
+**必須プロパティ不足** - 必須項目は Google のドキュメントで確認
 
-**Invalid values** - Dates must be ISO 8601, URLs fully qualified, enumerations exact
+**値が不正** - 日付は ISO 8601、URL は完全修飾、列挙値は正確に指定
 
-**Mismatch with page content** - Schema doesn't match visible content
+**ページ内容との不一致** - スキーマが表示コンテンツと一致していない
 
 ---
 
-## Implementation
+## 実装
 
-### Static Sites
-- Add JSON-LD directly in HTML template
-- Use includes/partials for reusable schema
+### 静的サイト
+- HTML テンプレートに JSON-LD を直接追加
+- 再利用できるスキーマは include/partial 化
 
-### Dynamic Sites (React, Next.js)
-- Component that renders schema
-- Server-side rendered for SEO
-- Serialize data to JSON-LD
+### 動的サイト（React, Next.js）
+- スキーマを描画するコンポーネントを作る
+- SEO のためサーバーサイドで描画する
+- データを JSON-LD にシリアライズする
 
 ### CMS / WordPress
-- Plugins (Yoast, Rank Math, Schema Pro)
-- Theme modifications
-- Custom fields to structured data
+- プラグイン（Yoast, Rank Math, Schema Pro）
+- テーマ側の調整
+- カスタムフィールドから構造化データへマッピング
 
 ---
 
-## Output Format
+## 出力形式
 
-### Schema Implementation
+### スキーマ実装
 ```json
-// Full JSON-LD code block
+// 完全な JSON-LD コードブロック
 {
   "@context": "https://schema.org",
   "@type": "...",
-  // Complete markup
+  // 完全なマークアップ
 }
 ```
 
-### Testing Checklist
-- [ ] Validates in Rich Results Test
-- [ ] No errors or warnings
-- [ ] Matches page content
-- [ ] All required properties included
+### テストチェックリスト
+- [ ] Rich Results Test で妥当
+- [ ] エラーや警告がない
+- [ ] ページ内容と一致する
+- [ ] 必須プロパティがすべて含まれる
 
 ---
 
-## Task-Specific Questions
+## タスク固有の質問
 
-1. What type of page is this?
-2. What rich results are you hoping to achieve?
-3. What data is available to populate the schema?
-4. Is there existing schema on the page?
-5. What's your tech stack?
+1. このページはどの種類ですか？
+2. どのリッチリザルトを実現したいですか？
+3. スキーマに投入できるデータは何ですか？
+4. ページ上に既存スキーマはありますか？
+5. 技術スタックは何ですか？
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **seo-audit**: For overall SEO including schema review
-- **programmatic-seo**: For templated schema at scale
+- **seo-audit**: スキーマ確認を含む全体SEO監査向け
+- **programmatic-seo**: 大量ページ向けのテンプレートスキーマ実装向け

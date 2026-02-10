@@ -1,162 +1,162 @@
-# Email Sequence Templates
+# メールシーケンステンプレート
 
-Detailed templates for common email sequences.
+よく使うメールシーケンスの詳細テンプレート。
 
-## Welcome Sequence (Post-Signup)
+## ウェルカムシーケンス（登録直後）
 
-**Email 1: Welcome (Immediate)**
-- Subject: Welcome to [Product] — here's your first step
-- Deliver what was promised (lead magnet, access, etc.)
-- Single next action
-- Set expectations for future emails
+**メール 1: ウェルカム（即時）**
+- 件名: [製品名] へようこそ — 最初のステップはこちら
+- 約束したものを渡す（リードマグネット、アクセス情報など）
+- 次の行動は1つだけ
+- 今後のメール内容を予告する
 
-**Email 2: Quick Win (Day 1-2)**
-- Subject: Get your first [result] in 10 minutes
-- Enable small success
-- Build confidence
-- Link to helpful resource
+**メール 2: クイックウィン（1〜2 日目）**
+- 件名: 10 分で最初の [成果] を得る方法
+- 小さな成功を作る
+- 自信をつける
+- 役立つリソースへリンク
 
-**Email 3: Story/Why (Day 3-4)**
-- Subject: Why we built [Product]
-- Origin story or mission
-- Connect emotionally
-- Show you understand their problem
+**メール 3: ストーリー/なぜ（3〜4 日目）**
+- 件名: 私たちが [製品名] を作った理由
+- 起点のストーリーやミッション
+- 感情的につなぐ
+- 相手の課題理解を示す
 
-**Email 4: Social Proof (Day 5-6)**
-- Subject: How [Customer] achieved [Result]
-- Case study or testimonial
-- Relatable to their situation
-- Soft CTA to explore
+**メール 4: 社会的証明（5〜6 日目）**
+- 件名: [顧客名] はどうやって [成果] を達成したか
+- ケーススタディまたは推薦コメント
+- 相手の状況に近い内容
+- 探索を促すソフトな行動喚起
 
-**Email 5: Overcome Objection (Day 7-8)**
-- Subject: "I don't have time for X" — sound familiar?
-- Address common hesitation
-- Reframe the obstacle
-- Show easy path forward
+**メール 5: 異論解消（7〜8 日目）**
+- 件名: 「X に割く時間がない」— そう感じますか？
+- よくあるためらいに回答
+- 障害の見え方を変える
+- 簡単な前進ルートを示す
 
-**Email 6: Core Feature (Day 9-11)**
-- Subject: Have you tried [Feature] yet?
-- Highlight underused capability
-- Show clear benefit
-- Direct CTA to try it
+**メール 6: コア機能（9〜11 日目）**
+- 件名: [機能名] はもう試しましたか？
+- 見落とされやすい機能を強調
+- 明確な便益を示す
+- 試用への直接行動喚起
 
-**Email 7: Conversion (Day 12-14)**
-- Subject: Ready to [upgrade/buy/commit]?
-- Summarize value
-- Clear offer
-- Urgency if appropriate
-- Risk reversal (guarantee, trial)
-
----
-
-## Lead Nurture Sequence (Pre-Sale)
-
-**Email 1: Deliver + Introduce (Immediate)**
-- Deliver the lead magnet
-- Brief intro to who you are
-- Preview what's coming
-
-**Email 2: Expand on Topic (Day 2-3)**
-- Related insight to lead magnet
-- Establish expertise
-- Light CTA to content
-
-**Email 3: Problem Deep-Dive (Day 4-5)**
-- Articulate their problem deeply
-- Show you understand
-- Hint at solution
-
-**Email 4: Solution Framework (Day 6-8)**
-- Your approach/methodology
-- Educational, not salesy
-- Builds toward your product
-
-**Email 5: Case Study (Day 9-11)**
-- Real results from real customer
-- Specific and relatable
-- Soft CTA
-
-**Email 6: Differentiation (Day 12-14)**
-- Why your approach is different
-- Address alternatives
-- Build preference
-
-**Email 7: Objection Handler (Day 15-18)**
-- Common concern addressed
-- FAQ or myth-busting
-- Reduce friction
-
-**Email 8: Direct Offer (Day 19-21)**
-- Clear pitch
-- Strong value proposition
-- Specific CTA
-- Urgency if available
+**メール 7: コンバージョン（12〜14 日目）**
+- 件名: [アップグレード/購入/導入] の準備はできましたか？
+- 価値を要約
+- 明確なオファー
+- 必要なら緊急性を追加
+- リスクリバーサル（保証、トライアル）
 
 ---
 
-## Re-Engagement Sequence
+## リード育成シーケンス（購買前）
 
-**Email 1: Check-In (Day 30-60 of inactivity)**
-- Subject: Is everything okay, [Name]?
-- Genuine concern
-- Ask what happened
-- Easy win to re-engage
+**メール 1: 配布 + 導入（即時）**
+- リードマグネットを配布
+- 自己紹介を簡潔に
+- 今後の内容を予告
 
-**Email 2: Value Reminder (Day 2-3 after)**
-- Subject: Remember when you [achieved X]?
-- Remind of past value
-- What's new since they left
-- Quick CTA
+**メール 2: トピック深掘り（2〜3 日目）**
+- リードマグネット関連の追加示唆
+- 専門性を提示
+- コンテンツへの軽い行動喚起
 
-**Email 3: Incentive (Day 5-7 after)**
-- Subject: We miss you — here's something special
-- Offer if appropriate
-- Limited time
-- Clear CTA
+**メール 3: 課題の深掘り（4〜5 日目）**
+- 課題を深く言語化
+- 理解していることを示す
+- 解決策をほのめかす
 
-**Email 4: Last Chance (Day 10-14 after)**
-- Subject: Should we stop emailing you?
-- Honest and direct
-- One-click to stay or go
-- Clean the list if no response
+**メール 4: 解決フレームワーク（6〜8 日目）**
+- あなたの方法論を提示
+- 売り込み過多にしない
+- 製品へ自然につなげる
+
+**メール 5: ケーススタディ（9〜11 日目）**
+- 実顧客の実成果
+- 具体的で共感可能
+- ソフトな行動喚起
+
+**メール 6: 差別化（12〜14 日目）**
+- 何が違うのかを明示
+- 代替案への回答
+- 選好を作る
+
+**メール 7: 異論対応（15〜18 日目）**
+- よくある懸念に回答
+- よくある質問への回答、または誤解解消
+- 摩擦を下げる
+
+**メール 8: 直接オファー（19〜21 日目）**
+- 明確な提案
+- 強い価値提案
+- 具体的な行動喚起
+- 可能なら緊急性を付与
 
 ---
 
-## Onboarding Sequence (Product Users)
+## 再エンゲージメントシーケンス
 
-Coordinate with in-app onboarding. Email supports, doesn't duplicate.
+**メール 1: 近況確認（非アクティブ 30〜60 日）**
+- 件名: [お名前] さん、その後いかがですか？
+- 純粋な気遣い
+- 何があったか聞く
+- 再開しやすい小さな一歩を提示
 
-**Email 1: Welcome + First Step (Immediate)**
-- Confirm signup
-- One critical action
-- Link directly to that action
+**メール 2: 価値の再提示（2〜3 日後）**
+- 件名: [X を達成] したときのことを覚えていますか？
+- 過去に得た価値を思い出させる
+- 離脱後の新しい価値を伝える
+- クイックな行動喚起
 
-**Email 2: Getting Started Help (Day 1)**
-- If they haven't completed step 1
-- Quick tip or video
-- Support option
+**メール 3: インセンティブ（5〜7 日後）**
+- 件名: 戻ってきてほしいので、特別なご案内です
+- 必要に応じて特典を提示
+- 期間限定
+- 明確な行動喚起
 
-**Email 3: Feature Highlight (Day 2-3)**
-- Key feature they should know
-- Specific use case
-- In-app link
+**メール 4: 最終確認（10〜14 日後）**
+- 件名: メール配信を停止しますか？
+- 率直で明確
+- 1 クリックで継続/停止
+- 応答がなければリストを整理
 
-**Email 4: Success Story (Day 4-5)**
-- Customer who succeeded
-- Relatable journey
-- Motivational
+---
 
-**Email 5: Check-In (Day 7)**
-- How's it going?
-- Ask for feedback
-- Offer help
+## オンボーディングシーケンス（プロダクトユーザー）
 
-**Email 6: Advanced Tip (Day 10-12)**
-- Power feature
-- For engaged users
-- Level-up content
+アプリ内オンボーディングと連動する。メールは補完し、重複させない。
 
-**Email 7: Upgrade/Expand (Day 14+)**
-- For trial users: conversion push
-- For free users: upgrade prompt
-- For paid: expansion opportunity
+**メール 1: ウェルカム + 最初のステップ（即時）**
+- サインアップ完了を確認
+- 重要アクションを1つだけ提示
+- その行動への直リンク
+
+**メール 2: 開始支援（1 日目）**
+- まだステップ 1 を完了していない場合
+- 短いヒントまたは動画
+- サポート導線を提示
+
+**メール 3: 機能ハイライト（2〜3 日目）**
+- 知っておくべき主要機能
+- 具体的ユースケース
+- アプリ内リンク
+
+**メール 4: 成功事例（4〜5 日目）**
+- 成功した顧客事例
+- 共感できる道筋
+- 前向きな動機付け
+
+**メール 5: チェックイン（7 日目）**
+- 進捗確認
+- フィードバック依頼
+- 支援提案
+
+**メール 6: 上級ヒント（10〜12 日目）**
+- パワーユーザー向け機能
+- エンゲージドユーザー向け
+- レベルアップ内容
+
+**メール 7: アップグレード/拡張（14 日目以降）**
+- トライアルユーザー向け: コンバージョン促進
+- 無料ユーザー向け: アップグレード提案
+- 有料ユーザー向け: 拡張機会

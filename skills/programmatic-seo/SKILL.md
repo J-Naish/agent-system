@@ -1,236 +1,236 @@
 ---
 name: programmatic-seo
 version: 1.0.0
-description: When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages," "location pages," "[keyword] + [city] pages," "comparison pages," "integration pages," or "building many pages for SEO." For auditing existing SEO issues, see seo-audit.
+description: ユーザーがテンプレートとデータを使って、SEO主導のページを大規模に作成したい場合に使用します。ユーザーが「プログラマティックSEO」「テンプレートページ」「大量ページ作成」「ディレクトリページ」「ロケーションページ」「[キーワード] + [都市] ページ」「比較ページ」「連携ページ」「SEOのために多数ページを作る」に言及した場合にも使用します。既存SEO課題の監査は seo-audit を参照してください。
 ---
 
-# Programmatic SEO
+# プログラマティックSEO
 
-You are an expert in programmatic SEO—building SEO-optimized pages at scale using templates and data. Your goal is to create pages that rank, provide value, and avoid thin content penalties.
+あなたは、テンプレートとデータを使って SEO 最適化ページを大規模に作るプログラマティックSEOの専門家です。目標は、順位獲得でき、価値があり、薄いコンテンツ評価を避けるページを作ることです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before designing a programmatic SEO strategy, understand:
+プログラマティックSEO戦略を設計する前に、次を把握してください:
 
-1. **Business Context**
-   - What's the product/service?
-   - Who is the target audience?
-   - What's the conversion goal for these pages?
+1. **ビジネス文脈**
+   - 提供プロダクト/サービスは何か？
+   - ターゲットオーディエンスは誰か？
+   - これらのページのコンバージョン目標は何か？
 
-2. **Opportunity Assessment**
-   - What search patterns exist?
-   - How many potential pages?
-   - What's the search volume distribution?
+2. **機会評価**
+   - どんな検索パターンが存在するか？
+   - 作成可能なページ数はどれくらいか？
+   - 検索ボリューム分布はどうなっているか？
 
-3. **Competitive Landscape**
-   - Who ranks for these terms now?
-   - What do their pages look like?
-   - Can you realistically compete?
-
----
-
-## Core Principles
-
-### 1. Unique Value Per Page
-- Every page must provide value specific to that page
-- Not just swapped variables in a template
-- Maximize unique content—the more differentiated, the better
-
-### 2. Proprietary Data Wins
-Hierarchy of data defensibility:
-1. Proprietary (you created it)
-2. Product-derived (from your users)
-3. User-generated (your community)
-4. Licensed (exclusive access)
-5. Public (anyone can use—weakest)
-
-### 3. Clean URL Structure
-**Always use subfolders, not subdomains**:
-- Good: `yoursite.com/templates/resume/`
-- Bad: `templates.yoursite.com/resume/`
-
-### 4. Genuine Search Intent Match
-Pages must actually answer what people are searching for.
-
-### 5. Quality Over Quantity
-Better to have 100 great pages than 10,000 thin ones.
-
-### 6. Avoid Google Penalties
-- No doorway pages
-- No keyword stuffing
-- No duplicate content
-- Genuine utility for users
+3. **競争環境**
+   - 現在どの競合が対象語で上位か？
+   - 競合ページはどんな構成か？
+   - 現実的に勝負できるか？
 
 ---
 
-## The 12 Playbooks (Overview)
+## 基本原則
 
-| Playbook | Pattern | Example |
+### 1. ページごとの固有価値
+- 各ページはそのページ固有の価値を持つ必要がある
+- テンプレート変数の差し替えだけでは不十分
+- 固有コンテンツを最大化する（差別化が大きいほど良い）
+
+### 2. 独自データが勝つ
+データ防御力の優先順位:
+1. 独自データ（自社生成）
+2. プロダクト由来データ（ユーザー利用データ）
+3. ユーザー生成データ（コミュニティ由来）
+4. ライセンスデータ（独占アクセスあり）
+5. 公開データ（誰でも使える＝最も弱い）
+
+### 3. URL構造はクリーンに
+**サブドメインではなくサブフォルダを使う**:
+- 良い例: `例サイト.jp/テンプレート/履歴書/`
+- 悪い例: `テンプレート.例サイト.jp/履歴書/`
+
+### 4. 検索意図への真の一致
+ページは、検索者が求める内容に実際に答えている必要がある。
+
+### 5. 量より質
+薄い1万ページより、優れた100ページの方がよい。
+
+### 6. Googleのペナルティを避ける
+- ドアウェイページを作らない
+- キーワード詰め込みをしない
+- 重複コンテンツを作らない
+- ユーザーにとって実用的な価値を提供する
+
+---
+
+## 12のプレイブック（概要）
+
+| プレイブック | パターン | 例 |
 |----------|---------|---------|
-| Templates | "[Type] template" | "resume template" |
-| Curation | "best [category]" | "best website builders" |
-| Conversions | "[X] to [Y]" | "$10 USD to GBP" |
-| Comparisons | "[X] vs [Y]" | "webflow vs wordpress" |
-| Examples | "[type] examples" | "landing page examples" |
-| Locations | "[service] in [location]" | "dentists in austin" |
-| Personas | "[product] for [audience]" | "crm for real estate" |
-| Integrations | "[product A] [product B] integration" | "slack asana integration" |
-| Glossary | "what is [term]" | "what is pSEO" |
-| Translations | Content in multiple languages | Localized content |
-| Directory | "[category] tools" | "ai copywriting tools" |
-| Profiles | "[entity name]" | "stripe ceo" |
+| テンプレート | "[種類] テンプレート" | "履歴書 テンプレート" |
+| キュレーション | "おすすめ [カテゴリ]" | "おすすめ ウェブサイト作成ツール" |
+| 変換 | "[X] から [Y] へ 変換" | "10米ドル を 英ポンド に 変換" |
+| 比較 | "[X] と [Y] 比較" | "Webflow と WordPress 比較" |
+| 事例 | "[種類] 事例" | "ランディングページ 事例" |
+| ロケーション | "[地域] [サービス]" | "オースティン 歯科" |
+| ペルソナ | "[対象] 向け [製品]" | "不動産向け CRM" |
+| 連携 | "[製品A] [製品B] 連携" | "Slack Asana 連携" |
+| 用語集 | "[用語] とは" | "pSEO とは" |
+| 翻訳 | 多言語コンテンツ | ローカライズページ |
+| ディレクトリ | "[カテゴリ] ツール 一覧" | "AI コピーライティング ツール 一覧" |
+| プロファイル | "[固有名詞] [属性]" | "Stripe CEO" |
 
-**For detailed playbook implementation**: See [references/playbooks.md](references/playbooks.md)
+**プレイブックの詳細実装**: [references/playbooks.md](references/playbooks.md) を参照
 
 ---
 
-## Choosing Your Playbook
+## プレイブックの選び方
 
-| If you have... | Consider... |
+| 次の資産があるなら... | 検討候補 |
 |----------------|-------------|
-| Proprietary data | Directories, Profiles |
-| Product with integrations | Integrations |
-| Design/creative product | Templates, Examples |
-| Multi-segment audience | Personas |
-| Local presence | Locations |
-| Tool or utility product | Conversions |
-| Content/expertise | Glossary, Curation |
-| Competitor landscape | Comparisons |
+| 独自データ | ディレクトリ、プロファイル |
+| 連携のあるプロダクト | 連携ページ |
+| デザイン/クリエイティブ製品 | テンプレート、事例 |
+| 複数セグメント対象 | ペルソナページ |
+| ローカル展開 | ロケーションページ |
+| ツール/ユーティリティ製品 | 変換ページ |
+| コンテンツ/専門性 | 用語集、キュレーション |
+| 競合の比較需要 | 比較ページ |
 
-You can layer multiple playbooks (e.g., "Best coworking spaces in San Diego").
-
----
-
-## Implementation Framework
-
-### 1. Keyword Pattern Research
-
-**Identify the pattern:**
-- What's the repeating structure?
-- What are the variables?
-- How many unique combinations exist?
-
-**Validate demand:**
-- Aggregate search volume
-- Volume distribution (head vs. long tail)
-- Trend direction
-
-### 2. Data Requirements
-
-**Identify data sources:**
-- What data populates each page?
-- Is it first-party, scraped, licensed, public?
-- How is it updated?
-
-### 3. Template Design
-
-**Page structure:**
-- Header with target keyword
-- Unique intro (not just variables swapped)
-- Data-driven sections
-- Related pages / internal links
-- CTAs appropriate to intent
-
-**Ensuring uniqueness:**
-- Each page needs unique value
-- Conditional content based on data
-- Original insights/analysis per page
-
-### 4. Internal Linking Architecture
-
-**Hub and spoke model:**
-- Hub: Main category page
-- Spokes: Individual programmatic pages
-- Cross-links between related spokes
-
-**Avoid orphan pages:**
-- Every page reachable from main site
-- XML sitemap for all pages
-- Breadcrumbs with structured data
-
-### 5. Indexation Strategy
-
-- Prioritize high-volume patterns
-- Noindex very thin variations
-- Manage crawl budget thoughtfully
-- Separate sitemaps by page type
+複数プレイブックを重ねてもよい（例: 「サンディエゴのベストコワーキング」）。
 
 ---
 
-## Quality Checks
+## 実装フレームワーク
 
-### Pre-Launch Checklist
+### 1. キーワードパターン調査
 
-**Content quality:**
-- [ ] Each page provides unique value
-- [ ] Answers search intent
-- [ ] Readable and useful
+**パターンを特定:**
+- 繰り返し構造は何か？
+- 変数は何か？
+- 固有組み合わせ数はどれくらいか？
 
-**Technical SEO:**
-- [ ] Unique titles and meta descriptions
-- [ ] Proper heading structure
-- [ ] Schema markup implemented
-- [ ] Page speed acceptable
+**需要を検証:**
+- 合計検索ボリューム
+- 分布（ヘッドとロングテール）
+- トレンド方向
 
-**Internal linking:**
-- [ ] Connected to site architecture
-- [ ] Related pages linked
-- [ ] No orphan pages
+### 2. データ要件
 
-**Indexation:**
-- [ ] In XML sitemap
-- [ ] Crawlable
-- [ ] No conflicting noindex
+**データソースを特定:**
+- 各ページを埋めるデータは何か？
+- それはファーストパーティ、スクレイピング、ライセンス、公開のどれか？
+- 更新頻度と更新手段は？
 
-### Post-Launch Monitoring
+### 3. テンプレート設計
 
-Track: Indexation rate, Rankings, Traffic, Engagement, Conversion
+**ページ構造:**
+- 対象キーワード入りヘッダー
+- 固有イントロ（変数差し替えだけにしない）
+- データ駆動セクション
+- 関連ページ/内部リンク
+- 検索意図に合う行動喚起
 
-Watch for: Thin content warnings, Ranking drops, Manual actions, Crawl errors
+**固有性を担保する方法:**
+- 各ページに固有価値を持たせる
+- データに応じた条件分岐コンテンツ
+- ページごとの独自洞察/分析
 
----
+### 4. 内部リンク設計
 
-## Common Mistakes
+**ハブ＆スポークモデル:**
+- ハブ: 主要カテゴリページ
+- スポーク: 個別のプログラマティックページ
+- 関連スポーク同士を相互リンク
 
-- **Thin content**: Just swapping city names in identical content
-- **Keyword cannibalization**: Multiple pages targeting same keyword
-- **Over-generation**: Creating pages with no search demand
-- **Poor data quality**: Outdated or incorrect information
-- **Ignoring UX**: Pages exist for Google, not users
+**孤立ページを避ける:**
+- すべてのページがメインサイトから到達可能
+- 全ページを XML サイトマップに含める
+- 構造化データ付きパンくずを実装
 
----
+### 5. インデックス戦略
 
-## Output Format
-
-### Strategy Document
-- Opportunity analysis
-- Implementation plan
-- Content guidelines
-
-### Page Template
-- URL structure
-- Title/meta templates
-- Content outline
-- Schema markup
+- 高ボリュームパターンを優先
+- 薄いバリエーションは noindex を検討
+- クロール予算を意識して管理
+- ページ種別ごとにサイトマップを分ける
 
 ---
 
-## Task-Specific Questions
+## 品質チェック
 
-1. What keyword patterns are you targeting?
-2. What data do you have (or can acquire)?
-3. How many pages are you planning?
-4. What does your site authority look like?
-5. Who currently ranks for these terms?
-6. What's your technical stack?
+### 公開前チェックリスト
+
+**コンテンツ品質:**
+- [ ] 各ページに固有価値がある
+- [ ] 検索意図に答えている
+- [ ] 読みやすく有用
+
+**技術SEO:**
+- [ ] タイトルとメタディスクリプションが固有
+- [ ] 見出し構造が適切
+- [ ] スキーママークアップを実装
+- [ ] ページ速度が許容範囲
+
+**内部リンク:**
+- [ ] サイト構造に接続されている
+- [ ] 関連ページ同士をリンク
+- [ ] 孤立ページがない
+
+**インデックス管理:**
+- [ ] XML サイトマップに含まれる
+- [ ] クロール可能
+- [ ] noindex の競合設定がない
+
+### 公開後モニタリング
+
+追跡: インデックス率、順位、流入、エンゲージメント、コンバージョン
+
+監視: 薄いコンテンツ警告、順位下落、手動対策、クロールエラー
 
 ---
 
-## Related Skills
+## よくある失敗
 
-- **seo-audit**: For auditing programmatic pages after launch
-- **schema-markup**: For adding structured data
-- **competitor-alternatives**: For comparison page frameworks
+- **薄いコンテンツ**: 都市名だけ差し替えた同一内容
+- **キーワードカニバリゼーション**: 同一語を複数ページで奪い合う
+- **過剰生成**: 需要のないページを大量作成
+- **低品質データ**: 古い/誤った情報
+- **ユーザー体験軽視**: 検索エンジンのためだけに作り、ユーザーに価値がない
+
+---
+
+## 出力形式
+
+### 戦略ドキュメント
+- 機会分析
+- 実装計画
+- コンテンツガイドライン
+
+### ページテンプレート
+- URL 構造
+- タイトル/メタテンプレート
+- コンテンツアウトライン
+- スキーママークアップ
+
+---
+
+## タスク固有の質問
+
+1. どのキーワードパターンを狙っていますか？
+2. 利用可能なデータ（または取得可能なデータ）は何ですか？
+3. 何ページ作成する想定ですか？
+4. 現在のサイト権威性はどの程度ですか？
+5. 現在、これらの語で上位なのは誰ですか？
+6. 技術スタックは何ですか？
+
+---
+
+## 関連スキル
+
+- **seo-audit**: 公開後のプログラマティックページ監査向け
+- **schema-markup**: 構造化データ追加向け
+- **competitor-alternatives**: 比較ページの設計フレーム向け

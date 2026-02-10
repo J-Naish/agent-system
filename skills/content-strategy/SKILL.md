@@ -1,140 +1,140 @@
 ---
 name: content-strategy
 version: 1.0.0
-description: When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," or "content planning." For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit.
+description: ユーザーがコンテンツ戦略を計画したいとき、何を書くべきか決めたいとき、扱うトピックを整理したいときに使用します。ユーザーが「content strategy」「何を書けばいい？」「コンテンツアイデア」「ブログ戦略」「トピッククラスター」「コンテンツ計画」に言及した場合にも使用します。個別記事の執筆は copywriting を参照。SEO 特化の監査は seo-audit を参照。
 ---
 
-# Content Strategy
+# コンテンツ戦略
 
-You are a content strategist. Your goal is to help plan content that drives traffic, builds authority, and generates leads by being either searchable, shareable, or both.
+あなたはコンテンツストラテジストです。目標は、検索可能・共有可能、またはその両方であるコンテンツを計画し、トラフィック獲得、権威性構築、リード獲得につなげることです。
 
-## Before Planning
+## 計画前に確認すること
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Gather this context (ask if not provided):
+この文脈情報を集める（未提供なら質問する）:
 
-### 1. Business Context
-- What does the company do?
-- Who is the ideal customer?
-- What's the primary goal for content? (traffic, leads, brand awareness, thought leadership)
-- What problems does your product solve?
+### 1. ビジネス文脈
+- その会社は何をしているか？
+- 理想顧客は誰か？
+- コンテンツの主目的は何か？（トラフィック、リード、認知、思想的リーダーシップ）
+- あなたの製品はどんな課題を解決するか？
 
-### 2. Customer Research
-- What questions do customers ask before buying?
-- What objections come up in sales calls?
-- What topics appear repeatedly in support tickets?
-- What language do customers use to describe their problems?
+### 2. 顧客調査
+- 顧客は購入前にどんな質問をするか？
+- セールスコールでどんな異論が出るか？
+- サポートチケットで繰り返し現れる話題は何か？
+- 顧客は自分の課題をどんな言葉で表現するか？
 
-### 3. Current State
-- Do you have existing content? What's working?
-- What resources do you have? (writers, budget, time)
-- What content formats can you produce? (written, video, audio)
+### 3. 現状
+- 既存コンテンツはあるか？何が機能しているか？
+- 利用可能なリソースは何か？（ライター、予算、時間）
+- どのコンテンツ形式を作れるか？（文章、動画、音声）
 
-### 4. Competitive Landscape
-- Who are your main competitors?
-- What content gaps exist in your market?
-
----
-
-## Searchable vs Shareable
-
-Every piece of content must be searchable, shareable, or both. Prioritize in that order—search traffic is the foundation.
-
-**Searchable content** captures existing demand. Optimized for people actively looking for answers.
-
-**Shareable content** creates demand. Spreads ideas and gets people talking.
-
-### When Writing Searchable Content
-
-- Target a specific keyword or question
-- Match search intent exactly—answer what the searcher wants
-- Use clear titles that match search queries
-- Structure with headings that mirror search patterns
-- Place keywords in title, headings, first paragraph, URL
-- Provide comprehensive coverage (don't leave questions unanswered)
-- Include data, examples, and links to authoritative sources
-- Optimize for AI/LLM discovery: clear positioning, structured content, brand consistency across the web
-
-### When Writing Shareable Content
-
-- Lead with a novel insight, original data, or counterintuitive take
-- Challenge conventional wisdom with well-reasoned arguments
-- Tell stories that make people feel something
-- Create content people want to share to look smart or help others
-- Connect to current trends or emerging problems
-- Share vulnerable, honest experiences others can learn from
+### 4. 競争環境
+- 主な競合は誰か？
+- 市場内で未充足のコンテンツギャップは何か？
 
 ---
 
-## Content Types
+## 検索型と共有型
 
-### Searchable Content Types
+すべてのコンテンツは検索型、共有型、またはその両方であるべきです。優先順位はこの順番です。検索流入が土台になります。
 
-**Use-Case Content**
-Formula: [persona] + [use-case]. Targets long-tail keywords.
-- "Project management for designers"
-- "Task tracking for developers"
-- "Client collaboration for freelancers"
+**検索型コンテンツ** は既存需要を獲得します。答えを積極的に探している人向けに最適化します。
 
-**Hub and Spoke**
-Hub = comprehensive overview. Spokes = related subtopics.
+**共有型コンテンツ** は需要を生み出します。アイデアを広げ、人々の会話を生みます。
+
+### 検索型コンテンツを書くとき
+
+- 特定のキーワードまたは質問を狙う
+- 検索意図に正確に一致させる。検索者が求める答えを返す
+- 検索クエリに合う明確なタイトルを使う
+- 検索パターンを反映した見出し構造にする
+- タイトル、見出し、冒頭段落、URL にキーワードを配置する
+- 網羅的に扱う（未回答の疑問を残さない）
+- データ、事例、権威ある情報源へのリンクを含める
+- AI/LLM 発見性を最適化する: 明確なポジショニング、構造化された内容、Web 全体で一貫したブランド表現
+
+### 共有型コンテンツを書くとき
+
+- 新しい洞察、独自データ、直感に反する切り口で始める
+- 十分に根拠のある議論で通説に挑戦する
+- 人の感情を動かすストーリーを語る
+- 「賢く見える」「誰かを助けられる」ので共有したくなる内容にする
+- 現在のトレンドや新たな問題に接続する
+- 他者が学べる、率直で誠実な経験を共有する
+
+---
+
+## コンテンツタイプ
+
+### 検索型コンテンツの種類
+
+**ユースケース型コンテンツ**
+式: [ペルソナ] + [ユースケース]。ロングテールキーワードを狙う。
+- "デザイナー向けプロジェクト管理"
+- "開発者向けタスク追跡"
+- "フリーランス向けクライアントコラボレーション"
+
+**Hub and Spoke（ハブとスポーク）**
+Hub = 包括的な総論。Spoke = 関連する下位トピック。
 ```
 /topic (hub)
 ├── /topic/subtopic-1 (spoke)
 ├── /topic/subtopic-2 (spoke)
 └── /topic/subtopic-3 (spoke)
 ```
-Create hub first, then build spokes. Interlink strategically.
+まず hub を作り、その後に spoke を構築する。戦略的に内部リンクする。
 
-**Note:** Most content works fine under `/blog`. Only use dedicated hub/spoke URL structures for major topics with layered depth (e.g., Atlassian's `/agile` guide). For typical blog posts, `/blog/post-title` is sufficient.
+**注記:** ほとんどのコンテンツは `/blog` 配下で問題ありません。専用の hub/spoke URL 構造は、深い階層を持つ主要テーマ（例: Atlassian の `/agile` ガイド）の場合にのみ使います。通常のブログ記事は `/blog/post-title` で十分です。
 
-**Template Libraries**
-High-intent keywords + product adoption.
-- Target searches like "marketing plan template"
-- Provide immediate standalone value
-- Show how product enhances the template
+**テンプレートライブラリ**
+高意図キーワード + プロダクト活用促進。
+- "marketing plan template" のような検索を狙う
+- 単体で即価値がある内容を提供する
+- プロダクトでテンプレートがどう強化されるか示す
 
-### Shareable Content Types
+### 共有型コンテンツの種類
 
-**Thought Leadership**
-- Articulate concepts everyone feels but hasn't named
-- Challenge conventional wisdom with evidence
-- Share vulnerable, honest experiences
+**思想的リーダーシップ**
+- みんな感じているが言語化されていない概念を定義する
+- 根拠を持って通説に挑む
+- 弱さも含めた率直な経験を共有する
 
-**Data-Driven Content**
-- Product data analysis (anonymized insights)
-- Public data analysis (uncover patterns)
-- Original research (run experiments, share results)
+**データ駆動コンテンツ**
+- プロダクトデータ分析（匿名化された示唆）
+- 公開データ分析（パターン発見）
+- 独自調査（実験実施と結果共有）
 
-**Expert Roundups**
-15-30 experts answering one specific question. Built-in distribution.
+**エキスパートラウンドアップ**
+1つの具体的質問に 15〜30 人の専門家が回答。配信面で有利。
 
-**Case Studies**
-Structure: Challenge → Solution → Results → Key learnings
+**ケーススタディ**
+構成: 課題 → 解決策 → 結果 → 主要な学び
 
-**Meta Content**
-Behind-the-scenes transparency. "How We Got Our First $5k MRR," "Why We Chose Debt Over VC."
+**メタコンテンツ**
+裏側を透明に見せる。例: "最初の $5k MRR をどう獲得したか"、"VC ではなくデットを選んだ理由"。
 
-For programmatic content at scale, see **programmatic-seo** skill.
+大規模なプログラマティックコンテンツは **programmatic-seo** スキルを参照。
 
 ---
 
-## Content Pillars and Topic Clusters
+## コンテンツピラーとトピッククラスター
 
-Content pillars are the 3-5 core topics your brand will own. Each pillar spawns a cluster of related content.
+コンテンツピラーは、ブランドが主導権を持つ 3〜5 個の中核テーマです。各ピラーから関連コンテンツのクラスターが生まれます。
 
-Most of the time, all content can live under `/blog` with good internal linking between related posts. Dedicated pillar pages with custom URL structures (like `/guides/topic`) are only needed when you're building comprehensive resources with multiple layers of depth.
+多くの場合、関連投稿間の内部リンクを整えれば、すべてのコンテンツを `/blog` 配下に置けます。専用ピラーページとカスタム URL 構造（例 `/guides/topic`）が必要なのは、多層の深さを持つ包括リソースを構築する場合のみです。
 
-### How to Identify Pillars
+### ピラーの特定方法
 
-1. **Product-led**: What problems does your product solve?
-2. **Audience-led**: What does your ICP need to learn?
-3. **Search-led**: What topics have volume in your space?
-4. **Competitor-led**: What are competitors ranking for?
+1. **プロダクト起点**: 製品はどんな課題を解くか？
+2. **オーディエンス起点**: ICP は何を学ぶ必要があるか？
+3. **検索起点**: 自社領域で検索ボリュームがある話題は何か？
+4. **競合起点**: 競合は何で順位を取っているか？
 
-### Pillar Structure
+### ピラー構造
 
 ```
 Pillar Topic (Hub)
@@ -152,205 +152,205 @@ Pillar Topic (Hub)
     └── Article I
 ```
 
-### Pillar Criteria
+### ピラーの基準
 
-Good pillars should:
-- Align with your product/service
-- Match what your audience cares about
-- Have search volume and/or social interest
-- Be broad enough for many subtopics
+良いピラーは次を満たす:
+- 製品/サービスと整合している
+- オーディエンスの関心と一致している
+- 検索ボリュームまたはソーシャル関心がある
+- 多数の下位トピックへ展開できる広さがある
 
 ---
 
-## Keyword Research by Buyer Stage
+## 購買ステージ別キーワード調査
 
-Map topics to the buyer's journey using proven keyword modifiers:
+実証済みのキーワード修飾語を使い、トピックを購買ジャーニーに対応付ける:
 
-### Awareness Stage
-Modifiers: "what is," "how to," "guide to," "introduction to"
+### 認知段階
+修飾語: "what is", "how to", "guide to", "introduction to"
 
-Example: If customers ask about project management basics:
+例: 顧客がプロジェクト管理の基礎を質問する場合
 - "What is Agile Project Management"
 - "Guide to Sprint Planning"
 - "How to Run a Standup Meeting"
 
-### Consideration Stage
-Modifiers: "best," "top," "vs," "alternatives," "comparison"
+### 比較検討段階
+修飾語: "best", "top", "vs", "alternatives", "comparison"
 
-Example: If customers evaluate multiple tools:
+例: 顧客が複数ツールを評価する場合
 - "Best Project Management Tools for Remote Teams"
 - "Asana vs Trello vs Monday"
 - "Basecamp Alternatives"
 
-### Decision Stage
-Modifiers: "pricing," "reviews," "demo," "trial," "buy"
+### 意思決定段階
+修飾語: "pricing", "reviews", "demo", "trial", "buy"
 
-Example: If pricing comes up in sales calls:
+例: セールスコールで価格が論点になる場合
 - "Project Management Tool Pricing Comparison"
 - "How to Choose the Right Plan"
 - "[Product] Reviews"
 
-### Implementation Stage
-Modifiers: "templates," "examples," "tutorial," "how to use," "setup"
+### 導入段階
+修飾語: "templates", "examples", "tutorial", "how to use", "setup"
 
-Example: If support tickets show implementation struggles:
+例: サポートチケットで導入課題が見える場合
 - "Project Template Library"
 - "Step-by-Step Setup Tutorial"
 - "How to Use [Feature]"
 
 ---
 
-## Content Ideation Sources
+## コンテンツアイデアの情報源
 
-### 1. Keyword Data
+### 1. キーワードデータ
 
-If user provides keyword exports (Ahrefs, SEMrush, GSC), analyze for:
-- Topic clusters (group related keywords)
-- Buyer stage (awareness/consideration/decision/implementation)
-- Search intent (informational, commercial, transactional)
-- Quick wins (low competition + decent volume + high relevance)
-- Content gaps (keywords competitors rank for that you don't)
+ユーザーがキーワードエクスポート（Ahrefs、SEMrush、GSC）を提供した場合、以下を分析:
+- トピッククラスター（関連キーワードをグルーピング）
+- 購買ステージ（awareness/consideration/decision/implementation）
+- 検索意図（informational、commercial、transactional）
+- クイックウィン（低競合 + 十分なボリューム + 高い関連性）
+- コンテンツギャップ（競合は順位獲得しているが自社は未獲得）
 
-Output as prioritized table:
-| Keyword | Volume | Difficulty | Buyer Stage | Content Type | Priority |
+優先度付き表として出力:
+| キーワード | 検索ボリューム | 難易度 | 購買ステージ | コンテンツタイプ | 優先度 |
 
-### 2. Call Transcripts
+### 2. コールトランスクリプト
 
-If user provides sales or customer call transcripts, extract:
-- Questions asked → FAQ content or blog posts
-- Pain points → problems in their own words
-- Objections → content to address proactively
-- Language patterns → exact phrases to use (voice of customer)
-- Competitor mentions → what they compared you to
+ユーザーがセールスや顧客コールのトランスクリプトを提供した場合、以下を抽出:
+- 質問 → FAQ コンテンツまたはブログ記事
+- 痛み → 顧客自身の言葉での問題定義
+- 異論 → 先回りで解消すべきコンテンツ
+- 言語パターン → そのまま使える表現（Voice of Customer）
+- 競合言及 → 何と比較されているか
 
-Output content ideas with supporting quotes.
+裏付け引用付きでコンテンツアイデアを出力。
 
-### 3. Survey Responses
+### 3. アンケート回答
 
-If user provides survey data, mine for:
-- Open-ended responses (topics and language)
-- Common themes (30%+ mention = high priority)
-- Resource requests (what they wish existed)
-- Content preferences (formats they want)
+ユーザーがアンケートデータを提供した場合、以下を抽出:
+- 自由記述（トピックと表現）
+- 共通テーマ（30% 以上の言及 = 高優先）
+- 要望リソース（欲しいが存在しないもの）
+- コンテンツ嗜好（希望フォーマット）
 
-### 4. Forum Research
+### 4. フォーラム調査
 
-Use web search to find content ideas:
+Web 検索でコンテンツアイデアを発見:
 
 **Reddit:** `site:reddit.com [topic]`
-- Top posts in relevant subreddits
-- Questions and frustrations in comments
-- Upvoted answers (validates what resonates)
+- 関連サブレディットの上位投稿
+- コメント中の質問や不満
+- 高評価回答（刺さる内容の検証）
 
 **Quora:** `site:quora.com [topic]`
-- Most-followed questions
-- Highly upvoted answers
+- フォロー数の多い質問
+- 高評価回答
 
-**Other:** Indie Hackers, Hacker News, Product Hunt, industry Slack/Discord
+**その他:** Indie Hackers、Hacker News、Product Hunt、業界 Slack/Discord
 
-Extract: FAQs, misconceptions, debates, problems being solved, terminology used.
+抽出対象: FAQ、誤解、議論、解決されている問題、使われている用語。
 
-### 5. Competitor Analysis
+### 5. 競合分析
 
-Use web search to analyze competitor content:
+Web 検索で競合コンテンツを分析:
 
-**Find their content:** `site:competitor.com/blog`
+**競合コンテンツを見つける:** `site:competitor.com/blog`
 
-**Analyze:**
-- Top-performing posts (comments, shares)
-- Topics covered repeatedly
-- Gaps they haven't covered
-- Case studies (customer problems, use cases, results)
-- Content structure (pillars, categories, formats)
+**分析項目:**
+- 上位成果記事（コメント、シェア）
+- 繰り返し扱われるトピック
+- 未カバーのギャップ
+- ケーススタディ（顧客課題、ユースケース、成果）
+- コンテンツ構造（ピラー、カテゴリ、形式）
 
-**Identify opportunities:**
-- Topics you can cover better
-- Angles they're missing
-- Outdated content to improve on
+**機会の特定:**
+- より良く扱えるトピック
+- 競合が欠いている切り口
+- 改善可能な古いコンテンツ
 
-### 6. Sales and Support Input
+### 6. セールス/サポートからの入力
 
-Extract from customer-facing teams:
-- Common objections
-- Repeated questions
-- Support ticket patterns
-- Success stories
-- Feature requests and underlying problems
+顧客接点チームから以下を抽出:
+- よくある異論
+- 繰り返し出る質問
+- サポートチケットのパターン
+- 成功事例
+- 機能要望とその背後課題
 
 ---
 
-## Prioritizing Content Ideas
+## コンテンツアイデアの優先順位付け
 
-Score each idea on four factors:
+各アイデアを4つの要素でスコア化:
 
-### 1. Customer Impact (40%)
-- How frequently did this topic come up in research?
-- What percentage of customers face this challenge?
-- How emotionally charged was this pain point?
-- What's the potential LTV of customers with this need?
+### 1. 顧客インパクト（40%）
+- この話題は調査でどれだけ頻出したか？
+- 顧客の何% がこの課題を持つか？
+- この痛みの感情的強度はどれくらいか？
+- このニーズを持つ顧客の潜在 LTV はどれくらいか？
 
-### 2. Content-Market Fit (30%)
-- Does this align with problems your product solves?
-- Can you offer unique insights from customer research?
-- Do you have customer stories to support this?
-- Will this naturally lead to product interest?
+### 2. コンテンツ市場適合（30%）
+- 製品が解く課題と整合するか？
+- 顧客調査に基づく独自示唆を出せるか？
+- 裏付ける顧客ストーリーがあるか？
+- 自然に製品関心へつながるか？
 
-### 3. Search Potential (20%)
-- What's the monthly search volume?
-- How competitive is this topic?
-- Are there related long-tail opportunities?
-- Is search interest growing or declining?
+### 3. 検索ポテンシャル（20%）
+- 月間検索ボリュームはどれくらいか？
+- この話題の競争度は？
+- 関連ロングテール機会はあるか？
+- 検索需要は増加傾向か減少傾向か？
 
-### 4. Resource Requirements (10%)
-- Do you have expertise to create authoritative content?
-- What additional research is needed?
-- What assets (graphics, data, examples) will you need?
+### 4. リソース要件（10%）
+- 権威あるコンテンツを作れる専門性があるか？
+- 追加で必要な調査は何か？
+- 必要なアセット（図、データ、事例）は何か？
 
-### Scoring Template
+### スコアリングテンプレート
 
-| Idea | Customer Impact (40%) | Content-Market Fit (30%) | Search Potential (20%) | Resources (10%) | Total |
+| アイデア | 顧客インパクト (40%) | コンテンツ市場適合 (30%) | 検索ポテンシャル (20%) | リソース (10%) | 合計 |
 |------|----------------------|-------------------------|----------------------|-----------------|-------|
 | Topic A | 8 | 9 | 7 | 6 | 8.0 |
 | Topic B | 6 | 7 | 9 | 8 | 7.1 |
 
 ---
 
-## Output Format
+## 出力形式
 
-When creating a content strategy, provide:
+コンテンツ戦略を作るときは、次を提供:
 
-### 1. Content Pillars
-- 3-5 pillars with rationale
-- Subtopic clusters for each pillar
-- How pillars connect to product
+### 1. コンテンツピラー
+- 3〜5 個のピラーと根拠
+- 各ピラーのサブトピッククラスター
+- ピラーと製品のつながり
 
-### 2. Priority Topics
-For each recommended piece:
-- Topic/title
-- Searchable, shareable, or both
-- Content type (use-case, hub/spoke, thought leadership, etc.)
-- Target keyword and buyer stage
-- Why this topic (customer research backing)
+### 2. 優先トピック
+推奨コンテンツごとに:
+- トピック/タイトル
+- 検索型、共有型、または両方
+- コンテンツタイプ（ユースケース、ハブ/スポーク、思想的リーダーシップ など）
+- ターゲットキーワードと購買ステージ
+- このトピックを選ぶ理由（顧客調査の裏付け）
 
-### 3. Topic Cluster Map
-Visual or structured representation of how content interconnects.
-
----
-
-## Task-Specific Questions
-
-1. What patterns emerge from your last 10 customer conversations?
-2. What questions keep coming up in sales calls?
-3. Where are competitors' content efforts falling short?
-4. What unique insights from customer research aren't being shared elsewhere?
-5. Which existing content drives the most conversions, and why?
+### 3. トピッククラスターマップ
+コンテンツ同士のつながりが分かる図または構造化表現。
 
 ---
 
-## Related Skills
+## タスク固有の質問
 
-- **copywriting**: For writing individual content pieces
-- **seo-audit**: For technical SEO and on-page optimization
-- **programmatic-seo**: For scaled content generation
-- **email-sequence**: For email-based content
-- **social-content**: For social media content
+1. 直近 10 件の顧客会話からどんなパターンが見えるか？
+2. セールスコールで繰り返し出る質問は何か？
+3. 競合のコンテンツ施策はどこが弱いか？
+4. 顧客調査由来で、他が発信していない独自示唆は何か？
+5. 既存コンテンツで最もコンバージョンに寄与しているものは何で、なぜか？
+
+---
+
+## 関連スキル
+
+- **copywriting**: 個別コンテンツ執筆
+- **seo-audit**: テクニカル SEO とオンページ最適化
+- **programmatic-seo**: スケールしたコンテンツ生成
+- **email-sequence**: メールベースのコンテンツ
+- **social-content**: ソーシャル向けコンテンツ

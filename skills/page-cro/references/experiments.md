@@ -1,239 +1,239 @@
-# Page CRO Experiment Ideas
+# ページCRO実験アイデア
 
-Comprehensive list of A/B tests and experiments organized by page type.
+ページ種別ごとに整理した、包括的なA/Bテストと実験リストです。
 
-## Homepage Experiments
+## ホームページ実験
 
-### Hero Section
+### ヒーローセクション
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Headline variations | Specific vs. abstract messaging |
-| Subheadline clarity | Add/refine to support headline |
-| CTA above fold | Include or exclude prominent CTA |
-| Hero visual format | Screenshot vs. GIF vs. illustration vs. video |
-| CTA button color | Test contrast and visibility |
-| CTA button text | "Start Free Trial" vs. "Get Started" vs. "See Demo" |
-| Interactive demo | Engage visitors immediately with product |
+| 見出しバリエーション | 具体訴求と抽象訴求の比較 |
+| サブ見出しの明瞭さ | 見出し補強の追加/改善 |
+| ファーストビュー内の行動喚起（CTA） | 目立つ行動喚起（CTA）の有無 |
+| ヒーロービジュアル形式 | スクリーンショット、GIF、イラスト、動画の比較 |
+| 行動喚起（CTA）ボタン色 | コントラストと視認性の比較 |
+| 行動喚起（CTA）ボタン文言 | 「無料トライアル開始」「はじめる」「デモを見る」の比較 |
+| インタラクティブデモ | 製品体験で即時に関与を高める効果 |
 
-### Trust & Social Proof
+### 信頼と社会的証明
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Logo placement | Hero section vs. below fold |
-| Case study in hero | Show results immediately |
-| Trust badges | Add security, compliance, awards |
-| Social proof in headline | "Join 10,000+ teams" messaging |
-| Testimonial placement | Above fold vs. dedicated section |
-| Video testimonials | More engaging than text quotes |
+| ロゴ配置 | ヒーロー内とファーストビュー外の比較 |
+| ヒーロー内ケーススタディ | 実績を早期提示する効果 |
+| 信頼バッジ | セキュリティ、コンプライアンス、受賞の追加効果 |
+| 見出し内社会的証明 | 「10,000以上のチームが利用中」の効果 |
+| 推薦文配置 | ファーストビュー内と専用セクションの比較 |
+| 動画推薦文 | テキスト引用より関与が高いか |
 
-### Features & Content
+### 機能とコンテンツ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Feature presentation | Icons + descriptions vs. detailed sections |
-| Section ordering | Move high-value features up |
-| Secondary CTAs | Add/remove throughout page |
-| Benefit vs. feature focus | Lead with outcomes |
-| Comparison section | Show vs. competitors or status quo |
+| 機能提示方法 | アイコン+短文と詳細セクションの比較 |
+| セクション順序 | 高価値機能を上部に移す効果 |
+| 副次的な行動喚起（CTA） | ページ内への追加/削除の効果 |
+| ベネフィット重視と機能重視 | 成果訴求を先に出す効果 |
+| 比較セクション | 競合比較または現状比較の有無 |
 
-### Navigation & UX
+### ナビゲーションとUX
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Sticky navigation | Persistent nav with CTA |
-| Nav menu order | High-priority items at edges |
-| Nav CTA button | Add prominent button in nav |
-| Support widget | Live chat vs. AI chatbot |
-| Footer optimization | Clearer secondary conversions |
-| Exit intent popup | Capture abandoning visitors |
+| 固定ナビゲーション | 行動喚起（CTA）付き固定ナビの効果 |
+| ナビ項目順序 | 優先項目を端に置く効果 |
+| ナビ内の行動喚起（CTA）ボタン | ナビ内に目立つボタンを置く効果 |
+| サポートウィジェット | ライブチャットとAIチャットボットの比較 |
+| フッター最適化 | 二次コンバージョン導線の明瞭化 |
+| 離脱意図ポップアップ | 離脱訪問者の回収効果 |
 
 ---
 
-## Pricing Page Experiments
+## 価格ページ実験
 
-### Price Presentation
+### 価格提示
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Annual vs. monthly display | Highlight savings or simplify |
-| Price points | $99 vs. $100 vs. $97 psychology |
-| "Most Popular" badge | Highlight target plan |
-| Number of tiers | 3 vs. 4 vs. 2 visible options |
-| Price anchoring | Order plans to anchor expectations |
-| Custom enterprise tier | Show vs. "Contact Sales" |
+| 年額表示と月額表示 | 節約訴求強化と単純化の比較 |
+| 価格点 | 99ドル、100ドル、97ドルの心理差 |
+| 「最も人気」バッジ | 目標プランへの誘導効果 |
+| ティア数 | 3、4、2プラン表示の比較 |
+| 価格アンカリング | プラン順序で期待値を固定する効果 |
+| エンタープライズ表示 | 明示表示と「営業に問い合わせ」の比較 |
 
-### Pricing UX
+### 価格UX
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Pricing calculator | For usage-based pricing clarity |
-| Guided pricing flow | Multistep wizard vs. comparison table |
-| Feature comparison format | Table vs. expandable sections |
-| Monthly/annual toggle | With savings highlighted |
-| Plan recommendation quiz | Help visitors choose |
-| Checkout flow length | Steps required after plan selection |
+| 価格計算ツール | 従量課金の理解明瞭化 |
+| ガイド付き料金選択 | 複数ステップウィザードと比較表の比較 |
+| 機能比較形式 | テーブルと展開セクションの比較 |
+| 月額/年額トグル | 割引表示付きトグルの効果 |
+| プラン推薦クイズ | プラン選択不安を軽減できるか |
+| 決済フロー長 | プラン選択後の必要ステップ数の影響 |
 
-### Objection Handling
+### 反論処理
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| FAQ section | Address pricing objections |
-| ROI calculator | Demonstrate value vs. cost |
-| Money-back guarantee | Prominent placement |
-| Per-user breakdowns | Clarity for team plans |
-| Feature inclusion clarity | What's in each tier |
-| Competitor comparison | Side-by-side value comparison |
+| よくある質問（FAQ）セクション | 価格への懸念を解消できるか |
+| 投資対効果（ROI）計算ツール | コスト対価値の可視化効果 |
+| 返金保証 | 目立つ配置の効果 |
+| 1ユーザーあたり内訳 | チームプランの理解向上効果 |
+| 機能含有の明瞭化 | 各ティア内容の分かりやすさ |
+| 競合比較 | 横並び価値比較の効果 |
 
-### Trust Signals
+### 信頼シグナル
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Value testimonials | Quotes about ROI specifically |
-| Customer logos | Near pricing section |
-| Review scores | G2/Capterra ratings |
-| Case study snippet | Specific pricing/value results |
+| 価値訴求推薦文 | 投資対効果（ROI）に関する引用の効果 |
+| 顧客ロゴ | 価格セクション近接配置の効果 |
+| レビュー評価 | G2/Capterra 評価の効果 |
+| ケーススタディ抜粋 | 価格/価値に関する実数効果 |
 
 ---
 
-## Demo Request Page Experiments
+## デモ依頼ページ実験
 
-### Form Optimization
+### フォーム最適化
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Field count | Fewer fields, higher completion |
-| Multi-step vs. single | Progress bar encouragement |
-| Form placement | Above fold vs. after content |
-| Phone field | Include vs. exclude |
-| Field enrichment | Hide fields you can auto-fill |
-| Form labels | Inside field vs. above |
+| 項目数 | 項目削減で完了率が上がるか |
+| マルチステップと単一フォーム | 進捗バーの後押し効果 |
+| フォーム配置 | ファーストビュー内とコンテンツ後の比較 |
+| 電話番号項目 | あり/なしの比較 |
+| 項目補完 | 自動入力可能項目を隠す効果 |
+| ラベル位置 | 項目内と項目上の比較 |
 
-### Page Content
+### ページ内容
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Benefits above form | Reinforce value before ask |
-| Demo preview | Video/GIF showing demo experience |
-| "What You'll Learn" | Set expectations clearly |
-| Testimonials near form | Reduce friction at decision point |
-| FAQ below form | Address common objections |
-| Video vs. text | Format for explaining value |
+| フォーム上部ベネフィット | 要求前に価値を補強する効果 |
+| デモプレビュー | デモ体験の動画/GIF提示効果 |
+| 「得られること」提示 | 期待値明確化の効果 |
+| フォーム近接推薦文 | 意思決定点で摩擦を下げる効果 |
+| フォーム下のよくある質問（FAQ） | よくある懸念への先回り効果 |
+| 動画とテキスト | 価値説明フォーマットの比較 |
 
-### CTA & Routing
+### 行動喚起（CTA）とルーティング
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| CTA text | "Book Your Demo" vs. "Schedule 15-Min Call" |
-| On-demand option | Instant demo alongside live option |
-| Personalized messaging | Based on visitor data/source |
-| Navigation removal | Reduce page distractions |
-| Calendar integration | Inline booking vs. external link |
-| Qualification routing | Self-serve for some, sales for others |
+| 行動喚起（CTA）文言 | 「デモを予約」と「15分相談を予約」の比較 |
+| オンデマンド選択肢 | ライブと即時デモ併設の効果 |
+| 個別化メッセージ | 訪問者データ/流入元に応じた表示効果 |
+| ナビゲーション削除 | ページ内の注意分散を減らす効果 |
+| カレンダー統合 | インライン予約と外部リンクの比較 |
+| 適格性ルーティング | セルフサーブと営業対応の振り分け効果 |
 
 ---
 
-## Resource/Blog Page Experiments
+## リソース/ブログページ実験
 
-### Content CTAs
+### コンテンツの行動喚起（CTA）
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Floating CTAs | Sticky CTA on blog posts |
-| CTA placement | Inline vs. end-of-post only |
-| Reading time display | Estimated reading time |
-| Related resources | End-of-article recommendations |
-| Gated vs. free | Content access strategy |
-| Content upgrades | Specific to article topic |
+| フローティング行動喚起（CTA） | ブログ内固定行動喚起（CTA）の効果 |
+| 行動喚起（CTA）配置 | インラインと記事末尾のみの比較 |
+| 読了時間表示 | 推定読了時間表示の効果 |
+| 関連リソース | 記事末おすすめ導線の効果 |
+| ゲート有無 | コンテンツ公開戦略の比較 |
+| コンテンツアップグレード | 記事テーマ特化オファーの効果 |
 
-### Resource Section
+### リソースセクション
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Navigation/filtering | Easier to find relevant content |
-| Search functionality | Find specific resources |
-| Featured resources | Highlight best content |
-| Layout format | Grid vs. list view |
-| Topic bundles | Grouped resources by theme |
-| Download tracking | Gate some, track engagement |
+| ナビ/フィルタリング | 関連コンテンツを探しやすくする効果 |
+| 検索機能 | 特定資料発見率の改善 |
+| 注目リソース | ベストコンテンツ強調の効果 |
+| レイアウト形式 | グリッド表示とリスト表示の比較 |
+| トピック束ね | テーマ別グルーピングの効果 |
+| ダウンロード追跡 | 一部ゲート化とエンゲージメント計測 |
 
 ---
 
-## Landing Page Experiments
+## ランディングページ実験
 
-### Message Match
+### メッセージ一致
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Headline matching | Match ad copy exactly |
-| Visual matching | Match ad creative |
-| Offer alignment | Same offer as ad promised |
-| Audience-specific pages | Different pages per segment |
+| 見出し一致 | 広告コピーとの完全一致効果 |
+| ビジュアル一致 | 広告クリエイティブとの一致効果 |
+| オファー一致 | 広告で約束した訴求との整合性 |
+| オーディエンス別ページ | セグメント別ページ分岐の効果 |
 
-### Conversion Focus
+### コンバージョン集中
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Navigation removal | Single-focus page |
-| CTA repetition | Multiple CTAs throughout |
-| Form vs. button | Direct capture vs. click-through |
-| Urgency/scarcity | If genuine, test messaging |
-| Social proof density | Amount and placement |
-| Video inclusion | Explain offer with video |
+| ナビゲーション削除 | 単一目的ページ化の効果 |
+| 行動喚起（CTA）の反復 | ページ全体での複数配置効果 |
+| フォームとボタン | 直接獲得とクリック遷移の比較 |
+| 緊急性/希少性 | 実態がある場合の訴求効果 |
+| 社会的証明密度 | 量と配置の最適化 |
+| 動画挿入 | オファー説明動画の効果 |
 
-### Page Length
+### ページ長
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Short vs. long | Quick conversion vs. complete argument |
-| Above-fold only | Minimal scroll required |
-| Section ordering | Most important content first |
-| Footer removal | Eliminate navigation |
+| 短尺と長尺 | 即時転換と論理完結の比較 |
+| ファーストビュー中心 | スクロール最小化の効果 |
+| セクション順序 | 重要情報先出しの効果 |
+| フッター削除 | 余計な遷移導線の削減効果 |
 
 ---
 
-## Feature Page Experiments
+## 機能ページ実験
 
-### Feature Presentation
+### 機能提示
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Demo/screenshot | Show feature in action |
-| Use case examples | How customers use it |
-| Before/after | Impact visualization |
-| Video walkthrough | Feature tour |
-| Interactive demo | Try feature without signup |
+| デモ/スクリーンショット | 機能動作を見せる効果 |
+| ユースケース例 | 顧客利用像を示す効果 |
+| ビフォー/アフター | 変化を可視化する効果 |
+| 動画ウォークスルー | 機能理解を促進する効果 |
+| インタラクティブデモ | 登録なし試用の効果 |
 
-### Conversion Path
+### コンバージョン導線
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Trial CTA | Feature-specific trial offer |
-| Related features | Cross-link to other features |
-| Comparison | vs. competitors' version |
-| Pricing mention | Connect to relevant plan |
-| Case study link | Feature-specific success story |
+| トライアル行動喚起（CTA） | 機能特化オファーの効果 |
+| 関連機能導線 | 他機能への内部リンク効果 |
+| 比較表示 | 競合機能との比較効果 |
+| 価格言及 | 関連プランへの接続効果 |
+| 事例リンク | 機能別成功事例の効果 |
 
 ---
 
-## Cross-Page Experiments
+## 横断実験（全ページ共通）
 
-### Site-Wide Tests
+### サイト全体テスト
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Chat widget | Impact on conversions |
-| Cookie consent UX | Minimize friction |
-| Page load speed | Performance vs. features |
-| Mobile experience | Responsive optimization |
-| Accessibility | Impact on conversion |
-| Personalization | Dynamic content by segment |
+| チャットウィジェット | コンバージョンへの影響 |
+| Cookie同意の体験設計（UX） | 摩擦最小化の効果 |
+| ページ読み込み速度 | 機能量と速度の最適バランス |
+| モバイル体験 | レスポンシブ最適化の効果 |
+| アクセシビリティ | コンバージョンへの影響 |
+| パーソナライズ | セグメント別動的コンテンツの効果 |
 
-### Navigation Tests
+### ナビゲーションテスト
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Menu structure | Information architecture |
-| Search placement | Help visitors find content |
-| CTA in nav | Always-visible conversion path |
-| Breadcrumbs | Navigation clarity |
+| メニュー構造 | 情報設計の改善効果 |
+| 検索配置 | 目的コンテンツ発見の支援効果 |
+| ナビ内の行動喚起（CTA） | 常時表示のコンバージョン導線効果 |
+| パンくずリスト | ナビゲーション明瞭化の効果 |

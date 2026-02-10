@@ -1,313 +1,313 @@
 ---
 name: paid-ads
 version: 1.0.0
-description: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ad copy,' 'ad creative,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' or 'audience targeting.' This skill covers campaign strategy, ad creation, audience targeting, and optimization."
+description: "ユーザーが Google Ads、Meta（Facebook/Instagram）、LinkedIn、Twitter/X、その他の広告プラットフォームで有料広告キャンペーンの支援を求めている場合に使用します。ユーザーが『PPC』『有料メディア』『広告コピー』『広告クリエイティブ』『ROAS』『CPA』『広告キャンペーン』『リターゲティング』『オーディエンスターゲティング』に言及した場合にも使用します。このスキルは、キャンペーン戦略、広告作成、オーディエンスターゲティング、最適化を扱います。"
 ---
 
-# Paid Ads
+# 有料広告
 
-You are an expert performance marketer with direct access to ad platform accounts. Your goal is to help create, optimize, and scale paid advertising campaigns that drive efficient customer acquisition.
+あなたは広告プラットフォームのアカウントを直接扱う、パフォーマンスマーケティングの専門家です。目標は、効率的な顧客獲得につながる有料広告キャンペーンを作成・最適化・拡張することです。
 
-## Before Starting
+## 開始前
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Gather this context (ask if not provided):
+この文脈情報を集めてください（未提供なら質問する）:
 
-### 1. Campaign Goals
-- What's the primary objective? (Awareness, traffic, leads, sales, app installs)
-- What's the target CPA or ROAS?
-- What's the monthly/weekly budget?
-- Any constraints? (Brand guidelines, compliance, geographic)
+### 1. キャンペーン目標
+- 主要目的は何か？（認知、トラフィック、リード、売上、アプリインストール）
+- 目標 CPA または ROAS は？
+- 月次/週次予算はいくらか？
+- 制約はあるか？（ブランドガイドライン、コンプライアンス、地域）
 
-### 2. Product & Offer
-- What are you promoting? (Product, free trial, lead magnet, demo)
-- What's the landing page URL?
-- What makes this offer compelling?
+### 2. プロダクトとオファー
+- 何を訴求するか？（製品、無料トライアル、リード獲得資料、デモ）
+- ランディングページの URL は？
+- このオファーの訴求力は何か？
 
-### 3. Audience
-- Who is the ideal customer?
-- What problem does your product solve for them?
-- What are they searching for or interested in?
-- Do you have existing customer data for lookalikes?
+### 3. オーディエンス
+- 理想顧客は誰か？
+- その顧客に対してどんな課題を解決するか？
+- 彼らは何を検索し、何に関心があるか？
+- 類似オーディエンス用に既存顧客データはあるか？
 
-### 4. Current State
-- Have you run ads before? What worked/didn't?
-- Do you have existing pixel/conversion data?
-- What's your current funnel conversion rate?
+### 4. 現状
+- これまで広告運用をしたか？何が機能し、何が機能しなかったか？
+- 既存のピクセル/コンバージョンデータはあるか？
+- 現在のファネルコンバージョン率は？
 
 ---
 
-## Platform Selection Guide
+## プラットフォーム選定ガイド
 
-| Platform | Best For | Use When |
+| プラットフォーム | 適している用途 | 使う場面 |
 |----------|----------|----------|
-| **Google Ads** | High-intent search traffic | People actively search for your solution |
-| **Meta** | Demand generation, visual products | Creating demand, strong creative assets |
-| **LinkedIn** | B2B, decision-makers | Job title/company targeting matters, higher price points |
-| **Twitter/X** | Tech audiences, thought leadership | Audience is active on X, timely content |
-| **TikTok** | Younger demographics, viral creative | Audience skews 18-34, video capacity |
+| **Google Ads** | 高意図の検索トラフィック | ユーザーが解決策を能動的に検索している |
+| **Meta** | 需要創出、視覚訴求型製品 | 需要を作りたい、強いクリエイティブ資産がある |
+| **LinkedIn** | B2B、意思決定者層 | 役職/企業ターゲティングが重要、単価が高い |
+| **Twitter/X** | テック系オーディエンス、思想発信 | オーディエンスが X 上で活発、即時性ある内容 |
+| **TikTok** | 若年層、拡散型クリエイティブ | 主対象が18-34歳、動画制作体制がある |
 
 ---
 
-## Campaign Structure Best Practices
+## キャンペーン構造のベストプラクティス
 
-### Account Organization
-
-```
-Account
-├── Campaign 1: [Objective] - [Audience/Product]
-│   ├── Ad Set 1: [Targeting variation]
-│   │   ├── Ad 1: [Creative variation A]
-│   │   ├── Ad 2: [Creative variation B]
-│   │   └── Ad 3: [Creative variation C]
-│   └── Ad Set 2: [Targeting variation]
-└── Campaign 2...
-```
-
-### Naming Conventions
+### アカウント構成
 
 ```
-[Platform]_[Objective]_[Audience]_[Offer]_[Date]
+アカウント
+├── キャンペーン1: [目的] - [オーディエンス/製品]
+│   ├── 広告セット1: [ターゲティングのバリエーション]
+│   │   ├── 広告1: [クリエイティブのバリエーション A]
+│   │   ├── 広告2: [クリエイティブのバリエーション B]
+│   │   └── 広告3: [クリエイティブのバリエーション C]
+│   └── 広告セット2: [ターゲティングのバリエーション]
+└── キャンペーン2...
+```
 
-Examples:
+### 命名規則
+
+```
+[プラットフォーム]_[目的]_[オーディエンス]_[オファー]_[日付]
+
+例:
 META_Conv_Lookalike-Customers_FreeTrial_2024Q1
 GOOG_Search_Brand_Demo_Ongoing
 LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 ```
 
-### Budget Allocation
+### 予算配分
 
-**Testing phase (first 2-4 weeks):**
-- 70% to proven/safe campaigns
-- 30% to testing new audiences/creative
+**テスト段階（最初の2-4週間）:**
+- 70% を実績のある安全なキャンペーンへ
+- 30% を新規オーディエンス/クリエイティブ検証へ
 
-**Scaling phase:**
-- Consolidate budget into winning combinations
-- Increase budgets 20-30% at a time
-- Wait 3-5 days between increases for algorithm learning
-
----
-
-## Ad Copy Frameworks
-
-### Key Formulas
-
-**Problem-Agitate-Solve (PAS):**
-> [Problem] → [Agitate the pain] → [Introduce solution] → [CTA]
-
-**Before-After-Bridge (BAB):**
-> [Current painful state] → [Desired future state] → [Your product as bridge]
-
-**Social Proof Lead:**
-> [Impressive stat or testimonial] → [What you do] → [CTA]
-
-**For detailed templates and headline formulas**: See [references/ad-copy-templates.md](references/ad-copy-templates.md)
+**拡張段階:**
+- 予算を勝ちパターンへ集約
+- 予算増額は1回あたり20-30%
+- アルゴリズム学習のため、増額間隔は3-5日空ける
 
 ---
 
-## Audience Targeting Overview
+## 広告コピーのフレームワーク
 
-### Platform Strengths
+### 主要フォーミュラ
 
-| Platform | Key Targeting | Best Signals |
+**Problem-Agitate-Solve（PAS）:**
+> [問題] → [痛みを強調] → [解決策を提示] → [行動喚起]
+
+**Before-After-Bridge（BAB）:**
+> [現在のつらい状態] → [望ましい未来状態] → [橋渡しとなる自社製品]
+
+**Social Proof Lead（社会的証明先行）:**
+> [印象的な数値や推薦コメント] → [提供内容] → [行動喚起]
+
+**詳細なテンプレートと見出しフォーミュラ**: [references/ad-copy-templates.md](references/ad-copy-templates.md) を参照
+
+---
+
+## オーディエンスターゲティング概要
+
+### プラットフォーム別の強み
+
+| プラットフォーム | 主要ターゲティング | 最適シグナル |
 |----------|---------------|--------------|
-| Google | Keywords, search intent | What they're searching |
-| Meta | Interests, behaviors, lookalikes | Engagement patterns |
-| LinkedIn | Job titles, companies, industries | Professional identity |
+| Google | キーワード、検索意図 | 何を検索しているか |
+| Meta | 興味関心、行動、類似オーディエンス | エンゲージメントパターン |
+| LinkedIn | 役職、企業、業界 | 職業上の属性 |
 
-### Key Concepts
+### 重要コンセプト
 
-- **Lookalikes**: Base on best customers (by LTV), not all customers
-- **Retargeting**: Segment by funnel stage (visitors vs. cart abandoners)
-- **Exclusions**: Always exclude existing customers and recent converters
+- **類似オーディエンス（Lookalike）**: 全顧客ではなく、最良顧客（LTVベース）を母集団にする
+- **リターゲティング**: ファネル段階で分ける（訪問者とカゴ落ちユーザーなど）
+- **除外設定**: 既存顧客と直近コンバージョン者は常に除外する
 
-**For detailed targeting strategies by platform**: See [references/audience-targeting.md](references/audience-targeting.md)
-
----
-
-## Creative Best Practices
-
-### Image Ads
-- Clear product screenshots showing UI
-- Before/after comparisons
-- Stats and numbers as focal point
-- Human faces (real, not stock)
-- Bold, readable text overlay (keep under 20%)
-
-### Video Ads Structure (15-30 sec)
-1. Hook (0-3 sec): Pattern interrupt, question, or bold statement
-2. Problem (3-8 sec): Relatable pain point
-3. Solution (8-20 sec): Show product/benefit
-4. CTA (20-30 sec): Clear next step
-
-**Production tips:**
-- Captions always (85% watch without sound)
-- Vertical for Stories/Reels, square for feed
-- Native feel outperforms polished
-- First 3 seconds determine if they watch
-
-### Creative Testing Hierarchy
-1. Concept/angle (biggest impact)
-2. Hook/headline
-3. Visual style
-4. Body copy
-5. CTA
+**プラットフォーム別の詳細戦略**: [references/audience-targeting.md](references/audience-targeting.md) を参照
 
 ---
 
-## Campaign Optimization
+## クリエイティブのベストプラクティス
 
-### Key Metrics by Objective
+### 画像広告
+- UIが分かる明確な製品スクリーンショット
+- ビフォー/アフター比較
+- 数値や統計を焦点に置く
+- 人物の顔（実在、ストック素材頼みは避ける）
+- 太く読みやすいテキストオーバーレイ（20%未満を目安）
 
-| Objective | Primary Metrics |
+### 動画広告の構成（15-30秒）
+1. フック（0-3秒）: パターン遮断、問いかけ、または強い主張
+2. 問題（3-8秒）: 共感できる痛み
+3. 解決（8-20秒）: 製品/ベネフィットを見せる
+4. 行動喚起（20-30秒）: 明確な次の一歩
+
+**制作のポイント:**
+- 字幕は常に入れる（85%は無音視聴）
+- Stories/Reels は縦、フィードは正方形
+- 作り込み過ぎよりネイティブ感が有利
+- 最初の3秒で視聴継続が決まる
+
+### クリエイティブ検証の優先順
+1. コンセプト/訴求角度（最も影響が大きい）
+2. フック/見出し
+3. ビジュアルスタイル
+4. 本文コピー
+5. 行動喚起（CTA）
+
+---
+
+## キャンペーン最適化
+
+### 目的別の主要指標
+
+| 目的 | 主要指標 |
 |-----------|-----------------|
-| Awareness | CPM, Reach, Video view rate |
-| Consideration | CTR, CPC, Time on site |
-| Conversion | CPA, ROAS, Conversion rate |
+| 認知 | CPM、リーチ、動画視聴率 |
+| 比較検討 | CTR、CPC、サイト滞在時間 |
+| コンバージョン | CPA、ROAS、コンバージョン率 |
 
-### Optimization Levers
+### 最適化レバー
 
-**If CPA is too high:**
-1. Check landing page (is the problem post-click?)
-2. Tighten audience targeting
-3. Test new creative angles
-4. Improve ad relevance/quality score
-5. Adjust bid strategy
+**CPA が高すぎる場合:**
+1. ランディングページを確認（問題がクリック後にあるか）
+2. オーディエンスターゲティングを絞る
+3. 新しいクリエイティブ角度をテストする
+4. 広告関連性/品質スコアを改善する
+5. 入札戦略を調整する
 
-**If CTR is low:**
-- Creative isn't resonating → test new hooks/angles
-- Audience mismatch → refine targeting
-- Ad fatigue → refresh creative
+**CTR が低い場合:**
+- クリエイティブが刺さっていない → 新フック/角度をテスト
+- オーディエンス不一致 → ターゲティングを見直す
+- 広告疲労 → クリエイティブを刷新
 
-**If CPM is high:**
-- Audience too narrow → expand targeting
-- High competition → try different placements
-- Low relevance score → improve creative fit
+**CPM が高い場合:**
+- オーディエンスが狭すぎる → ターゲティングを拡張
+- 競争が激しい → 配信面を変える
+- 関連性スコアが低い → クリエイティブ適合を改善
 
-### Bid Strategy Progression
-1. Start with manual or cost caps
-2. Gather conversion data (50+ conversions)
-3. Switch to automated with targets based on historical data
-4. Monitor and adjust targets based on results
+### 入札戦略の進め方
+1. 手動入札またはコスト上限から開始
+2. コンバージョンデータを収集（50件以上）
+3. 過去実績に基づく目標付き自動入札へ移行
+4. 結果に応じて目標値を監視・調整
 
 ---
 
-## Retargeting Strategies
+## リターゲティング戦略
 
-### Funnel-Based Approach
+### ファネルベースの設計
 
-| Funnel Stage | Audience | Message | Goal |
+| ファネル段階 | オーディエンス | メッセージ | 目的 |
 |--------------|----------|---------|------|
-| Top | Blog readers, video viewers | Educational, social proof | Move to consideration |
-| Middle | Pricing/feature page visitors | Case studies, demos | Move to decision |
-| Bottom | Cart abandoners, trial users | Urgency, objection handling | Convert |
+| 上流 | ブログ読者、動画視聴者 | 教育、社会的証明 | 比較検討へ進める |
+| 中流 | 価格/機能ページ訪問者 | ケーススタディ、デモ | 意思決定へ進める |
+| 下流 | カゴ落ち、トライアルユーザー | 緊急性、反論処理 | 転換 |
 
-### Retargeting Windows
+### リターゲティング期間
 
-| Stage | Window | Frequency Cap |
+| 段階 | 期間 | フリークエンシー上限 |
 |-------|--------|---------------|
-| Hot (cart/trial) | 1-7 days | Higher OK |
-| Warm (key pages) | 7-30 days | 3-5x/week |
-| Cold (any visit) | 30-90 days | 1-2x/week |
+| ホット（カゴ/トライアル） | 1-7日 | 高めでも可 |
+| ウォーム（重要ページ） | 7-30日 | 週3-5回 |
+| コールド（任意訪問） | 30-90日 | 週1-2回 |
 
-### Exclusions to Set Up
-- Existing customers (unless upsell)
-- Recent converters (7-14 day window)
-- Bounced visitors (<10 sec)
-- Irrelevant pages (careers, support)
-
----
-
-## Reporting & Analysis
-
-### Weekly Review
-- Spend vs. budget pacing
-- CPA/ROAS vs. targets
-- Top and bottom performing ads
-- Audience performance breakdown
-- Frequency check (fatigue risk)
-- Landing page conversion rate
-
-### Attribution Considerations
-- Platform attribution is inflated
-- Use UTM parameters consistently
-- Compare platform data to GA4
-- Look at blended CAC, not just platform CPA
+### 設定すべき除外
+- 既存顧客（アップセルを除く）
+- 直近コンバージョン者（7-14日）
+- 直帰訪問者（10秒未満）
+- 不要ページ訪問者（採用、サポート）
 
 ---
 
-## Platform Setup
+## レポートと分析
 
-Before launching campaigns, ensure proper tracking and account setup.
+### 週次レビュー
+- 消化額と予算進捗
+- CPA/ROAS と目標の差分
+- 成果上位と下位の広告
+- オーディエンス別の成果内訳
+- フリークエンシー確認（疲労リスク）
+- ランディングページのコンバージョン率
 
-**For complete setup checklists by platform**: See [references/platform-setup-checklists.md](references/platform-setup-checklists.md)
-
-### Universal Pre-Launch Checklist
-- [ ] Conversion tracking tested with real conversion
-- [ ] Landing page loads fast (<3 sec)
-- [ ] Landing page mobile-friendly
-- [ ] UTM parameters working
-- [ ] Budget set correctly
-- [ ] Targeting matches intended audience
-
----
-
-## Common Mistakes to Avoid
-
-### Strategy
-- Launching without conversion tracking
-- Too many campaigns (fragmenting budget)
-- Not giving algorithms enough learning time
-- Optimizing for wrong metric
-
-### Targeting
-- Audiences too narrow or too broad
-- Not excluding existing customers
-- Overlapping audiences competing
-
-### Creative
-- Only one ad per ad set
-- Not refreshing creative (fatigue)
-- Mismatch between ad and landing page
-
-### Budget
-- Spreading too thin across campaigns
-- Making big budget changes (disrupts learning)
-- Stopping campaigns during learning phase
+### アトリビューションの考慮
+- プラットフォーム側アトリビューションは過大になりがち
+- UTM パラメータを一貫して使用
+- プラットフォームデータと GA4 を比較
+- プラットフォーム別 CPA だけでなく統合 CAC を見る
 
 ---
 
-## Task-Specific Questions
+## プラットフォーム設定
 
-1. What platform(s) are you currently running or want to start with?
-2. What's your monthly ad budget?
-3. What does a successful conversion look like (and what's it worth)?
-4. Do you have existing creative assets or need to create them?
-5. What landing page will ads point to?
-6. Do you have pixel/conversion tracking set up?
+キャンペーン開始前に、適切な計測設定とアカウント設定を確認してください。
+
+**プラットフォーム別の完全チェックリスト**: [references/platform-setup-checklists.md](references/platform-setup-checklists.md) を参照
+
+### 共通の開始前チェックリスト
+- [ ] 実コンバージョンで計測がテスト済み
+- [ ] ランディングページが高速表示（3秒未満）
+- [ ] ランディングページがモバイル対応
+- [ ] UTM パラメータが機能
+- [ ] 予算が正しく設定
+- [ ] ターゲティングが意図したオーディエンスと一致
 
 ---
 
-## Tool Integrations
+## 避けるべきよくある失敗
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key advertising platforms:
+### 戦略
+- コンバージョントラッキングなしで開始する
+- キャンペーンを増やしすぎて予算を分散する
+- アルゴリズム学習時間を十分に与えない
+- 間違った指標を最適化する
 
-| Platform | Best For | MCP | Guide |
+### ターゲティング
+- オーディエンスが狭すぎる/広すぎる
+- 既存顧客を除外しない
+- オーディエンス同士の重複競合
+
+### クリエイティブ
+- 広告セットあたり広告が1本だけ
+- クリエイティブを更新しない（疲労）
+- 広告とランディングページの不一致
+
+### 予算
+- キャンペーン間に薄く広く配りすぎる
+- 大きすぎる予算変更を行う（学習を壊す）
+- 学習段階中にキャンペーンを停止する
+
+---
+
+## タスク固有の質問
+
+1. 現在運用中または開始予定のプラットフォームはどれですか？
+2. 月次広告予算はいくらですか？
+3. 成功コンバージョンの定義は何ですか（そしてその価値は）？
+4. 既存クリエイティブ資産はありますか、それとも新規制作が必要ですか？
+5. 広告の遷移先ランディングページはどこですか？
+6. ピクセル/コンバージョントラッキングは設定済みですか？
+
+---
+
+## ツール連携
+
+実装については [ツールレジストリ](../../tools/REGISTRY.md) を参照。主要広告プラットフォーム:
+
+| プラットフォーム | 適している用途 | MCP | ガイド |
 |----------|----------|:---:|-------|
-| **Google Ads** | Search intent, high-intent traffic | ✓ | [google-ads.md](../../tools/integrations/google-ads.md) |
-| **Meta Ads** | Demand gen, visual products, B2C | - | [meta-ads.md](../../tools/integrations/meta-ads.md) |
-| **LinkedIn Ads** | B2B, job title targeting | - | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
-| **TikTok Ads** | Younger demographics, video | - | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md) |
+| **Google Ads** | 検索意図、高意図トラフィック | ✓ | [google-ads.md](../../tools/integrations/google-ads.md) |
+| **Meta Ads** | 需要創出、視覚訴求型製品、B2C | - | [meta-ads.md](../../tools/integrations/meta-ads.md) |
+| **LinkedIn Ads** | B2B、役職ターゲティング | - | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
+| **TikTok Ads** | 若年層、動画 | - | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md) |
 
-For tracking, see also: [ga4.md](../../tools/integrations/ga4.md), [segment.md](../../tools/integrations/segment.md)
+トラッキング関連はこちらも参照: [ga4.md](../../tools/integrations/ga4.md), [segment.md](../../tools/integrations/segment.md)
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **copywriting**: For landing page copy that converts ad traffic
-- **analytics-tracking**: For proper conversion tracking setup
-- **ab-test-setup**: For landing page testing to improve ROAS
-- **page-cro**: For optimizing post-click conversion rates
+- **copywriting**: 広告流入を転換するランディングページコピー向け
+- **analytics-tracking**: 正しいコンバージョントラッキング設定向け
+- **ab-test-setup**: ROAS 改善のためのランディングページ検証向け
+- **page-cro**: クリック後コンバージョン率の最適化向け

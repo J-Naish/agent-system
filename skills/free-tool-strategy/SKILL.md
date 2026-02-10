@@ -1,177 +1,177 @@
 ---
 name: free-tool-strategy
 version: 1.0.0
-description: When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions "engineering as marketing," "free tool," "marketing tool," "calculator," "generator," "interactive tool," "lead gen tool," "build a tool for leads," or "free resource." This skill bridges engineering and marketing — useful for founders and technical marketers.
+description: ユーザーがマーケティング目的の無料ツールを計画・評価・構築したい場合に使用します。対象には、リード獲得、SEO価値向上、ブランド認知向上が含まれます。また、ユーザーが「エンジニアリングをマーケティングに活用」「無料ツール」「マーケティングツール」「計算ツール」「生成ツール」「インタラクティブツール」「リード獲得ツール」「リード獲得のためのツール構築」「無料リソース」に言及した場合にも使用します。このスキルはエンジニアリングとマーケティングを橋渡しするもので、創業者やテクニカルマーケターに有用です。
 ---
 
-# Free Tool Strategy (Engineering as Marketing)
+# 無料ツール戦略（エンジニアリングをマーケティングに活用）
 
-You are an expert in engineering-as-marketing strategy. Your goal is to help plan and evaluate free tools that generate leads, attract organic traffic, and build brand awareness.
+あなたは、エンジニアリングを活用したマーケティング戦略の専門家です。目標は、リードを生み出し、オーガニックトラフィックを集め、ブランド認知を高める無料ツールの計画と評価を支援することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before designing a tool strategy, understand:
+ツール戦略を設計する前に、以下を把握してください:
 
-1. **Business Context** - What's the core product? Who is the target audience? What problems do they have?
+1. **ビジネス文脈** - コアプロダクトは何か？ ターゲットオーディエンスは誰か？ どんな課題を抱えているか？
 
-2. **Goals** - Lead generation? SEO/traffic? Brand awareness? Product education?
+2. **目的** - リード獲得か？ SEO/トラフィックか？ ブランド認知か？ プロダクト理解促進か？
 
-3. **Resources** - Technical capacity to build? Ongoing maintenance bandwidth? Budget for promotion?
-
----
-
-## Core Principles
-
-### 1. Solve a Real Problem
-- Tool must provide genuine value
-- Solves a problem your audience actually has
-- Useful even without your main product
-
-### 2. Adjacent to Core Product
-- Related to what you sell
-- Natural path from tool to product
-- Educates on problem you solve
-
-### 3. Simple and Focused
-- Does one thing well
-- Low friction to use
-- Immediate value
-
-### 4. Worth the Investment
-- Lead value × expected leads > build cost + maintenance
+3. **リソース** - 構築できる技術力はあるか？ 継続保守の余力はあるか？ プロモーション予算はあるか？
 
 ---
 
-## Tool Types Overview
+## 基本原則
 
-| Type | Examples | Best For |
+### 1. 実際の課題を解決する
+- ツールは本当に価値を提供する必要がある
+- オーディエンスが実際に抱える課題を解決する
+- メインプロダクトがなくても役立つ
+
+### 2. コアプロダクトに隣接している
+- 提供サービスと関連している
+- ツールからプロダクトへの自然な導線がある
+- 自社が解決する課題への理解を促進する
+
+### 3. シンプルで焦点が明確
+- 1つのことを確実に実行する
+- 利用時の摩擦が少ない
+- すぐに価値を得られる
+
+### 4. 投資に見合う
+- リード価値 × 想定リード数 > 構築コスト + 保守コスト
+
+---
+
+## ツールタイプ概要
+
+| 種類 | 例 | 適している用途 |
 |------|----------|----------|
-| Calculators | ROI, savings, pricing estimators | Decisions involving numbers |
-| Generators | Templates, policies, names | Creating something quickly |
-| Analyzers | Website graders, SEO auditors | Evaluating existing work |
-| Testers | Meta tag preview, speed tests | Checking if something works |
-| Libraries | Icon sets, templates, snippets | Reference material |
-| Interactive | Tutorials, playgrounds, quizzes | Learning/understanding |
+| 計算ツール | ROI、節約額、価格見積もり | 数値を伴う意思決定 |
+| 生成ツール | テンプレート、ポリシー、名前 | 何かをすばやく作成する |
+| 分析ツール | サイト評価、SEO監査 | 既存作業の評価 |
+| テストツール | メタタグプレビュー、速度テスト | 動作確認 |
+| ライブラリ | アイコン集、テンプレート、スニペット | 参照資料 |
+| インタラクティブ | チュートリアル、プレイグラウンド、クイズ | 学習/理解 |
 
-**For detailed tool types and examples**: See [references/tool-types.md](references/tool-types.md)
-
----
-
-## Ideation Framework
-
-### Start with Pain Points
-
-1. **What problems does your audience Google?** - Search query research, common questions
-
-2. **What manual processes are tedious?** - Spreadsheet tasks, repetitive calculations
-
-3. **What do they need before buying your product?** - Assessments, planning, comparisons
-
-4. **What information do they wish they had?** - Data they can't easily access, benchmarks
-
-### Validate the Idea
-
-- **Search demand**: Is there search volume? How competitive?
-- **Uniqueness**: What exists? How can you be 10x better?
-- **Lead quality**: Does this audience match buyers?
-- **Build feasibility**: How complex? Can you scope an MVP?
+**詳細なツールタイプと例**: [references/tool-types.md](references/tool-types.md) を参照
 
 ---
 
-## Lead Capture Strategy
+## アイデア創出フレームワーク
 
-### Gating Options
+### 課題から始める
 
-| Approach | Pros | Cons |
+1. **オーディエンスはどんな問題を検索しているか？** - 検索クエリ調査、よくある質問
+
+2. **どんな手作業プロセスが面倒か？** - スプレッドシート作業、繰り返し計算
+
+3. **プロダクト購入前に何が必要か？** - 評価、計画、比較
+
+4. **どんな情報を欲しがっているか？** - 簡単には取得できないデータ、ベンチマーク
+
+### アイデアを検証する
+
+- **検索需要**: 検索ボリュームはあるか？ 競合は強いか？
+- **独自性**: 既存のものは何か？ どうすれば10倍良くできるか？
+- **リード品質**: このオーディエンスは購入者層と一致するか？
+- **構築実現性**: どれだけ複雑か？ MVPにスコープできるか？
+
+---
+
+## リード獲得戦略
+
+### ゲート方式の選択肢
+
+| 方式 | 長所 | 短所 |
 |----------|------|------|
-| Fully gated | Maximum capture | Lower usage |
-| Partially gated | Balance of both | Common pattern |
-| Ungated + optional | Maximum reach | Lower capture |
-| Ungated entirely | Pure SEO/brand | No direct leads |
+| 完全ゲート | 最大限の獲得 | 利用率が下がる |
+| 部分ゲート | 両者のバランス | 一般的なパターン |
+| 非ゲート + 任意入力 | 最大限の到達 | 獲得率が下がる |
+| 完全非ゲート | 純粋なSEO/ブランド施策 | 直接リードなし |
 
-### Lead Capture Best Practices
-- Value exchange clear: "Get your full report"
-- Minimal friction: Email only
-- Show preview of what they'll get
-- Optional: Segment by asking one qualifying question
-
----
-
-## SEO Considerations
-
-### Keyword Strategy
-**Tool landing page**: "[thing] calculator", "[thing] generator", "free [tool type]"
-
-**Supporting content**: "How to [use case]", "What is [concept]"
-
-### Link Building
-Free tools attract links because:
-- Genuinely useful (people reference them)
-- Unique (can't link to just any page)
-- Shareable (social amplification)
+### リード獲得のベストプラクティス
+- 価値交換を明確にする: 「完全版レポートを受け取る」
+- 摩擦を最小化する: メールアドレスのみ
+- 得られる内容のプレビューを見せる
+- 任意: 適格性確認の質問を1つ入れてセグメント化する
 
 ---
 
-## Build vs. Buy
+## SEOの考慮点
 
-### Build Custom
-When: Unique concept, core to brand, high strategic value, have dev capacity
+### キーワード戦略
+**ツールのランディングページ**: 「[対象] 計算ツール」「[対象] 生成ツール」「無料 [ツール種別]」
 
-### Use No-Code Tools
-Options: Outgrow, Involve.me, Typeform, Tally, Bubble, Webflow
-When: Speed to market, limited dev resources, testing concept
+**補助コンテンツ**: 「[ユースケース] のやり方」「[概念] とは」
 
-### Embed Existing
-When: Something good exists, white-label available, not core differentiator
-
----
-
-## MVP Scope
-
-### Minimum Viable Tool
-1. Core functionality only—does the one thing, works reliably
-2. Essential UX—clear input, obvious output, mobile works
-3. Basic lead capture—email collection, leads go somewhere useful
-
-### What to Skip Initially
-Account creation, saving results, advanced features, perfect design, every edge case
+### 被リンク獲得
+無料ツールがリンクを集める理由:
+- 本当に有用である（参照されやすい）
+- 独自性がある（どのページでも代替できない）
+- 共有しやすい（SNSで拡散されやすい）
 
 ---
 
-## Evaluation Scorecard
+## 自社開発か導入か
 
-Rate each factor 1-5:
+### カスタム開発
+適する場面: 独自コンセプト、ブランドの中核、高い戦略価値、開発体制がある
 
-| Factor | Score |
+### ノーコードツールを使う
+選択肢: Outgrow, Involve.me, Typeform, Tally, Bubble, Webflow
+適する場面: 早期投入を重視、開発リソースが限られる、コンセプト検証
+
+### 既存ツールを埋め込む
+適する場面: すでに良いものがある、ホワイトラベルが利用可能、中核差別化要素ではない
+
+---
+
+## MVPスコープ
+
+### 最小実用ツール
+1. コア機能のみ - 1つの目的を確実に実行し、安定して動作する
+2. 必須UX - 入力が明確、出力が直感的、モバイルで使える
+3. 基本的なリード獲得 - メール収集と、リードが有効活用される導線
+
+### 初期に省くもの
+アカウント作成、結果保存、高度機能、完璧なデザイン、あらゆるエッジケース対応
+
+---
+
+## 評価スコアカード
+
+各項目を1-5で評価:
+
+| 項目 | スコア |
 |--------|-------|
-| Search demand exists | ___ |
-| Audience match to buyers | ___ |
-| Uniqueness vs. existing | ___ |
-| Natural path to product | ___ |
-| Build feasibility | ___ |
-| Maintenance burden (inverse) | ___ |
-| Link-building potential | ___ |
-| Share-worthiness | ___ |
+| 検索需要が存在する | ___ |
+| 購入者層との一致度 | ___ |
+| 既存に対する独自性 | ___ |
+| プロダクトへの自然な導線 | ___ |
+| 構築実現性 | ___ |
+| 保守負荷（逆評価） | ___ |
+| 被リンク獲得ポテンシャル | ___ |
+| 共有されやすさ | ___ |
 
-**25+**: Strong candidate | **15-24**: Promising | **<15**: Reconsider
-
----
-
-## Task-Specific Questions
-
-1. What existing tools does your audience use for workarounds?
-2. How do you currently generate leads?
-3. What technical resources are available?
-4. What's the timeline and budget?
+**25点以上**: 有力候補 | **15-24点**: 有望 | **15点未満**: 再検討
 
 ---
 
-## Related Skills
+## タスク固有の質問
 
-- **page-cro**: For optimizing the tool's landing page
-- **seo-audit**: For SEO-optimizing the tool
-- **analytics-tracking**: For measuring tool usage
-- **email-sequence**: For nurturing leads from the tool
+1. オーディエンスは現在、どんな既存ツールを代替手段として使っていますか？
+2. 現在のリード獲得方法は何ですか？
+3. 利用可能な技術リソースは何ですか？
+4. 期限と予算はどの程度ですか？
+
+---
+
+## 関連スキル
+
+- **page-cro**: ツールのランディングページ最適化向け
+- **seo-audit**: ツールのSEO最適化向け
+- **analytics-tracking**: ツール利用計測向け
+- **email-sequence**: ツール由来リードの育成向け

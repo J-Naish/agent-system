@@ -1,293 +1,293 @@
-# The 12 Programmatic SEO Playbooks
+# 12のプログラマティックSEOプレイブック
 
-Beyond mixing and matching data point permutations, these are the proven playbooks for programmatic SEO.
+単なるデータ項目の組み合わせ生成を超えて、実績のあるプログラマティックSEOの定番パターンです。
 
-## 1. Templates
+## 1. テンプレート
 
-**Pattern**: "[Type] template" or "free [type] template"
-**Example searches**: "resume template", "invoice template", "pitch deck template"
+**パターン**: "[種類] テンプレート" または "無料 [種類] テンプレート"
+**検索例**: "履歴書 テンプレート", "請求書 テンプレート", "提案資料 テンプレート"
 
-**What it is**: Downloadable or interactive templates users can use directly.
+**概要**: ユーザーが直接使える、ダウンロード可能または操作可能なテンプレートを提供する。
 
-**Why it works**:
-- High intent—people need it now
-- Shareable/linkable assets
-- Natural for product-led companies
+**機能する理由**:
+- 意図が高い（今すぐ必要）
+- 共有/被リンクされやすい資産
+- プロダクト主導企業と相性が良い
 
-**Value requirements**:
-- Actually usable templates (not just previews)
-- Multiple variations per type
-- Quality comparable to paid options
-- Easy download/use flow
+**価値要件**:
+- 実際に使えるテンプレート（プレビューだけではない）
+- 種類ごとに複数バリエーション
+- 有料オプションに匹敵する品質
+- ダウンロード/利用導線が簡単
 
-**URL structure**: `/templates/[type]/` or `/templates/[category]/[type]/`
-
----
-
-## 2. Curation
-
-**Pattern**: "best [category]" or "top [number] [things]"
-**Example searches**: "best website builders", "top 10 crm software", "best free design tools"
-
-**What it is**: Curated lists ranking or recommending options in a category.
-
-**Why it works**:
-- Comparison shoppers searching for guidance
-- High commercial intent
-- Evergreen with updates
-
-**Value requirements**:
-- Genuine evaluation criteria
-- Real testing or expertise
-- Regular updates (date visible)
-- Not just affiliate-driven rankings
-
-**URL structure**: `/best/[category]/` or `/[category]/best/`
+**URL構造**: `/テンプレート/[種類]/` または `/テンプレート/[カテゴリ]/[種類]/`
 
 ---
 
-## 3. Conversions
+## 2. キュレーション
 
-**Pattern**: "[X] to [Y]" or "[amount] [unit] in [unit]"
-**Example searches**: "$10 USD to GBP", "100 kg to lbs", "pdf to word"
+**パターン**: "おすすめ [カテゴリ]" または "上位 [数] [対象]"
+**検索例**: "おすすめ ウェブサイト作成ツール", "上位 10件 顧客管理ソフト", "おすすめ 無料 デザインツール"
 
-**What it is**: Tools or pages that convert between formats, units, or currencies.
+**概要**: カテゴリ内の選択肢を順位付け・推奨する一覧ページ。
 
-**Why it works**:
-- Instant utility
-- Extremely high search volume
-- Repeat usage potential
+**機能する理由**:
+- 比較検討層がガイドを探している
+- 商用意図が高い
+- 更新で長期運用しやすい
 
-**Value requirements**:
-- Accurate, real-time data
-- Fast, functional tool
-- Related conversions suggested
-- Mobile-friendly interface
+**価値要件**:
+- 実質的な評価基準
+- 実テストまたは専門知見
+- 定期更新（更新日を明示）
+- アフィリエイト偏重の羅列にしない
 
-**URL structure**: `/convert/[from]-to-[to]/` or `/[from]-to-[to]-converter/`
-
----
-
-## 4. Comparisons
-
-**Pattern**: "[X] vs [Y]" or "[X] alternative"
-**Example searches**: "webflow vs wordpress", "notion vs coda", "figma alternatives"
-
-**What it is**: Head-to-head comparisons between products, tools, or options.
-
-**Why it works**:
-- High purchase intent
-- Clear search pattern
-- Scales with number of competitors
-
-**Value requirements**:
-- Honest, balanced analysis
-- Actual feature comparison data
-- Clear recommendation by use case
-- Updated when products change
-
-**URL structure**: `/compare/[x]-vs-[y]/` or `/[x]-vs-[y]/`
-
-*See also: competitor-alternatives skill for detailed frameworks*
+**URL構造**: `/おすすめ/[カテゴリ]/` または `/[カテゴリ]/おすすめ/`
 
 ---
 
-## 5. Examples
+## 3. 変換
 
-**Pattern**: "[type] examples" or "[category] inspiration"
-**Example searches**: "saas landing page examples", "email subject line examples", "portfolio website examples"
+**パターン**: "[X] から [Y] へ 変換" または "[量] [単位] を [単位] に 変換"
+**検索例**: "10米ドル を 英ポンド に 変換", "100キログラム を ポンド に 変換", "PDF を Word に 変換"
 
-**What it is**: Galleries or collections of real-world examples for inspiration.
+**概要**: 形式、単位、通貨を変換するツールまたはページ。
 
-**Why it works**:
-- Research phase traffic
-- Highly shareable
-- Natural for design/creative tools
+**機能する理由**:
+- 即時の実用価値
+- 検索ボリュームが非常に大きい
+- 繰り返し利用されやすい
 
-**Value requirements**:
-- Real, high-quality examples
-- Screenshots or embeds
-- Categorization/filtering
-- Analysis of why they work
+**価値要件**:
+- 正確でリアルタイムなデータ
+- 高速で機能するツール
+- 関連変換の提案
+- モバイル対応インターフェース
 
-**URL structure**: `/examples/[type]/` or `/[type]-examples/`
-
----
-
-## 6. Locations
-
-**Pattern**: "[service/thing] in [location]"
-**Example searches**: "coworking spaces in san diego", "dentists in austin", "best restaurants in brooklyn"
-
-**What it is**: Location-specific pages for services, businesses, or information.
-
-**Why it works**:
-- Local intent is massive
-- Scales with geography
-- Natural for marketplaces/directories
-
-**Value requirements**:
-- Actual local data (not just city name swapped)
-- Local providers/options listed
-- Location-specific insights (pricing, regulations)
-- Map integration helpful
-
-**URL structure**: `/[service]/[city]/` or `/locations/[city]/[service]/`
+**URL構造**: `/変換/[元]-から-[先]/` または `/[元]-から-[先]-変換/`
 
 ---
 
-## 7. Personas
+## 4. 比較
 
-**Pattern**: "[product] for [audience]" or "[solution] for [role/industry]"
-**Example searches**: "payroll software for agencies", "crm for real estate", "project management for freelancers"
+**パターン**: "[X] と [Y] 比較" または "[X] の代替"
+**検索例**: "Webflow と WordPress 比較", "Notion と Coda 比較", "Figma の代替"
 
-**What it is**: Tailored landing pages addressing specific audience segments.
+**概要**: 製品、ツール、選択肢を1対1で比較するページ。
 
-**Why it works**:
-- Speaks directly to searcher's context
-- Higher conversion than generic pages
-- Scales with personas
+**機能する理由**:
+- 購入意図が高い
+- 検索パターンが明確
+- 競合数に応じて拡張しやすい
 
-**Value requirements**:
-- Genuine persona-specific content
-- Relevant features highlighted
-- Testimonials from that segment
-- Use cases specific to audience
+**価値要件**:
+- 誠実でバランスの取れた分析
+- 実データに基づく機能比較
+- ユースケース別の明確な推奨
+- 製品変更に合わせた更新
 
-**URL structure**: `/for/[persona]/` or `/solutions/[industry]/`
+**URL構造**: `/比較/[x]-と-[y]/` または `/[x]-と-[y]-比較/`
 
----
-
-## 8. Integrations
-
-**Pattern**: "[your product] [other product] integration" or "[product] + [product]"
-**Example searches**: "slack asana integration", "zapier airtable", "hubspot salesforce sync"
-
-**What it is**: Pages explaining how your product works with other tools.
-
-**Why it works**:
-- Captures users of other products
-- High intent (they want the solution)
-- Scales with integration ecosystem
-
-**Value requirements**:
-- Real integration details
-- Setup instructions
-- Use cases for the combination
-- Working integration (not vaporware)
-
-**URL structure**: `/integrations/[product]/` or `/connect/[product]/`
+*詳細フレームは competitor-alternatives スキルも参照*
 
 ---
 
-## 9. Glossary
+## 5. 事例
 
-**Pattern**: "what is [term]" or "[term] definition" or "[term] meaning"
-**Example searches**: "what is pSEO", "api definition", "what does crm stand for"
+**パターン**: "[種類] 事例" または "[カテゴリ] 参考例"
+**検索例**: "SaaS ランディングページ 事例", "メール件名 事例", "ポートフォリオサイト 事例"
 
-**What it is**: Educational definitions of industry terms and concepts.
+**概要**: 参考になる実例を集めたギャラリーやコレクション。
 
-**Why it works**:
-- Top-of-funnel awareness
-- Establishes expertise
-- Natural internal linking opportunities
+**機能する理由**:
+- 調査フェーズの流入を取れる
+- 共有されやすい
+- デザイン/クリエイティブ系ツールと相性が良い
 
-**Value requirements**:
-- Clear, accurate definitions
-- Examples and context
-- Related terms linked
-- More depth than a dictionary
+**価値要件**:
+- 実在する高品質な事例
+- スクリーンショットや埋め込み
+- 分類/フィルタリング
+- うまく機能する理由の解説
 
-**URL structure**: `/glossary/[term]/` or `/learn/[term]/`
-
----
-
-## 10. Translations
-
-**Pattern**: Same content in multiple languages
-**Example searches**: "qué es pSEO", "was ist SEO", "マーケティングとは"
-
-**What it is**: Your content translated and localized for other language markets.
-
-**Why it works**:
-- Opens entirely new markets
-- Lower competition in many languages
-- Multiplies your content reach
-
-**Value requirements**:
-- Quality translation (not just Google Translate)
-- Cultural localization
-- hreflang tags properly implemented
-- Native speaker review
-
-**URL structure**: `/[lang]/[page]/` or `yoursite.com/es/`, `/de/`, etc.
+**URL構造**: `/事例/[種類]/` または `/[種類]-事例/`
 
 ---
 
-## 11. Directory
+## 6. ロケーション
 
-**Pattern**: "[category] tools" or "[type] software" or "[category] companies"
-**Example searches**: "ai copywriting tools", "email marketing software", "crm companies"
+**パターン**: "[地域] [サービス/対象]"
+**検索例**: "サンディエゴ コワーキングスペース", "オースティン 歯科", "ブルックリン おすすめ レストラン"
 
-**What it is**: Comprehensive directories listing options in a category.
+**概要**: サービス、店舗、情報を地域別にまとめるページ。
 
-**Why it works**:
-- Research phase capture
-- Link building magnet
-- Natural for aggregators/reviewers
+**機能する理由**:
+- ローカル意図の需要が大きい
+- 地理軸で拡張しやすい
+- マーケットプレイス/ディレクトリと自然に合う
 
-**Value requirements**:
-- Comprehensive coverage
-- Useful filtering/sorting
-- Details per listing (not just names)
-- Regular updates
+**価値要件**:
+- 実際の地域データ（都市名差し替えだけにしない）
+- 地域内の提供者/選択肢を掲載
+- 地域固有の示唆（価格、規制など）
+- 地図連携が有効
 
-**URL structure**: `/directory/[category]/` or `/[category]-directory/`
-
----
-
-## 12. Profiles
-
-**Pattern**: "[person/company name]" or "[entity] + [attribute]"
-**Example searches**: "stripe ceo", "airbnb founding story", "elon musk companies"
-
-**What it is**: Profile pages about notable people, companies, or entities.
-
-**Why it works**:
-- Informational intent traffic
-- Builds topical authority
-- Natural for B2B, news, research
-
-**Value requirements**:
-- Accurate, sourced information
-- Regularly updated
-- Unique insights or aggregation
-- Not just Wikipedia rehash
-
-**URL structure**: `/people/[name]/` or `/companies/[name]/`
+**URL構造**: `/[サービス]/[地域]/` または `/地域/[地域]/[サービス]/`
 
 ---
 
-## Choosing Your Playbook
+## 7. ペルソナ
 
-### Match to Your Assets
+**パターン**: "[対象] 向け [製品]" または "[役割/業界] 向け [解決策]"
+**検索例**: "代理店向け 給与計算ソフト", "不動産向け CRM", "フリーランス向け プロジェクト管理"
 
-| If you have... | Consider... |
+**概要**: 特定オーディエンス向けに最適化したランディングページ。
+
+**機能する理由**:
+- 検索者の文脈に直接刺さる
+- 汎用ページよりコンバージョンしやすい
+- ペルソナ数に応じて拡張可能
+
+**価値要件**:
+- 本当にペルソナ特化した内容
+- 関連機能の強調
+- そのセグメントの推薦コメント
+- 対象向けに具体化したユースケース
+
+**URL構造**: `/向け/[対象]/` または `/解決策/[業界]/`
+
+---
+
+## 8. 連携
+
+**パターン**: "[自社製品] [他社製品] 連携" または "[製品] + [製品]"
+**検索例**: "Slack Asana 連携", "Zapier Airtable 連携", "HubSpot Salesforce 同期"
+
+**概要**: 自社製品と他ツールの連携方法を説明するページ。
+
+**機能する理由**:
+- 他製品ユーザーを取り込める
+- 意図が高い（解決策を探している）
+- 連携エコシステムに合わせて拡張可能
+
+**価値要件**:
+- 実際の連携仕様を説明
+- セットアップ手順を提供
+- 組み合わせのユースケースを示す
+- 動作する連携を提供（見せかけにしない）
+
+**URL構造**: `/連携/[製品]/` または `/接続/[製品]/`
+
+---
+
+## 9. 用語集
+
+**パターン**: "[用語] とは" または "[用語] 定義" または "[用語] 意味"
+**検索例**: "pSEO とは", "API 定義", "CRM とは何か"
+
+**概要**: 業界用語や概念を解説する教育ページ。
+
+**機能する理由**:
+- ファネル上流の認知流入を獲得
+- 専門性を示せる
+- 内部リンク機会を自然に作れる
+
+**価値要件**:
+- 明確で正確な定義
+- 例と文脈の提示
+- 関連用語へのリンク
+- 辞書以上の深さ
+
+**URL構造**: `/用語集/[用語]/` または `/学ぶ/[用語]/`
+
+---
+
+## 10. 翻訳
+
+**パターン**: 同じ内容を複数言語で展開
+**検索例**: "pSEO とは", "SEO とは", "マーケティング とは"
+
+**概要**: 他言語市場向けに翻訳・ローカライズしたコンテンツ。
+
+**機能する理由**:
+- 新しい市場を開拓できる
+- 言語によって競争が緩い領域がある
+- 既存コンテンツ資産を拡張できる
+
+**価値要件**:
+- 高品質翻訳（機械翻訳の貼り付けだけにしない）
+- 文化的ローカライズ
+- hreflang タグを正しく実装
+- ネイティブ話者レビュー
+
+**URL構造**: `/[言語]/[ページ]/` または `例サイト.jp/スペイン語/`, `/ドイツ語/` など
+
+---
+
+## 11. ディレクトリ
+
+**パターン**: "[カテゴリ] ツール" または "[種類] ソフトウェア" または "[カテゴリ] 企業"
+**検索例**: "AI コピーライティング ツール", "メールマーケティング ソフトウェア", "CRM 企業"
+
+**概要**: カテゴリ内の選択肢を網羅するディレクトリページ。
+
+**機能する理由**:
+- 調査フェーズ流入を獲得
+- 被リンクを集めやすい
+- アグリゲーター/レビュー型サイトと相性が良い
+
+**価値要件**:
+- 網羅性
+- 有用な絞り込み/並べ替え
+- 各掲載先の詳細情報（名前だけにしない）
+- 定期更新
+
+**URL構造**: `/ディレクトリ/[カテゴリ]/` または `/[カテゴリ]-ディレクトリ/`
+
+---
+
+## 12. プロファイル
+
+**パターン**: "[人物名/企業名]" または "[固有名詞] + [属性]"
+**検索例**: "Stripe CEO", "Airbnb 創業ストーリー", "イーロン・マスク 企業"
+
+**概要**: 著名人物、企業、組織に関するプロフィールページ。
+
+**機能する理由**:
+- 情報探索意図の流入を獲得
+- トピック権威性を構築
+- B2B、ニュース、リサーチ領域で自然に機能
+
+**価値要件**:
+- 正確で出典付きの情報
+- 定期更新
+- 独自の洞察または集約価値
+- ウィキペディアの焼き直しにしない
+
+**URL構造**: `/人物/[名前]/` または `/企業/[名前]/`
+
+---
+
+## プレイブックの選び方
+
+### 保有資産に合わせる
+
+| 次の資産があるなら... | 検討候補 |
 |----------------|-------------|
-| Proprietary data | Stats, Directories, Profiles |
-| Product with integrations | Integrations |
-| Design/creative product | Templates, Examples |
-| Multi-segment audience | Personas |
-| Local presence | Locations |
-| Tool or utility product | Conversions |
-| Content/expertise | Glossary, Curation |
-| International potential | Translations |
-| Competitor landscape | Comparisons |
+| 独自データ | 統計、ディレクトリ、プロファイル |
+| 連携のあるプロダクト | 連携ページ |
+| デザイン/クリエイティブ製品 | テンプレート、事例 |
+| 複数セグメント対象 | ペルソナページ |
+| ローカル展開 | ロケーションページ |
+| ツール/ユーティリティ製品 | 変換ページ |
+| コンテンツ/専門性 | 用語集、キュレーション |
+| 海外展開ポテンシャル | 翻訳ページ |
+| 競合比較需要 | 比較ページ |
 
-### Combine Playbooks
+### プレイブックを組み合わせる
 
-You can layer multiple playbooks:
-- **Locations + Personas**: "Marketing agencies for startups in Austin"
-- **Curation + Locations**: "Best coworking spaces in San Diego"
-- **Integrations + Personas**: "Slack for sales teams"
-- **Glossary + Translations**: Multi-language educational content
+複数プレイブックを重ねて使えます:
+- **ロケーション + ペルソナ**: 「オースティンのスタートアップ向けマーケティング代理店」
+- **キュレーション + ロケーション**: 「サンディエゴのベストコワーキングスペース」
+- **連携 + ペルソナ**: 「営業チーム向け Slack 活用」
+- **用語集 + 翻訳**: 多言語教育コンテンツ

@@ -1,306 +1,306 @@
 ---
 name: email-sequence
 version: 1.0.0
-description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," or "lifecycle emails." For in-app onboarding, see onboarding-cro.
+description: ユーザーがメールシーケンス、ドリップキャンペーン、自動メールフロー、ライフサイクルメールプログラムを作成・最適化したいときに使用します。ユーザーが「メールシーケンス」「ドリップキャンペーン」「育成シーケンス」「オンボーディングメール」「ウェルカムシーケンス」「再エンゲージメントメール」「メール自動化」「ライフサイクルメール」に言及した場合にも使用します。アプリ内オンボーディングは onboarding-cro を参照してください。
 ---
 
-# Email Sequence Design
+# メールシーケンス設計
 
-You are an expert in email marketing and automation. Your goal is to create email sequences that nurture relationships, drive action, and move people toward conversion.
+あなたはメールマーケティングと自動化の専門家です。目標は、関係構築を進め、行動を促し、コンバージョンへ導くメールシーケンスを作ることです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Before creating a sequence, understand:
+シーケンス作成前に、次を把握する:
 
-1. **Sequence Type**
-   - Welcome/onboarding sequence
-   - Lead nurture sequence
-   - Re-engagement sequence
-   - Post-purchase sequence
-   - Event-based sequence
-   - Educational sequence
-   - Sales sequence
+1. **シーケンスタイプ**
+   - ウェルカム/オンボーディング
+   - リード育成
+   - 再エンゲージメント
+   - 購入後フォロー
+   - イベント起点
+   - 教育コンテンツ
+   - セールス
 
-2. **Audience Context**
-   - Who are they?
-   - What triggered them into this sequence?
-   - What do they already know/believe?
-   - What's their current relationship with you?
+2. **オーディエンス文脈**
+   - 彼らは誰か？
+   - 何がきっかけでこのシーケンスに入ったか？
+   - すでに何を知っていて、何を信じているか？
+   - 現在の関係性はどの段階か？
 
-3. **Goals**
-   - Primary conversion goal
-   - Relationship-building goals
-   - Segmentation goals
-   - What defines success?
-
----
-
-## Core Principles
-
-### 1. One Email, One Job
-- Each email has one primary purpose
-- One main CTA per email
-- Don't try to do everything
-
-### 2. Value Before Ask
-- Lead with usefulness
-- Build trust through content
-- Earn the right to sell
-
-### 3. Relevance Over Volume
-- Fewer, better emails win
-- Segment for relevance
-- Quality > frequency
-
-### 4. Clear Path Forward
-- Every email moves them somewhere
-- Links should do something useful
-- Make next steps obvious
+3. **目標**
+   - 主要コンバージョン目標
+   - 関係構築目標
+   - セグメンテーション目標
+   - 成功をどう定義するか？
 
 ---
 
-## Email Sequence Strategy
+## コア原則
 
-### Sequence Length
-- Welcome: 3-7 emails
-- Lead nurture: 5-10 emails
-- Onboarding: 5-10 emails
-- Re-engagement: 3-5 emails
+### 1. 1通1目的
+- 各メールは主要目的を1つに絞る
+- 1通につき主要な行動喚起は1つ
+- すべてを1通でやろうとしない
 
-Depends on:
-- Sales cycle length
-- Product complexity
-- Relationship stage
+### 2. 依頼より先に価値
+- まず有益さを提供する
+- コンテンツで信頼を築く
+- 売る権利を先に獲得する
 
-### Timing/Delays
-- Welcome email: Immediately
-- Early sequence: 1-2 days apart
-- Nurture: 2-4 days apart
-- Long-term: Weekly or bi-weekly
+### 3. 量より関連性
+- 少なくても質の高いメールが勝つ
+- 関連性のためにセグメントする
+- 質 > 頻度
 
-Consider:
-- B2B: Avoid weekends
-- B2C: Test weekends
-- Time zones: Send at local time
-
-### Subject Line Strategy
-- Clear > Clever
-- Specific > Vague
-- Benefit or curiosity-driven
-- 40-60 characters ideal
-- Test emoji (they're polarizing)
-
-**Patterns that work:**
-- Question: "Still struggling with X?"
-- How-to: "How to [achieve outcome] in [timeframe]"
-- Number: "3 ways to [benefit]"
-- Direct: "[First name], your [thing] is ready"
-- Story tease: "The mistake I made with [topic]"
-
-### Preview Text
-- Extends the subject line
-- ~90-140 characters
-- Don't repeat subject line
-- Complete the thought or add intrigue
+### 4. 次の道筋を明確に
+- すべてのメールで次の地点へ進ませる
+- リンクは実際に役立つ行動へつなぐ
+- 次のステップを明白にする
 
 ---
 
-## Sequence Types Overview
+## メールシーケンス戦略
 
-### Welcome Sequence (Post-Signup)
-**Length**: 5-7 emails over 12-14 days
-**Goal**: Activate, build trust, convert
+### シーケンス長
+- ウェルカム: 3〜7 通
+- リード育成: 5〜10 通
+- オンボーディング: 5〜10 通
+- 再エンゲージメント: 3〜5 通
 
-Key emails:
-1. Welcome + deliver promised value (immediate)
-2. Quick win (day 1-2)
-3. Story/Why (day 3-4)
-4. Social proof (day 5-6)
-5. Overcome objection (day 7-8)
-6. Core feature highlight (day 9-11)
-7. Conversion (day 12-14)
+次に依存:
+- セールスサイクルの長さ
+- 製品の複雑性
+- 関係性の段階
 
-### Lead Nurture Sequence (Pre-Sale)
-**Length**: 6-8 emails over 2-3 weeks
-**Goal**: Build trust, demonstrate expertise, convert
+### 配信間隔
+- ウェルカムメール: 即時
+- 初期シーケンス: 1〜2 日間隔
+- 育成: 2〜4 日間隔
+- 長期: 週次または隔週
 
-Key emails:
-1. Deliver lead magnet + intro (immediate)
-2. Expand on topic (day 2-3)
-3. Problem deep-dive (day 4-5)
-4. Solution framework (day 6-8)
-5. Case study (day 9-11)
-6. Differentiation (day 12-14)
-7. Objection handler (day 15-18)
-8. Direct offer (day 19-21)
+考慮事項:
+- B2B: 週末を避ける
+- B2C: 週末配信もテスト
+- タイムゾーン: ローカル時間で送る
 
-### Re-Engagement Sequence
-**Length**: 3-4 emails over 2 weeks
-**Trigger**: 30-60 days of inactivity
-**Goal**: Win back or clean list
+### 件名戦略
+- 気の利いた表現より明確さ
+- 曖昧さより具体性
+- 便益訴求または好奇心訴求
+- 理想文字数は 40〜60 文字
+- 絵文字はテストする（好みが分かれる）
 
-Key emails:
-1. Check-in (genuine concern)
-2. Value reminder (what's new)
-3. Incentive (special offer)
-4. Last chance (stay or unsubscribe)
+**機能しやすい型:**
+- 質問: 「まだ X で悩んでいますか？」
+- ハウツー: 「[期間] で [成果] を達成する方法」
+- 数字: 「[便益] のための 3 つの方法」
+- 直接訴求: 「[名] さん、あなたの [対象] が準備できました」
+- ストーリー予告: 「[テーマ] で私が犯した失敗」
 
-### Onboarding Sequence (Product Users)
-**Length**: 5-7 emails over 14 days
-**Goal**: Activate, drive to aha moment, upgrade
-**Note**: Coordinate with in-app onboarding—email supports, doesn't duplicate
-
-Key emails:
-1. Welcome + first step (immediate)
-2. Getting started help (day 1)
-3. Feature highlight (day 2-3)
-4. Success story (day 4-5)
-5. Check-in (day 7)
-6. Advanced tip (day 10-12)
-7. Upgrade/expand (day 14+)
-
-**For detailed templates**: See [references/sequence-templates.md](references/sequence-templates.md)
+### プレビューテキスト
+- 件名を補完する
+- 約 90〜140 文字
+- 件名を繰り返さない
+- 思考を完結させるか、興味を追加する
 
 ---
 
-## Email Types by Category
+## シーケンスタイプ概要
 
-### Onboarding Emails
-- New users series
-- New customers series
-- Key onboarding step reminders
-- New user invites
+### ウェルカムシーケンス（登録直後）
+**長さ**: 12〜14 日で 5〜7 通
+**目標**: 活性化、信頼構築、転換
 
-### Retention Emails
-- Upgrade to paid
-- Upgrade to higher plan
-- Ask for review
-- Proactive support offers
-- Product usage reports
-- NPS survey
-- Referral program
+主要メール:
+1. ウェルカム + 約束した価値の提供（即時）
+2. クイックウィン（1〜2 日目）
+3. ストーリー/なぜ（3〜4 日目）
+4. 社会的証明（5〜6 日目）
+5. 異論解消（7〜8 日目）
+6. コア機能の訴求（9〜11 日目）
+7. コンバージョン（12〜14 日目）
 
-### Billing Emails
-- Switch to annual
-- Failed payment recovery
-- Cancellation survey
-- Upcoming renewal reminders
+### リード育成シーケンス（購買前）
+**長さ**: 2〜3 週間で 6〜8 通
+**目標**: 信頼構築、専門性提示、転換
 
-### Usage Emails
-- Daily/weekly/monthly summaries
-- Key event notifications
-- Milestone celebrations
+主要メール:
+1. リードマグネット配布 + 導入（即時）
+2. トピック深掘り（2〜3 日目）
+3. 課題の深掘り（4〜5 日目）
+4. 解決フレームワーク（6〜8 日目）
+5. ケーススタディ（9〜11 日目）
+6. 差別化（12〜14 日目）
+7. 異論対応（15〜18 日目）
+8. 直接オファー（19〜21 日目）
 
-### Win-Back Emails
-- Expired trials
-- Cancelled customers
+### 再エンゲージメントシーケンス
+**長さ**: 2 週間で 3〜4 通
+**トリガー**: 30〜60 日間の非アクティブ
+**目標**: 呼び戻しまたはリスト整理
 
-### Campaign Emails
-- Monthly roundup / newsletter
-- Seasonal promotions
-- Product updates
-- Industry news roundup
-- Pricing updates
+主要メール:
+1. 近況確認（純粋な気遣い）
+2. 価値再提示（新しい価値）
+3. インセンティブ（特別オファー）
+4. 最終確認（継続購読か解除か）
 
-**For detailed email type reference**: See [references/email-types.md](references/email-types.md)
+### オンボーディングシーケンス（プロダクトユーザー）
+**長さ**: 14 日で 5〜7 通
+**目標**: 活性化、価値実感ポイント到達、アップグレード
+**注記**: アプリ内オンボーディングと連動する。メールは補完であり重複しない。
 
----
+主要メール:
+1. ウェルカム + 最初の1ステップ（即時）
+2. 開始支援（1 日目）
+3. 機能ハイライト（2〜3 日目）
+4. 成功事例（4〜5 日目）
+5. チェックイン（7 日目）
+6. 上級ヒント（10〜12 日目）
+7. アップグレード/拡張（14 日目以降）
 
-## Email Copy Guidelines
-
-### Structure
-1. **Hook**: First line grabs attention
-2. **Context**: Why this matters to them
-3. **Value**: The useful content
-4. **CTA**: What to do next
-5. **Sign-off**: Human, warm close
-
-### Formatting
-- Short paragraphs (1-3 sentences)
-- White space between sections
-- Bullet points for scanability
-- Bold for emphasis (sparingly)
-- Mobile-first (most read on phone)
-
-### Tone
-- Conversational, not formal
-- First-person (I/we) and second-person (you)
-- Active voice
-- Read it out loud—does it sound human?
-
-### Length
-- 50-125 words for transactional
-- 150-300 words for educational
-- 300-500 words for story-driven
-
-### CTA Guidelines
-- Buttons for primary actions
-- Links for secondary actions
-- One clear primary CTA per email
-- Button text: Action + outcome
-
-**For detailed copy, personalization, and testing guidelines**: See [references/copy-guidelines.md](references/copy-guidelines.md)
+**詳細テンプレート**: [references/sequence-templates.md](references/sequence-templates.md) を参照
 
 ---
 
-## Output Format
+## カテゴリ別メールタイプ
 
-### Sequence Overview
+### オンボーディングメール
+- 新規ユーザー向けシリーズ
+- 新規顧客向けシリーズ
+- 重要オンボーディングステップのリマインド
+- 新規ユーザー招待
+
+### 継続利用メール
+- 有料プランへのアップグレード
+- 上位プランへのアップグレード
+- レビュー依頼
+- 先回りサポート提案
+- プロダクト利用レポート
+- 顧客推奨度（NPS）調査
+- 紹介プログラム
+
+### 請求関連メール
+- 年額プランへの切り替え
+- 支払い失敗の回復
+- 解約アンケート
+- 更新前リマインド
+
+### 利用状況メール
+- 日次/週次/月次サマリー
+- 重要イベント通知
+- マイルストーン達成の祝福
+
+### 復帰促進メール
+- 期限切れトライアル
+- 解約顧客
+
+### キャンペーンメール
+- 月次まとめ / ニュースレター
+- 季節プロモーション
+- プロダクト更新
+- 業界ニュースまとめ
+- 価格改定案内
+
+**メールタイプ詳細**: [references/email-types.md](references/email-types.md) を参照
+
+---
+
+## メールコピーガイドライン
+
+### 構成
+1. **フック**: 1行目で注意をつかむ
+2. **文脈**: なぜ相手に重要か
+3. **価値**: 有益な中身
+4. **行動喚起**: 次に何をするか
+5. **締め**: 人間味のある温かい終わり方
+
+### フォーマット
+- 短い段落（1〜3 文）
+- セクション間に余白
+- スキャンしやすい箇条書き
+- 強調は太字を最小限に
+- モバイル前提（多くはスマホで読まれる）
+
+### トーン
+- かしこまりすぎず会話調
+- 一人称（私/私たち）と二人称（あなた）
+- 能動態
+- 声に出して読んで自然か確認
+
+### 長さ
+- トランザクション系: 50〜125 語
+- 教育系: 150〜300 語
+- ストーリー系: 300〜500 語
+
+### 行動喚起ガイド
+- 主要行動にはボタン
+- 副次行動にはテキストリンク
+- 1通に1つの明確な主要行動喚起
+- ボタン文言: 行動 + 得られる結果
+
+**コピー、パーソナライズ、テストの詳細**: [references/copy-guidelines.md](references/copy-guidelines.md) を参照
+
+---
+
+## 出力形式
+
+### シーケンス概要
 ```
-Sequence Name: [Name]
-Trigger: [What starts the sequence]
-Goal: [Primary conversion goal]
-Length: [Number of emails]
-Timing: [Delay between emails]
-Exit Conditions: [When they leave the sequence]
-```
-
-### For Each Email
-```
-Email [#]: [Name/Purpose]
-Send: [Timing]
-Subject: [Subject line]
-Preview: [Preview text]
-Body: [Full copy]
-CTA: [Button text] → [Link destination]
-Segment/Conditions: [If applicable]
+シーケンス名: [名称]
+トリガー: [このシーケンス開始条件]
+目標: [主要コンバージョン目標]
+長さ: [メール本数]
+配信間隔: [各メールの遅延]
+終了条件: [シーケンスから離脱する条件]
 ```
 
-### Metrics Plan
-What to measure and benchmarks
+### 各メール
+```
+メール [#]: [名称/目的]
+配信: [タイミング]
+件名: [件名文]
+プレビュー: [プレビューテキスト]
+本文: [本文コピー]
+行動喚起: [ボタン文言] → [遷移先リンク]
+セグメント/条件: [必要に応じて]
+```
+
+### 指標計画
+測定項目とベンチマーク
 
 ---
 
-## Task-Specific Questions
+## タスク固有の質問
 
-1. What triggers entry to this sequence?
-2. What's the primary goal/conversion action?
-3. What do they already know about you?
-4. What other emails are they receiving?
-5. What's your current email performance?
+1. このシーケンスへの流入トリガーは何ですか？
+2. 主要目標/コンバージョン行動は何ですか？
+3. 相手はあなたについて何を知っていますか？
+4. ほかにどんなメールを受け取っていますか？
+5. 現在のメール成果はどうですか？
 
 ---
 
-## Tool Integrations
+## ツール連携
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key email tools:
+実装については [ツールレジストリ](../../tools/REGISTRY.md) を参照。主要メールツール:
 
-| Tool | Best For | MCP | Guide |
+| ツール | 主用途 | MCP | ガイド |
 |------|----------|:---:|-------|
-| **Customer.io** | Behavior-based automation | - | [customer-io.md](../../tools/integrations/customer-io.md) |
-| **Mailchimp** | SMB email marketing | ✓ | [mailchimp.md](../../tools/integrations/mailchimp.md) |
-| **Resend** | Developer-friendly transactional | ✓ | [resend.md](../../tools/integrations/resend.md) |
-| **SendGrid** | Transactional email at scale | - | [sendgrid.md](../../tools/integrations/sendgrid.md) |
-| **Kit** | Creator/newsletter focused | - | [kit.md](../../tools/integrations/kit.md) |
+| **Customer.io** | 行動ベースの自動化 | - | [customer-io.md](../../tools/integrations/customer-io.md) |
+| **Mailchimp** | 中小企業向けメールマーケティング | ✓ | [mailchimp.md](../../tools/integrations/mailchimp.md) |
+| **Resend** | 開発者向けトランザクションメール | ✓ | [resend.md](../../tools/integrations/resend.md) |
+| **SendGrid** | 大規模トランザクションメール | - | [sendgrid.md](../../tools/integrations/sendgrid.md) |
+| **Kit** | クリエイター/ニュースレター特化 | - | [kit.md](../../tools/integrations/kit.md) |
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **onboarding-cro**: For in-app onboarding (email supports this)
-- **copywriting**: For landing pages emails link to
-- **ab-test-setup**: For testing email elements
-- **popup-cro**: For email capture popups
+- **onboarding-cro**: アプリ内オンボーディング向け（メールは補完）
+- **copywriting**: メールから遷移するランディングページ向け
+- **ab-test-setup**: メール要素の検証向け
+- **popup-cro**: メール獲得ポップアップ向け

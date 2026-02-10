@@ -1,190 +1,190 @@
-# AI Writing Detection
+# AI文章検出
 
-Words, phrases, and punctuation patterns commonly associated with AI-generated text. Avoid these to ensure writing sounds natural and human.
+AI生成文に典型的な単語、言い回し、句読点パターンです。文章を自然で人間らしくするため、これらを避けてください。
 
-Sources: Grammarly (2025), Microsoft 365 Life Hacks (2025), GPTHuman (2025), Walter Writes (2025), Textero (2025), Plagiarism Today (2025), Rolling Stone (2025), MDPI Blog (2025)
+出典: Grammarly (2025), Microsoft 365 Life Hacks (2025), GPTHuman (2025), Walter Writes (2025), Textero (2025), Plagiarism Today (2025), Rolling Stone (2025), MDPI Blog (2025)
 
 ---
 
-## Em Dashes: The Primary AI Tell
+## エムダッシュ: 代表的なAIらしさのサイン
 
-**The em dash (—) has become one of the most reliable markers of AI-generated content.**
+**エムダッシュ（—）は、AI生成コンテンツを見分ける有力な指標の1つです。**
 
-Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, or parenthetical information. While they have legitimate uses in writing, AI models drastically overuse them.
+エムダッシュはハイフン（-）より長く、強調・挿入・補足に使われます。正しい用途はありますが、AIモデルはこれを過剰に使いがちです。
 
-### Why Em Dashes Signal AI Writing
-- AI models were trained on edited books, academic papers, and style guides where em dashes appear frequently
-- AI uses em dashes as a shortcut for sentence variety instead of commas, colons, or parentheses
-- Most human writers rarely use em dashes because they don't exist as a standard keyboard key
-- The overuse is so consistent that it has become the unofficial signature of ChatGPT writing
+### なぜエムダッシュが AI 文章のサインになるのか
+- AIモデルは、エムダッシュが頻出する編集済み書籍・学術論文・スタイルガイドで学習している
+- AIは、カンマやコロン、括弧の代わりに文の変化を出す近道としてエムダッシュを使う
+- 多くの人間の書き手は、標準キーボードに直接キーがないためエムダッシュをほとんど使わない
+- 過剰使用が一貫しているため、ChatGPT 文体の非公式な署名になっている
 
-### What To Do Instead
-| Instead of | Use |
+### 代わりにどうするか
+| 避ける | 代わりに使う |
 |------------|-----|
-| The results—which were surprising—showed... | The results, which were surprising, showed... |
-| This approach—unlike traditional methods—allows... | This approach, unlike traditional methods, allows... |
-| The study found—as expected—that... | The study found, as expected, that... |
-| Communication skills—both written and verbal—are essential | Communication skills (both written and verbal) are essential |
+| この結果—予想外だったが—改善につながった。 | この結果は予想外だったが、改善につながった。 |
+| この方法—従来手法と違い—効率が高い。 | この方法は、従来手法と違って効率が高い。 |
+| 調査では—予想どおり—差が見られた。 | 調査では、予想どおり差が見られた。 |
+| 書く力—読む力と同様に—重要だ。 | 書く力（読む力と同様に）は重要だ。 |
 
-### Guidelines
-- Use commas for most parenthetical information
-- Use colons to introduce explanations or lists
-- Use parentheses for supplementary information
-- Reserve em dashes for rare, deliberate emphasis only
-- If you find yourself using more than one em dash per page, revise
+### ガイドライン
+- 補足情報の多くはカンマで処理する
+- 説明や列挙の導入にはコロンを使う
+- 付随情報には括弧を使う
+- エムダッシュは、意図的な強調が必要なときだけまれに使う
+- 1ページにエムダッシュが2回以上あるなら見直す
 
 ---
 
-## Overused Verbs
+## 使い古されやすい動詞
 
-| Avoid | Use Instead |
+| 避ける | 代わりに使う |
 |-------|-------------|
-| delve (into) | explore, examine, investigate, look at |
-| leverage | use, apply, draw on |
-| optimise | improve, refine, enhance |
-| utilise | use |
-| facilitate | help, enable, support |
-| foster | encourage, support, develop, nurture |
-| bolster | strengthen, support, reinforce |
-| underscore | emphasise, highlight, stress |
-| unveil | reveal, show, introduce, present |
-| navigate | manage, handle, work through |
-| streamline | simplify, make more efficient |
-| enhance | improve, strengthen |
-| endeavour | try, attempt, effort |
-| ascertain | find out, determine, establish |
-| elucidate | explain, clarify, make clear |
+| 深掘りする | 詳しく見る、検討する、調べる |
+| 活用する（曖昧に） | 使う、適用する |
+| 最適化する（根拠なし） | 改善する、調整する |
+| 利用する（多用） | 使う |
+| 促進する（抽象的） | 助ける、後押しする |
+| 育む（抽象的） | 伸ばす、支える |
+| 強化する（連発） | 補強する、改善する |
+| 強調する（連発） | 示す、目立たせる |
+| 明らかにする（多用） | 示す、公開する |
+| 乗り切る | 対処する、進める |
+| 効率化する（曖昧） | 単純化する、無駄を減らす |
+| 向上させる（連発） | 改善する |
+| 努力する | 試す、取り組む |
+| 把握する（硬すぎる） | 見つける、確認する |
+| 解明する（大げさ） | 説明する、明確にする |
 
 ---
 
-## Overused Adjectives
+## 使い古されやすい形容詞
 
-| Avoid | Use Instead |
+| 避ける | 代わりに使う |
 |-------|-------------|
-| robust | strong, reliable, thorough, solid |
-| comprehensive | complete, thorough, full, detailed |
-| pivotal | key, critical, central, important |
-| crucial | important, key, essential, critical |
-| vital | important, essential, necessary |
-| transformative | significant, important, major |
-| cutting-edge | new, advanced, recent, modern |
-| groundbreaking | new, original, significant |
-| innovative | new, original, creative |
-| seamless | smooth, easy, effortless |
-| intricate | complex, detailed, complicated |
-| nuanced | subtle, complex, detailed |
-| multifaceted | complex, varied, diverse |
-| holistic | complete, whole, comprehensive |
+| 堅牢な | 強い、信頼できる |
+| 包括的な | 網羅的な、詳細な |
+| 極めて重要な | 重要な、中核の |
+| 決定的な | 重要な、欠かせない |
+| 不可欠な | 必要な、重要な |
+| 変革的な | 大きな、重要な |
+| 最先端の | 新しい、高度な |
+| 画期的な | 新しい、独自の |
+| 革新的な | 新しい、創造的な |
+| シームレスな | スムーズな、簡単な |
+| 複雑な（多用） | 詳細な、入り組んだ |
+| ニュアンスのある | 微妙な、複合的な |
+| 多面的な | 多様な、複合的な |
+| 全体的な | 一体的な、網羅的な |
 
 ---
 
-## Overused Transitions and Connectors
+## 使い古されやすい接続語・つなぎ表現
 
-| Avoid | Use Instead |
+| 避ける | 代わりに使う |
 |-------|-------------|
-| furthermore | also, in addition, and |
-| moreover | also, and, besides |
-| notwithstanding | despite, even so, still |
-| that being said | however, but, still |
-| at its core | essentially, fundamentally, basically |
-| to put it simply | in short, simply put |
-| it is worth noting that | note that, importantly |
-| in the realm of | in, within, regarding |
-| in the landscape of | in, within |
-| in today's [anything] | currently, now, today |
+| さらに申し上げると | また、加えて |
+| そのうえ | また、加えて |
+| とはいえ | それでも、ただし |
+| そうは言っても | しかし、ただ |
+| 本質的には | 要するに、基本的には |
+| 簡単に言えば | 要するに、端的には |
+| 注目すべきは | 重要なのは、注意点は |
+| 〜の文脈では | 〜では、〜において |
+| 〜の領域では | 〜では、〜において |
+| 現代の〜において | 現在は、今は |
 
 ---
 
-## Phrases That Signal AI Writing
+## AI文章らしさが出やすいフレーズ
 
-### Opening Phrases to Avoid
-- "In today's fast-paced world..."
-- "In today's digital age..."
-- "In an era of..."
-- "In the ever-evolving landscape of..."
-- "In the realm of..."
-- "It's important to note that..."
-- "Let's delve into..."
-- "Imagine a world where..."
+### 避けたい導入フレーズ
+- 「現代のスピード感ある社会では…」
+- 「デジタル時代において…」
+- 「〜の時代において…」
+- 「常に進化する環境の中で…」
+- 「〜という領域では…」
+- 「重要なのは…」
+- 「では掘り下げてみましょう…」
+- 「〜な世界を想像してみてください…」
 
-### Transitional Phrases to Avoid
-- "That being said..."
-- "With that in mind..."
-- "It's worth mentioning that..."
-- "At its core..."
-- "To put it simply..."
-- "In essence..."
-- "This begs the question..."
+### 避けたい遷移フレーズ
+- 「とはいえ…」
+- 「それを踏まえると…」
+- 「触れておくべきなのは…」
+- 「本質的には…」
+- 「簡単に言えば…」
+- 「要するに…」
+- 「ここで疑問が生じます…」
 
-### Concluding Phrases to Avoid
-- "In conclusion..."
-- "To sum up..."
-- "By [doing X], you can [achieve Y]..."
-- "In the final analysis..."
-- "All things considered..."
-- "At the end of the day..."
+### 避けたい結論フレーズ
+- 「結論として…」
+- 「まとめると…」
+- 「[X] を行うことで [Y] を達成できます…」
+- 「最終的に分析すると…」
+- 「総合的に考えると…」
+- 「結局のところ…」
 
-### Structural Patterns to Avoid
-- "Whether you're a [X], [Y], or [Z]..." (listing three examples after "whether")
-- "It's not just [X], it's also [Y]..."
-- "Think of [X] as [elaborate metaphor]..."
-- Starting sentences with "By" followed by a gerund: "By understanding X, you can Y..."
-
----
-
-## Filler Words and Empty Intensifiers
-
-These words often add nothing to meaning. Remove them or find specific alternatives:
-
-- absolutely
-- actually
-- basically
-- certainly
-- clearly
-- definitely
-- essentially
-- extremely
-- fundamentally
-- incredibly
-- interestingly
-- naturally
-- obviously
-- quite
-- really
-- significantly
-- simply
-- surely
-- truly
-- ultimately
-- undoubtedly
-- very
+### 避けたい構文パターン
+- 「あなたが [X] でも [Y] でも [Z] でも…」（3例列挙）
+- 「[X] だけでなく、[Y] でもある…」
+- 「[X] を [大げさな比喩] にたとえると…」
+- 「〜することで」で文を始める構文の連発
 
 ---
 
-## Academic-Specific AI Tells
+## 冗長語と中身のない強調語
 
-| Avoid | Use Instead |
+意味をほとんど増やさないことが多い語です。削るか、より具体的な表現に置き換えてください:
+
+- 絶対的に
+- 実際のところ
+- 基本的に
+- 確かに
+- 明らかに
+- 間違いなく
+- 本質的に
+- 非常に
+- 根本的に
+- 驚くほど
+- 興味深いことに
+- 自然に
+- 当然ながら
+- かなり
+- 本当に
+- 大きく
+- 単純に
+- きっと
+- 真に
+- 最終的に
+- 疑いなく
+- とても
+
+---
+
+## 学術文で出やすいAIらしさ
+
+| 避ける | 代わりに使う |
 |-------|-------------|
-| shed light on | clarify, explain, reveal |
-| pave the way for | enable, allow, make possible |
-| a myriad of | many, numerous, various |
-| a plethora of | many, numerous, several |
-| paramount | very important, essential, critical |
-| pertaining to | about, regarding, concerning |
-| prior to | before |
-| subsequent to | after |
-| in light of | because of, given, considering |
-| with respect to | about, regarding, for |
-| in terms of | regarding, for, about |
-| the fact that | that (or rewrite sentence) |
+| 光を当てる | 明確にする、説明する |
+| 道を開く | 可能にする、実現しやすくする |
+| 無数の | 多くの、さまざまな |
+| 豊富な | 多くの、いくつもの |
+| 最重要の | とても重要な、不可欠な |
+| 〜に関する | 〜について、〜に関して |
+| 〜に先立って | 〜の前に |
+| 〜に続いて | 〜の後に |
+| 〜を踏まえると | 〜なので、〜を考えると |
+| 〜に関しては | 〜については |
+| 〜という観点で | 〜について、〜の面で |
+| 〜という事実 | 「〜」に言い換える（文を簡潔化） |
 
 ---
 
-## How to Self-Check
+## 自己チェック方法
 
-1. Read your text aloud. If phrases sound unnatural in speech, revise them
-2. Ask: "Would I say this in a conversation with a colleague?"
-3. Check for repetitive sentence structures
-4. Look for clusters of the words listed above
-5. Ensure varied sentence lengths (not all similar length)
-6. Verify each intensifier adds genuine meaning
+1. 音読する。不自然に聞こえるフレーズは修正する
+2. 「同僚との会話で本当にこう言うか？」と自問する
+3. 文構造の繰り返しがないか確認する
+4. 上記の語が固まって出ていないか確認する
+5. 文長に変化をつける（似た長さばかりにしない）
+6. 強調語が本当に意味を増やしているか確認する

@@ -1,63 +1,63 @@
-# GA4 Implementation Reference
+# GA4 実装リファレンス
 
-Detailed implementation guide for Google Analytics 4.
+Google Analytics 4 の詳細実装ガイド。
 
-## Configuration
+## 設定
 
-### Data Streams
+### データストリーム
 
-- One stream per platform (web, iOS, Android)
-- Enable enhanced measurement for automatic tracking
-- Configure data retention (2 months default, 14 months max)
-- Enable Google Signals (for cross-device, if consented)
+- プラットフォームごとに 1 ストリーム（web, iOS, Android）
+- 拡張計測を有効化して自動トラッキングを活用
+- データ保持を設定（デフォルト 2 か月、最大 14 か月）
+- Google Signals を有効化（同意がある場合のクロスデバイス用）
 
-### Enhanced Measurement Events (Automatic)
+### 拡張計測イベント（自動）
 
 | Event | Description | Configuration |
 |-------|-------------|---------------|
-| page_view | Page loads | Automatic |
-| scroll | 90% scroll depth | Toggle on/off |
-| outbound_click | Click to external domain | Automatic |
-| site_search | Search query used | Configure parameter |
-| video_engagement | YouTube video plays | Toggle on/off |
-| file_download | PDF, docs, etc. | Configurable extensions |
+| page_view | ページ読み込み | Automatic |
+| scroll | 90% スクロール深度 | Toggle on/off |
+| outbound_click | 外部ドメインへのクリック | Automatic |
+| site_search | 検索クエリ利用 | パラメータを設定 |
+| video_engagement | YouTube 動画再生 | Toggle on/off |
+| file_download | PDF、ドキュメント等 | 拡張子を設定可能 |
 
-### Recommended Events
+### 推奨イベント
 
-Use Google's predefined events when possible for enhanced reporting:
+拡張レポート活用のため、可能な限り Google の定義済みイベントを使用:
 
-**All properties:**
+**全プロパティ共通:**
 - login, sign_up
 - share
 - search
 
-**E-commerce:**
+**E コマース:**
 - view_item, view_item_list
 - add_to_cart, remove_from_cart
 - begin_checkout
 - add_payment_info
 - purchase, refund
 
-**Games:**
+**ゲーム:**
 - level_up, unlock_achievement
 - post_score, spend_virtual_currency
 
-Reference: https://support.google.com/analytics/answer/9267735
+参考: https://support.google.com/analytics/answer/9267735
 
 ---
 
-## Custom Events
+## カスタムイベント
 
-### gtag.js Implementation
+### gtag.js 実装
 
 ```javascript
-// Basic event
+// 基本イベント
 gtag('event', 'signup_completed', {
   'method': 'email',
   'plan': 'free'
 });
 
-// Event with value
+// 値付きイベント
 gtag('event', 'purchase', {
   'transaction_id': 'T12345',
   'value': 99.99,
@@ -69,35 +69,35 @@ gtag('event', 'purchase', {
   }]
 });
 
-// User properties
+// ユーザープロパティ
 gtag('set', 'user_properties', {
   'user_type': 'premium',
   'plan_name': 'pro'
 });
 
-// User ID (for logged-in users)
+// User ID（ログインユーザー向け）
 gtag('config', 'GA_MEASUREMENT_ID', {
   'user_id': 'USER_ID'
 });
 ```
 
-### Google Tag Manager (dataLayer)
+### Google Tag Manager（dataLayer）
 
 ```javascript
-// Custom event
+// カスタムイベント
 dataLayer.push({
   'event': 'signup_completed',
   'method': 'email',
   'plan': 'free'
 });
 
-// Set user properties
+// ユーザープロパティ設定
 dataLayer.push({
   'user_id': '12345',
   'user_type': 'premium'
 });
 
-// E-commerce purchase
+// E コマース購入
 dataLayer.push({
   'event': 'purchase',
   'ecommerce': {
@@ -113,7 +113,7 @@ dataLayer.push({
   }
 });
 
-// Clear ecommerce before sending (best practice)
+// 送信前に ecommerce をクリア（ベストプラクティス）
 dataLayer.push({ ecommerce: null });
 dataLayer.push({
   'event': 'view_item',
@@ -125,166 +125,166 @@ dataLayer.push({
 
 ---
 
-## Conversions Setup
+## コンバージョン設定
 
-### Creating Conversions
+### コンバージョン作成
 
-1. **Collect the event** - Ensure event is firing in GA4
-2. **Mark as conversion** - Admin > Events > Mark as conversion
-3. **Set counting method**:
-   - Once per session (leads, signups)
-   - Every event (purchases)
-4. **Import to Google Ads** - For conversion-optimized bidding
+1. **イベントを収集** - GA4 でイベントが発火していることを確認
+2. **コンバージョンとして指定** - Admin > Events > Mark as conversion
+3. **カウント方式を設定**:
+   - セッションごとに 1 回（リード、サインアップ）
+   - すべてのイベント（購入）
+4. **Google Ads にインポート** - コンバージョン最適化入札に利用
 
-### Conversion Values
+### コンバージョン値
 
 ```javascript
-// Event with conversion value
+// コンバージョン値付きイベント
 gtag('event', 'purchase', {
   'value': 99.99,
   'currency': 'USD'
 });
 ```
 
-Or set default value in GA4 Admin when marking conversion.
+または、コンバージョン指定時に GA4 管理画面でデフォルト値を設定。
 
 ---
 
-## Custom Dimensions and Metrics
+## カスタムディメンションと指標
 
-### When to Use
+### 使う場面
 
-**Custom dimensions:**
-- Properties you want to segment/filter by
-- User attributes (plan type, industry)
-- Content attributes (author, category)
+**カスタムディメンション:**
+- セグメント/フィルタしたいプロパティ
+- ユーザー属性（プラン種別、業界）
+- コンテンツ属性（著者、カテゴリ）
 
-**Custom metrics:**
-- Numeric values to aggregate
-- Scores, counts, durations
+**カスタム指標:**
+- 集計したい数値
+- スコア、回数、時間
 
-### Setup Steps
+### 設定手順
 
 1. Admin > Data display > Custom definitions
-2. Create dimension or metric
-3. Choose scope:
-   - **Event**: Per event (content_type)
-   - **User**: Per user (account_type)
-   - **Item**: Per product (product_category)
-4. Enter parameter name (must match event parameter)
+2. ディメンションまたは指標を作成
+3. スコープを選択:
+   - **Event**: イベント単位（content_type）
+   - **User**: ユーザー単位（account_type）
+   - **Item**: 商品単位（product_category）
+4. パラメータ名を入力（イベントパラメータ名と一致させる）
 
-### Examples
+### 例
 
 | Dimension | Scope | Parameter | Description |
 |-----------|-------|-----------|-------------|
 | User Type | User | user_type | Free, trial, paid |
-| Content Author | Event | author | Blog post author |
-| Product Category | Item | item_category | E-commerce category |
+| Content Author | Event | author | ブログ記事の著者 |
+| Product Category | Item | item_category | E コマースのカテゴリ |
 
 ---
 
-## Audiences
+## オーディエンス
 
-### Creating Audiences
+### オーディエンス作成
 
 Admin > Data display > Audiences
 
-**Use cases:**
-- Remarketing audiences (export to Ads)
-- Segment analysis
-- Trigger-based events
+**ユースケース:**
+- リマーケティングオーディエンス（Ads へエクスポート）
+- セグメント分析
+- トリガーベースのイベント
 
-### Audience Examples
+### オーディエンス例
 
-**High-intent visitors:**
-- Viewed pricing page
-- Did not convert
-- In last 7 days
+**高意図訪問者:**
+- 料金ページを閲覧
+- コンバージョンしていない
+- 直近 7 日以内
 
-**Engaged users:**
-- 3+ sessions
-- Or 5+ minutes total engagement
+**エンゲージドユーザー:**
+- 3 回以上のセッション
+- または合計エンゲージメント 5 分以上
 
-**Purchasers:**
-- Purchase event
-- For exclusion or lookalike
+**購入者:**
+- 購入イベントあり
+- 除外または類似拡張向け
 
 ---
 
-## Debugging
+## デバッグ
 
 ### DebugView
 
-Enable with:
-- URL parameter: `?debug_mode=true`
-- Chrome extension: GA Debugger
-- gtag: `'debug_mode': true` in config
+有効化方法:
+- URL パラメータ: `?debug_mode=true`
+- Chrome 拡張: GA Debugger
+- gtag: config に `'debug_mode': true`
 
-View at: Reports > Configure > DebugView
+確認場所: Reports > Configure > DebugView
 
-### Real-Time Reports
+### リアルタイムレポート
 
-Check events within 30 minutes:
+30 分以内のイベントを確認:
 Reports > Real-time
 
-### Common Issues
+### よくある問題
 
-**Events not appearing:**
-- Check DebugView first
-- Verify gtag/GTM firing
-- Check filter exclusions
+**イベントが表示されない:**
+- まず DebugView を確認
+- gtag/GTM の発火を確認
+- フィルタ除外を確認
 
-**Parameter values missing:**
-- Custom dimension not created
-- Parameter name mismatch
-- Data still processing (24-48 hrs)
+**パラメータ値が欠落:**
+- カスタムディメンション未作成
+- パラメータ名不一致
+- 処理待ち（24〜48 時間）
 
-**Conversions not recording:**
-- Event not marked as conversion
-- Event name doesn't match
-- Counting method (once vs. every)
+**コンバージョンが記録されない:**
+- イベントがコンバージョン指定されていない
+- イベント名不一致
+- カウント方式の設定（1 回/毎回）
 
 ---
 
-## Data Quality
+## データ品質
 
-### Filters
+### フィルタ
 
 Admin > Data streams > [Stream] > Configure tag settings > Define internal traffic
 
-**Exclude:**
-- Internal IP addresses
-- Developer traffic
-- Testing environments
+**除外対象:**
+- 社内 IP アドレス
+- 開発者トラフィック
+- テスト環境
 
-### Cross-Domain Tracking
+### クロスドメイントラッキング
 
-For multiple domains sharing analytics:
+複数ドメインで分析を共有する場合:
 
 1. Admin > Data streams > [Stream] > Configure tag settings
-2. Configure your domains
-3. List all domains that should share sessions
+2. 対象ドメインを設定
+3. セッションを共有すべき全ドメインを列挙
 
-### Session Settings
+### セッション設定
 
 Admin > Data streams > [Stream] > Configure tag settings
 
-- Session timeout (default 30 min)
-- Engaged session duration (10 sec default)
+- セッションタイムアウト（デフォルト 30 分）
+- エンゲージドセッション時間（デフォルト 10 秒）
 
 ---
 
-## Integration with Google Ads
+## Google Ads 連携
 
-### Linking
+### リンク設定
 
 1. Admin > Product links > Google Ads links
-2. Enable auto-tagging in Google Ads
-3. Import conversions in Google Ads
+2. Google Ads で自動タグ設定を有効化
+3. Google Ads でコンバージョンをインポート
 
-### Audience Export
+### オーディエンスエクスポート
 
-Audiences created in GA4 can be used in Google Ads for:
-- Remarketing campaigns
-- Customer match
-- Similar audiences
+GA4 で作成したオーディエンスは Google Ads で以下に利用可能:
+- リマーケティングキャンペーン
+- Customer Match
+- 類似オーディエンス

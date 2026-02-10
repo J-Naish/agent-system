@@ -1,36 +1,36 @@
-# Sample Size Guide
+# サンプルサイズガイド
 
-Reference for calculating sample sizes and test duration.
+サンプルサイズとテスト期間を計算するためのリファレンス。
 
-## Sample Size Fundamentals
+## サンプルサイズの基礎
 
-### Required Inputs
+### 必要な入力
 
-1. **Baseline conversion rate**: Your current rate
-2. **Minimum detectable effect (MDE)**: Smallest change worth detecting
-3. **Statistical significance level**: Usually 95% (α = 0.05)
-4. **Statistical power**: Usually 80% (β = 0.20)
+1. **ベースラインコンバージョン率**: 現在の率
+2. **最小検出効果 (MDE)**: 検出したい最小の変化
+3. **統計的有意水準**: 通常は 95% (α = 0.05)
+4. **統計的検出力**: 通常は 80% (β = 0.20)
 
-### What These Mean
+### これらの意味
 
-**Baseline conversion rate**: If your page converts at 5%, that's your baseline.
+**ベースラインコンバージョン率**: ページの CVR が 5% なら、それがベースラインです。
 
-**MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this based on:
-- Business impact (is a 5% lift meaningful?)
-- Implementation cost (worth the effort?)
-- Realistic expectations (what have past tests shown?)
+**MDE（最小検出効果）**: 検出したい最小の改善幅。以下に基づいて設定します:
+- ビジネスへの影響 (5% のリフトは意味があるか？)
+- 実装コスト (労力に見合うか？)
+- 現実的な期待値 (過去テストではどうだったか？)
 
-**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
+**統計的有意性 (95%)**: 観測された差が偶然である確率が 5% 未満であることを意味します。
 
-**Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
+**統計的検出力 (80%)**: MDE サイズの実際の効果がある場合、それを検出できる確率が 80% であることを意味します。
 
 ---
 
-## Sample Size Quick Reference Tables
+## サンプルサイズ クイックリファレンステーブル
 
-### Conversion Rate: 1%
+### コンバージョン率: 1%
 
-| Lift to Detect | Sample per Variant | Total Sample |
+| 検出したいリフト | バリアントごとのサンプル | 総サンプル |
 |----------------|-------------------|--------------|
 | 5% (1% → 1.05%) | 1,500,000 | 3,000,000 |
 | 10% (1% → 1.1%) | 380,000 | 760,000 |
@@ -38,9 +38,9 @@ Reference for calculating sample sizes and test duration.
 | 50% (1% → 1.5%) | 16,000 | 32,000 |
 | 100% (1% → 2%) | 4,200 | 8,400 |
 
-### Conversion Rate: 3%
+### コンバージョン率: 3%
 
-| Lift to Detect | Sample per Variant | Total Sample |
+| 検出したいリフト | バリアントごとのサンプル | 総サンプル |
 |----------------|-------------------|--------------|
 | 5% (3% → 3.15%) | 480,000 | 960,000 |
 | 10% (3% → 3.3%) | 120,000 | 240,000 |
@@ -48,9 +48,9 @@ Reference for calculating sample sizes and test duration.
 | 50% (3% → 4.5%) | 5,200 | 10,400 |
 | 100% (3% → 6%) | 1,400 | 2,800 |
 
-### Conversion Rate: 5%
+### コンバージョン率: 5%
 
-| Lift to Detect | Sample per Variant | Total Sample |
+| 検出したいリフト | バリアントごとのサンプル | 総サンプル |
 |----------------|-------------------|--------------|
 | 5% (5% → 5.25%) | 280,000 | 560,000 |
 | 10% (5% → 5.5%) | 72,000 | 144,000 |
@@ -58,9 +58,9 @@ Reference for calculating sample sizes and test duration.
 | 50% (5% → 7.5%) | 3,100 | 6,200 |
 | 100% (5% → 10%) | 810 | 1,620 |
 
-### Conversion Rate: 10%
+### コンバージョン率: 10%
 
-| Lift to Detect | Sample per Variant | Total Sample |
+| 検出したいリフト | バリアントごとのサンプル | 総サンプル |
 |----------------|-------------------|--------------|
 | 5% (10% → 10.5%) | 130,000 | 260,000 |
 | 10% (10% → 11%) | 34,000 | 68,000 |
@@ -68,9 +68,9 @@ Reference for calculating sample sizes and test duration.
 | 50% (10% → 15%) | 1,500 | 3,000 |
 | 100% (10% → 20%) | 400 | 800 |
 
-### Conversion Rate: 20%
+### コンバージョン率: 20%
 
-| Lift to Detect | Sample per Variant | Total Sample |
+| 検出したいリフト | バリアントごとのサンプル | 総サンプル |
 |----------------|-------------------|--------------|
 | 5% (20% → 21%) | 60,000 | 120,000 |
 | 10% (20% → 22%) | 16,000 | 32,000 |
@@ -80,173 +80,173 @@ Reference for calculating sample sizes and test duration.
 
 ---
 
-## Duration Calculator
+## 期間計算
 
-### Formula
+### 計算式
 
 ```
-Duration (days) = (Sample per variant × Number of variants) / (Daily traffic × % exposed)
+期間（日） = （バリアントごとのサンプル × バリアント数） / （日次トラフィック × 露出率）
 ```
 
-### Examples
+### 例
 
-**Scenario 1: High-traffic page**
-- Need: 10,000 per variant (2 variants = 20,000 total)
-- Daily traffic: 5,000 visitors
-- 100% exposed to test
-- Duration: 20,000 / 5,000 = **4 days**
+**シナリオ 1: 高トラフィックページ**
+- 必要数: バリアントごとに 10,000（2 バリアント = 合計 20,000）
+- 日次トラフィック: 5,000 訪問者
+- テスト露出: 100%
+- 期間: 20,000 / 5,000 = **4 日**
 
-**Scenario 2: Medium-traffic page**
-- Need: 30,000 per variant (60,000 total)
-- Daily traffic: 2,000 visitors
-- 100% exposed
-- Duration: 60,000 / 2,000 = **30 days**
+**シナリオ 2: 中トラフィックページ**
+- 必要数: バリアントごとに 30,000（合計 60,000）
+- 日次トラフィック: 2,000 訪問者
+- テスト露出: 100%
+- 期間: 60,000 / 2,000 = **30 日**
 
-**Scenario 3: Low-traffic with partial exposure**
-- Need: 15,000 per variant (30,000 total)
-- Daily traffic: 500 visitors
-- 50% exposed to test
-- Effective daily: 250
-- Duration: 30,000 / 250 = **120 days** (too long!)
+**シナリオ 3: 低トラフィックかつ部分露出**
+- 必要数: バリアントごとに 15,000（合計 30,000）
+- 日次トラフィック: 500 訪問者
+- テスト露出: 50%
+- 実効日次: 250
+- 期間: 30,000 / 250 = **120 日**（長すぎる！）
 
-### Minimum Duration Rules
+### 最短期間のルール
 
-Even with sufficient sample size, run tests for at least:
-- **1 full week**: To capture day-of-week variation
-- **2 business cycles**: If B2B (weekday vs. weekend patterns)
-- **Through paydays**: If e-commerce (beginning/end of month)
+サンプルサイズが十分でも、最低でも以下の期間は実施する:
+- **丸 1 週間**: 曜日変動を取り込むため
+- **2 つの業務サイクル**: B2B の場合（平日/週末パターン）
+- **給料日をまたぐ**: EC の場合（月初/月末）
 
-### Maximum Duration Guidelines
+### 最長期間のガイドライン
 
-Avoid running tests longer than 4-8 weeks:
-- Novelty effects wear off
-- External factors intervene
-- Opportunity cost of other tests
+4〜8 週間を超えてテストを続けるのは避ける:
+- 新奇性効果が薄れる
+- 外部要因の影響を受ける
+- 他テストを行う機会コストが発生する
 
 ---
 
-## Online Calculators
+## オンライン計算ツール
 
-### Recommended Tools
+### 推奨ツール
 
-**Evan Miller's Calculator**
+**Evan Miller の計算ツール**
 https://www.evanmiller.org/ab-testing/sample-size.html
-- Simple interface
-- Bookmark-worthy
+- シンプルなインターフェース
+- ブックマーク推奨
 
-**Optimizely's Calculator**
+**Optimizely の計算ツール**
 https://www.optimizely.com/sample-size-calculator/
-- Business-friendly language
-- Duration estimates
+- ビジネス向けの分かりやすい文言
+- 期間見積もりあり
 
-**AB Test Guide Calculator**
+**AB Test Guide の計算ツール**
 https://www.abtestguide.com/calc/
-- Includes Bayesian option
-- Multiple test types
+- ベイズオプションを含む
+- 複数のテストタイプに対応
 
-**VWO Duration Calculator**
+**VWO の期間計算ツール**
 https://vwo.com/tools/ab-test-duration-calculator/
-- Duration-focused
-- Good for planning
+- 期間計算に特化
+- 計画立案に有用
 
 ---
 
-## Adjusting for Multiple Variants
+## 複数バリアント時の調整
 
-With more than 2 variants (A/B/n tests), you need more sample:
+2 バリアントより多い場合（A/B/n テスト）は、より多くのサンプルが必要:
 
-| Variants | Multiplier |
+| バリアント数 | 係数 |
 |----------|------------|
 | 2 (A/B) | 1x |
 | 3 (A/B/C) | ~1.5x |
 | 4 (A/B/C/D) | ~2x |
-| 5+ | Consider reducing variants |
+| 5+ | バリアント削減を検討 |
 
-**Why?** More comparisons increase chance of false positives. You're comparing:
+**なぜ？** 比較数が増えると偽陽性の確率が上がるため。比較対象は:
 - A vs B
 - A vs C
-- B vs C (sometimes)
+- B vs C（場合による）
 
-Apply Bonferroni correction or use tools that handle this automatically.
-
----
-
-## Common Sample Size Mistakes
-
-### 1. Underpowered tests
-**Problem**: Not enough sample to detect realistic effects
-**Fix**: Be realistic about MDE, get more traffic, or don't test
-
-### 2. Overpowered tests
-**Problem**: Waiting for sample size when you already have significance
-**Fix**: This is actually fine—you committed to sample size, honor it
-
-### 3. Wrong baseline rate
-**Problem**: Using wrong conversion rate for calculation
-**Fix**: Use the specific metric and page, not site-wide averages
-
-### 4. Ignoring segments
-**Problem**: Calculating for full traffic, then analyzing segments
-**Fix**: If you plan segment analysis, calculate sample for smallest segment
-
-### 5. Testing too many things
-**Problem**: Dividing traffic too many ways
-**Fix**: Prioritize ruthlessly, run fewer concurrent tests
+Bonferroni 補正を適用するか、自動で処理するツールを使ってください。
 
 ---
 
-## When Sample Size Requirements Are Too High
+## よくあるサンプルサイズのミス
 
-Options when you can't get enough traffic:
+### 1. 検出力不足のテスト
+**問題**: 現実的な効果を検出するのにサンプルが足りない
+**対策**: MDE を現実的に設定し、トラフィックを増やす。無理ならテストしない
 
-1. **Increase MDE**: Accept only detecting larger effects (20%+ lift)
-2. **Lower confidence**: Use 90% instead of 95% (risky, document it)
-3. **Reduce variants**: Test only the most promising variant
-4. **Combine traffic**: Test across multiple similar pages
-5. **Test upstream**: Test earlier in funnel where traffic is higher
-6. **Don't test**: Make decision based on qualitative data instead
-7. **Longer test**: Accept longer duration (weeks/months)
+### 2. 過剰検出力のテスト
+**問題**: すでに有意でもサンプルサイズ到達まで待ってしまう
+**対策**: 実は問題なし。事前に決めたサンプルサイズを守る
+
+### 3. 間違ったベースライン率
+**問題**: 計算に誤った CVR を使う
+**対策**: サイト全体平均ではなく、対象ページ・対象指標の率を使う
+
+### 4. セグメントを無視する
+**問題**: 全体トラフィックで計算し、後でセグメント分析する
+**対策**: セグメント分析を予定しているなら、最小セグメントでサンプル計算する
+
+### 5. 同時にテストしすぎる
+**問題**: トラフィックを細かく分割しすぎる
+**対策**: 優先順位を厳密につけ、同時実行テストを減らす
 
 ---
 
-## Sequential Testing
+## 必要サンプルが大きすぎるとき
 
-If you must check results before reaching sample size:
+十分なトラフィックを確保できない場合の選択肢:
 
-### What is it?
-Statistical method that adjusts for multiple looks at data.
+1. **MDE を上げる**: 大きな効果（20%+ リフト）のみ検出対象にする
+2. **信頼水準を下げる**: 95% の代わりに 90% を使う（リスクあり、要記録）
+3. **バリアントを減らす**: 最有力の 1 バリアントだけテストする
+4. **トラフィックを統合する**: 複数の類似ページをまとめてテストする
+5. **上流でテストする**: トラフィックが多いファネル上流でテストする
+6. **テストしない**: 定性データに基づいて意思決定する
+7. **期間を延ばす**: 長期実施（数週間〜数か月）を受け入れる
 
-### When to use
-- High-risk changes
-- Need to stop bad variants early
-- Time-sensitive decisions
+---
 
-### Tools that support it
+## 逐次テスト
+
+サンプルサイズ到達前に結果確認が必要な場合:
+
+### 何か？
+データを複数回確認することを考慮して補正する統計手法。
+
+### 使う場面
+- リスクの高い変更
+- 悪いバリアントを早期停止したい
+- 時間制約のある意思決定
+
+### 対応ツール
 - Optimizely (Stats Accelerator)
 - VWO (SmartStats)
-- PostHog (Bayesian approach)
+- PostHog（ベイズアプローチ）
 
-### Tradeoff
-- More flexibility to stop early
-- Slightly larger sample size requirement
-- More complex analysis
+### トレードオフ
+- 早期停止の柔軟性が高い
+- 必要サンプルサイズがやや増える
+- 分析がより複雑になる
 
 ---
 
-## Quick Decision Framework
+## クイック判断フレームワーク
 
-### Can I run this test?
+### このテストは実施可能か？
 
 ```
-Daily traffic to page: _____
-Baseline conversion rate: _____
-MDE I care about: _____
+対象ページの日次トラフィック: _____
+ベースラインコンバージョン率: _____
+重視する MDE: _____
 
-Sample needed per variant: _____ (from tables above)
-Days to run: Sample / Daily traffic = _____
+バリアントごとの必要サンプル: _____ （上記テーブル参照）
+実施日数: サンプル数 / 日次トラフィック = _____
 
-If days > 60: Consider alternatives
-If days > 30: Acceptable for high-impact tests
-If days < 14: Likely feasible
-If days < 7: Easy to run, consider running longer anyway
+日数 > 60 の場合: 代替案を検討
+日数 > 30 の場合: 高インパクト施策なら許容
+日数 < 14 の場合: 実施可能性が高い
+日数 < 7 の場合: 実施は容易。ただし長めに回すことも検討
 ```

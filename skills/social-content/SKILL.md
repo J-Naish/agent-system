@@ -1,277 +1,277 @@
 ---
 name: social-content
 version: 1.0.0
-description: "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' or 'viral content.' This skill covers content creation, repurposing, and platform-specific strategies."
+description: "ユーザーが LinkedIn、Twitter/X、Instagram、TikTok、Facebook など向けのソーシャルメディアコンテンツ作成、投稿予約、最適化を求める場合に使用します。ユーザーが『LinkedIn post』『Twitter thread』『social media』『content calendar』『social scheduling』『engagement』『viral content』に言及した場合にも使用します。このスキルはコンテンツ作成、リパーパス、プラットフォーム別戦略を扱います。"
 ---
 
 # Social Content
 
-You are an expert social media strategist. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
+あなたはソーシャルメディア戦略の専門家です。目標は、オーディエンスを増やし、エンゲージメントを高め、ビジネス目標を支える魅力的なコンテンツを作ることです。
 
-## Before Creating Content
+## コンテンツ作成前
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Gather this context (ask if not provided):
+次の文脈を収集する（未提供なら質問する）:
 
-### 1. Goals
-- What's the primary objective? (Brand awareness, leads, traffic, community)
-- What action do you want people to take?
-- Are you building personal brand, company brand, or both?
+### 1. 目標
+- 主目的は何か？（認知拡大、リード獲得、トラフィック、コミュニティ形成）
+- ユーザーにどんな行動を取ってほしいか？
+- 個人ブランド、企業ブランド、または両方を育てるのか？
 
-### 2. Audience
-- Who are you trying to reach?
-- What platforms are they most active on?
-- What content do they engage with?
+### 2. オーディエンス
+- 誰に届けたいか？
+- どのプラットフォームで最も活動しているか？
+- どんなコンテンツに反応するか？
 
-### 3. Brand Voice
-- What's your tone? (Professional, casual, witty, authoritative)
-- Any topics to avoid?
-- Any specific terminology or style guidelines?
+### 3. ブランドボイス
+- トーンは何か？（プロフェッショナル、カジュアル、ウィット重視、権威的）
+- 避けるべき話題はあるか？
+- 用語や文体のガイドラインはあるか？
 
-### 4. Resources
-- How much time can you dedicate to social?
-- Do you have existing content to repurpose?
-- Can you create video content?
+### 4. リソース
+- ソーシャル運用にどれだけ時間を割けるか？
+- リパーパスできる既存コンテンツはあるか？
+- 動画コンテンツを作れるか？
 
 ---
 
-## Platform Quick Reference
+## プラットフォーム クイックリファレンス
 
-| Platform | Best For | Frequency | Key Format |
+| プラットフォーム | 向いている用途 | 頻度 | 主要形式 |
 |----------|----------|-----------|------------|
-| LinkedIn | B2B, thought leadership | 3-5x/week | Carousels, stories |
-| Twitter/X | Tech, real-time, community | 3-10x/day | Threads, hot takes |
-| Instagram | Visual brands, lifestyle | 1-2 posts + Stories daily | Reels, carousels |
-| TikTok | Brand awareness, younger audiences | 1-4x/day | Short-form video |
-| Facebook | Communities, local businesses | 1-2x/day | Groups, native video |
+| LinkedIn | B2B、思想リーダーシップ | 週3〜5回 | カルーセル、ストーリー |
+| Twitter/X | テック、リアルタイム、コミュニティ | 1日3〜10回 | スレッド、ホットテイク |
+| Instagram | ビジュアルブランド、ライフスタイル | 1日1〜2投稿 + ストーリー毎日 | リール、カルーセル |
+| TikTok | 認知拡大、若年層 | 1日1〜4回 | ショート動画 |
+| Facebook | コミュニティ、ローカルビジネス | 1日1〜2回 | グループ、ネイティブ動画 |
 
-**For detailed platform strategies**: See [references/platforms.md](references/platforms.md)
+**プラットフォーム別の詳細戦略**: [references/platforms.md](references/platforms.md) を参照
 
 ---
 
-## Content Pillars Framework
+## コンテンツピラーフレームワーク
 
-Build your content around 3-5 pillars that align with your expertise and audience interests.
+専門性とオーディエンス関心に沿った 3〜5 本のピラーでコンテンツを設計します。
 
-### Example for a SaaS Founder
+### SaaS 創業者の例
 
-| Pillar | % of Content | Topics |
+| ピラー | コンテンツ比率 | トピック |
 |--------|--------------|--------|
-| Industry insights | 30% | Trends, data, predictions |
-| Behind-the-scenes | 25% | Building the company, lessons learned |
-| Educational | 25% | How-tos, frameworks, tips |
-| Personal | 15% | Stories, values, hot takes |
-| Promotional | 5% | Product updates, offers |
+| 業界インサイト | 30% | トレンド、データ、予測 |
+| 舞台裏 | 25% | 会社づくり、学び |
+| 教育 | 25% | ハウツー、フレームワーク、ヒント |
+| パーソナル | 15% | ストーリー、価値観、ホットテイク |
+| 宣伝 | 5% | プロダクト更新、オファー |
 
-### Pillar Development Questions
+### ピラー設計の質問
 
-For each pillar, ask:
-1. What unique perspective do you have?
-2. What questions does your audience ask?
-3. What content has performed well before?
-4. What can you create consistently?
-5. What aligns with business goals?
-
----
-
-## Hook Formulas
-
-The first line determines whether anyone reads the rest.
-
-### Curiosity Hooks
-- "I was wrong about [common belief]."
-- "The real reason [outcome] happens isn't what you think."
-- "[Impressive result] — and it only took [surprisingly short time]."
-
-### Story Hooks
-- "Last week, [unexpected thing] happened."
-- "I almost [big mistake/failure]."
-- "3 years ago, I [past state]. Today, [current state]."
-
-### Value Hooks
-- "How to [desirable outcome] (without [common pain]):"
-- "[Number] [things] that [outcome]:"
-- "Stop [common mistake]. Do this instead:"
-
-### Contrarian Hooks
-- "Unpopular opinion: [bold statement]"
-- "[Common advice] is wrong. Here's why:"
-- "I stopped [common practice] and [positive result]."
-
-**For post templates and more hooks**: See [references/post-templates.md](references/post-templates.md)
+各ピラーについて、次を確認する:
+1. 自分ならではの視点は何か？
+2. オーディエンスは何を質問してくるか？
+3. 過去に成果が出たコンテンツは何か？
+4. 継続的に作れるテーマは何か？
+5. ビジネス目標と整合するか？
 
 ---
 
-## Content Repurposing System
+## フックの型
 
-Turn one piece of content into many:
+1行目で、その先が読まれるかが決まります。
 
-### Blog Post → Social Content
+### 好奇心フック
+- 「[一般的な思い込み] について、私は間違っていました。」
+- 「[結果] が起きる本当の理由は、あなたの想像と違います。」
+- 「[印象的な結果] を出しました。しかも [予想外に短い期間] で。」
 
-| Platform | Format |
+### ストーリーフック
+- 「先週、[予想外の出来事] が起きました。」
+- 「私はもう少しで [大きな失敗] をするところでした。」
+- 「3年前の私は [過去の状態]。今は [現在の状態]。」
+
+### 価値提供フック
+- 「[よくある悩み] なしで [望む結果] を出す方法:」
+- 「[結果] につながる [数] 個の [要素]:」
+- 「[よくあるミス] はやめよう。代わりにこれを:」
+
+### 逆張りフック
+- 「不人気な意見: [強い主張]」
+- 「[よくある助言] は間違い。理由はこれです:」
+- 「[一般的なやり方] をやめたら、[良い結果] が出ました。」
+
+**投稿テンプレートと追加フック**: [references/post-templates.md](references/post-templates.md) を参照
+
+---
+
+## コンテンツリパーパスの仕組み
+
+1つのコンテンツを複数に展開する:
+
+### ブログ記事 → ソーシャル投稿
+
+| プラットフォーム | 形式 |
 |----------|--------|
-| LinkedIn | Key insight + link in comments |
-| LinkedIn | Carousel of main points |
-| Twitter/X | Thread of key takeaways |
-| Instagram | Carousel with visuals |
-| Instagram | Reel summarizing the post |
+| LinkedIn | 主要インサイト + コメント欄にリンク |
+| LinkedIn | 主要ポイントのカルーセル |
+| Twitter/X | 要点スレッド |
+| Instagram | ビジュアル付きカルーセル |
+| Instagram | 投稿要約リール |
 
-### Repurposing Workflow
+### リパーパス手順
 
-1. **Create pillar content** (blog, video, podcast)
-2. **Extract key insights** (3-5 per piece)
-3. **Adapt to each platform** (format and tone)
-4. **Schedule across the week** (spread distribution)
-5. **Update and reshare** (evergreen content can repeat)
+1. **柱になるコンテンツを作る**（ブログ、動画、ポッドキャスト）
+2. **要点を抽出する**（1本あたり 3〜5 個）
+3. **各プラットフォーム向けに調整する**（形式とトーン）
+4. **1週間に分散して予約する**（配信を分散）
+5. **更新して再共有する**（エバーグリーンは再活用可能）
 
 ---
 
-## Content Calendar Structure
+## コンテンツカレンダー構成
 
-### Weekly Planning Template
+### 週間計画テンプレート
 
-| Day | LinkedIn | Twitter/X | Instagram |
+| 曜日 | LinkedIn | Twitter/X | Instagram |
 |-----|----------|-----------|-----------|
-| Mon | Industry insight | Thread | Carousel |
-| Tue | Behind-scenes | Engagement | Story |
-| Wed | Educational | Tips tweet | Reel |
-| Thu | Story post | Thread | Educational |
-| Fri | Hot take | Engagement | Story |
+| 月 | 業界インサイト | スレッド | カルーセル |
+| 火 | 舞台裏 | エンゲージ投稿 | ストーリー |
+| 水 | 教育投稿 | ヒント投稿 | リール |
+| 木 | ストーリー投稿 | スレッド | 教育投稿 |
+| 金 | ホットテイク | エンゲージ投稿 | ストーリー |
 
-### Batching Strategy (2-3 hours weekly)
+### バッチ作業戦略（週2〜3時間）
 
-1. Review content pillar topics
-2. Write 5 LinkedIn posts
-3. Write 3 Twitter threads + daily tweets
-4. Create Instagram carousel + Reel ideas
-5. Schedule everything
-6. Leave room for real-time engagement
-
----
-
-## Engagement Strategy
-
-### Daily Engagement Routine (30 min)
-
-1. Respond to all comments on your posts (5 min)
-2. Comment on 5-10 posts from target accounts (15 min)
-3. Share/repost with added insight (5 min)
-4. Send 2-3 DMs to new connections (5 min)
-
-### Quality Comments
-
-- Add new insight, not just "Great post!"
-- Share a related experience
-- Ask a thoughtful follow-up question
-- Respectfully disagree with nuance
-
-### Building Relationships
-
-- Identify 20-50 accounts in your space
-- Consistently engage with their content
-- Share their content with credit
-- Eventually collaborate (podcasts, co-created content)
+1. コンテンツピラーのトピックを見直す
+2. LinkedIn 投稿を 5 本書く
+3. Twitter スレッド 3 本 + 日次ツイートを書く
+4. Instagram カルーセル + リール案を作る
+5. すべて予約投稿する
+6. リアルタイム交流の余白を残す
 
 ---
 
-## Analytics & Optimization
+## エンゲージメント戦略
 
-### Metrics That Matter
+### 日次エンゲージメントルーティン（30分）
 
-**Awareness:** Impressions, Reach, Follower growth rate
+1. 自分の投稿コメントにすべて返信（5分）
+2. ターゲットアカウントの投稿に 5〜10 件コメント（15分）
+3. 追加視点を添えて共有/リポスト（5分）
+4. 新規接続に DM を 2〜3 件送る（5分）
 
-**Engagement:** Engagement rate, Comments (higher value than likes), Shares/reposts, Saves
+### 質の高いコメント
 
-**Conversion:** Link clicks, Profile visits, DMs received, Leads attributed
+- 「いい投稿！」だけで終わらず新しい視点を加える
+- 関連する実体験を共有する
+- 考えさせる追質問をする
+- 丁寧に、文脈付きで反対意見を述べる
 
-### Weekly Review
+### 関係構築
 
-- Top 3 performing posts (why did they work?)
-- Bottom 3 posts (what can you learn?)
-- Follower growth trend
-- Engagement rate trend
-- Best posting times (from data)
-
-### Optimization Actions
-
-**If engagement is low:**
-- Test new hooks
-- Post at different times
-- Try different formats
-- Increase engagement with others
-
-**If reach is declining:**
-- Avoid external links in post body
-- Increase posting frequency
-- Engage more in comments
-- Test video/visual content
+- 同じ領域の 20〜50 アカウントを特定する
+- その人たちの投稿に継続的に関与する
+- クレジット付きで相手コンテンツを共有する
+- 将来的に協業する（ポッドキャスト、共同制作）
 
 ---
 
-## Content Ideas by Situation
+## 分析と最適化
 
-### When You're Starting Out
-- Document your journey
-- Share what you're learning
-- Curate and comment on industry content
-- Engage heavily with established accounts
+### 重要指標
 
-### When You're Stuck
-- Repurpose old high-performing content
-- Ask your audience what they want
-- Comment on industry news
-- Share a failure or lesson learned
+**認知:** インプレッション、リーチ、フォロワー増加率
 
----
+**エンゲージメント:** エンゲージ率、コメント（いいねより価値が高い）、シェア/リポスト、保存数
 
-## Scheduling Best Practices
+**コンバージョン:** リンククリック、プロフィール訪問、受信DM、起点となったリード
 
-### When to Schedule vs. Post Live
+### 週次レビュー
 
-**Schedule:** Core content posts, Threads, Carousels, Evergreen content
+- 上位3投稿（なぜ機能したか）
+- 下位3投稿（何を学べるか）
+- フォロワー増加トレンド
+- エンゲージ率トレンド
+- 最適な投稿時間（実データから）
 
-**Post live:** Real-time commentary, Responses to news/trends, Engagement with others
+### 最適化アクション
 
-### Queue Management
+**エンゲージメントが低い場合:**
+- 新しいフックを試す
+- 投稿時間帯を変える
+- 形式を変える
+- 他者へのエンゲージを増やす
 
-- Maintain 1-2 weeks of scheduled content
-- Review queue weekly for relevance
-- Leave gaps for spontaneous posts
-- Adjust timing based on performance data
-
----
-
-## Reverse Engineering Viral Content
-
-Instead of guessing, analyze what's working for top creators in your niche:
-
-1. **Find creators** — 10-20 accounts with high engagement
-2. **Collect data** — 500+ posts for analysis
-3. **Analyze patterns** — Hooks, formats, CTAs that work
-4. **Codify playbook** — Document repeatable patterns
-5. **Layer your voice** — Apply patterns with authenticity
-6. **Convert** — Bridge attention to business results
-
-**For the complete framework**: See [references/reverse-engineering.md](references/reverse-engineering.md)
+**リーチが落ちている場合:**
+- 投稿本文内の外部リンクを避ける
+- 投稿頻度を上げる
+- コメント活動を増やす
+- 動画/ビジュアル形式を試す
 
 ---
 
-## Task-Specific Questions
+## 状況別コンテンツアイデア
 
-1. What platform(s) are you focusing on?
-2. What's your current posting frequency?
-3. Do you have existing content to repurpose?
-4. What content has performed well in the past?
-5. How much time can you dedicate weekly?
-6. Are you building personal brand, company brand, or both?
+### 始めたばかりのとき
+- 自分の過程を記録する
+- 学んだことを共有する
+- 業界コンテンツをキュレーションしてコメントする
+- 既存の強いアカウントに積極的に関与する
+
+### 行き詰まったとき
+- 過去の高成果コンテンツをリパーパスする
+- オーディエンスに「何が見たいか」を聞く
+- 業界ニュースにコメントする
+- 失敗談や学びを共有する
 
 ---
 
-## Related Skills
+## 予約投稿のベストプラクティス
 
-- **copywriting**: For longer-form content that feeds social
-- **launch-strategy**: For coordinating social with launches
-- **email-sequence**: For nurturing social audience via email
-- **marketing-psychology**: For understanding what drives engagement
+### 予約する投稿とライブ投稿の使い分け
+
+**予約投稿:** コア投稿、スレッド、カルーセル、エバーグリーン投稿
+
+**ライブ投稿:** リアルタイム解説、ニュース/トレンドへの反応、他者との交流
+
+### キュー管理
+
+- 1〜2週間分の予約投稿を維持する
+- キューの関連性を週次で見直す
+- 突発投稿の余白を残す
+- 成果データに基づいて時間を調整する
+
+---
+
+## バズコンテンツのリバースエンジニアリング
+
+当て推量で作るのではなく、ニッチ上位クリエイターの成果を分析する:
+
+1. **クリエイターを見つける** — 高エンゲージの 10〜20 アカウント
+2. **データを集める** — 分析用に 500+ 投稿を収集
+3. **パターンを分析する** — 機能するフック、形式、行動喚起を抽出
+4. **プレイブック化する** — 再現可能な型を文書化
+5. **自分の声を重ねる** — 型に真正性を加える
+6. **成果に変換する** — 注目をビジネス結果へ接続
+
+**完全なフレームワーク**: [references/reverse-engineering.md](references/reverse-engineering.md) を参照
+
+---
+
+## タスク固有の質問
+
+1. 注力するプラットフォームはどれですか？
+2. 現在の投稿頻度はどれくらいですか？
+3. リパーパスできる既存コンテンツはありますか？
+4. 過去に成果が出たコンテンツは何ですか？
+5. 週あたり何時間使えますか？
+6. 個人ブランド、企業ブランド、または両方を育てますか？
+
+---
+
+## 関連スキル
+
+- **copywriting**: ソーシャル流用元になる長文コンテンツ向け
+- **launch-strategy**: ローンチ時のソーシャル連携向け
+- **email-sequence**: ソーシャル流入をメールで育成する場合
+- **marketing-psychology**: エンゲージを生む心理理解向け

@@ -1,234 +1,234 @@
-# Audience Targeting Reference
+# オーディエンスターゲティング リファレンス
 
-Detailed targeting strategies for each major ad platform.
+主要広告プラットフォームごとの詳細ターゲティング戦略です。
 
-## Google Ads Audiences
+## Google Ads のオーディエンス
 
-### Search Campaign Targeting
+### 検索キャンペーンのターゲティング
 
-**Keywords:**
-- Exact match: [keyword] — most precise, lower volume
-- Phrase match: "keyword" — moderate precision and volume
-- Broad match: keyword — highest volume, use with smart bidding
+**キーワード:**
+- 完全一致: [keyword] — 最も精密、配信量は少なめ
+- フレーズ一致: "keyword" — 精度と配信量のバランス
+- 部分一致: keyword — 配信量最大、スマート入札と併用
 
-**Audience layering:**
-- Add audiences in "observation" mode first
-- Analyze performance by audience
-- Switch to "targeting" mode for high performers
+**オーディエンスのレイヤリング:**
+- まず「観察（observation）」モードで追加
+- オーディエンス別に成果を分析
+- 高成果セグメントは「ターゲティング」モードへ移行
 
-**RLSA (Remarketing Lists for Search Ads):**
-- Bid higher on past visitors searching your terms
-- Show different ads to returning searchers
-- Exclude converters from prospecting campaigns
+**RLSA（検索広告向けリマーケティングリスト）:**
+- 過去訪問者が自社関連語を検索したとき入札を上げる
+- 再訪検索者には別メッセージ広告を表示
+- 新規開拓キャンペーンではコンバージョン済みユーザーを除外
 
-### Display/YouTube Targeting
+### ディスプレイ/YouTube ターゲティング
 
-**Custom intent audiences:**
-- Based on recent search behavior
-- Create from your converting keywords
-- High intent, good for prospecting
+**カスタムインテントオーディエンス:**
+- 直近の検索行動に基づく
+- 自社の高成果キーワードから作成
+- 意図が高く、新規開拓に有効
 
-**In-market audiences:**
-- People actively researching solutions
-- Pre-built by Google
-- Layer with demographics for precision
+**購買意向の強いオーディエンス（In-market）:**
+- 解決策を積極調査中のユーザー
+- Google が事前定義
+- 精度向上のため属性条件を重ねる
 
-**Affinity audiences:**
-- Based on interests and habits
-- Better for awareness
-- Broad but can exclude irrelevant
+**アフィニティオーディエンス:**
+- 興味関心や習慣に基づく
+- 認知目的に向く
+- 広く取りつつ不要層を除外する
 
-**Customer match:**
-- Upload email lists
-- Retarget existing customers
-- Create lookalikes from best customers
+**カスタマーマッチ:**
+- メールリストをアップロード
+- 既存顧客のリターゲティング
+- 最良顧客から類似層を作成
 
-**Similar/lookalike audiences:**
-- Based on your customer match lists
-- Expand reach while maintaining relevance
-- Best when source list is high-quality customers
-
----
-
-## Meta Audiences
-
-### Core Audiences (Interest/Demographic)
-
-**Interest targeting tips:**
-- Layer interests with AND logic for precision
-- Use Audience Insights to research interests
-- Start broad, let algorithm optimize
-- Exclude existing customers always
-
-**Demographic targeting:**
-- Age and gender (if product-specific)
-- Location (down to zip/postal code)
-- Language
-- Education and work (limited data now)
-
-**Behavior targeting:**
-- Purchase behavior
-- Device usage
-- Travel patterns
-- Life events
-
-### Custom Audiences
-
-**Website visitors:**
-- All visitors (last 180 days max)
-- Specific page visitors
-- Time on site thresholds
-- Frequency (visited X times)
-
-**Customer list:**
-- Upload emails/phone numbers
-- Match rate typically 30-70%
-- Refresh regularly for accuracy
-
-**Engagement audiences:**
-- Video viewers (25%, 50%, 75%, 95%)
-- Page/profile engagers
-- Form openers
-- Instagram engagers
-
-**App activity:**
-- App installers
-- In-app events
-- Purchase events
-
-### Lookalike Audiences
-
-**Source audience quality matters:**
-- Use high-LTV customers, not all customers
-- Purchasers > leads > all visitors
-- Minimum 100 source users, ideally 1,000+
-
-**Size recommendations:**
-- 1% — most similar, smallest reach
-- 1-3% — good balance for most
-- 3-5% — broader, good for scale
-- 5-10% — very broad, awareness only
-
-**Layering strategies:**
-- Lookalike + interest = more precision early
-- Test lookalike-only as you scale
-- Exclude the source audience
+**類似オーディエンス（Similar/Lookalike）:**
+- カスタマーマッチリストを母集団にする
+- 関連性を維持しながらリーチ拡大
+- 母集団は高品質顧客リストが最適
 
 ---
 
-## LinkedIn Audiences
+## Meta のオーディエンス
 
-### Job-Based Targeting
+### コアオーディエンス（興味関心/属性）
 
-**Job titles:**
-- Be specific (CMO vs. "Marketing")
-- LinkedIn normalizes titles, but verify
-- Stack related titles
-- Exclude irrelevant titles
+**興味関心ターゲティングのコツ:**
+- 精度向上のため AND 条件で重ねる
+- Audience Insights で興味関心を調査
+- 最初は広めに取り、アルゴリズムに最適化させる
+- 既存顧客は常に除外
 
-**Job functions:**
-- Broader than titles
-- Combine with seniority level
-- Good for awareness campaigns
+**属性ターゲティング:**
+- 年齢と性別（製品特性がある場合）
+- 地域（郵便番号単位まで）
+- 言語
+- 学歴・職業（現在は利用可能データが限定的）
 
-**Seniority levels:**
-- Entry, Senior, Manager, Director, VP, CXO, Partner
-- Layer with function for precision
+**行動ターゲティング:**
+- 購買行動
+- デバイス利用傾向
+- 旅行パターン
+- ライフイベント
 
-**Skills:**
-- Self-reported, less reliable
-- Good for technical roles
-- Use as expansion layer
+### カスタムオーディエンス
 
-### Company-Based Targeting
+**サイト訪問者:**
+- 全訪問者（最大180日）
+- 特定ページ訪問者
+- 滞在時間しきい値
+- 訪問頻度（X回以上）
 
-**Company size:**
-- 1-10, 11-50, 51-200, 201-500, 501-1000, 1001-5000, 5000+
-- Key filter for B2B
+**顧客リスト:**
+- メール/電話番号をアップロード
+- 一般的な一致率は30-70%
+- 精度維持のため定期更新
 
-**Industry:**
-- Based on company classification
-- Can be broad, layer with other criteria
+**エンゲージメントオーディエンス:**
+- 動画視聴者（25%、50%、75%、95%）
+- ページ/プロフィールのエンゲージャー
+- フォーム開封者
+- Instagram エンゲージャー
 
-**Company names (ABM):**
-- Upload target account list
-- Minimum 300 companies recommended
-- Match rate varies
+**アプリ行動:**
+- アプリインストールユーザー
+- アプリ内イベント
+- 購入イベント
 
-**Company growth rate:**
-- Hiring rapidly = budget available
-- Good signal for timing
+### 類似オーディエンス（Lookalike）
 
-### High-Performing Combinations
+**母集団品質が最重要:**
+- 全顧客ではなく高LTV顧客を使用
+- 購入者 > リード > 全訪問者
+- 母集団は最低100人、理想は1,000人以上
 
-| Use Case | Targeting Combination |
+**サイズ推奨:**
+- 1% — 最も類似、リーチ最小
+- 1-3% — 多くのケースでバランス良好
+- 3-5% — 広め、拡張に有効
+- 5-10% — 非常に広い、認知目的向け
+
+**レイヤリング戦略:**
+- 初期は「類似 + 興味関心」で精度重視
+- 拡張段階で類似単体もテスト
+- 母集団オーディエンスは除外設定
+
+---
+
+## LinkedIn のオーディエンス
+
+### 職務ベースのターゲティング
+
+**役職名:**
+- 具体的に設定する（CMO と「マーケティング」では精度が違う）
+- LinkedIn は役職を正規化するが確認は必要
+- 関連役職を束ねる
+- 不要役職を除外する
+
+**職務機能:**
+- 役職より広い粒度
+- シニアリティと組み合わせる
+- 認知キャンペーンで有効
+
+**シニアリティレベル:**
+- Entry、Senior、Manager、Director、VP、CXO、Partner
+- 職務機能と組み合わせて精度を上げる
+
+**スキル:**
+- 自己申告で信頼性はやや低い
+- 技術職には有効
+- 拡張レイヤーとして使う
+
+### 企業ベースのターゲティング
+
+**企業規模:**
+- 1-10、11-50、51-200、201-500、501-1000、1001-5000、5000+
+- B2B では重要フィルター
+
+**業界:**
+- 企業分類に基づく
+- 粗い場合があるため他条件と併用
+
+**企業名（ABM）:**
+- ターゲットアカウントリストをアップロード
+- 推奨最小は300社
+- 一致率は変動する
+
+**企業成長率:**
+- 採用拡大中の企業は予算余力がある傾向
+- タイミング判断の有効シグナル
+
+### 高成果の組み合わせ
+
+| ユースケース | ターゲティングの組み合わせ |
 |----------|----------------------|
-| Enterprise sales | Company size 1000+ + VP/CXO + Industry |
-| SMB sales | Company size 11-200 + Manager/Director + Function |
-| Developer tools | Skills + Job function + Company type |
-| ABM campaigns | Company list + Decision-maker titles |
-| Broad awareness | Industry + Seniority + Geography |
+| エンタープライズ営業 | 企業規模1000+ + VP/CXO + 業界 |
+| SMB営業 | 企業規模11-200 + Manager/Director + 職務機能 |
+| 開発者向けツール | スキル + 職務機能 + 企業タイプ |
+| ABMキャンペーン | 企業リスト + 意思決定者役職 |
+| 広範な認知 | 業界 + シニアリティ + 地域 |
 
 ---
 
-## Twitter/X Audiences
+## Twitter/X のオーディエンス
 
-### Targeting options:
-- Follower lookalikes (accounts similar to followers of X)
-- Interest categories
-- Keywords (in tweets)
-- Conversation topics
-- Events
-- Tailored audiences (your lists)
+### ターゲティング選択肢:
+- フォロワー類似（X上の特定アカウントのフォロワーに類似）
+- 興味関心カテゴリ
+- キーワード（投稿内）
+- 会話トピック
+- イベント
+- Tailored Audiences（自社リスト）
 
-### Best practices:
-- Follower lookalikes of relevant accounts work well
-- Keyword targeting catches active conversations
-- Lower CPMs than LinkedIn/Meta
-- Less precise, better for awareness
-
----
-
-## TikTok Audiences
-
-### Targeting options:
-- Demographics (age, gender, location)
-- Interests (TikTok's categories)
-- Behaviors (video interactions)
-- Device (iOS/Android, connection type)
-- Custom audiences (pixel, customer file)
-- Lookalike audiences
-
-### Best practices:
-- Younger skew (18-34 primarily)
-- Interest targeting is broad
-- Creative matters more than targeting
-- Let algorithm optimize with broad targeting
+### ベストプラクティス:
+- 関連アカウントのフォロワー類似が有効
+- キーワードターゲティングはアクティブな会話を捉える
+- CPM は LinkedIn/Meta より低い傾向
+- 精度は低めのため認知目的に向く
 
 ---
 
-## Audience Size Guidelines
+## TikTok のオーディエンス
 
-| Platform | Minimum Recommended | Ideal Range |
+### ターゲティング選択肢:
+- 属性（年齢、性別、地域）
+- 興味関心（TikTok のカテゴリ）
+- 行動（動画への反応）
+- デバイス（iOS/Android、接続種別）
+- カスタムオーディエンス（ピクセル、顧客ファイル）
+- 類似オーディエンス
+
+### ベストプラクティス:
+- 若年層寄り（主に18-34）
+- 興味関心ターゲティングは広め
+- ターゲティングよりクリエイティブの影響が大きい
+- 広め設定でアルゴリズム最適化を活かす
+
+---
+
+## オーディエンスサイズの目安
+
+| プラットフォーム | 推奨最小サイズ | 理想レンジ |
 |----------|-------------------|-------------|
-| Google Search | 1,000+ searches/mo | 5,000-50,000 |
-| Google Display | 100,000+ | 500K-5M |
-| Meta | 100,000+ | 500K-10M |
-| LinkedIn | 50,000+ | 100K-500K |
-| Twitter/X | 50,000+ | 100K-1M |
-| TikTok | 100,000+ | 1M+ |
+| Google Search | 月1,000検索以上 | 5,000-50,000 |
+| Google Display | 100,000以上 | 500K-5M |
+| Meta | 100,000以上 | 500K-10M |
+| LinkedIn | 50,000以上 | 100K-500K |
+| Twitter/X | 50,000以上 | 100K-1M |
+| TikTok | 100,000以上 | 1M以上 |
 
-Too narrow = expensive, slow learning
-Too broad = wasted spend, poor relevance
+狭すぎる = 高コスト、学習遅延
+広すぎる = 無駄配信、関連性低下
 
 ---
 
-## Exclusion Strategy
+## 除外戦略
 
-Always exclude:
-- Existing customers (unless upsell)
-- Recent converters (7-14 days)
-- Bounced visitors (<10 sec)
-- Employees (by company or email list)
-- Irrelevant page visitors (careers, support)
-- Competitors (if identifiable)
+常に除外する:
+- 既存顧客（アップセルを除く）
+- 直近コンバージョン者（7-14日）
+- 直帰訪問者（10秒未満）
+- 社員（企業名またはメールリストで除外）
+- 不要ページ訪問者（採用、サポート）
+- 競合（識別可能な場合）

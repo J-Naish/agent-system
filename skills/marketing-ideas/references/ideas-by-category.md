@@ -1,347 +1,347 @@
-# The 139 Marketing Ideas
+# 139のマーケティングアイデア
 
-Complete list of proven marketing approaches organized by category.
+カテゴリ別に整理した、実証済みマーケティング手法の完全一覧です。
 
-## Content & SEO (1-10)
+## コンテンツとSEO（1-10）
 
-1. **Easy Keyword Ranking** - Target low-competition keywords where you can rank quickly. Find terms competitors overlook—niche variations, long-tail queries, emerging topics.
+1. **低難度キーワード攻略** - 競争が弱いキーワードを狙い、短期間で上位表示を狙う。競合が見落とす語句、ロングテール、立ち上がり中のトピックを発掘する。
 
-2. **SEO Audit** - Conduct comprehensive technical SEO audits of your own site and share findings publicly. Document fixes and improvements to build authority.
+2. **SEO監査** - 自社サイトの技術SEO監査を包括的に行い、結果を公開する。修正内容と改善結果を記録して権威性を高める。
 
-3. **Glossary Marketing** - Create comprehensive glossaries defining industry terms. Each term becomes an SEO-optimized page targeting "what is X" searches.
+3. **用語集マーケティング** - 業界用語を定義する包括的な用語集を作成する。各用語を「Xとは何か」検索に最適化したページにする。
 
-4. **Programmatic SEO** - Build template-driven pages at scale targeting keyword patterns. Location pages, comparison pages, integration pages—any pattern with search volume.
+4. **プログラマティックSEO** - キーワードパターンを狙ったテンプレート駆動ページを大規模作成する。地域ページ、比較ページ、連携ページなど、検索需要のある型を展開する。
 
-5. **Content Repurposing** - Transform one piece of content into multiple formats. Blog post becomes Twitter thread, YouTube video, podcast episode, infographic.
+5. **コンテンツ再利用** - 1つのコンテンツを複数形式へ展開する。ブログ記事をXのスレッド、YouTube動画、ポッドキャスト、インフォグラフィックへ変換する。
 
-6. **Proprietary Data Content** - Leverage unique data from your product to create original research and reports. Data competitors can't replicate creates linkable assets.
+6. **独自データコンテンツ** - プロダクト由来の独自データを使って一次調査やレポートを作る。競合が再現できないデータはリンクされやすい資産になる。
 
-7. **Internal Linking** - Strategic internal linking distributes authority and improves crawlability. Build topical clusters connecting related content.
+7. **内部リンク最適化** - 戦略的な内部リンクで評価を分配し、クロールしやすさを改善する。関連コンテンツをつなぐトピッククラスターを構築する。
 
-8. **Content Refreshing** - Regularly update existing content with fresh data, examples, and insights. Refreshed content often outperforms new content.
+8. **既存コンテンツ更新** - 既存コンテンツを新しいデータ、事例、洞察で定期更新する。更新記事は新規記事より成果が出ることが多い。
 
-9. **Knowledge Base SEO** - Optimize help documentation for search. Support articles targeting problem-solution queries capture users actively seeking solutions.
+9. **ナレッジベースSEO** - ヘルプドキュメントを検索最適化する。問題解決系クエリを狙うサポート記事は、解決策を探すユーザーを獲得できる。
 
-10. **Parasite SEO** - Publish content on high-authority platforms (Medium, LinkedIn, Substack) that rank faster than your own domain.
-
----
-
-## Competitor & Comparison (11-13)
-
-11. **Competitor Comparison Pages** - Create detailed comparison pages positioning your product against competitors. "[Your Product] vs [Competitor]" pages capture high-intent searchers.
-
-12. **Marketing Jiu-Jitsu** - Turn competitor weaknesses into your strengths. When competitors raise prices, launch affordability campaigns.
-
-13. **Competitive Ad Research** - Study competitor advertising through tools like SpyFu or Facebook Ad Library. Learn what messaging resonates.
+10. **寄生SEO** - 権威性の高いプラットフォーム（Medium、LinkedIn、Substack）に投稿し、自社ドメインより早く上位表示を狙う。
 
 ---
 
-## Free Tools & Engineering (14-22)
+## 競合と比較（11-13）
 
-14. **Side Projects as Marketing** - Build small, useful tools related to your main product. Side projects attract users who may later convert.
+11. **競合比較ページ** - 競合と自社製品を比較する詳細ページを作る。「[自社製品] vs [競合]」ページで高意図検索を獲得する。
 
-15. **Engineering as Marketing** - Build free tools that solve real problems. Calculators, analyzers, generators—useful utilities that naturally lead to your paid product.
+12. **マーケティング柔術** - 競合の弱みを自社の強みに変える。競合が値上げしたら、手頃さを訴求する施策を展開する。
 
-16. **Importers as Marketing** - Build import tools for competitor data. "Import from [Competitor]" reduces switching friction.
-
-17. **Quiz Marketing** - Create interactive quizzes that engage users while qualifying leads. Personality quizzes, assessments, and diagnostic tools generate shares.
-
-18. **Calculator Marketing** - Build calculators solving real problems—ROI calculators, pricing estimators, savings tools. Calculators attract links and rank well.
-
-19. **Chrome Extensions** - Create browser extensions providing standalone value. Chrome Web Store becomes another distribution channel.
-
-20. **Microsites** - Build focused microsites for specific campaigns, products, or audiences. Dedicated domains can rank faster.
-
-21. **Scanners** - Build free scanning tools that audit or analyze something. Website scanners, security checkers, performance analyzers.
-
-22. **Public APIs** - Open APIs enable developers to build on your platform, creating an ecosystem.
+13. **競合広告リサーチ** - SpyFu や Facebook Ad Library のようなツールで競合広告を分析し、反応される訴求を学ぶ。
 
 ---
 
-## Paid Advertising (23-34)
+## 無料ツールとエンジニアリング（14-22）
 
-23. **Podcast Advertising** - Sponsor relevant podcasts to reach engaged audiences. Host-read ads perform especially well.
+14. **サイドプロジェクトをマーケティング化** - メイン製品に関連した小さく有用なツールを作る。サイドプロジェクトが将来の顧客候補を集める。
 
-24. **Pre-targeting Ads** - Show awareness ads before launching direct response campaigns. Warm audiences convert better.
+15. **エンジニアリングをマーケティングに活用** - 実課題を解く無料ツールを構築する。計算、分析、生成ツールなどが有料製品への自然な導線になる。
 
-25. **Facebook Ads** - Meta's detailed targeting reaches specific audiences. Test creative variations and leverage retargeting.
+16. **インポーターをマーケティング化** - 競合データを取り込むツールを作る。「[競合]からインポート」で乗り換え摩擦を下げる。
 
-26. **Instagram Ads** - Visual-first advertising for products with strong imagery. Stories and Reels ads capture attention.
+17. **クイズマーケティング** - リードの選別をしながら、ユーザーを惹きつけるインタラクティブクイズを作る。性格診断、評価、診断ツールは共有されやすい。
 
-27. **Twitter Ads** - Reach engaged professionals discussing industry topics. Promoted tweets and follower campaigns.
+18. **計算ツールマーケティング** - 実課題を解く計算ツールを作る。ROI計算、料金見積もり、節約計算などは被リンクを集めやすく、検索にも強い。
 
-28. **LinkedIn Ads** - Target by job title, company size, and industry. Premium CPMs justified by B2B purchase intent.
+19. **Chrome拡張** - 単体で価値を提供するブラウザ拡張を作る。Chrome Web Store が追加の配布チャネルになる。
 
-29. **Reddit Ads** - Reach passionate communities with authentic messaging. Transparency wins on Reddit.
+20. **マイクロサイト** - 特定キャンペーン、製品、オーディエンス向けに焦点を絞ったマイクロサイトを構築する。専用ドメインは上位表示が早い場合がある。
 
-30. **Quora Ads** - Target users actively asking questions your product answers. Intent-rich environment.
+21. **スキャナーツール** - 何かを監査・分析する無料スキャンツールを作る。サイトスキャナー、セキュリティチェッカー、性能分析など。
 
-31. **Google Ads** - Capture high-intent search queries. Brand terms, competitor terms, and category terms.
-
-32. **YouTube Ads** - Video ads with detailed targeting. Pre-roll and discovery ads reach users consuming related content.
-
-33. **Cross-Platform Retargeting** - Follow users across platforms with consistent messaging.
-
-34. **Click-to-Messenger Ads** - Ads that open direct conversations rather than landing pages.
+22. **公開API** - APIを公開し、開発者が自社プラットフォーム上で開発できるようにする。結果としてエコシステムが育つ。
 
 ---
 
-## Social Media & Community (35-44)
+## 有料広告（23-34）
 
-35. **Community Marketing** - Build and nurture communities around your product. Slack groups, Discord servers, Facebook groups.
+23. **ポッドキャスト広告** - 関連ポッドキャストにスポンサー出稿し、関与度の高いオーディエンスへ到達する。特にホスト読み上げ広告が有効。
 
-36. **Quora Marketing** - Answer relevant questions with genuine expertise. Include product mentions where naturally appropriate.
+24. **プレターゲティング広告** - 直接獲得キャンペーン前に認知広告を当てる。温まったオーディエンスの方が転換しやすい。
 
-37. **Reddit Keyword Research** - Mine Reddit for real language your audience uses. Discover pain points and desires.
+25. **Facebook広告** - Metaの詳細ターゲティングで特定層へ届ける。クリエイティブを比較しつつ、リターゲティングを活用する。
 
-38. **Reddit Marketing** - Participate authentically in relevant subreddits. Provide value first.
+26. **Instagram広告** - 視覚訴求が強い製品向けのビジュアル中心広告。ストーリーズ広告とリール広告で注意を引く。
 
-39. **LinkedIn Audience** - Build personal brands on LinkedIn for B2B reach. Thought leadership builds authority.
+27. **X広告** - 業界トピックを議論するプロ層に到達する。プロモツイートやフォロワー獲得キャンペーンを使う。
 
-40. **Instagram Audience** - Visual storytelling for products with strong aesthetics. Behind-the-scenes and user stories.
+28. **LinkedIn広告** - 役職、企業規模、業界で精密ターゲティングする。B2B購買意図が高いため、高いCPMでも成立しやすい。
 
-41. **X Audience** - Build presence on X/Twitter through consistent value. Threads and insights grow followings.
+29. **Reddit広告** - 情熱的なコミュニティに、誠実な訴求で届ける。Redditでは透明性が重要。
 
-42. **Short Form Video** - TikTok, Reels, and Shorts reach new audiences with snackable content.
+30. **Quora広告** - 製品が解決する質問を積極的にしているユーザーを狙う。意図の強い環境。
 
-43. **Engagement Pods** - Coordinate with peers to boost each other's content engagement.
+31. **Google広告** - 高意図の検索クエリを獲得する。指名語、競合語、カテゴリ語を組み合わせる。
 
-44. **Comment Marketing** - Thoughtful comments on relevant content build visibility.
+32. **YouTube広告** - 詳細ターゲティング可能な動画広告。プレロール広告とディスカバリー広告で関連コンテンツ視聴者に到達する。
 
----
+33. **クロスプラットフォーム・リターゲティング** - 複数プラットフォームを横断し、一貫した訴求で追従する。
 
-## Email Marketing (45-53)
-
-45. **Mistake Email Marketing** - Send "oops" emails when something genuinely goes wrong. Authenticity generates engagement.
-
-46. **Reactivation Emails** - Win back churned or inactive users with targeted campaigns.
-
-47. **Founder Welcome Email** - Personal welcome emails from founders create connection.
-
-48. **Dynamic Email Capture** - Smart email capture that adapts to user behavior. Exit intent, scroll depth triggers.
-
-49. **Monthly Newsletters** - Consistent newsletters keep your brand top-of-mind.
-
-50. **Inbox Placement** - Technical email optimization for deliverability. Authentication and list hygiene.
-
-51. **Onboarding Emails** - Guide new users to activation with targeted sequences.
-
-52. **Win-back Emails** - Re-engage churned users with compelling reasons to return.
-
-53. **Trial Reactivation** - Expired trials aren't lost causes. Targeted campaigns can recover them.
+34. **クリックtoメッセンジャー広告** - LPではなく、直接会話を開く広告を使う。
 
 ---
 
-## Partnerships & Programs (54-64)
+## ソーシャルメディアとコミュニティ（35-44）
 
-54. **Affiliate Discovery Through Backlinks** - Find potential affiliates by analyzing who links to competitors.
+35. **コミュニティマーケティング** - 製品を中心としたコミュニティを構築・育成する。Slackグループ、Discordサーバー、Facebookグループなど。
 
-55. **Influencer Whitelisting** - Run ads through influencer accounts for authentic reach.
+36. **Quoraマーケティング** - 関連質問に実務的な知見で回答する。自然な場面で製品言及を入れる。
 
-56. **Reseller Programs** - Enable agencies to resell your product. White-label options create distribution partners.
+37. **Redditキーワードリサーチ** - Redditから顧客の実言語を抽出する。痛みと欲求を発見する。
 
-57. **Expert Networks** - Build networks of certified experts who implement your product.
+38. **Redditマーケティング** - 関連サブレディットで誠実に参加する。先に価値提供する。
 
-58. **Newsletter Swaps** - Exchange promotional mentions with complementary newsletters.
+39. **LinkedInオーディエンス構築** - B2B到達のため、LinkedInで個人ブランドを作る。ソートリーダーシップが権威性を高める。
 
-59. **Article Quotes** - Contribute expert quotes to journalists. HARO connects experts with writers.
+40. **Instagramオーディエンス構築** - 視覚表現が強い製品でストーリーテリングを行う。舞台裏やユーザーストーリーを使う。
 
-60. **Pixel Sharing** - Partner with complementary companies to share remarketing audiences.
+41. **Xオーディエンス構築** - X/Twitterで継続的に価値提供し、存在感を作る。スレッドと洞察投稿でフォロワーを伸ばす。
 
-61. **Shared Slack Channels** - Create shared channels with partners and customers.
+42. **ショート動画** - TikTok、Reels、Shortsで短尺コンテンツを配信し、新規層へ広げる。
 
-62. **Affiliate Program** - Structured commission programs for referrers.
+43. **エンゲージメントポッド** - 仲間同士でコンテンツ反応を相互強化する。
 
-63. **Integration Marketing** - Joint marketing with integration partners.
-
-64. **Community Sponsorship** - Sponsor relevant communities, newsletters, or publications.
+44. **コメントマーケティング** - 関連コンテンツに質の高いコメントを残し、露出を増やす。
 
 ---
 
-## Events & Speaking (65-72)
+## メールマーケティング（45-53）
 
-65. **Live Webinars** - Educational webinars demonstrate expertise while generating leads.
+45. **ミス報告メールマーケティング** - 実際に問題が起きた時に「お詫び/状況」メールを送る。誠実さがエンゲージメントを生む。
 
-66. **Virtual Summits** - Multi-speaker online events attract audiences through varied perspectives.
+46. **再アクティベーションメール** - 解約済みまたは休眠ユーザーを、ターゲット施策で呼び戻す。
 
-67. **Roadshows** - Take your product on the road to meet customers directly.
+47. **創業者ウェルカムメール** - 創業者本人の歓迎メールでつながりを作る。
 
-68. **Local Meetups** - Host or attend local meetups in key markets.
+48. **動的メール獲得** - 行動に応じて変わる賢いメール獲得導線を作る。離脱意図やスクロール深度トリガーを活用する。
 
-69. **Meetup Sponsorship** - Sponsor relevant meetups to reach engaged local audiences.
+49. **月次ニュースレター** - 継続配信でブランド想起を維持する。
 
-70. **Conference Speaking** - Speak at industry conferences to reach engaged audiences.
+50. **受信箱到達率最適化** - 到達性向上のための技術最適化。認証設定とリスト衛生管理を徹底する。
 
-71. **Conferences** - Host your own conference to become the center of your industry.
+51. **オンボーディングメール** - ターゲット化したシーケンスで新規ユーザーを活性化へ導く。
 
-72. **Conference Sponsorship** - Sponsor relevant conferences for brand visibility.
+52. **復帰メール** - 離脱ユーザーに、戻る理由を提示して再関与を促す。
 
----
-
-## PR & Media (73-76)
-
-73. **Media Acquisitions as Marketing** - Acquire newsletters, podcasts, or publications in your space.
-
-74. **Press Coverage** - Pitch newsworthy stories to relevant publications.
-
-75. **Fundraising PR** - Leverage funding announcements for press coverage.
-
-76. **Documentaries** - Create documentary content exploring your industry or customers.
+53. **トライアル再活性化** - 失効トライアルは終わりではない。適切な施策で回復できる。
 
 ---
 
-## Launches & Promotions (77-86)
+## パートナーシップとプログラム（54-64）
 
-77. **Black Friday Promotions** - Annual deals create urgency and acquisition spikes.
+54. **被リンク経由のアフィリエイト発掘** - 競合へのリンク元を分析し、アフィリエイト候補を見つける。
 
-78. **Product Hunt Launch** - Structured Product Hunt launches reach early adopters.
+55. **インフルエンサー・ホワイトリスティング** - インフルエンサーのアカウント経由で広告配信し、自然な到達を作る。
 
-79. **Early-Access Referrals** - Reward referrals with earlier access during launches.
+56. **リセラープログラム** - 代理店が製品を再販できる仕組みを作る。ホワイトラベル対応は配布パートナーを生む。
 
-80. **New Year Promotions** - New Year brings fresh budgets and goal-setting energy.
+57. **専門家ネットワーク** - 製品導入を担う認定専門家ネットワークを構築する。
 
-81. **Early Access Pricing** - Launch with discounted early access tiers.
+58. **ニュースレター交換** - 補完関係にあるニュースレター同士で相互紹介する。
 
-82. **Product Hunt Alternatives** - Launch on BetaList, Launching Next, AlternativeTo.
+59. **記事向けコメント提供** - 記者に専門家コメントを提供する。HARO で専門家とライターを接続できる。
 
-83. **Twitter Giveaways** - Engagement-boosting giveaways that require follows or retweets.
+60. **ピクセル共有** - 補完企業と連携し、リマーケティング対象を共有する。
 
-84. **Giveaways** - Strategic giveaways attract attention and capture leads.
+61. **共有Slackチャンネル** - パートナーと顧客をつなぐ共有チャンネルを作る。
 
-85. **Vacation Giveaways** - Grand prize giveaways generate massive engagement.
+62. **アフィリエイトプログラム** - 紹介者向けの体系的な報酬制度を設計する。
 
-86. **Lifetime Deals** - One-time payment deals generate cash and users.
+63. **連携マーケティング** - 連携パートナーと共同でマーケティングを実施する。
 
----
-
-## Product-Led Growth (87-96)
-
-87. **Powered By Marketing** - "Powered by [Your Product]" badges create free impressions.
-
-88. **Free Migrations** - Offer free migration services from competitors.
-
-89. **Contract Buyouts** - Pay to exit competitor contracts.
-
-90. **One-Click Registration** - Minimize signup friction with OAuth options.
-
-91. **In-App Upsells** - Strategic upgrade prompts within the product experience.
-
-92. **Newsletter Referrals** - Built-in referral programs for newsletters.
-
-93. **Viral Loops** - Product mechanics that naturally encourage sharing.
-
-94. **Offboarding Flows** - Optimize cancellation flows to retain or learn.
-
-95. **Concierge Setup** - White-glove onboarding for high-value accounts.
-
-96. **Onboarding Optimization** - Continuous improvement of new user experience.
+64. **コミュニティスポンサー** - 関連コミュニティ、ニュースレター、媒体をスポンサーする。
 
 ---
 
-## Content Formats (97-109)
+## イベントと登壇（65-72）
 
-97. **Playlists as Marketing** - Create Spotify playlists for your audience.
+65. **ライブウェビナー** - 教育的ウェビナーで専門性を示しつつリードを獲得する。
 
-98. **Template Marketing** - Offer free templates users can immediately use.
+66. **オンラインサミット** - 複数登壇者のオンラインイベントで多様な視点を提供し、集客する。
 
-99. **Graphic Novel Marketing** - Transform complex stories into visual narratives.
+67. **ロードショー** - 各地で顧客に直接会う場を設ける。
 
-100. **Promo Videos** - High-quality promotional videos showcase your product.
+68. **ローカルミートアップ** - 重点市場でミートアップを主催または参加する。
 
-101. **Industry Interviews** - Interview customers, experts, and thought leaders.
+69. **ミートアップスポンサー** - 関連ミートアップへの協賛で、関与度の高い地域オーディエンスに到達する。
 
-102. **Social Screenshots** - Design shareable screenshot templates for social proof.
+70. **カンファレンス登壇** - 業界カンファレンスで登壇し、関与度の高い層に届く。
 
-103. **Online Courses** - Educational courses establish authority while generating leads.
+71. **カンファレンス主催** - 自社主催イベントで業界の中心的存在になる。
 
-104. **Book Marketing** - Author a book establishing expertise in your domain.
-
-105. **Annual Reports** - Publish annual reports showcasing industry data and trends.
-
-106. **End of Year Wraps** - Personalized year-end summaries users want to share.
-
-107. **Podcasts** - Launch a podcast reaching audiences during commutes.
-
-108. **Changelogs** - Public changelogs showcase product momentum.
-
-109. **Public Demos** - Live product demonstrations showing real usage.
+72. **カンファレンススポンサー** - 関連カンファレンスへの協賛でブランド露出を高める。
 
 ---
 
-## Unconventional & Creative (110-122)
+## PRとメディア（73-76）
 
-110. **Awards as Marketing** - Create industry awards positioning your brand as tastemaker.
+73. **メディア買収をマーケティング化** - 自社領域のニュースレター、ポッドキャスト、媒体を買収する。
 
-111. **Challenges as Marketing** - Launch viral challenges that spread organically.
+74. **メディア露出** - ニュース性のあるストーリーを関連媒体へ提案する。
 
-112. **Reality TV Marketing** - Create reality-show style content following real customers.
+75. **資金調達PR** - 資金調達発表をメディア露出に活用する。
 
-113. **Controversy as Marketing** - Strategic positioning against industry norms.
-
-114. **Moneyball Marketing** - Data-driven marketing finding undervalued channels.
-
-115. **Curation as Marketing** - Curate valuable resources for your audience.
-
-116. **Grants as Marketing** - Offer grants to customers or community members.
-
-117. **Product Competitions** - Sponsor competitions using your product.
-
-118. **Cameo Marketing** - Use Cameo celebrities for personalized messages.
-
-119. **OOH Advertising** - Out-of-home advertising—billboards, transit ads.
-
-120. **Marketing Stunts** - Bold, attention-grabbing marketing moments.
-
-121. **Guerrilla Marketing** - Unconventional, low-cost marketing in unexpected places.
-
-122. **Humor Marketing** - Use humor to stand out and create memorability.
+76. **ドキュメンタリー** - 業界や顧客を掘り下げるドキュメンタリー型コンテンツを作る。
 
 ---
 
-## Platforms & Marketplaces (123-130)
+## ローンチとプロモーション（77-86）
 
-123. **Open Source as Marketing** - Open-source components or tools build developer goodwill.
+77. **ブラックフライデー施策** - 年次セールで緊急性を作り、獲得を急増させる。
 
-124. **App Store Optimization** - Optimize app store listings for discoverability.
+78. **Product Huntローンチ** - 構造化したProduct Huntローンチでアーリーアダプターへ到達する。
 
-125. **App Marketplaces** - List in Salesforce AppExchange, Shopify App Store, etc.
+79. **早期アクセス紹介施策** - ローンチ時に、紹介者へ早期アクセスを報酬として与える。
 
-126. **YouTube Reviews** - Get YouTubers to review your product.
+80. **新年プロモーション** - 新年の新予算と目標設定のタイミングを活用する。
 
-127. **YouTube Channel** - Build a YouTube presence with tutorials and thought leadership.
+81. **早期アクセス価格** - 割引された早期アクセスティアでローンチする。
 
-128. **Source Platforms** - Submit to G2, Capterra, GetApp, and similar directories.
+82. **Product Hunt代替施策** - BetaList、Launching Next、AlternativeTo でローンチする。
 
-129. **Review Sites** - Actively manage presence on review platforms.
+83. **Xギブアウェイ** - フォローやリポストを条件に、エンゲージメントを高める配布企画を実施する。
 
-130. **Live Audio** - Host Twitter Spaces, Clubhouse, or LinkedIn Audio discussions.
+84. **ギブアウェイ** - 戦略的な配布企画で注目を集め、リードを獲得する。
 
----
+85. **旅行ギブアウェイ** - 大型賞品の配布企画で大きなエンゲージメントを生む。
 
-## International & Localization (131-132)
-
-131. **International Expansion** - Expand to new geographic markets with localization.
-
-132. **Price Localization** - Adjust pricing for local purchasing power.
+86. **ライフタイムディール** - 一回払いの特別プランでキャッシュとユーザーを獲得する。
 
 ---
 
-## Developer & Technical (133-136)
+## プロダクト主導成長（87-96）
 
-133. **Investor Marketing** - Market to investors for portfolio introductions.
+87. **提供元表示マーケティング** - 「[自社製品] 提供」バッジで無料インプレッションを増やす。
 
-134. **Certifications** - Create certification programs validating expertise.
+88. **無料移行支援** - 競合からの移行を無料で提供する。
 
-135. **Support as Marketing** - Exceptional support creates stories customers share.
+89. **契約買い取り** - 競合契約の違約負担を肩代わりして乗り換えを促す。
 
-136. **Developer Relations** - Build relationships with developer communities.
+90. **ワンクリック登録** - OAuthなどでサインアップ摩擦を最小化する。
+
+91. **アプリ内アップセル** - プロダクト体験内で戦略的に上位プラン訴求を行う。
+
+92. **ニュースレター紹介施策** - ニュースレターに組み込み型の紹介プログラムを実装する。
+
+93. **バイラルループ** - 共有を自然に促すプロダクト設計を組み込む。
+
+94. **オフボーディング導線** - 解約フローを最適化し、維持または学習につなげる。
+
+95. **コンシェルジュ設定支援** - 高価値アカウントに手厚い導入支援を提供する。
+
+96. **オンボーディング最適化** - 新規ユーザー体験を継続的に改善する。
 
 ---
 
-## Audience-Specific (137-139)
+## コンテンツ形式（97-109）
 
-137. **Two-Sided Referrals** - Reward both referrer and referred.
+97. **プレイリストをマーケティング化** - オーディエンス向けのSpotifyプレイリストを作る。
 
-138. **Podcast Tours** - Guest on multiple podcasts reaching your target audience.
+98. **テンプレートマーケティング** - すぐ使える無料テンプレートを提供する。
 
-139. **Customer Language** - Use the exact words your customers use in marketing.
+99. **グラフィックノベル・マーケティング** - 複雑なストーリーをビジュアル物語へ変換する。
+
+100. **プロモ動画** - 高品質なプロモーション動画で製品価値を示す。
+
+101. **業界インタビュー** - 顧客、専門家、ソートリーダーへのインタビューを実施する。
+
+102. **ソーシャル用スクリーンショット** - ソーシャルプルーフ向けの共有しやすい画像テンプレートを作る。
+
+103. **オンライン講座** - 教育コンテンツで権威性を高めながらリードを獲得する。
+
+104. **書籍マーケティング** - 自領域の専門性を示す書籍を出版する。
+
+105. **年次レポート** - 業界データやトレンドを示す年次レポートを公開する。
+
+106. **年末まとめ** - ユーザーが共有したくなる、個別化された年末サマリーを提供する。
+
+107. **ポッドキャスト** - 通勤・移動時間の視聴を狙ってポッドキャストを立ち上げる。
+
+108. **変更ログ公開** - 公開変更ログでプロダクトの進化を可視化する。
+
+109. **公開デモ** - 実利用を見せるライブデモを行う。
+
+---
+
+## 非定型とクリエイティブ（110-122）
+
+110. **アワードをマーケティング化** - 業界アワードを作り、ブランドを目利きポジションに置く。
+
+111. **チャレンジをマーケティング化** - 自然拡散しやすいチャレンジ企画を実施する。
+
+112. **リアリティ番組型マーケティング** - 実在顧客を追うリアリティ番組風コンテンツを作る。
+
+113. **論争をマーケティング化** - 業界慣習への対抗軸を戦略的に打ち出す。
+
+114. **マネーボール型マーケティング** - データ駆動で過小評価チャネルを見つける。
+
+115. **キュレーションをマーケティング化** - オーディエンスに価値ある情報を選定・整理して提供する。
+
+116. **助成金をマーケティング化** - 顧客やコミュニティ向けに助成金を提供する。
+
+117. **製品コンペティション** - 自社製品を使うコンペをスポンサーする。
+
+118. **Cameoマーケティング** - Cameoの著名人を使い、個別メッセージで訴求する。
+
+119. **屋外広告** - 看板や交通広告など、屋外メディアを活用する。
+
+120. **マーケティングスタント** - 大胆で話題化しやすいマーケティング演出を行う。
+
+121. **ゲリラマーケティング** - 想定外の場所で低コストかつ非定型の施策を行う。
+
+122. **ユーモアマーケティング** - ユーモアで差別化し、記憶に残す。
+
+---
+
+## プラットフォームとマーケットプレイス（123-130）
+
+123. **オープンソースをマーケティング化** - コンポーネントやツールをオープンソース化し、開発者の信頼を得る。
+
+124. **アプリストア最適化** - アプリストア掲載を最適化して発見性を高める。
+
+125. **アプリマーケットプレイス展開** - Salesforce AppExchange、Shopify App Store などへ掲載する。
+
+126. **YouTubeレビュー獲得** - YouTuberに製品レビューを依頼する。
+
+127. **YouTubeチャンネル運営** - チュートリアルとソートリーダーシップでYouTube上の存在感を作る。
+
+128. **情報源プラットフォーム掲載** - G2、Capterra、GetApp などのディレクトリへ登録する。
+
+129. **レビューサイト運用** - レビュー系プラットフォーム上での露出を能動管理する。
+
+130. **ライブ音声** - Twitter Spaces、Clubhouse、LinkedIn Audio で対話型セッションを実施する。
+
+---
+
+## 海外展開とローカライズ（131-132）
+
+131. **海外市場展開** - ローカライズを伴って新しい地域市場へ拡張する。
+
+132. **価格ローカライズ** - 現地の購買力に合わせて価格を調整する。
+
+---
+
+## 開発者向けと技術系（133-136）
+
+133. **投資家マーケティング** - 投資家経由でポートフォリオ企業への紹介を得る。
+
+134. **認定制度** - 専門性を証明する認定プログラムを作る。
+
+135. **サポートをマーケティング化** - 卓越したサポートで顧客が共有したくなる体験を作る。
+
+136. **開発者リレーションズ** - 開発者コミュニティとの関係を構築する。
+
+---
+
+## オーディエンス特化（137-139）
+
+137. **両面紹介施策** - 紹介した側と紹介された側の双方に報酬を与える。
+
+138. **ポッドキャストツアー** - ターゲット層に届く複数ポッドキャストへ連続出演する。
+
+139. **顧客の言葉を使う** - 顧客が実際に使う語彙を、そのままマーケティング表現に使う。

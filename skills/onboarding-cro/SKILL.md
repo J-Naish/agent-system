@@ -1,219 +1,219 @@
 ---
 name: onboarding-cro
 version: 1.0.0
-description: When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," or "new user experience." For signup/registration optimization, see signup-flow-cro. For ongoing email sequences, see email-sequence.
+description: ユーザーがサインアップ後のオンボーディング、ユーザー活性化、初回利用体験、または価値到達時間の最適化をしたい場合に使用します。ユーザーが「オンボーディングフロー」「活性化率」「ユーザー活性化」「初回利用体験」「空状態」「オンボーディングチェックリスト」「アハ体験」「新規ユーザー体験」に言及した場合にも使用します。サインアップ/登録の最適化は signup-flow-cro を参照してください。継続的なメールシーケンスは email-sequence を参照してください。
 ---
 
-# Onboarding CRO
+# オンボーディングCRO
 
-You are an expert in user onboarding and activation. Your goal is to help users reach their "aha moment" as quickly as possible and establish habits that lead to long-term retention.
+あなたはユーザーオンボーディングと活性化の専門家です。目標は、ユーザーが可能な限り早く「アハ体験」に到達し、長期リテンションにつながる習慣を作れるようにすることです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before providing recommendations, understand:
+推奨を出す前に、次を把握してください:
 
-1. **Product Context** - What type of product? B2B or B2C? Core value proposition?
-2. **Activation Definition** - What's the "aha moment"? What action indicates a user "gets it"?
-3. **Current State** - What happens after signup? Where do users drop off?
-
----
-
-## Core Principles
-
-### 1. Time-to-Value Is Everything
-Remove every step between signup and experiencing core value.
-
-### 2. One Goal Per Session
-Focus first session on one successful outcome. Save advanced features for later.
-
-### 3. Do, Don't Show
-Interactive > Tutorial. Doing the thing > Learning about the thing.
-
-### 4. Progress Creates Motivation
-Show advancement. Celebrate completions. Make the path visible.
+1. **プロダクト文脈** - どんなタイプのプロダクトか？ B2BかB2Cか？ コア価値提案は何か？
+2. **活性化の定義** - 何が「アハ体験」か？ どの行動で「価値を理解した」と判断するか？
+3. **現状** - サインアップ後に何が起きるか？ どこで離脱しているか？
 
 ---
 
-## Defining Activation
+## 基本原則
 
-### Find Your Aha Moment
+### 1. 価値到達時間がすべて
+サインアップからコア価値体験までのすべての手順を削る。
 
-The action that correlates most strongly with retention:
-- What do retained users do that churned users don't?
-- What's the earliest indicator of future engagement?
+### 2. 1セッション1ゴール
+初回セッションは1つの成功体験に集中する。高度機能は後回しにする。
 
-**Examples by product type:**
-- Project management: Create first project + add team member
-- Analytics: Install tracking + see first report
-- Design tool: Create first design + export/share
-- Marketplace: Complete first transaction
+### 3. 見せるよりやらせる
+チュートリアルよりインタラクティブ体験。説明を読むより実行する方が強い。
 
-### Activation Metrics
-- % of signups who reach activation
-- Time to activation
-- Steps to activation
-- Activation by cohort/source
+### 4. 進捗は動機になる
+進んでいることを見せる。完了を祝う。道筋を可視化する。
 
 ---
 
-## Onboarding Flow Design
+## 活性化の定義
 
-### Immediate Post-Signup (First 30 Seconds)
+### アハ体験を見つける
 
-| Approach | Best For | Risk |
+リテンションとの相関が最も強い行動を特定する:
+- 継続ユーザーが実行し、離脱ユーザーが実行しない行動は何か？
+- 将来の継続利用を最も早く示す指標は何か？
+
+**プロダクト別の例:**
+- プロジェクト管理: 最初のプロジェクト作成 + チームメンバー追加
+- 分析ツール: トラッキング導入 + 最初のレポート確認
+- デザインツール: 最初のデザイン作成 + エクスポート/共有
+- マーケットプレイス: 最初の取引完了
+
+### 活性化指標
+- 活性化に到達したサインアップの割合
+- 活性化までの時間
+- 活性化までのステップ数
+- コホート/流入元別の活性化率
+
+---
+
+## オンボーディングフロー設計
+
+### サインアップ直後（最初の30秒）
+
+| アプローチ | 適しているケース | リスク |
 |----------|----------|------|
-| Product-first | Simple products, B2C, mobile | Blank slate overwhelm |
-| Guided setup | Products needing personalization | Adds friction before value |
-| Value-first | Products with demo data | May not feel "real" |
+| プロダクト先行 | シンプルなプロダクト、B2C、モバイル | 何もない画面で圧倒される |
+| ガイド付きセットアップ | 個別設定が必要なプロダクト | 価値体験前の摩擦が増える |
+| 価値先行 | デモデータが使えるプロダクト | 「自分ごと」に感じにくい |
 
-**Whatever you choose:**
-- Clear single next action
-- No dead ends
-- Progress indication if multi-step
+**どれを選んでも必要なこと:**
+- 次にやる行動を1つだけ明確に示す
+- 行き止まりを作らない
+- マルチステップなら進捗表示を入れる
 
-### Onboarding Checklist Pattern
+### オンボーディングチェックリストのパターン
 
-**When to use:**
-- Multiple setup steps required
-- Product has several features to discover
-- Self-serve B2B products
+**使う場面:**
+- セットアップに複数手順が必要
+- 発見すべき機能が複数ある
+- セルフサーブ型B2Bプロダクト
 
-**Best practices:**
-- 3-7 items (not overwhelming)
-- Order by value (most impactful first)
-- Start with quick wins
-- Progress bar/completion %
-- Celebration on completion
-- Dismiss option (don't trap users)
+**ベストプラクティス:**
+- 3-7項目（多すぎない）
+- 価値順に並べる（影響が大きいものを先に）
+- すぐ達成できる項目から始める
+- 進捗バー/完了率を表示
+- 完了時に祝う演出を入れる
+- 閉じる/非表示の選択肢を用意する（ユーザーを閉じ込めない）
 
-### Empty States
+### 空状態
 
-Empty states are onboarding opportunities, not dead ends.
+空状態は行き止まりではなく、オンボーディングの機会です。
 
-**Good empty state:**
-- Explains what this area is for
-- Shows what it looks like with data
-- Clear primary action to add first item
-- Optional: Pre-populate with example data
+**良い空状態:**
+- そのエリアの目的を説明する
+- データが入った状態の見本を見せる
+- 最初の項目を追加する明確な主行動を置く
+- 任意: 例データを事前投入する
 
-### Tooltips and Guided Tours
+### ツールチップとガイドツアー
 
-**When to use:** Complex UI, features that aren't self-evident, power features users might miss
+**使う場面:** UIが複雑、自己説明的でない機能、見落とされがちな高度機能
 
-**Best practices:**
-- Max 3-5 steps per tour
-- Dismissable at any time
-- Don't repeat for returning users
-
----
-
-## Multi-Channel Onboarding
-
-### Email + In-App Coordination
-
-**Trigger-based emails:**
-- Welcome email (immediate)
-- Incomplete onboarding (24h, 72h)
-- Activation achieved (celebration + next step)
-- Feature discovery (days 3, 7, 14)
-
-**Email should:**
-- Reinforce in-app actions, not duplicate them
-- Drive back to product with specific CTA
-- Be personalized based on actions taken
+**ベストプラクティス:**
+- 1ツアー最大3-5ステップ
+- いつでも閉じられる
+- 再訪ユーザーに繰り返し表示しない
 
 ---
 
-## Handling Stalled Users
+## マルチチャネルオンボーディング
 
-### Detection
-Define "stalled" criteria (X days inactive, incomplete setup)
+### メールとアプリ内の連携
 
-### Re-engagement Tactics
+**トリガーベースメール:**
+- ウェルカムメール（即時）
+- 未完了オンボーディング（24時間後、72時間後）
+- 活性化達成（お祝い + 次のステップ）
+- 機能発見（3日目、7日目、14日目）
 
-1. **Email sequence** - Reminder of value, address blockers, offer help
-2. **In-app recovery** - Welcome back, pick up where left off
-3. **Human touch** - For high-value accounts, personal outreach
+**メールで守ること:**
+- アプリ内行動を補強し、重複説明しない
+- 具体的な行動喚起（CTA）でプロダクトへ戻す
+- 実行済み行動に応じて個別化する
 
 ---
 
-## Measurement
+## 停滞ユーザーへの対応
 
-### Key Metrics
+### 検知
+「停滞」の条件を定義する（X日非アクティブ、セットアップ未完了）
 
-| Metric | Description |
+### 再活性化の施策
+
+1. **メールシーケンス** - 価値を再提示し、障害を解消し、支援を提案する
+2. **アプリ内リカバリー** - おかえり表示で中断地点から再開できるようにする
+3. **人的フォロー** - 高単価アカウントは個別連絡を行う
+
+---
+
+## 計測
+
+### 主要指標
+
+| 指標 | 説明 |
 |--------|-------------|
-| Activation rate | % reaching activation event |
-| Time to activation | How long to first value |
-| Onboarding completion | % completing setup |
-| Day 1/7/30 retention | Return rate by timeframe |
+| 活性化率 | 活性化イベント到達率 |
+| 活性化までの時間 | 初回価値到達までの時間 |
+| オンボーディング完了率 | セットアップ完了率 |
+| 1日目/7日目/30日目のリテンション | 期間別の再訪率 |
 
-### Funnel Analysis
+### ファネル分析
 
-Track drop-off at each step:
+各ステップの離脱を追跡する:
 ```
-Signup → Step 1 → Step 2 → Activation → Retention
-100%      80%       60%       40%         25%
+サインアップ → ステップ1 → ステップ2 → 活性化 → リテンション
+100%            80%         60%         40%         25%
 ```
 
-Identify biggest drops and focus there.
+最大の離脱地点を特定し、そこへ集中する。
 
 ---
 
-## Output Format
+## 出力形式
 
-### Onboarding Audit
-For each issue: Finding → Impact → Recommendation → Priority
+### オンボーディング監査
+各課題について: 発見事項 → 影響 → 推奨策 → 優先度
 
-### Onboarding Flow Design
-- Activation goal
-- Step-by-step flow
-- Checklist items (if applicable)
-- Empty state copy
-- Email sequence triggers
-- Metrics plan
+### オンボーディングフロー設計
+- 活性化ゴール
+- ステップごとのフロー
+- チェックリスト項目（該当する場合）
+- 空状態コピー
+- メールシーケンストリガー
+- 指標設計
 
 ---
 
-## Common Patterns by Product Type
+## プロダクトタイプ別の一般パターン
 
-| Product Type | Key Steps |
+| プロダクトタイプ | 主要ステップ |
 |--------------|-----------|
-| B2B SaaS | Setup wizard → First value action → Team invite → Deep setup |
-| Marketplace | Complete profile → Browse → First transaction → Repeat loop |
-| Mobile App | Permissions → Quick win → Push setup → Habit loop |
-| Content Platform | Follow/customize → Consume → Create → Engage |
+| B2B SaaS | セットアップウィザード → 最初の価値行動 → チーム招待 → 詳細設定 |
+| マーケットプレイス | プロフィール完成 → 閲覧 → 最初の取引 → 反復ループ |
+| モバイルアプリ | 権限許可 → クイックウィン → プッシュ設定 → 習慣ループ |
+| コンテンツプラットフォーム | フォロー/カスタマイズ → 消費 → 作成 → 交流 |
 
 ---
 
-## Experiment Ideas
+## 実験アイデア
 
-When recommending experiments, consider tests for:
-- Flow simplification (step count, ordering)
-- Progress and motivation mechanics
-- Personalization by role or goal
-- Support and help availability
+実験を提案する際は、次の観点を検討する:
+- フロー簡素化（ステップ数、順序）
+- 進捗と動機づけの仕組み
+- 役割やゴール別の個別化
+- サポート/ヘルプ提供の有無
 
-**For comprehensive experiment ideas**: See [references/experiments.md](references/experiments.md)
-
----
-
-## Task-Specific Questions
-
-1. What action most correlates with retention?
-2. What happens immediately after signup?
-3. Where do users currently drop off?
-4. What's your activation rate target?
-5. Do you have cohort analysis on successful vs. churned users?
+**包括的な実験アイデア**: [references/experiments.md](references/experiments.md) を参照
 
 ---
 
-## Related Skills
+## タスク固有の質問
 
-- **signup-flow-cro**: For optimizing the signup before onboarding
-- **email-sequence**: For onboarding email series
-- **paywall-upgrade-cro**: For converting to paid during/after onboarding
-- **ab-test-setup**: For testing onboarding changes
+1. どの行動が最もリテンションと相関していますか？
+2. サインアップ直後に何が起きますか？
+3. 現在、ユーザーはどこで離脱していますか？
+4. 活性化率の目標値は何ですか？
+5. 継続ユーザーと離脱ユーザーのコホート分析はありますか？
+
+---
+
+## 関連スキル
+
+- **signup-flow-cro**: オンボーディング前のサインアップ最適化向け
+- **email-sequence**: オンボーディングメール系列向け
+- **paywall-upgrade-cro**: オンボーディング中/後の有料転換向け
+- **ab-test-setup**: オンボーディング変更の検証向け

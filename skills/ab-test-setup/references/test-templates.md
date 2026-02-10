@@ -1,268 +1,268 @@
-# A/B Test Templates Reference
+# A/B テストテンプレート リファレンス
 
-Templates for planning, documenting, and analyzing experiments.
+実験の計画、記録、分析のためのテンプレート。
 
-## Test Plan Template
+## テスト計画テンプレート
 
 ```markdown
-# A/B Test: [Name]
+# A/B テスト: [テスト名]
 
-## Overview
-- **Owner**: [Name]
-- **Test ID**: [ID in testing tool]
-- **Page/Feature**: [What's being tested]
-- **Planned dates**: [Start] - [End]
+## 概要
+- **担当者**: [名前]
+- **テスト ID**: [テストツール内の ID]
+- **対象ページ/機能**: [何をテストするか]
+- **予定期間**: [開始日] - [終了日]
 
-## Hypothesis
+## 仮説
 
-Because [observation/data],
-we believe [change]
-will cause [expected outcome]
-for [audience].
-We'll know this is true when [metrics].
+[観察/データ] という理由から、
+私たちは [変更] が
+[対象オーディエンス] に対して
+[期待する結果] をもたらすと考える。
+これが正しいと判断する指標は [指標] である。
 
-## Test Design
+## テスト設計
 
-| Element | Details |
+| 要素 | 詳細 |
 |---------|---------|
-| Test type | A/B / A/B/n / MVT |
-| Duration | X weeks |
-| Sample size | X per variant |
-| Traffic allocation | 50/50 |
-| Tool | [Tool name] |
-| Implementation | Client-side / Server-side |
+| テストタイプ | A/B / A/B/n / MVT |
+| 実施期間 | X 週間 |
+| サンプルサイズ | バリアントごとに X |
+| トラフィック配分 | 50/50 |
+| ツール | [ツール名] |
+| 実装方式 | クライアントサイド / サーバーサイド |
 
-## Variants
+## バリアント
 
-### Control (A)
-[Screenshot]
-- Current experience
-- [Key details about current state]
+### コントロール (A)
+[スクリーンショット]
+- 現在の体験
+- [現状の重要ポイント]
 
-### Variant (B)
-[Screenshot or mockup]
-- [Specific change #1]
-- [Specific change #2]
-- Rationale: [Why we think this will win]
+### バリアント (B)
+[スクリーンショットまたはモックアップ]
+- [具体的な変更 #1]
+- [具体的な変更 #2]
+- 根拠: [なぜ勝てると考えるか]
 
-## Metrics
+## 指標
 
-### Primary
-- **Metric**: [metric name]
-- **Definition**: [how it's calculated]
-- **Current baseline**: [X%]
-- **Minimum detectable effect**: [X%]
+### 主要指標
+- **指標**: [指標名]
+- **定義**: [計算方法]
+- **現在のベースライン**: [X%]
+- **最小検出効果**: [X%]
 
-### Secondary
-- [Metric 1]: [what it tells us]
-- [Metric 2]: [what it tells us]
-- [Metric 3]: [what it tells us]
+### 副次指標
+- [指標 1]: [何が分かるか]
+- [指標 2]: [何が分かるか]
+- [指標 3]: [何が分かるか]
 
-### Guardrails
-- [Metric that shouldn't get worse]
-- [Another safety metric]
+### ガードレール
+- [悪化してはいけない指標]
+- [別の安全指標]
 
-## Segment Analysis Plan
-- Mobile vs. desktop
-- New vs. returning visitors
-- Traffic source
-- [Other relevant segments]
+## セグメント分析計画
+- モバイル vs デスクトップ
+- 新規訪問者 vs リピーター
+- 流入元
+- [その他の関連セグメント]
 
-## Success Criteria
-- Winner: [Primary metric improves by X% with 95% confidence]
-- Loser: [Primary metric decreases significantly]
-- Inconclusive: [What we'll do if no significant result]
+## 成功基準
+- 勝者: [主要指標が 95% 信頼水準で X% 改善]
+- 敗者: [主要指標が有意に悪化]
+- 結論保留: [有意差がない場合の対応]
 
-## Pre-Launch Checklist
-- [ ] Hypothesis documented and reviewed
-- [ ] Primary metric defined and trackable
-- [ ] Sample size calculated
-- [ ] Test duration estimated
-- [ ] Variants implemented correctly
-- [ ] Tracking verified in all variants
-- [ ] QA completed on all variants
-- [ ] Stakeholders informed
-- [ ] Calendar hold for analysis date
+## 公開前チェックリスト
+- [ ] 仮説を文書化し、レビュー済み
+- [ ] 主要指標を定義し、計測可能
+- [ ] サンプルサイズを計算済み
+- [ ] テスト期間を見積もり済み
+- [ ] バリアントを正しく実装済み
+- [ ] 全バリアントでトラッキング検証済み
+- [ ] 全バリアントで QA 完了
+- [ ] 関係者へ共有済み
+- [ ] 分析日のカレンダーブロック設定済み
 ```
 
 ---
 
-## Results Documentation Template
+## 結果記録テンプレート
 
 ```markdown
-# A/B Test Results: [Name]
+# A/B テスト結果: [テスト名]
 
-## Summary
-| Element | Value |
+## サマリー
+| 要素 | 値 |
 |---------|-------|
-| Test ID | [ID] |
-| Dates | [Start] - [End] |
-| Duration | X days |
-| Result | Winner / Loser / Inconclusive |
-| Decision | [What we're doing] |
+| テスト ID | [ID] |
+| 期間 | [開始日] - [終了日] |
+| 実施日数 | X 日 |
+| 結果 | 勝者 / 敗者 / 結論保留 |
+| 意思決定 | [実施する対応] |
 
-## Hypothesis (Reminder)
-[Copy from test plan]
+## 仮説（再掲）
+[テスト計画から転記]
 
-## Results
+## 結果
 
-### Sample Size
-| Variant | Target | Actual | % of target |
+### サンプルサイズ
+| バリアント | 目標 | 実績 | 目標達成率 |
 |---------|--------|--------|-------------|
-| Control | X | Y | Z% |
-| Variant | X | Y | Z% |
+| コントロール | X | Y | Z% |
+| バリアント | X | Y | Z% |
 
-### Primary Metric: [Metric Name]
-| Variant | Value | 95% CI | vs. Control |
+### 主要指標: [指標名]
+| バリアント | 値 | 95% CI | コントロール比 |
 |---------|-------|--------|-------------|
-| Control | X% | [X%, Y%] | — |
-| Variant | X% | [X%, Y%] | +X% |
+| コントロール | X% | [X%, Y%] | — |
+| バリアント | X% | [X%, Y%] | +X% |
 
-**Statistical significance**: p = X.XX (95% = sig / not sig)
-**Practical significance**: [Is this lift meaningful for the business?]
+**統計的有意性**: p = X.XX (95% = 有意 / 非有意)
+**実務的有意性**: [このリフトはビジネス上意味があるか？]
 
-### Secondary Metrics
+### 副次指標
 
-| Metric | Control | Variant | Change | Significant? |
+| 指標 | コントロール | バリアント | 変化 | 有意か？ |
 |--------|---------|---------|--------|--------------|
-| [Metric 1] | X | Y | +Z% | Yes/No |
-| [Metric 2] | X | Y | +Z% | Yes/No |
+| [指標 1] | X | Y | +Z% | はい/いいえ |
+| [指標 2] | X | Y | +Z% | はい/いいえ |
 
-### Guardrail Metrics
+### ガードレール指標
 
-| Metric | Control | Variant | Change | Concern? |
+| 指標 | コントロール | バリアント | 変化 | 懸念あり？ |
 |--------|---------|---------|--------|----------|
-| [Metric 1] | X | Y | +Z% | Yes/No |
+| [指標 1] | X | Y | +Z% | はい/いいえ |
 
-### Segment Analysis
+### セグメント分析
 
-**Mobile vs. Desktop**
-| Segment | Control | Variant | Lift |
+**モバイル vs デスクトップ**
+| セグメント | コントロール | バリアント | リフト |
 |---------|---------|---------|------|
-| Mobile | X% | Y% | +Z% |
-| Desktop | X% | Y% | +Z% |
+| モバイル | X% | Y% | +Z% |
+| デスクトップ | X% | Y% | +Z% |
 
-**New vs. Returning**
-| Segment | Control | Variant | Lift |
+**新規 vs リピーター**
+| セグメント | コントロール | バリアント | リフト |
 |---------|---------|---------|------|
-| New | X% | Y% | +Z% |
-| Returning | X% | Y% | +Z% |
+| 新規 | X% | Y% | +Z% |
+| リピーター | X% | Y% | +Z% |
 
-## Interpretation
+## 解釈
 
-### What happened?
-[Explanation of results in plain language]
+### 何が起きたか？
+[平易な言葉で結果を説明]
 
-### Why do we think this happened?
-[Analysis and reasoning]
+### なぜ起きたと考えるか？
+[分析と推論]
 
-### Caveats
-[Any limitations, external factors, or concerns]
+### 留意点
+[制約、外部要因、懸念事項]
 
-## Decision
+## 意思決定
 
-**Winner**: [Control / Variant]
+**勝者**: [コントロール / バリアント]
 
-**Action**: [Implement variant / Keep control / Re-test]
+**対応**: [バリアント実装 / コントロール維持 / 再テスト]
 
-**Timeline**: [When changes will be implemented]
+**スケジュール**: [変更実施時期]
 
-## Learnings
+## 学び
 
-### What we learned
-- [Key insight 1]
-- [Key insight 2]
+### 分かったこと
+- [主要な示唆 1]
+- [主要な示唆 2]
 
-### What to test next
-- [Follow-up test idea 1]
-- [Follow-up test idea 2]
+### 次にテストすること
+- [フォローアップ案 1]
+- [フォローアップ案 2]
 
-### Impact
-- **Projected lift**: [X% improvement in Y metric]
-- **Business impact**: [Revenue, conversions, etc.]
+### 影響
+- **想定リフト**: [Y 指標で X% 改善]
+- **ビジネス影響**: [売上、コンバージョンなど]
 ```
 
 ---
 
-## Test Repository Entry Template
+## テストリポジトリエントリテンプレート
 
-For tracking all tests in a central location:
+全テストを一元管理するためのテンプレート:
 
 ```markdown
-| Test ID | Name | Page | Dates | Primary Metric | Result | Lift | Link |
+| テスト ID | テスト名 | ページ | 期間 | 主要指標 | 結果 | リフト | リンク |
 |---------|------|------|-------|----------------|--------|------|------|
-| 001 | Hero headline test | Homepage | 1/1-1/15 | CTR | Winner | +12% | [Link] |
-| 002 | Pricing table layout | Pricing | 1/10-1/31 | Plan selection | Loser | -5% | [Link] |
-| 003 | Signup form fields | Signup | 2/1-2/14 | Completion | Inconclusive | +2% | [Link] |
+| 001 | ヒーロー見出しテスト | ホームページ | 1/1-1/15 | CTR | 勝者 | +12% | [リンク] |
+| 002 | 価格表レイアウト | 価格ページ | 1/10-1/31 | プラン選択 | 敗者 | -5% | [リンク] |
+| 003 | サインアップフォーム項目 | サインアップ | 2/1-2/14 | 完了率 | 結論保留 | +2% | [リンク] |
 ```
 
 ---
 
-## Quick Test Brief Template
+## クイックテストブリーフテンプレート
 
-For simple tests that don't need full documentation:
+完全なドキュメント化が不要なシンプルテスト向け:
 
 ```markdown
-## [Test Name]
+## [テスト名]
 
-**What**: [One sentence description]
-**Why**: [One sentence hypothesis]
-**Metric**: [Primary metric]
-**Duration**: [X weeks]
-**Result**: [TBD / Winner / Loser / Inconclusive]
-**Learnings**: [Key takeaway]
+**何を**: [1 文で説明]
+**なぜ**: [1 文の仮説]
+**指標**: [主要指標]
+**期間**: [X 週間]
+**結果**: [未定 / 勝者 / 敗者 / 結論保留]
+**学び**: [主要な示唆]
 ```
 
 ---
 
-## Stakeholder Update Template
+## ステークホルダー更新テンプレート
 
 ```markdown
-## A/B Test Update: [Name]
+## A/B テスト更新: [テスト名]
 
-**Status**: Running / Complete
-**Days remaining**: X (or complete)
-**Current sample**: X% of target
+**ステータス**: 実施中 / 完了
+**残り日数**: X（または完了）
+**現在サンプル**: 目標の X%
 
-### Preliminary observations
-[What we're seeing - without making decisions yet]
+### 途中観測
+[まだ意思決定せずに、見えていることを記載]
 
-### Next steps
-[What happens next]
+### 次のステップ
+[次に何をするか]
 
-### Timeline
-- [Date]: Analysis complete
-- [Date]: Decision and recommendation
-- [Date]: Implementation (if winner)
+### タイムライン
+- [日付]: 分析完了
+- [日付]: 意思決定と提案
+- [日付]: 実装（勝者の場合）
 ```
 
 ---
 
-## Experiment Prioritization Scorecard
+## 実験優先順位スコアカード
 
-For deciding which tests to run:
+実施するテストを決めるための評価表:
 
-| Factor | Weight | Test A | Test B | Test C |
+| 要素 | 重み | テスト A | テスト B | テスト C |
 |--------|--------|--------|--------|--------|
-| Potential impact | 30% | | | |
-| Confidence in hypothesis | 25% | | | |
-| Ease of implementation | 20% | | | |
-| Risk if wrong | 15% | | | |
-| Strategic alignment | 10% | | | |
-| **Total** | | | | |
+| 想定インパクト | 30% | | | |
+| 仮説への確信度 | 25% | | | |
+| 実装の容易さ | 20% | | | |
+| 外した場合のリスク | 15% | | | |
+| 戦略整合性 | 10% | | | |
+| **合計** | | | | |
 
-Scoring: 1-5 (5 = best)
+採点: 1-5（5 が最良）
 
 ---
 
-## Hypothesis Bank Template
+## 仮説バンクテンプレート
 
-For collecting test ideas:
+テストアイデアを収集するためのテンプレート:
 
 ```markdown
-| ID | Page/Area | Observation | Hypothesis | Potential Impact | Status |
+| ID | ページ/領域 | 観測 | 仮説 | 想定インパクト | ステータス |
 |----|-----------|-------------|------------|------------------|--------|
-| H1 | Homepage | Low scroll depth | Shorter hero will increase scroll | High | Testing |
-| H2 | Pricing | Users compare plans | Comparison table will help | Medium | Backlog |
-| H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
+| H1 | ホームページ | スクロール深度が低い | ヒーローを短くするとスクロールが増える | 高 | テスト中 |
+| H2 | 価格ページ | ユーザーがプラン比較している | 比較表で意思決定を補助できる | 中 | バックログ |
+| H3 | サインアップ | メール入力で離脱 | ソーシャルログインで完了率が上がる | 中 | バックログ |
 ```

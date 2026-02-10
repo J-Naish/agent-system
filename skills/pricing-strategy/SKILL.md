@@ -1,227 +1,227 @@
 ---
 name: pricing-strategy
 version: 1.0.0
-description: "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' or 'monetization.' This skill covers pricing research, tier structure, and packaging strategy."
+description: "ユーザーが価格設定の意思決定、パッケージ設計、または収益化戦略の支援を求める場合に使用します。ユーザーが『価格設定』『価格ティア』『フリーミアム』『無料トライアル』『パッケージング』『値上げ』『価値指標』『Van Westendorp』『支払い意思額』『収益化』に言及した場合にも使用します。このスキルは価格調査、ティア構造、パッケージ戦略を扱います。"
 ---
 
-# Pricing Strategy
+# 価格戦略
 
-You are an expert in SaaS pricing and monetization strategy. Your goal is to help design pricing that captures value, drives growth, and aligns with customer willingness to pay.
+あなたはSaaSの価格設定と収益化戦略の専門家です。目標は、価値を適切に回収し、成長を促進し、顧客の支払い意思に整合する価格設計を支援することです。
 
-## Before Starting
+## 開始前
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Gather this context (ask if not provided):
+この文脈情報を集めてください（未提供なら質問する）:
 
-### 1. Business Context
-- What type of product? (SaaS, marketplace, e-commerce, service)
-- What's your current pricing (if any)?
-- What's your target market? (SMB, mid-market, enterprise)
-- What's your go-to-market motion? (self-serve, sales-led, hybrid)
+### 1. ビジネス文脈
+- どのタイプのプロダクトか？（SaaS、マーケットプレイス、EC、サービス）
+- 現在の価格設定は？（ある場合）
+- ターゲット市場は？（SMB、ミッドマーケット、エンタープライズ）
+- 市場投入の進め方は？（セルフサーブ、営業主導、ハイブリッド）
 
-### 2. Value & Competition
-- What's the primary value you deliver?
-- What alternatives do customers consider?
-- How do competitors price?
+### 2. 価値と競争
+- 提供している主要価値は何か？
+- 顧客が比較している代替手段は何か？
+- 競合はどう価格設定しているか？
 
-### 3. Current Performance
-- What's your current conversion rate?
-- What's your ARPU and churn rate?
-- Any feedback on pricing from customers/prospects?
+### 3. 現在の成果
+- 現在のコンバージョン率は？
+- ARPU と解約率は？
+- 顧客/見込み客から価格に関するフィードバックはあるか？
 
-### 4. Goals
-- Optimizing for growth, revenue, or profitability?
-- Moving upmarket or expanding downmarket?
-
----
-
-## Pricing Fundamentals
-
-### The Three Pricing Axes
-
-**1. Packaging** — What's included at each tier?
-- Features, limits, support level
-- How tiers differ from each other
-
-**2. Pricing Metric** — What do you charge for?
-- Per user, per usage, flat fee
-- How price scales with value
-
-**3. Price Point** — How much do you charge?
-- The actual dollar amounts
-- Perceived value vs. cost
-
-### Value-Based Pricing
-
-Price should be based on value delivered, not cost to serve:
-
-- **Customer's perceived value** — The ceiling
-- **Your price** — Between alternatives and perceived value
-- **Next best alternative** — The floor for differentiation
-- **Your cost to serve** — Only a baseline, not the basis
-
-**Key insight:** Price between the next best alternative and perceived value.
+### 4. 目標
+- 成長、売上、利益率のどれを優先するか？
+- 上位市場へ進むか、下位市場へ広げるか？
 
 ---
 
-## Value Metrics
+## 価格設定の基礎
 
-### What is a Value Metric?
+### 価格の3軸
 
-The value metric is what you charge for—it should scale with the value customers receive.
+**1. パッケージング** — 各ティアに何を含めるか？
+- 機能、上限、サポートレベル
+- ティア間の差分設計
 
-**Good value metrics:**
-- Align price with value delivered
-- Are easy to understand
-- Scale as customer grows
-- Are hard to game
+**2. 価格指標** — 何に対して課金するか？
+- ユーザー単位、利用量単位、固定料金
+- 価値に応じた価格スケール
 
-### Common Value Metrics
+**3. 価格水準** — いくら請求するか？
+- 実際の金額設定
+- 知覚価値とコストのバランス
 
-| Metric | Best For | Example |
+### 価値ベース価格設定
+
+価格は提供価値に基づくべきで、提供コスト起点ではありません:
+
+- **顧客の知覚価値** — 上限
+- **自社価格** — 代替手段と知覚価値の間
+- **次善の代替手段** — 差別化の下限
+- **提供コスト** — 基準にはなるが、価格決定の中心ではない
+
+**重要な洞察:** 価格は「次善の代替手段」と「知覚価値」の間に置く。
+
+---
+
+## 価値指標
+
+### 価値指標とは何か？
+
+価値指標は課金の単位です。顧客が受け取る価値に合わせて増える設計であるべきです。
+
+**良い価値指標の条件:**
+- 価格と提供価値が連動する
+- 理解しやすい
+- 顧客成長とともに自然に拡張する
+- 悪用されにくい
+
+### 代表的な価値指標
+
+| 指標 | 向いている用途 | 例 |
 |--------|----------|---------|
-| Per user/seat | Collaboration tools | Slack, Notion |
-| Per usage | Variable consumption | AWS, Twilio |
-| Per feature | Modular products | HubSpot add-ons |
-| Per contact/record | CRM, email tools | Mailchimp |
-| Per transaction | Payments, marketplaces | Stripe |
-| Flat fee | Simple products | Basecamp |
+| ユーザー/席単位 | コラボレーションツール | Slack、Notion |
+| 利用量単位 | 変動消費型 | AWS、Twilio |
+| 機能単位 | モジュール型製品 | HubSpot のアドオン |
+| 連絡先/レコード単位 | CRM、メールツール | Mailchimp |
+| 取引単位 | 決済、マーケットプレイス | Stripe |
+| 固定料金 | シンプルな製品 | Basecamp |
 
-### Choosing Your Value Metric
+### 価値指標の選び方
 
-Ask: "As a customer uses more of [metric], do they get more value?"
-- If yes → good value metric
-- If no → price doesn't align with value
-
----
-
-## Tier Structure Overview
-
-### Good-Better-Best Framework
-
-**Good tier (Entry):** Core features, limited usage, low price
-**Better tier (Recommended):** Full features, reasonable limits, anchor price
-**Best tier (Premium):** Everything, advanced features, 2-3x Better price
-
-### Tier Differentiation
-
-- **Feature gating** — Basic vs. advanced features
-- **Usage limits** — Same features, different limits
-- **Support level** — Email → Priority → Dedicated
-- **Access** — API, SSO, custom branding
-
-**For detailed tier structures and persona-based packaging**: See [references/tier-structure.md](references/tier-structure.md)
+問い: 「顧客が [指標] を多く使うほど、受け取る価値は増えるか？」
+- はい → 良い価値指標
+- いいえ → 価格と価値がずれている
 
 ---
 
-## Pricing Research
+## ティア構造の概要
 
-### Van Westendorp Method
+### 3段階（Good-Better-Best）フレームワーク
 
-Four questions that identify acceptable price range:
-1. Too expensive (wouldn't consider)
-2. Too cheap (question quality)
-3. Expensive but might consider
-4. A bargain
+**Good ティア（導入）:** コア機能、低い利用上限、低価格
+**Better ティア（推奨）:** 機能を十分に提供、現実的な上限、基準価格
+**Best ティア（プレミアム）:** 全機能、高度機能、Better の2-3倍価格
 
-Analyze intersections to find optimal pricing zone.
+### ティア差別化
 
-### MaxDiff Analysis
+- **機能ゲーティング** — 基本機能と高度機能を分ける
+- **利用上限** — 同じ機能で上限値を変える
+- **サポートレベル** — メール → 優先対応 → 専任対応
+- **アクセス権** — API、SSO、カスタムブランディング
 
-Identifies which features customers value most:
-- Show sets of features
-- Ask: Most important? Least important?
-- Results inform tier packaging
-
-**For detailed research methods**: See [references/research-methods.md](references/research-methods.md)
+**詳細なティア構造とペルソナ別パッケージング**: [references/tier-structure.md](references/tier-structure.md) を参照
 
 ---
 
-## When to Raise Prices
+## 価格調査
 
-### Signs It's Time
+### Van Westendorp 手法
 
-**Market signals:**
-- Competitors have raised prices
-- Prospects don't flinch at price
-- "It's so cheap!" feedback
+許容価格帯を特定する4つの質問:
+1. 高すぎて購入対象外になる価格
+2. 安すぎて品質不安を感じる価格
+3. 高いが検討余地がある価格
+4. 掘り出し物だと感じる価格
 
-**Business signals:**
-- Very high conversion rates (>40%)
-- Very low churn (<3% monthly)
-- Strong unit economics
+交点分析で最適な価格ゾーンを見つけます。
 
-**Product signals:**
-- Significant value added since last pricing
-- Product more mature/stable
+### MaxDiff 分析
 
-### Price Increase Strategies
+顧客が最も価値を感じる機能を特定します:
+- 機能セットを提示
+- 「最も重要」「最も重要でない」を選択
+- 結果をティア設計へ反映
 
-1. **Grandfather existing** — New price for new customers only
-2. **Delayed increase** — Announce 3-6 months out
-3. **Tied to value** — Raise price but add features
-4. **Plan restructure** — Change plans entirely
+**詳細な調査手法**: [references/research-methods.md](references/research-methods.md) を参照
 
 ---
 
-## Pricing Page Best Practices
+## 値上げのタイミング
 
-### Above the Fold
-- Clear tier comparison table
-- Recommended tier highlighted
-- Monthly/annual toggle
-- Primary CTA for each tier
+### 値上げを検討すべきサイン
 
-### Common Elements
-- Feature comparison table
-- Who each tier is for
-- FAQ section
-- Annual discount callout (17-20%)
-- Money-back guarantee
-- Customer logos/trust signals
+**市場シグナル:**
+- 競合が値上げした
+- 見込み客が価格に反応しない
+- 「安すぎる」という声が出ている
 
-### Pricing Psychology
-- **Anchoring:** Show higher-priced option first
-- **Decoy effect:** Middle tier should be best value
-- **Charm pricing:** $49 vs. $50 (for value-focused)
-- **Round pricing:** $50 vs. $49 (for premium)
+**事業シグナル:**
+- コンバージョン率が非常に高い（40%超）
+- 解約率が非常に低い（月3%未満）
+- ユニットエコノミクスが強い
 
----
+**プロダクトシグナル:**
+- 前回価格改定以降に価値が大幅増加
+- 製品の成熟度/安定性が向上
 
-## Pricing Checklist
+### 値上げの戦略
 
-### Before Setting Prices
-- [ ] Defined target customer personas
-- [ ] Researched competitor pricing
-- [ ] Identified your value metric
-- [ ] Conducted willingness-to-pay research
-- [ ] Mapped features to tiers
-
-### Pricing Structure
-- [ ] Chosen number of tiers
-- [ ] Differentiated tiers clearly
-- [ ] Set price points based on research
-- [ ] Created annual discount strategy
-- [ ] Planned enterprise/custom tier
+1. **既存顧客を据え置き** — 新規顧客のみ新価格
+2. **段階的実施** — 3-6か月前に告知
+3. **価値と連動** — 値上げと同時に機能追加
+4. **プラン再設計** — プラン構成ごと変更
 
 ---
 
-## Task-Specific Questions
+## 価格ページのベストプラクティス
 
-1. What pricing research have you done?
-2. What's your current ARPU and conversion rate?
-3. What's your primary value metric?
-4. Who are your main pricing personas?
-5. Are you self-serve, sales-led, or hybrid?
-6. What pricing changes are you considering?
+### ファーストビュー
+- 明確なティア比較表
+- 推奨ティアの強調
+- 月額/年額トグル
+- 各ティアの主要な行動喚起（CTA）
+
+### よく使う要素
+- 機能比較表
+- ティアごとの対象顧客説明
+- よくある質問（FAQ）セクション
+- 年額割引の訴求（17-20%）
+- 返金保証
+- 顧客ロゴ/信頼シグナル
+
+### 価格心理
+- **アンカリング:** 高価格オプションを先に見せる
+- **デコイ効果:** 中間ティアを最も割安に見せる
+- **チャームプライシング:** $50 より $49（価値訴求向け）
+- **ラウンドプライシング:** $49 より $50（プレミアム訴求向け）
 
 ---
 
-## Related Skills
+## 価格設定チェックリスト
 
-- **page-cro**: For optimizing pricing page conversion
-- **copywriting**: For pricing page copy
-- **marketing-psychology**: For pricing psychology principles
-- **ab-test-setup**: For testing pricing changes
+### 価格を決める前
+- [ ] ターゲット顧客ペルソナを定義
+- [ ] 競合価格を調査
+- [ ] 価値指標を特定
+- [ ] 支払い意思調査を実施
+- [ ] 機能をティアへマッピング
+
+### 価格構造
+- [ ] ティア数を決定
+- [ ] ティア差分を明確化
+- [ ] 調査に基づく価格水準を設定
+- [ ] 年額割引戦略を設計
+- [ ] エンタープライズ/カスタムティアを計画
+
+---
+
+## タスク固有の質問
+
+1. どのような価格調査を実施しましたか？
+2. 現在の ARPU とコンバージョン率は？
+3. 主要な価値指標は何ですか？
+4. 主な価格ペルソナは誰ですか？
+5. セルフサーブ、営業主導、ハイブリッドのどれですか？
+6. どんな価格変更を検討していますか？
+
+---
+
+## 関連スキル
+
+- **page-cro**: 価格ページのコンバージョン最適化向け
+- **copywriting**: 価格ページのコピー作成向け
+- **marketing-psychology**: 価格心理の原則活用向け
+- **ab-test-setup**: 価格変更の検証向け

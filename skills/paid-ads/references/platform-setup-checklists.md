@@ -1,269 +1,269 @@
-# Platform Setup Checklists
+# プラットフォーム設定チェックリスト
 
-Complete setup checklists for major ad platforms.
+主要広告プラットフォーム向けの、完全な設定チェックリストです。
 
-## Google Ads Setup
+## Google Ads 設定
 
-### Account Foundation
+### アカウント基盤
 
-- [ ] Google Ads account created and verified
-- [ ] Billing information added
-- [ ] Time zone and currency set correctly
-- [ ] Account access granted to team members
+- [ ] Google Ads アカウント作成と確認完了
+- [ ] 請求情報の追加
+- [ ] タイムゾーンと通貨の設定確認
+- [ ] チームメンバーへのアクセス権付与
 
-### Conversion Tracking
+### コンバージョントラッキング
 
-- [ ] Google tag installed on all pages
-- [ ] Conversion actions created (purchase, lead, signup)
-- [ ] Conversion values assigned (if applicable)
-- [ ] Enhanced conversions enabled
-- [ ] Test conversions firing correctly
-- [ ] Import conversions from GA4 (optional)
+- [ ] 全ページに Google タグを実装
+- [ ] コンバージョンアクション作成（購入、リード、サインアップ）
+- [ ] コンバージョン値の設定（該当する場合）
+- [ ] 拡張コンバージョンを有効化
+- [ ] テストコンバージョン発火を確認
+- [ ] GA4 からのコンバージョンインポート（任意）
 
-### Analytics Integration
+### 分析連携
 
-- [ ] Google Analytics 4 linked
-- [ ] Auto-tagging enabled
-- [ ] GA4 audiences available in Google Ads
-- [ ] Cross-domain tracking set up (if multiple domains)
+- [ ] Google Analytics 4 を連携
+- [ ] 自動タグ設定を有効化
+- [ ] GA4 オーディエンスを Google Ads で利用可能
+- [ ] クロスドメイントラッキング設定（複数ドメインの場合）
 
-### Audience Setup
+### オーディエンス設定
 
-- [ ] Remarketing tag verified
-- [ ] Website visitor audiences created:
-  - All visitors (180 days)
-  - Key page visitors (pricing, demo, features)
-  - Converters (for exclusion)
-- [ ] Customer match lists uploaded
-- [ ] Similar audiences enabled
+- [ ] リマーケティングタグ検証
+- [ ] サイト訪問者オーディエンス作成:
+  - 全訪問者（180日）
+  - 主要ページ訪問者（価格、デモ、機能）
+  - コンバージョン済みユーザー（除外用）
+- [ ] カスタマーマッチリストをアップロード
+- [ ] 類似オーディエンスを有効化
 
-### Campaign Readiness
+### キャンペーン準備
 
-- [ ] Negative keyword lists created:
-  - Universal negatives (free, jobs, careers, reviews, complaints)
-  - Competitor negatives (if needed)
-  - Irrelevant industry terms
-- [ ] Location targeting set (include/exclude)
-- [ ] Language targeting set
-- [ ] Ad schedule configured (if B2B, business hours)
-- [ ] Device bid adjustments considered
+- [ ] 除外キーワードリスト作成:
+  - 共通除外語（無料、求人、採用、レビュー、苦情）
+  - 競合除外語（必要に応じて）
+  - 無関係な業界用語
+- [ ] 地域ターゲティング設定（含める/除外）
+- [ ] 言語ターゲティング設定
+- [ ] 配信スケジュール設定（B2Bなら営業時間）
+- [ ] デバイス別入札調整を検討
 
-### Ad Extensions
+### 広告表示オプション（アセット）
 
-- [ ] Sitelinks (4-6 relevant pages)
-- [ ] Callouts (key benefits, offers)
-- [ ] Structured snippets (features, types, services)
-- [ ] Call extension (if phone leads valuable)
-- [ ] Lead form extension (if using)
-- [ ] Price extensions (if applicable)
-- [ ] Image extensions (where available)
+- [ ] サイトリンク（関連ページ4-6件）
+- [ ] コールアウト（主要ベネフィット、オファー）
+- [ ] 構造化スニペット（機能、種類、サービス）
+- [ ] 電話番号表示（電話リードが重要な場合）
+- [ ] リードフォーム表示オプション（使用時）
+- [ ] 価格表示オプション（該当時）
+- [ ] 画像表示オプション（利用可能な場合）
 
-### Brand Protection
+### ブランド保護
 
-- [ ] Brand campaign running (protect branded terms)
-- [ ] Competitor campaigns considered
-- [ ] Brand terms in negative lists for non-brand campaigns
-
----
-
-## Meta Ads Setup
-
-### Business Manager Foundation
-
-- [ ] Business Manager created
-- [ ] Business verified (if running certain ad types)
-- [ ] Ad account created within Business Manager
-- [ ] Payment method added
-- [ ] Team access configured with proper roles
-
-### Pixel & Tracking
-
-- [ ] Meta Pixel installed on all pages
-- [ ] Standard events configured:
-  - PageView (automatic)
-  - ViewContent (product/feature pages)
-  - Lead (form submissions)
-  - Purchase (conversions)
-  - AddToCart (if e-commerce)
-  - InitiateCheckout (if e-commerce)
-- [ ] Conversions API (CAPI) set up for server-side tracking
-- [ ] Event Match Quality score > 6
-- [ ] Test events in Events Manager
-
-### Domain & Aggregated Events
-
-- [ ] Domain verified in Business Manager
-- [ ] Aggregated Event Measurement configured
-- [ ] Top 8 events prioritized in order of importance
-- [ ] Web events prioritized for iOS 14+ tracking
-
-### Audience Setup
-
-- [ ] Custom audiences created:
-  - Website visitors (all, 30/60/90/180 days)
-  - Key page visitors
-  - Video viewers (25%, 50%, 75%, 95%)
-  - Page/Instagram engagers
-  - Customer list uploaded
-- [ ] Lookalike audiences created (1%, 1-3%)
-- [ ] Saved audiences for common targeting
-
-### Catalog (E-commerce)
-
-- [ ] Product catalog connected
-- [ ] Product feed updating correctly
-- [ ] Catalog sales campaigns enabled
-- [ ] Dynamic product ads configured
-
-### Creative Assets
-
-- [ ] Images in correct sizes:
-  - Feed: 1080x1080 (1:1)
-  - Stories/Reels: 1080x1920 (9:16)
-  - Landscape: 1200x628 (1.91:1)
-- [ ] Videos in correct formats
-- [ ] Ad copy variations ready
-- [ ] UTM parameters in all destination URLs
-
-### Compliance
-
-- [ ] Special Ad Categories declared (if housing, credit, employment, politics)
-- [ ] Landing page complies with Meta policies
-- [ ] No prohibited content in ads
+- [ ] ブランドキャンペーン配信中（指名語保護）
+- [ ] 競合キャンペーンを検討
+- [ ] 非指名キャンペーンの除外リストにブランド語を設定
 
 ---
 
-## LinkedIn Ads Setup
+## Meta 広告設定
 
-### Campaign Manager Foundation
+### Business Manager 基盤
 
-- [ ] Campaign Manager account created
-- [ ] Company Page connected
-- [ ] Billing information added
-- [ ] Team access configured
+- [ ] Business Manager 作成
+- [ ] 事業者確認完了（特定広告種別で必要）
+- [ ] Business Manager 内に広告アカウント作成
+- [ ] 支払い方法の追加
+- [ ] 適切な役割でチームアクセスを設定
 
-### Insight Tag & Tracking
+### ピクセルとトラッキング
 
-- [ ] LinkedIn Insight Tag installed on all pages
-- [ ] Tag verified and firing
-- [ ] Conversion tracking configured:
-  - URL-based conversions
-  - Event-specific conversions
-- [ ] Conversion values set (if applicable)
+- [ ] 全ページに Meta Pixel を実装
+- [ ] 標準イベント設定:
+  - PageView（自動）
+  - ViewContent（製品/機能ページ）
+  - Lead（フォーム送信）
+  - Purchase（コンバージョン）
+  - AddToCart（ECの場合）
+  - InitiateCheckout（ECの場合）
+- [ ] Conversions API（CAPI）を設定（サーバーサイド計測）
+- [ ] Event Match Quality スコア 6 超
+- [ ] Events Manager でイベントテスト
 
-### Audience Setup
+### ドメインと集約イベント
 
-- [ ] Matched Audiences created:
-  - Website retargeting audiences
-  - Company list uploaded (for ABM)
-  - Contact list uploaded
-- [ ] Lookalike audiences created
-- [ ] Saved audiences for common targeting
+- [ ] Business Manager でドメイン認証
+- [ ] Aggregated Event Measurement 設定
+- [ ] 重要度順に上位8イベントを優先設定
+- [ ] iOS 14+ 向けに Web イベント優先順位を設定
 
-### Lead Gen Forms (if using)
+### オーディエンス設定
 
-- [ ] Lead gen form templates created
-- [ ] Form fields selected (minimize for conversion)
-- [ ] Privacy policy URL added
-- [ ] Thank you message configured
-- [ ] CRM integration set up (or CSV export process)
+- [ ] カスタムオーディエンス作成:
+  - サイト訪問者（全体、30/60/90/180日）
+  - 主要ページ訪問者
+  - 動画視聴者（25%、50%、75%、95%）
+  - ページ/Instagram エンゲージャー
+  - 顧客リストをアップロード
+- [ ] 類似オーディエンス作成（1%、1-3%）
+- [ ] よく使うターゲティングの保存済みオーディエンス作成
 
-### Document Ads (if using)
+### カタログ（EC）
 
-- [ ] Documents uploaded (PDF, PowerPoint)
-- [ ] Gating configured (full gate or preview)
-- [ ] Lead gen form connected
+- [ ] 商品カタログ連携
+- [ ] 商品フィード更新が正常動作
+- [ ] カタログ販売キャンペーンを有効化
+- [ ] 動的商品広告を設定
 
-### Creative Assets
+### クリエイティブ資産
 
-- [ ] Single image ads: 1200x627 (1.91:1) or 1080x1080 (1:1)
-- [ ] Carousel images ready
-- [ ] Video specs met (if using)
-- [ ] Ad copy within character limits:
-  - Intro text: 600 max, 150 recommended
-  - Headline: 200 max, 70 recommended
+- [ ] 正しいサイズで画像を用意:
+  - フィード: 1080x1080（1:1）
+  - ストーリーズ/Reels: 1080x1920（9:16）
+  - 横長: 1200x628（1.91:1）
+- [ ] 正しい形式で動画を用意
+- [ ] 広告コピーのバリエーションを準備
+- [ ] すべての遷移 URL に UTM パラメータを設定
 
-### Budget Considerations
+### コンプライアンス
 
-- [ ] Budget realistic for LinkedIn CPCs ($8-15+ typical)
-- [ ] Audience size validated (50K+ recommended)
-- [ ] Daily vs. lifetime budget decided
-- [ ] Bid strategy selected
-
----
-
-## Twitter/X Ads Setup
-
-### Account Foundation
-
-- [ ] Ads account created
-- [ ] Payment method added
-- [ ] Account verified (if required)
-
-### Tracking
-
-- [ ] Twitter Pixel installed
-- [ ] Conversion events created
-- [ ] Website tag verified
-
-### Audience Setup
-
-- [ ] Tailored audiences created:
-  - Website visitors
-  - Customer lists
-- [ ] Follower lookalikes identified
-- [ ] Interest and keyword targets researched
-
-### Creative
-
-- [ ] Tweet copy within 280 characters
-- [ ] Images: 1200x675 (1.91:1) or 1200x1200 (1:1)
-- [ ] Video specs met (if using)
-- [ ] Cards configured (website, app, etc.)
+- [ ] 特別広告カテゴリを宣言（住宅、金融、雇用、政治）
+- [ ] ランディングページが Meta ポリシーに準拠
+- [ ] 広告内に禁止コンテンツがない
 
 ---
 
-## TikTok Ads Setup
+## LinkedIn 広告設定
 
-### Account Foundation
+### Campaign Manager 基盤
 
-- [ ] TikTok Ads Manager account created
-- [ ] Business verification completed
-- [ ] Payment method added
+- [ ] Campaign Manager アカウント作成
+- [ ] 会社ページを連携
+- [ ] 請求情報の追加
+- [ ] チームアクセス設定
 
-### Pixel & Tracking
+### Insight Tag とトラッキング
 
-- [ ] TikTok Pixel installed
-- [ ] Events configured (ViewContent, Purchase, etc.)
-- [ ] Events API set up (recommended)
+- [ ] 全ページに LinkedIn Insight Tag を実装
+- [ ] タグの有効化と発火確認
+- [ ] コンバージョントラッキング設定:
+  - URL ベースコンバージョン
+  - イベントベースコンバージョン
+- [ ] コンバージョン値の設定（該当時）
 
-### Audience Setup
+### オーディエンス設定
 
-- [ ] Custom audiences created
-- [ ] Lookalike audiences created
-- [ ] Interest categories identified
+- [ ] Matched Audiences 作成:
+  - サイトリターゲティング
+  - 企業リストアップロード（ABM用）
+  - 連絡先リストアップロード
+- [ ] 類似オーディエンス作成
+- [ ] よく使うターゲティングの保存済みオーディエンス作成
 
-### Creative
+### リード獲得フォーム（使用時）
 
-- [ ] Vertical video (9:16) ready
-- [ ] Native-feeling content (not too polished)
-- [ ] First 3 seconds are compelling hooks
-- [ ] Captions added (most watch without sound)
-- [ ] Music/sounds selected (licensed if needed)
+- [ ] リードフォームテンプレート作成
+- [ ] フォーム項目選定（コンバージョン重視で最小化）
+- [ ] プライバシーポリシー URL 追加
+- [ ] サンクスメッセージ設定
+- [ ] CRM 連携設定（または CSV エクスポート運用）
+
+### ドキュメント広告（使用時）
+
+- [ ] ドキュメントをアップロード（PDF、PowerPoint）
+- [ ] ゲート設定（完全ゲートまたはプレビュー）
+- [ ] リードフォーム連携
+
+### クリエイティブ資産
+
+- [ ] 単一画像広告: 1200x627（1.91:1）または 1080x1080（1:1）
+- [ ] カルーセル画像の準備
+- [ ] 動画仕様を満たす（使用時）
+- [ ] 文字数制限内で広告コピー作成:
+  - 導入テキスト: 最大600、推奨150
+  - 見出し: 最大200、推奨70
+
+### 予算の考慮
+
+- [ ] LinkedIn の CPC 水準（一般に8-15ドル以上）に見合う予算
+- [ ] オーディエンスサイズ検証（50K以上推奨）
+- [ ] 日次予算と通算予算を決定
+- [ ] 入札戦略を選択
 
 ---
 
-## Universal Pre-Launch Checklist
+## Twitter/X 広告設定
 
-Before launching any campaign:
+### アカウント基盤
 
-- [ ] Conversion tracking tested with real conversion
-- [ ] Landing page loads fast (<3 sec)
-- [ ] Landing page mobile-friendly
-- [ ] UTM parameters working
-- [ ] Budget set correctly (daily vs. lifetime)
-- [ ] Start/end dates correct
-- [ ] Targeting matches intended audience
-- [ ] Ad creative approved
-- [ ] Team notified of launch
-- [ ] Reporting dashboard ready
+- [ ] 広告アカウント作成
+- [ ] 支払い方法の追加
+- [ ] アカウント確認（必要な場合）
+
+### トラッキング
+
+- [ ] Twitter Pixel を実装
+- [ ] コンバージョンイベント作成
+- [ ] サイトタグ検証
+
+### オーディエンス設定
+
+- [ ] Tailored Audiences を作成:
+  - サイト訪問者
+  - 顧客リスト
+- [ ] フォロワー類似オーディエンスを選定
+- [ ] 興味関心とキーワードターゲットを調査
+
+### クリエイティブ
+
+- [ ] 投稿文を280文字以内に収める
+- [ ] 画像: 1200x675（1.91:1）または 1200x1200（1:1）
+- [ ] 動画仕様を満たす（使用時）
+- [ ] カード設定（サイト、アプリなど）
+
+---
+
+## TikTok 広告設定
+
+### アカウント基盤
+
+- [ ] TikTok Ads Manager アカウント作成
+- [ ] 事業者確認完了
+- [ ] 支払い方法の追加
+
+### ピクセルとトラッキング
+
+- [ ] TikTok Pixel を実装
+- [ ] イベント設定（ViewContent、Purchase など）
+- [ ] Events API 設定（推奨）
+
+### オーディエンス設定
+
+- [ ] カスタムオーディエンス作成
+- [ ] 類似オーディエンス作成
+- [ ] 興味関心カテゴリを特定
+
+### クリエイティブ
+
+- [ ] 縦動画（9:16）を準備
+- [ ] ネイティブ感のあるコンテンツ（作り込みすぎない）
+- [ ] 最初の3秒に強いフックを置く
+- [ ] 字幕を追加（多くは無音視聴）
+- [ ] 音楽/サウンドを選定（必要に応じてライセンス確認）
+
+---
+
+## 共通の開始前チェックリスト
+
+どのキャンペーンでも、開始前に次を確認:
+
+- [ ] 実コンバージョンで計測をテスト
+- [ ] ランディングページが高速表示（3秒未満）
+- [ ] ランディングページがモバイル対応
+- [ ] UTM パラメータが機能
+- [ ] 予算設定が適切（日次/通算）
+- [ ] 開始日/終了日が正しい
+- [ ] ターゲティングが意図したオーディエンスと一致
+- [ ] 広告クリエイティブが承認済み
+- [ ] チームに配信開始を共有済み
+- [ ] レポートダッシュボードが準備済み

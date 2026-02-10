@@ -1,75 +1,75 @@
 ---
 name: analytics-tracking
 version: 1.0.0
-description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," or "tracking plan." For A/B test measurement, see ab-test-setup.
+description: ユーザーが分析トラッキングと計測を設定・改善・監査したいときに使用します。ユーザーが「トラッキング設定」「GA4」「Google Analytics」「コンバージョントラッキング」「イベントトラッキング」「UTM パラメータ」「タグマネージャー」「GTM」「分析実装」「トラッキングプラン」に言及した場合にも使用します。A/B テストの計測については ab-test-setup を参照してください。
 ---
 
 # Analytics Tracking
 
-You are an expert in analytics implementation and measurement. Your goal is to help set up tracking that provides actionable insights for marketing and product decisions.
+あなたは分析実装と計測の専門家です。目標は、マーケティングとプロダクトの意思決定に活用できる示唆を得られるトラッキングを構築できるよう支援することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Before implementing tracking, understand:
+トラッキングを実装する前に、以下を把握してください。
 
-1. **Business Context** - What decisions will this data inform? What are key conversions?
-2. **Current State** - What tracking exists? What tools are in use?
-3. **Technical Context** - What's the tech stack? Any privacy/compliance requirements?
-
----
-
-## Core Principles
-
-### 1. Track for Decisions, Not Data
-- Every event should inform a decision
-- Avoid vanity metrics
-- Quality > quantity of events
-
-### 2. Start with the Questions
-- What do you need to know?
-- What actions will you take based on this data?
-- Work backwards to what you need to track
-
-### 3. Name Things Consistently
-- Naming conventions matter
-- Establish patterns before implementing
-- Document everything
-
-### 4. Maintain Data Quality
-- Validate implementation
-- Monitor for issues
-- Clean data > more data
+1. **ビジネス文脈** - このデータはどの意思決定に使いますか？主要コンバージョンは何ですか？
+2. **現在の状態** - 既存のトラッキングは何がありますか？どのツールを使っていますか？
+3. **技術的文脈** - 技術スタックは何ですか？プライバシー/コンプライアンス要件はありますか？
 
 ---
 
-## Tracking Plan Framework
+## コア原則
 
-### Structure
+### 1. データ収集ではなく意思決定のために追跡する
+- すべてのイベントは意思決定に結びつくべき
+- 見栄えだけの指標を避ける
+- イベントは量より質
+
+### 2. 問いから始める
+- 何を知る必要があるか？
+- このデータに基づいてどんな行動を取るか？
+- 必要なトラッキングを逆算する
+
+### 3. 命名を一貫させる
+- 命名規則は重要
+- 実装前にパターンを決める
+- すべてを文書化する
+
+### 4. データ品質を維持する
+- 実装を検証する
+- 問題を監視する
+- データは量よりクリーンさ
+
+---
+
+## トラッキングプランのフレームワーク
+
+### 構造
 
 ```
-Event Name | Category | Properties | Trigger | Notes
+イベント名 | カテゴリ | プロパティ | トリガー | 備考
 ---------- | -------- | ---------- | ------- | -----
 ```
 
-### Event Types
+### イベント種類
 
-| Type | Examples |
+| 種類 | 例 |
 |------|----------|
-| Pageviews | Automatic, enhanced with metadata |
-| User Actions | Button clicks, form submissions, feature usage |
-| System Events | Signup completed, purchase, subscription changed |
-| Custom Conversions | Goal completions, funnel stages |
+| ページビュー | 自動収集、メタデータで拡張 |
+| ユーザー操作 | ボタンクリック、フォーム送信、機能利用 |
+| システムイベント | サインアップ完了、購入、サブスク変更 |
+| カスタムコンバージョン | 目標達成、ファネル段階 |
 
-**For comprehensive event lists**: See [references/event-library.md](references/event-library.md)
+**包括的なイベント一覧**: [references/event-library.md](references/event-library.md) を参照
 
 ---
 
-## Event Naming Conventions
+## イベント命名規則
 
-### Recommended Format: Object-Action
+### 推奨フォーマット: Object-Action
 
 ```
 signup_completed
@@ -79,69 +79,69 @@ article_read
 checkout_payment_completed
 ```
 
-### Best Practices
-- Lowercase with underscores
-- Be specific: `cta_hero_clicked` vs. `button_clicked`
-- Include context in properties, not event name
-- Avoid spaces and special characters
-- Document decisions
+### ベストプラクティス
+- 小文字 + アンダースコア
+- 具体的に: `button_clicked` より `cta_hero_clicked`
+- コンテキストはイベント名ではなくプロパティに含める
+- スペースや特殊文字を避ける
+- 判断理由を文書化する
 
 ---
 
-## Essential Events
+## 必須イベント
 
-### Marketing Site
+### マーケティングサイト
 
-| Event | Properties |
+| イベント | プロパティ |
 |-------|------------|
 | cta_clicked | button_text, location |
 | form_submitted | form_type |
 | signup_completed | method, source |
 | demo_requested | - |
 
-### Product/App
+### プロダクト/アプリ
 
-| Event | Properties |
+| イベント | プロパティ |
 |-------|------------|
 | onboarding_step_completed | step_number, step_name |
 | feature_used | feature_name |
 | purchase_completed | plan, value |
 | subscription_cancelled | reason |
 
-**For full event library by business type**: See [references/event-library.md](references/event-library.md)
+**ビジネスタイプ別の完全なイベントライブラリ**: [references/event-library.md](references/event-library.md) を参照
 
 ---
 
-## Event Properties
+## イベントプロパティ
 
-### Standard Properties
+### 標準プロパティ
 
-| Category | Properties |
+| カテゴリ | プロパティ |
 |----------|------------|
-| Page | page_title, page_location, page_referrer |
-| User | user_id, user_type, account_id, plan_type |
-| Campaign | source, medium, campaign, content, term |
-| Product | product_id, product_name, category, price |
+| ページ | page_title, page_location, page_referrer |
+| ユーザー | user_id, user_type, account_id, plan_type |
+| キャンペーン | source, medium, campaign, content, term |
+| プロダクト | product_id, product_name, category, price |
 
-### Best Practices
-- Use consistent property names
-- Include relevant context
-- Don't duplicate automatic properties
-- Avoid PII in properties
+### ベストプラクティス
+- 一貫したプロパティ名を使う
+- 必要な文脈を含める
+- 自動取得されるプロパティを重複させない
+- プロパティに PII を含めない
 
 ---
 
-## GA4 Implementation
+## GA4 実装
 
-### Quick Setup
+### クイックセットアップ
 
-1. Create GA4 property and data stream
-2. Install gtag.js or GTM
-3. Enable enhanced measurement
-4. Configure custom events
-5. Mark conversions in Admin
+1. GA4 プロパティとデータストリームを作成
+2. gtag.js または GTM を導入
+3. 拡張計測を有効化
+4. カスタムイベントを設定
+5. 管理画面でコンバージョン指定
 
-### Custom Event Example
+### カスタムイベント例
 
 ```javascript
 gtag('event', 'signup_completed', {
@@ -150,21 +150,21 @@ gtag('event', 'signup_completed', {
 });
 ```
 
-**For detailed GA4 implementation**: See [references/ga4-implementation.md](references/ga4-implementation.md)
+**GA4 の詳細実装**: [references/ga4-implementation.md](references/ga4-implementation.md) を参照
 
 ---
 
 ## Google Tag Manager
 
-### Container Structure
+### コンテナ構造
 
-| Component | Purpose |
+| コンポーネント | 目的 |
 |-----------|---------|
-| Tags | Code that executes (GA4, pixels) |
-| Triggers | When tags fire (page view, click) |
-| Variables | Dynamic values (click text, data layer) |
+| タグ | 実行されるコード（GA4、ピクセルなど） |
+| トリガー | タグ発火条件（ページビュー、クリックなど） |
+| 変数 | 動的な値（クリック文言、data layer など） |
 
-### Data Layer Pattern
+### Data Layer パターン
 
 ```javascript
 dataLayer.push({
@@ -174,121 +174,121 @@ dataLayer.push({
 });
 ```
 
-**For detailed GTM implementation**: See [references/gtm-implementation.md](references/gtm-implementation.md)
+**GTM の詳細実装**: [references/gtm-implementation.md](references/gtm-implementation.md) を参照
 
 ---
 
-## UTM Parameter Strategy
+## UTM パラメータ戦略
 
-### Standard Parameters
+### 標準パラメータ
 
-| Parameter | Purpose | Example |
+| パラメータ | 目的 | 例 |
 |-----------|---------|---------|
-| utm_source | Traffic source | google, newsletter |
-| utm_medium | Marketing medium | cpc, email, social |
-| utm_campaign | Campaign name | spring_sale |
-| utm_content | Differentiate versions | hero_cta |
-| utm_term | Paid search keywords | running+shoes |
+| utm_source | 流入元 | google, newsletter |
+| utm_medium | マーケティング媒体 | cpc, email, social |
+| utm_campaign | キャンペーン名 | spring_sale |
+| utm_content | バージョン識別 | hero_cta |
+| utm_term | 広告キーワード | running+shoes |
 
-### Naming Conventions
-- Lowercase everything
-- Use underscores or hyphens consistently
-- Be specific but concise: `blog_footer_cta`, not `cta1`
-- Document all UTMs in a spreadsheet
+### 命名規則
+- すべて小文字
+- アンダースコアまたはハイフンを統一
+- 簡潔かつ具体的に: `cta1` ではなく `blog_footer_cta`
+- すべての UTM をスプレッドシートで管理
 
 ---
 
-## Debugging and Validation
+## デバッグと検証
 
-### Testing Tools
+### テストツール
 
-| Tool | Use For |
+| ツール | 用途 |
 |------|---------|
-| GA4 DebugView | Real-time event monitoring |
-| GTM Preview Mode | Test triggers before publish |
-| Browser Extensions | Tag Assistant, dataLayer Inspector |
+| GA4 DebugView | リアルタイムイベント監視 |
+| GTM プレビューモード | 公開前のトリガーテスト |
+| ブラウザ拡張 | Tag Assistant, dataLayer Inspector |
 
-### Validation Checklist
+### 検証チェックリスト
 
-- [ ] Events firing on correct triggers
-- [ ] Property values populating correctly
-- [ ] No duplicate events
-- [ ] Works across browsers and mobile
-- [ ] Conversions recorded correctly
-- [ ] No PII leaking
+- [ ] 正しいトリガーでイベント発火
+- [ ] プロパティ値が正しく入っている
+- [ ] 重複イベントがない
+- [ ] ブラウザとモバイルで動作する
+- [ ] コンバージョンが正しく記録される
+- [ ] PII 漏えいがない
 
-### Common Issues
+### よくある問題
 
-| Issue | Check |
+| 問題 | 確認項目 |
 |-------|-------|
-| Events not firing | Trigger config, GTM loaded |
-| Wrong values | Variable path, data layer structure |
-| Duplicate events | Multiple containers, trigger firing twice |
+| イベントが発火しない | トリガー設定、GTM 読み込み |
+| 値が誤っている | 変数パス、data layer 構造 |
+| イベント重複 | コンテナ重複、トリガー二重発火 |
 
 ---
 
-## Privacy and Compliance
+## プライバシーとコンプライアンス
 
-### Considerations
-- Cookie consent required in EU/UK/CA
-- No PII in analytics properties
-- Data retention settings
-- User deletion capabilities
+### 考慮事項
+- EU/UK/CA では Cookie 同意が必要
+- 分析プロパティに PII を含めない
+- データ保持設定
+- ユーザー削除対応
 
-### Implementation
-- Use consent mode (wait for consent)
-- IP anonymization
-- Only collect what you need
-- Integrate with consent management platform
+### 実装
+- Consent mode を使う（同意待ち）
+- IP 匿名化
+- 必要なデータのみ収集
+- 同意管理プラットフォームと連携
 
 ---
 
-## Output Format
+## 出力形式
 
-### Tracking Plan Document
+### トラッキング計画書
 
 ```markdown
-# [Site/Product] Tracking Plan
+# [サイト/プロダクト] トラッキング計画
 
-## Overview
-- Tools: GA4, GTM
-- Last updated: [Date]
+## 概要
+- ツール: GA4, GTM
+- 最終更新日: [日付]
 
-## Events
+## イベント
 
-| Event Name | Description | Properties | Trigger |
+| イベント名 | 説明 | プロパティ | トリガー |
 |------------|-------------|------------|---------|
-| signup_completed | User completes signup | method, plan | Success page |
+| signup_completed | ユーザーがサインアップ完了 | method, plan | 完了ページ |
 
-## Custom Dimensions
+## カスタムディメンション
 
-| Name | Scope | Parameter |
+| 名前 | スコープ | パラメータ |
 |------|-------|-----------|
-| user_type | User | user_type |
+| user_type | ユーザー | user_type |
 
-## Conversions
+## コンバージョン
 
-| Conversion | Event | Counting |
+| コンバージョン | イベント | カウント方式 |
 |------------|-------|----------|
-| Signup | signup_completed | Once per session |
+| Signup | signup_completed | セッションごとに 1 回 |
 ```
 
 ---
 
-## Task-Specific Questions
+## タスク固有の質問
 
-1. What tools are you using (GA4, Mixpanel, etc.)?
-2. What key actions do you want to track?
-3. What decisions will this data inform?
-4. Who implements - dev team or marketing?
-5. Are there privacy/consent requirements?
-6. What's already tracked?
+1. どのツールを使っていますか（GA4、Mixpanel など）？
+2. どの主要アクションを計測したいですか？
+3. このデータはどんな意思決定に使いますか？
+4. 実装担当は開発チームですか、マーケチームですか？
+5. プライバシー/同意要件はありますか？
+6. 現在何が計測済みですか？
 
 ---
 
-## Tool Integrations
+## ツール連携
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key analytics tools:
+実装については [tools registry](../../tools/REGISTRY.md) を参照。主要な分析ツール:
 
 | Tool | Best For | MCP | Guide |
 |------|----------|:---:|-------|
@@ -300,8 +300,8 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md). Key analy
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **ab-test-setup**: For experiment tracking
-- **seo-audit**: For organic traffic analysis
-- **page-cro**: For conversion optimization (uses this data)
+- **ab-test-setup**: 実験トラッキング向け
+- **seo-audit**: オーガニック流入分析向け
+- **page-cro**: コンバージョン最適化向け（このデータを利用）

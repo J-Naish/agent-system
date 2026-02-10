@@ -1,171 +1,171 @@
-# Post Format Templates
+# 投稿フォーマットテンプレート
 
-Ready-to-use templates for different platforms and content types.
+プラットフォーム別・コンテンツ種別でそのまま使えるテンプレート集です。
 
-## LinkedIn Post Templates
+## LinkedIn 投稿テンプレート
 
-### The Story Post
+### ストーリー投稿
 ```
-[Hook: Unexpected outcome or lesson]
+[フック: 予想外の結果や学び]
 
-[Set the scene: When/where this happened]
+[状況設定: いつ/どこで起きたか]
 
-[The challenge you faced]
+[直面した課題]
 
-[What you tried / what happened]
+[試したこと / 起きたこと]
 
-[The turning point]
+[転換点]
 
-[The result]
+[結果]
 
-[The lesson for readers]
+[読み手への学び]
 
-[Question to prompt engagement]
-```
-
-### The Contrarian Take
-```
-[Unpopular opinion stated boldly]
-
-Here's why:
-
-[Reason 1]
-[Reason 2]
-[Reason 3]
-
-[What you recommend instead]
-
-[Invite discussion: "Am I wrong?"]
+[エンゲージメントを促す質問]
 ```
 
-### The List Post
+### 逆張り投稿
 ```
-[X things I learned about [topic] after [credibility builder]:
+[不人気な意見を強く提示]
 
-1. [Point] — [Brief explanation]
+理由はこれです:
 
-2. [Point] — [Brief explanation]
+[理由1]
+[理由2]
+[理由3]
 
-3. [Point] — [Brief explanation]
+[代わりに推奨すること]
 
-[Wrap-up insight]
-
-Which resonates most with you?
-```
-
-### The How-To
-```
-How to [achieve outcome] in [timeframe]:
-
-Step 1: [Action]
-↳ [Why this matters]
-
-Step 2: [Action]
-↳ [Key detail]
-
-Step 3: [Action]
-↳ [Common mistake to avoid]
-
-[Result you can expect]
-
-[CTA or question]
+[議論を促す一言: 「私が間違ってますか？」]
 ```
 
----
-
-## Twitter/X Thread Templates
-
-### The Tutorial Thread
+### リスト投稿
 ```
-Tweet 1: [Hook + promise of value]
+[信頼を示す前提] のあとに [トピック] について学んだ [X] 個のこと:
 
-"Here's exactly how to [outcome] (step-by-step):"
+1. [ポイント] — [簡潔な説明]
 
-Tweet 2-7: [One step per tweet with details]
+2. [ポイント] — [簡潔な説明]
 
-Final tweet: [Summary + CTA]
+3. [ポイント] — [簡潔な説明]
 
-"If this was helpful, follow me for more on [topic]"
+[締めのインサイト]
+
+どれが一番刺さりましたか？
 ```
 
-### The Story Thread
+### ハウツー投稿
 ```
-Tweet 1: [Intriguing hook]
+[期間] で [結果] を出す方法:
 
-"[Time] ago, [unexpected thing happened]. Here's the full story:"
+ステップ1: [行動]
+↳ [これが重要な理由]
 
-Tweet 2-6: [Story beats, building tension]
+ステップ2: [行動]
+↳ [重要な詳細]
 
-Tweet 7: [Resolution and lesson]
+ステップ3: [行動]
+↳ [避けるべきよくあるミス]
 
-Final tweet: [Takeaway + engagement ask]
-```
+[期待できる結果]
 
-### The Breakdown Thread
-```
-Tweet 1: [Company/person] just [did thing].
-
-Here's why it's genius (and what you can learn):
-
-Tweet 2-6: [Analysis points]
-
-Tweet 7: [Your key takeaway]
-
-"[Related insight + follow CTA]"
+[行動喚起 または質問]
 ```
 
 ---
 
-## Instagram Templates
+## Twitter/X スレッドテンプレート
 
-### The Carousel Hook
+### チュートリアルスレッド
 ```
-[Slide 1: Bold statement or question]
-[Slides 2-9: One point per slide, visual + text]
-[Slide 10: Summary + CTA]
+ツイート1: [フック + 価値の約束]
 
-Caption: [Expand on the topic, add context, include CTA]
+「[結果] を出す方法を、手順で具体的に解説します:」
+
+ツイート2-7: [1ツイート1ステップで詳細]
+
+最後のツイート: [要約 + 行動喚起]
+
+「役立ったら [トピック] の発信をフォローしてください」
 ```
 
-### The Reel Script
+### ストーリースレッド
 ```
-Hook (0-2 sec): [Pattern interrupt or bold claim]
-Setup (2-5 sec): [Context for the tip]
-Value (5-25 sec): [The actual advice/content]
-CTA (25-30 sec): [Follow, comment, share, link]
+ツイート1: [引きのあるフック]
+
+「[期間] 前に、[予想外の出来事] が起きました。全体像はこちら:」
+
+ツイート2-6: [緊張感を高める展開]
+
+ツイート7: [解決と学び]
+
+最後のツイート: [要点 + 反応依頼]
+```
+
+### 分解スレッド
+```
+ツイート1: [企業/人物] が [出来事] を実行。
+
+なぜ秀逸なのか（そして何を学べるか）を解説します:
+
+ツイート2-6: [分析ポイント]
+
+ツイート7: [最重要の学び]
+
+「[関連インサイト + フォロー喚起]」
 ```
 
 ---
 
-## Hook Formulas
+## Instagram テンプレート
 
-The first line determines whether anyone reads the rest.
+### カルーセルフック
+```
+[1枚目: 強い主張または質問]
+[2〜9枚目: 1枚1ポイント、ビジュアル + テキスト]
+[10枚目: 要約 + 行動喚起]
 
-### Curiosity Hooks
-- "I was wrong about [common belief]."
-- "The real reason [outcome] happens isn't what you think."
-- "[Impressive result] — and it only took [surprisingly short time]."
-- "Nobody talks about [insider knowledge]."
+キャプション: [トピックを補足し、文脈を追加し、行動喚起を入れる]
+```
 
-### Story Hooks
-- "Last week, [unexpected thing] happened."
-- "I almost [big mistake/failure]."
-- "3 years ago, I [past state]. Today, [current state]."
-- "[Person] told me something I'll never forget."
+### リール台本
+```
+フック（0-2秒）: [パターン中断または強い主張]
+セットアップ（2-5秒）: [このヒントの文脈]
+価値提供（5-25秒）: [実際のアドバイス/内容]
+行動喚起（25-30秒）: [フォロー、コメント、シェア、リンク]
+```
 
-### Value Hooks
-- "How to [desirable outcome] (without [common pain]):"
-- "[Number] [things] that [outcome]:"
-- "The simplest way to [outcome]:"
-- "Stop [common mistake]. Do this instead:"
+---
 
-### Contrarian Hooks
-- "Unpopular opinion: [bold statement]"
-- "[Common advice] is wrong. Here's why:"
-- "I stopped [common practice] and [positive result]."
-- "Everyone says [X]. The truth is [Y]."
+## フックの型
 
-### Social Proof Hooks
-- "We [achieved result] in [timeframe]. Here's the full story:"
-- "[Number] people asked me about [topic]. Here's my answer:"
-- "[Authority figure] taught me [lesson]."
+1行目で、その先が読まれるかが決まります。
+
+### 好奇心フック
+- 「[一般的な思い込み] について、私は間違っていました。」
+- 「[結果] が起きる本当の理由は、あなたの想像と違います。」
+- 「[印象的な結果] を出しました。しかも [予想外に短い期間] で。」
+- 「[業界の内側の知識] について、ほとんど誰も話しません。」
+
+### ストーリーフック
+- 「先週、[予想外の出来事] が起きました。」
+- 「私はもう少しで [大きな失敗] をするところでした。」
+- 「3年前の私は [過去の状態]。今は [現在の状態]。」
+- 「[人物] に言われたことを、私は一生忘れません。」
+
+### 価値提供フック
+- 「[よくある悩み] なしで [望む結果] を出す方法:」
+- 「[結果] につながる [数] 個の [要素]:」
+- 「[結果] を出す最もシンプルな方法:」
+- 「[よくあるミス] はやめよう。代わりにこれを:」
+
+### 逆張りフック
+- 「不人気な意見: [強い主張]」
+- 「[よくある助言] は間違い。理由はこれです:」
+- 「[一般的なやり方] をやめたら、[良い結果] が出ました。」
+- 「みんなは [X] と言う。でも真実は [Y] です。」
+
+### 社会的証明フック
+- 「[期間] で [結果] を達成しました。全体像はこちら:」
+- 「[数] 人から [トピック] について質問されました。私の答えはこれです:」
+- 「[権威ある人物] から [学び] を教わりました。」

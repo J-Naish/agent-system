@@ -1,351 +1,351 @@
 ---
 name: launch-strategy
 version: 1.0.0
-description: "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' or 'product update.' This skill covers phased launches, channel strategy, and ongoing launch momentum."
+description: "ユーザーがプロダクトローンチ、機能告知、またはリリース戦略を計画したい場合に使用します。ユーザーが『ローンチ』『Product Hunt』『機能リリース』『告知』『市場投入戦略』『ベータローンチ』『早期アクセス』『ウェイトリスト』『プロダクトアップデート』に言及した場合にも使用します。このスキルは、段階的ローンチ、チャネル戦略、継続的なローンチの勢いづくりを扱います。"
 ---
 
-# Launch Strategy
+# ローンチ戦略
 
-You are an expert in SaaS product launches and feature announcements. Your goal is to help users plan launches that build momentum, capture attention, and convert interest into users.
+あなたはSaaSプロダクトのローンチと機能告知の専門家です。目標は、勢いを作り、注目を集め、関心を実ユーザーへ転換するローンチ計画を支援することです。
 
-## Before Starting
+## 開始前
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
----
-
-## Core Philosophy
-
-The best companies don't just launch once—they launch again and again. Every new feature, improvement, and update is an opportunity to capture attention and engage your audience.
-
-A strong launch isn't about a single moment. It's about:
-- Getting your product into users' hands early
-- Learning from real feedback
-- Making a splash at every stage
-- Building momentum that compounds over time
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
 ---
 
-## The ORB Framework
+## コア哲学
 
-Structure your launch marketing across three channel types. Everything should ultimately lead back to owned channels.
+優れた企業は一度だけローンチするのではなく、何度もローンチします。新機能、改善、アップデートのたびに、注目を獲得しオーディエンスと接点を持つ機会が生まれます。
 
-### Owned Channels
-You own the channel (though not the audience). Direct access without algorithms or platform rules.
+強いローンチは単発の瞬間ではありません。重要なのは次のことです:
+- 早い段階でユーザーにプロダクトを触ってもらう
+- 実際のフィードバックから学ぶ
+- 各段階でしっかり話題を作る
+- 時間とともに積み上がる勢いを構築する
 
-**Examples:**
-- Email list
-- Blog
-- Podcast
-- Branded community (Slack, Discord)
-- Website/product
+---
 
-**Why they matter:**
-- Get more effective over time
-- No algorithm changes or pay-to-play
-- Direct relationship with audience
-- Compound value from content
+## ORBフレームワーク
 
-**Start with 1-2 based on audience:**
-- Industry lacks quality content → Start a blog
-- People want direct updates → Focus on email
-- Engagement matters → Build a community
+ローンチマーケティングは3種類のチャネルで構成します。最終的には、すべてを自社保有チャネルへ戻すべきです。
 
-**Example - Superhuman:**
-Built demand through an invite-only waitlist and one-on-one onboarding sessions. Every new user got a 30-minute live demo. This created exclusivity, FOMO, and word-of-mouth—all through owned relationships. Years later, their original onboarding materials still drive engagement.
+### 自社保有チャネル
+チャネル自体は自社で保有します（オーディエンスそのものではない）。アルゴリズムやプラットフォーム規約に左右されず、直接アクセスできます。
 
-### Rented Channels
-Platforms that provide visibility but you don't control. Algorithms shift, rules change, pay-to-play increases.
+**例:**
+- メールリスト
+- ブログ
+- ポッドキャスト
+- 自社コミュニティ（Slack、Discord）
+- ウェブサイト/プロダクト
 
-**Examples:**
-- Social media (Twitter/X, LinkedIn, Instagram)
-- App stores and marketplaces
+**重要な理由:**
+- 時間とともに効率が高まる
+- アルゴリズム変更や課金前提に影響されない
+- オーディエンスと直接関係を築ける
+- コンテンツ価値が複利で積み上がる
+
+**オーディエンスに合わせて1-2個から開始:**
+- 業界に良質コンテンツが不足している → ブログを開始
+- 直接アップデートを求めている人が多い → メールを重視
+- 双方向の関与が重要 → コミュニティを構築
+
+**例 - Superhuman:**
+招待制ウェイトリストと1対1のオンボーディングで需要を作りました。すべての新規ユーザーに30分のライブデモを実施。これにより限定感、取り残される不安、口コミが生まれ、いずれも自社保有の関係の中で回りました。数年後も初期のオンボーディング素材がエンゲージメントを生み続けています。
+
+### 借用チャネル
+可視性は得られるが自社でコントロールできないプラットフォーム。アルゴリズムは変わり、規約は変わり、課金圧は高まります。
+
+**例:**
+- ソーシャルメディア（Twitter/X、LinkedIn、Instagram）
+- アプリストアとマーケットプレイス
 - YouTube
 - Reddit
 
-**How to use correctly:**
-- Pick 1-2 platforms where your audience is active
-- Use them to drive traffic to owned channels
-- Don't rely on them as your only strategy
+**正しい使い方:**
+- オーディエンスがいる1-2プラットフォームを選ぶ
+- 自社保有チャネルへ送客するために使う
+- それだけに依存しない
 
-**Example - Notion:**
-Hacked virality through Twitter, YouTube, and Reddit where productivity enthusiasts were active. Encouraged community to share templates and workflows. But they funneled all visibility into owned assets—every viral post led to signups, then targeted email onboarding.
+**例 - Notion:**
+生産性領域のユーザーが集まるTwitter、YouTube、Redditで拡散を設計。コミュニティにテンプレートやワークフローの共有を促しました。ただし可視性はすべて自社保有資産へ接続し、バズ投稿からサインアップ、さらにターゲット化したメールオンボーディングへ流しました。
 
-**Platform-specific tactics:**
-- Twitter/X: Threads that spark conversation → link to newsletter
-- LinkedIn: High-value posts → lead to gated content or email signup
-- Marketplaces (Shopify, Slack): Optimize listing → drive to site for more
+**プラットフォーム別施策:**
+- Twitter/X: 会話が生まれるスレッド → ニュースレターへリンク
+- LinkedIn: 価値の高い投稿 → 限定コンテンツやメール登録へ誘導
+- マーケットプレイス（Shopify、Slack）: 掲載最適化 → 詳細導線は自社サイトへ
 
-Rented channels give speed, not stability. Capture momentum by bringing users into your owned ecosystem.
+借用チャネルは速度をくれますが、安定性はくれません。勢いは自社保有エコシステムへ取り込んでください。
 
-### Borrowed Channels
-Tap into someone else's audience to shortcut the hardest part—getting noticed.
+### 他者借用チャネル
+他者のオーディエンスを活用し、最難関である「認知獲得」をショートカットします。
 
-**Examples:**
-- Guest content (blog posts, podcast interviews, newsletter features)
-- Collaborations (webinars, co-marketing, social takeovers)
-- Speaking engagements (conferences, panels, virtual summits)
-- Influencer partnerships
+**例:**
+- ゲストコンテンツ（寄稿、ポッドキャスト出演、ニュースレター掲載）
+- コラボ（ウェビナー、共同マーケティング、ソーシャル乗っ取り企画）
+- 登壇機会（カンファレンス、パネル、オンラインサミット）
+- インフルエンサー連携
 
-**Be proactive, not passive:**
-1. List industry leaders your audience follows
-2. Pitch win-win collaborations
-3. Use tools like SparkToro or Listen Notes to find audience overlap
-4. Set up affiliate/referral incentives
+**受け身ではなく能動的に動く:**
+1. オーディエンスがフォローしている業界キーパーソンを列挙
+2. 双方に利点のあるコラボを提案
+3. SparkToro や Listen Notes でオーディエンス重複を調査
+4. アフィリエイト/紹介インセンティブを設計
 
-**Example - TRMNL:**
-Sent a free e-ink display to YouTuber Snazzy Labs—not a paid sponsorship, just hoping he'd like it. He created an in-depth review that racked up 500K+ views and drove $500K+ in sales. They also set up an affiliate program for ongoing promotion.
+**例 - TRMNL:**
+ユーチューバーのSnazzy Labsに無料の電子ペーパーディスプレイを送付。広告案件ではなく、気に入ってもらえることを期待した施策でした。結果として詳細レビュー動画が公開され、50万回超の視聴と50万ドル超の売上を生みました。さらに継続促進のためアフィリエイトプログラムも構築しました。
 
-Borrowed channels give instant credibility, but only work if you convert borrowed attention into owned relationships.
-
----
-
-## Five-Phase Launch Approach
-
-Launching isn't a one-day event. It's a phased process that builds momentum.
-
-### Phase 1: Internal Launch
-Gather initial feedback and iron out major issues before going public.
-
-**Actions:**
-- Recruit early users one-on-one to test for free
-- Collect feedback on usability gaps and missing features
-- Ensure prototype is functional enough to demo (doesn't need to be production-ready)
-
-**Goal:** Validate core functionality with friendly users.
-
-### Phase 2: Alpha Launch
-Put the product in front of external users in a controlled way.
-
-**Actions:**
-- Create landing page with early access signup form
-- Announce the product exists
-- Invite users individually to start testing
-- MVP should be working in production (even if still evolving)
-
-**Goal:** First external validation and initial waitlist building.
-
-### Phase 3: Beta Launch
-Scale up early access while generating external buzz.
-
-**Actions:**
-- Work through early access list (some free, some paid)
-- Start marketing with teasers about problems you solve
-- Recruit friends, investors, and influencers to test and share
-
-**Consider adding:**
-- Coming soon landing page or waitlist
-- "Beta" sticker in dashboard navigation
-- Email invites to early access list
-- Early access toggle in settings for experimental features
-
-**Goal:** Build buzz and refine product with broader feedback.
-
-### Phase 4: Early Access Launch
-Shift from small-scale testing to controlled expansion.
-
-**Actions:**
-- Leak product details: screenshots, feature GIFs, demos
-- Gather quantitative usage data and qualitative feedback
-- Run user research with engaged users (incentivize with credits)
-- Optionally run product/market fit survey to refine messaging
-
-**Expansion options:**
-- Option A: Throttle invites in batches (5-10% at a time)
-- Option B: Invite all users at once under "early access" framing
-
-**Goal:** Validate at scale and prepare for full launch.
-
-### Phase 5: Full Launch
-Open the floodgates.
-
-**Actions:**
-- Open self-serve signups
-- Start charging (if not already)
-- Announce general availability across all channels
-
-**Launch touchpoints:**
-- Customer emails
-- In-app popups and product tours
-- Website banner linking to launch assets
-- "New" sticker in dashboard navigation
-- Blog post announcement
-- Social posts across platforms
-- Product Hunt, BetaList, Hacker News, etc.
-
-**Goal:** Maximum visibility and conversion to paying users.
+他者借用チャネルは即時の信頼を得られますが、借りた注目を自社保有の関係へ変換できる場合にのみ機能します。
 
 ---
 
-## Product Hunt Launch Strategy
+## 5フェーズのローンチアプローチ
 
-Product Hunt can be powerful for reaching early adopters, but it's not magic—it requires preparation.
+ローンチは1日イベントではありません。勢いを積み上げる段階的プロセスです。
 
-### Pros
-- Exposure to tech-savvy early adopter audience
-- Credibility bump (especially if Product of the Day)
-- Potential PR coverage and backlinks
+### フェーズ1: 内部ローンチ
+公開前に初期フィードバックを集め、大きな問題を潰します。
 
-### Cons
-- Very competitive to rank well
-- Short-lived traffic spikes
-- Requires significant pre-launch planning
+**アクション:**
+- 初期ユーザーを1対1で募り、無料でテストしてもらう
+- 使い勝手の不足や未実装機能に関するフィードバックを回収
+- デモ可能な最低限の動作を確保（本番品質は未達でも可）
 
-### How to Launch Successfully
+**目標:** 友好的なユーザーでコア機能を検証する。
 
-**Before launch day:**
-1. Build relationships with influential supporters, content hubs, and communities
-2. Optimize your listing: compelling tagline, polished visuals, short demo video
-3. Study successful launches to identify what worked
-4. Engage in relevant communities—provide value before pitching
-5. Prepare your team for all-day engagement
+### フェーズ2: アルファローンチ
+外部ユーザーの前に、制御可能な形でプロダクトを出します。
 
-**On launch day:**
-1. Treat it as an all-day event
-2. Respond to every comment in real-time
-3. Answer questions and spark discussions
-4. Encourage your existing audience to engage
-5. Direct traffic back to your site to capture signups
+**アクション:**
+- 早期アクセス登録フォーム付きのランディングページを作成
+- プロダクトの存在を告知
+- 個別招待でテストを開始
+- MVPは本番環境で動作させる（進化中でも可）
 
-**After launch day:**
-1. Follow up with everyone who engaged
-2. Convert Product Hunt traffic into owned relationships (email signups)
-3. Continue momentum with post-launch content
+**目標:** 最初の外部検証と初期ウェイトリストの構築。
 
-### Case Studies
+### フェーズ3: ベータローンチ
+早期アクセスを拡大しつつ、外部で話題を作ります。
 
-**SavvyCal** (Scheduling tool):
-- Optimized landing page and onboarding before launch
-- Built relationships with productivity/SaaS influencers in advance
-- Responded to every comment on launch day
-- Result: #2 Product of the Month
+**アクション:**
+- 早期アクセスリストを順次処理（無料と有料を混在）
+- 解決する課題を示すティーザーでマーケティング開始
+- 友人、投資家、インフルエンサーにテストと共有を依頼
 
-**Reform** (Form builder):
-- Studied successful launches and applied insights
-- Crafted clear tagline, polished visuals, demo video
-- Engaged in communities before launch (provided value first)
-- Treated launch as all-day engagement event
-- Directed traffic to capture signups
-- Result: #1 Product of the Day
+**追加を検討:**
+- 「近日公開」ランディングページまたはウェイトリスト
+- ダッシュボードナビゲーションに「ベータ」ラベル
+- 早期アクセスリストへのメール招待
+- 実験機能向けの設定内「早期アクセス」トグル
 
----
+**目標:** 話題を拡大し、より広いフィードバックでプロダクトを磨く。
 
-## Post-Launch Product Marketing
+### フェーズ4: 早期アクセスローンチ
+小規模検証から、管理された拡張フェーズへ移行します。
 
-Your launch isn't over when the announcement goes live. Now comes adoption and retention work.
+**アクション:**
+- プロダクト情報を段階公開: スクリーンショット、機能GIF、デモ
+- 定量的な利用データと定性的フィードバックを収集
+- 熱量の高いユーザーでユーザー調査を実施（クレジット付与で促進）
+- 必要に応じてPMF調査を実施し、メッセージを改善
 
-### Immediate Post-Launch Actions
+**拡張オプション:**
+- オプションA: 招待をバッチで段階開放（毎回5-10%）
+- オプションB: 「早期アクセス」表記で一斉招待
 
-**Educate new users:**
-Set up automated onboarding email sequence introducing key features and use cases.
+**目標:** スケールで検証し、フルローンチの準備を整える。
 
-**Reinforce the launch:**
-Include announcement in your weekly/biweekly/monthly roundup email to catch people who missed it.
+### フェーズ5: フルローンチ
+本格展開に入ります。
 
-**Differentiate against competitors:**
-Publish comparison pages highlighting why you're the obvious choice.
+**アクション:**
+- セルフサーブ登録を開放
+- 課金開始（未開始の場合）
+- すべてのチャネルで一般提供開始を告知
 
-**Update web pages:**
-Add dedicated sections about the new feature/product across your site.
+**ローンチ接点:**
+- 顧客向けメール
+- アプリ内ポップアップとプロダクトツアー
+- ローンチ資産へ誘導するサイトバナー
+- ダッシュボードナビゲーションの「新着」ラベル
+- 告知ブログ記事
+- 各プラットフォームでのソーシャル投稿
+- Product Hunt、BetaList、Hacker News など
 
-**Offer hands-on preview:**
-Create no-code interactive demo (using tools like Navattic) so visitors can explore before signing up.
-
-### Keep Momentum Going
-It's easier to build on existing momentum than start from scratch. Every touchpoint reinforces the launch.
+**目標:** 最大限の可視化と有料ユーザー転換。
 
 ---
 
-## Ongoing Launch Strategy
+## Product Hunt ローンチ戦略
 
-Don't rely on a single launch event. Regular updates and feature rollouts sustain engagement.
+Product Hunt はアーリーアダプター到達に有効ですが、魔法ではありません。準備が必要です。
 
-### How to Prioritize What to Announce
+### メリット
+- テック志向のアーリーアダプター層へ露出できる
+- 信頼性が上がる（特に Product of the Day 獲得時）
+- PR掲載や被リンク獲得の可能性がある
 
-Use this matrix to decide how much marketing each update deserves:
+### デメリット
+- 上位表示競争が非常に激しい
+- トラフィックスパイクが短命になりやすい
+- 事前準備に相応の工数が必要
 
-**Major updates** (new features, product overhauls):
-- Full campaign across multiple channels
-- Blog post, email campaign, in-app messages, social media
-- Maximize exposure
+### 成功させるための進め方
 
-**Medium updates** (new integrations, UI enhancements):
-- Targeted announcement
-- Email to relevant segments, in-app banner
-- Don't need full fanfare
+**ローンチ前日まで:**
+1. 影響力のある支援者、コンテンツハブ、コミュニティとの関係を構築
+2. 掲載ページを最適化: 魅力的なタグライン、整ったビジュアル、短いデモ動画
+3. 成功事例を調査し、機能した要素を把握
+4. 関連コミュニティに参加し、先に価値提供してから提案
+5. 終日対応できるようチーム体制を準備
 
-**Minor updates** (bug fixes, small tweaks):
-- Changelog and release notes
-- Signal that product is improving
-- Don't dominate marketing
+**ローンチ当日:**
+1. 終日イベントとして扱う
+2. すべてのコメントへリアルタイム対応
+3. 質問に答え、議論を生む
+4. 既存オーディエンスにも参加を促す
+5. サインアップ獲得のため自社サイトへ導線を戻す
 
-### Announcement Tactics
+**ローンチ後:**
+1. 参加・反応してくれた全員へフォローアップ
+2. Product Hunt 流入を自社保有の関係へ変換（メール登録）
+3. ローンチ後コンテンツで勢いを継続
 
-**Space out releases:**
-Instead of shipping everything at once, stagger announcements to maintain momentum.
+### ケーススタディ
 
-**Reuse high-performing tactics:**
-If a previous announcement resonated, apply those insights to future updates.
+**SavvyCal**（日程調整ツール）:
+- ローンチ前にランディングページとオンボーディングを最適化
+- 生産性/SaaS領域のインフルエンサーと事前に関係構築
+- 当日は全コメントに返信
+- 結果: Product of the Month 2位
 
-**Keep engaging:**
-Continue using email, social, and in-app messaging to highlight improvements.
-
-**Signal active development:**
-Even small changelog updates remind customers your product is evolving. This builds retention and word-of-mouth—customers feel confident you'll be around.
-
----
-
-## Launch Checklist
-
-### Pre-Launch
-- [ ] Landing page with clear value proposition
-- [ ] Email capture / waitlist signup
-- [ ] Early access list built
-- [ ] Owned channels established (email, blog, community)
-- [ ] Rented channel presence (social profiles optimized)
-- [ ] Borrowed channel opportunities identified (podcasts, influencers)
-- [ ] Product Hunt listing prepared (if using)
-- [ ] Launch assets created (screenshots, demo video, GIFs)
-- [ ] Onboarding flow ready
-- [ ] Analytics/tracking in place
-
-### Launch Day
-- [ ] Announcement email to list
-- [ ] Blog post published
-- [ ] Social posts scheduled and posted
-- [ ] Product Hunt listing live (if using)
-- [ ] In-app announcement for existing users
-- [ ] Website banner/notification active
-- [ ] Team ready to engage and respond
-- [ ] Monitor for issues and feedback
-
-### Post-Launch
-- [ ] Onboarding email sequence active
-- [ ] Follow-up with engaged prospects
-- [ ] Roundup email includes announcement
-- [ ] Comparison pages published
-- [ ] Interactive demo created
-- [ ] Gather and act on feedback
-- [ ] Plan next launch moment
+**Reform**（フォームビルダー）:
+- 成功ローンチを研究し、学びを適用
+- 明確なタグライン、完成度の高いビジュアル、デモ動画を用意
+- ローンチ前にコミュニティへ参加（先に価値提供）
+- 終日エンゲージメントイベントとして運用
+- 流入をサインアップ獲得へ接続
+- 結果: Product of the Day 1位
 
 ---
 
-## Task-Specific Questions
+## ローンチ後のプロダクトマーケティング
 
-1. What are you launching? (New product, major feature, minor update)
-2. What's your current audience size and engagement?
-3. What owned channels do you have? (Email list size, blog traffic, community)
-4. What's your timeline for launch?
-5. Have you launched before? What worked/didn't work?
-6. Are you considering Product Hunt? What's your preparation status?
+告知を出した時点でローンチは終わりません。ここから採用と定着のフェーズです。
+
+### ローンチ直後のアクション
+
+**新規ユーザーを教育する:**
+主要機能とユースケースを紹介する自動オンボーディングメールシーケンスを設定する。
+
+**ローンチを再想起させる:**
+週次/隔週/月次のまとめメールに告知を再掲載し、見逃した層へ届ける。
+
+**競合との差別化を明確にする:**
+「なぜ自社を選ぶべきか」を示す比較ページを公開する。
+
+**ウェブページを更新する:**
+サイト全体の関連ページに新機能/新プロダクトの専用セクションを追加する。
+
+**実体験できるプレビューを提供する:**
+ノーコードのインタラクティブデモ（Navattic など）を用意し、登録前に体験できるようにする。
+
+### 勢いを継続する
+ゼロから勢いを作るより、既存の勢いに乗る方が簡単です。すべての接点がローンチ効果を強化します。
 
 ---
 
-## Related Skills
+## 継続的ローンチ戦略
 
-- **marketing-ideas**: For additional launch tactics (#22 Product Hunt, #23 Early Access Referrals)
-- **email-sequence**: For launch and onboarding email sequences
-- **page-cro**: For optimizing launch landing pages
-- **marketing-psychology**: For psychology behind waitlists and exclusivity
-- **programmatic-seo**: For comparison pages mentioned in post-launch
+単発のローンチに依存しないでください。定期的な更新と機能公開が継続的な関与を生みます。
+
+### 何をどの規模で告知するかの優先順位
+
+各アップデートにどれだけマーケティング工数をかけるか、次の基準で判断します:
+
+**大規模アップデート**（新機能、プロダクト刷新）:
+- 複数チャネルでフルキャンペーン
+- ブログ記事、メールキャンペーン、アプリ内告知、ソーシャル投稿
+- 露出を最大化
+
+**中規模アップデート**（新規連携、UI改善）:
+- 対象を絞った告知
+- 関連セグメント向けメール、アプリ内バナー
+- 大規模演出は不要
+
+**小規模アップデート**（バグ修正、小改善）:
+- 変更ログとリリースノート
+- 改善継続を伝える
+- マーケティングの主軸にはしない
+
+### 告知施策
+
+**リリースを分散させる:**
+すべてを同時に出すのではなく、告知タイミングをずらして勢いを維持する。
+
+**成果が出た施策を再利用する:**
+過去告知で反応が良かった施策を次回アップデートに適用する。
+
+**継続的に発信する:**
+メール、ソーシャル、アプリ内メッセージを継続し、改善を伝える。
+
+**開発が進行中であることを示す:**
+小さな変更ログでも、プロダクトが進化していることを伝えられます。これが定着率と口コミを高め、「このプロダクトは継続する」という安心感につながります。
+
+---
+
+## ローンチチェックリスト
+
+### ローンチ前
+- [ ] 明確な価値提案のあるランディングページ
+- [ ] メール獲得 / ウェイトリスト登録導線
+- [ ] 早期アクセスリストの構築
+- [ ] 自社保有チャネル整備（メール、ブログ、コミュニティ）
+- [ ] 借用チャネル整備（ソーシャルプロフィール最適化）
+- [ ] 他者借用チャネル機会の特定（ポッドキャスト、インフルエンサー）
+- [ ] Product Hunt 掲載準備（実施する場合）
+- [ ] ローンチ素材作成（スクリーンショット、デモ動画、GIF）
+- [ ] オンボーディングフロー準備
+- [ ] 分析/トラッキング設定
+
+### ローンチ当日
+- [ ] リスト向け告知メール送信
+- [ ] ブログ記事公開
+- [ ] ソーシャル投稿の予約と公開
+- [ ] Product Hunt 掲載公開（実施する場合）
+- [ ] 既存ユーザー向けアプリ内告知
+- [ ] サイトバナー/通知の有効化
+- [ ] チームの対応体制準備
+- [ ] 問題とフィードバックの監視
+
+### ローンチ後
+- [ ] オンボーディングメールシーケンス稼働
+- [ ] 反応した見込み客へのフォローアップ
+- [ ] まとめメールへの告知掲載
+- [ ] 比較ページ公開
+- [ ] インタラクティブデモ作成
+- [ ] フィードバック収集と反映
+- [ ] 次のローンチ機会を計画
+
+---
+
+## タスク固有の質問
+
+1. 何をローンチしますか？（新規プロダクト、大型機能、小規模更新）
+2. 現在のオーディエンス規模とエンゲージメントはどの程度ですか？
+3. 保有している自社保有チャネルは何ですか？（メールリスト規模、ブログ流入、コミュニティ）
+4. ローンチまでのタイムラインは？
+5. 過去にローンチ経験はありますか？ 何が機能し、何が機能しませんでしたか？
+6. Product Hunt を検討していますか？ 準備状況は？
+
+---
+
+## 関連スキル
+
+- **marketing-ideas**: 追加のローンチ施策向け（#22 Product Hunt、#23 早期アクセス紹介）
+- **email-sequence**: ローンチとオンボーディングのメールシーケンス向け
+- **page-cro**: ローンチ用ランディングページ最適化向け
+- **marketing-psychology**: ウェイトリストや限定性の心理設計向け
+- **programmatic-seo**: ローンチ後の比較ページ施策向け

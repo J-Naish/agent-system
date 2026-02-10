@@ -1,200 +1,200 @@
-# Ad Copy Templates Reference
+# 広告コピーテンプレート リファレンス
 
-Detailed formulas and templates for writing high-converting ad copy.
+高コンバージョンを狙う広告コピー作成のための、詳細なフォーミュラとテンプレートです。
 
-## Primary Text Formulas
+## メインテキストのフォーミュラ
 
-### Problem-Agitate-Solve (PAS)
+### Problem-Agitate-Solve（PAS）
 
 ```
-[Problem statement]
-[Agitate the pain]
-[Introduce solution]
-[CTA]
+[問題提起]
+[痛みを強調]
+[解決策を提示]
+[行動喚起]
 ```
 
-**Example:**
-> Spending hours on manual reporting every week?
-> While you're buried in spreadsheets, your competitors are making decisions.
-> [Product] automates your reports in minutes.
-> Start your free trial →
+**例:**
+> 毎週、手作業レポートに何時間も使っていませんか？
+> あなたがスプレッドシート作業に埋もれている間に、競合は意思決定を進めています。
+> [製品名] はレポート作成を数分で自動化します。
+> 無料トライアルを開始する →
 
 ---
 
-### Before-After-Bridge (BAB)
+### Before-After-Bridge（BAB）
 
 ```
-[Current painful state]
-[Desired future state]
-[Your product as the bridge]
+[現在のつらい状態]
+[望ましい未来状態]
+[橋渡しとなる自社製品]
 ```
 
-**Example:**
-> Before: Chasing down approvals across email, Slack, and spreadsheets.
-> After: Every approval tracked, automated, and on time.
-> [Product] connects your tools and keeps projects moving.
+**例:**
+> 導入前: メール、Slack、スプレッドシートを横断して承認依頼を追いかける状態。
+> 導入後: すべての承認が可視化され、自動化され、期限どおりに完了する状態。
+> [製品名] が各ツールをつなぎ、プロジェクト進行を止めません。
 
 ---
 
-### Social Proof Lead
+### Social Proof Lead（社会的証明先行）
 
 ```
-[Impressive stat or testimonial]
-[What you do]
-[CTA]
+[印象的な数値や推薦コメント]
+[提供内容]
+[行動喚起]
 ```
 
-**Example:**
-> "We cut our reporting time by 75%." — Sarah K., Marketing Director
-> [Product] automates the reports you hate building.
-> See how it works →
+**例:**
+> 「レポート作成時間を75%削減できました。」— マーケティング責任者 Sarah K.
+> [製品名] は、面倒なレポート作成を自動化します。
+> 仕組みを見る →
 
 ---
 
-### Feature-Benefit Bridge
+### Feature-Benefit Bridge（機能と便益の橋渡し）
 
 ```
-[Feature]
-[So that...]
-[Which means...]
+[機能]
+[その結果...]
+[つまり...]
 ```
 
-**Example:**
-> Real-time collaboration on documents
-> So your team always works from the latest version
-> Which means no more version confusion or lost work
+**例:**
+> ドキュメントのリアルタイム共同編集
+> その結果、チームは常に最新バージョンで作業できます
+> つまり、版管理の混乱や作業損失がなくなります
 
 ---
 
-### Direct Response
+### Direct Response（ダイレクトレスポンス）
 
 ```
-[Bold claim/outcome]
-[Proof point]
-[CTA with urgency if genuine]
+[強い主張/成果]
+[根拠]
+[緊急性が本当にある場合の行動喚起]
 ```
 
-**Example:**
-> Cut your reporting time by 80%
-> Join 5,000+ marketing teams already using [Product]
-> Start free → First month 50% off
+**例:**
+> レポート作成時間を80%削減
+> すでに5,000以上のマーケティングチームが [製品名] を利用中
+> 無料で始める → 初月50%オフ
 
 ---
 
-## Headline Formulas
+## 見出しフォーミュラ
 
-### For Search Ads
+### 検索広告向け
 
-| Formula | Example |
+| フォーミュラ | 例 |
 |---------|---------|
-| [Keyword] + [Benefit] | "Project Management That Teams Actually Use" |
-| [Action] + [Outcome] | "Automate Reports \| Save 10 Hours Weekly" |
-| [Question] | "Tired of Manual Data Entry?" |
-| [Number] + [Benefit] | "500+ Teams Trust [Product] for [Outcome]" |
-| [Keyword] + [Differentiator] | "CRM Built for Small Teams" |
-| [Price/Offer] + [Keyword] | "Free Project Management \| No Credit Card" |
+| [キーワード] + [便益] | 「チームが本当に使うプロジェクト管理」 |
+| [行動] + [成果] | 「レポートを自動化 \\| 週10時間を削減」 |
+| [質問形] | 「手作業のデータ入力に疲れていませんか？」 |
+| [数字] + [便益] | 「500以上のチームが [製品名] で [成果] を実現」 |
+| [キーワード] + [差別化要素] | 「小規模チーム向けに設計された CRM」 |
+| [価格/オファー] + [キーワード] | 「無料プロジェクト管理 \\| クレジットカード不要」 |
 
-### For Social Ads
+### ソーシャル広告向け
 
-| Type | Example |
+| 種類 | 例 |
 |------|---------|
-| Outcome hook | "How we 3x'd our conversion rate" |
-| Curiosity hook | "The reporting hack no one talks about" |
-| Contrarian hook | "Why we stopped using [common tool]" |
-| Specificity hook | "The exact template we use for..." |
-| Question hook | "What if you could cut your admin time in half?" |
-| Number hook | "7 ways to improve your workflow today" |
-| Story hook | "We almost gave up. Then we found..." |
+| 成果フック | 「コンバージョン率を3倍にした方法」 |
+| 好奇心フック | 「誰も語らないレポート改善ハック」 |
+| 逆張りフック | 「私たちが [一般的ツール] の利用をやめた理由」 |
+| 具体性フック | 「私たちが実際に使っているテンプレートを公開」 |
+| 質問フック | 「事務作業時間を半分にできるとしたら？」 |
+| 数字フック | 「今日からワークフローを改善する7つの方法」 |
+| ストーリーフック | 「もう諦めかけていました。そこに見つけたのが...」 |
 
 ---
 
-## CTA Variations
+## 行動喚起（CTA）バリエーション
 
-### Soft CTAs (awareness/consideration)
+### ソフト CTA（認知/比較検討）
 
-Best for: Top of funnel, cold audiences, complex products
+適している場面: ファネル上流、コールドオーディエンス、複雑な製品
 
-- Learn More
-- See How It Works
-- Watch Demo
-- Get the Guide
-- Explore Features
-- See Examples
-- Read the Case Study
+- 詳しく見る
+- 仕組みを見る
+- デモを見る
+- ガイドを受け取る
+- 機能を見る
+- 事例を見る
+- ケーススタディを読む
 
-### Hard CTAs (conversion)
+### ハード CTA（コンバージョン）
 
-Best for: Bottom of funnel, warm audiences, clear offers
+適している場面: ファネル下流、ウォームオーディエンス、明確なオファー
 
-- Start Free Trial
-- Get Started Free
-- Book a Demo
-- Claim Your Discount
-- Buy Now
-- Sign Up Free
-- Get Instant Access
+- 無料トライアルを開始
+- 無料で始める
+- デモを予約
+- 割引を受け取る
+- 今すぐ購入
+- 無料登録
+- 今すぐアクセスする
 
-### Urgency CTAs (use when genuine)
+### 緊急性 CTA（実態がある場合のみ）
 
-Best for: Limited-time offers, scarcity situations
+適している場面: 期間限定オファー、希少性のある状況
 
-- Limited Time: 30% Off
-- Offer Ends [Date]
-- Only X Spots Left
-- Last Chance
-- Early Bird Pricing Ends Soon
+- 期間限定: 30%オフ
+- オファー終了日 [日付]
+- 残り [X] 枠のみ
+- 今が最後の機会
+- 早割価格はまもなく終了
 
-### Action-Oriented CTAs
+### 行動志向 CTA
 
-Best for: Active voice, clear next step
+適している場面: 能動的な文体、明確な次の一歩
 
-- Start Saving Time Today
-- Get Your Free Report
-- See Your Score
-- Calculate Your ROI
-- Build Your First Project
-
----
-
-## Platform-Specific Copy Guidelines
-
-### Google Search Ads
-
-- **Headline limits:** 30 characters each (up to 15 headlines)
-- **Description limits:** 90 characters each (up to 4 descriptions)
-- Include keywords naturally
-- Use all available headline slots
-- Include numbers and stats when possible
-- Test dynamic keyword insertion
-
-### Meta Ads (Facebook/Instagram)
-
-- **Primary text:** 125 characters visible (can be longer, gets truncated)
-- **Headline:** 40 characters recommended
-- Front-load the hook (first line matters most)
-- Emojis can work but test
-- Questions perform well
-- Keep image text under 20%
-
-### LinkedIn Ads
-
-- **Intro text:** 600 characters max (150 recommended)
-- **Headline:** 200 characters max (70 recommended)
-- Professional tone (but not boring)
-- Specific job outcomes resonate
-- Stats and social proof important
-- Avoid consumer-style hype
+- 今日から時間を節約する
+- 無料レポートを受け取る
+- スコアを確認する
+- ROI を計算する
+- 最初のプロジェクトを作成する
 
 ---
 
-## Copy Testing Priority
+## プラットフォーム別コピーガイドライン
 
-When testing ad copy, focus on these elements in order of impact:
+### Google 検索広告
 
-1. **Hook/angle** (biggest impact on performance)
-2. **Headline**
-3. **Primary benefit**
-4. **CTA**
-5. **Supporting proof points**
+- **見出し上限:** 各30文字（最大15見出し）
+- **説明文上限:** 各90文字（最大4説明文）
+- キーワードは自然に含める
+- 利用可能な見出し枠を使い切る
+- 可能なら数字や統計を入れる
+- 動的キーワード挿入をテストする
 
-Test one element at a time for clean data.
+### Meta 広告（Facebook/Instagram）
+
+- **メインテキスト:** 125文字程度までが可視（長文も可能だが省略される）
+- **見出し:** 40文字推奨
+- フックは先頭に置く（1行目が最重要）
+- 絵文字は機能する場合があるがテストする
+- 質問形式は効果が出やすい
+- 画像内テキストは20%未満に抑える
+
+### LinkedIn 広告
+
+- **導入テキスト:** 最大600文字（150文字推奨）
+- **見出し:** 最大200文字（70文字推奨）
+- トーンはプロフェッショナルに（ただし退屈にしない）
+- 具体的な職務成果が響きやすい
+- 数値と社会的証明が重要
+- 消費者向け過剰表現は避ける
+
+---
+
+## コピー検証の優先順位
+
+広告コピーを検証するときは、次の順で注目してください:
+
+1. **フック/訴求角度**（成果への影響が最大）
+2. **見出し**
+3. **主要ベネフィット**
+4. **行動喚起（CTA）**
+5. **補強となる根拠要素**
+
+クリーンなデータを得るため、1回のテストで変更する要素は1つに絞ってください。

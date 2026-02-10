@@ -1,254 +1,254 @@
 ---
 name: competitor-alternatives
 version: 1.0.0
-description: "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' or 'competitive landing pages.' Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. Emphasizes deep research, modular content architecture, and varied section types beyond feature tables."
+description: "ユーザーが SEO とセールス支援向けに競合比較ページや代替ページを作成したいときに使用します。ユーザーが『代替ページ』『比較ページ』『競合比較』『[製品] vs [製品]』『[製品] の代替』に言及した場合にも使用します。4つの形式を扱います: 単数の代替、複数の代替、自社 vs 競合、競合 vs 競合。深い調査、モジュール型コンテンツ設計、機能表以外の多様なセクションを重視します。"
 ---
 
 # Competitor & Alternative Pages
 
-You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.
+あなたは競合比較ページと代替ページ作成の専門家です。目標は、競合系検索語で上位表示し、比較検討者に実際の価値を提供し、自社製品を効果的に位置づけるページを構築することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Before creating competitor pages, understand:
+競合ページを作る前に、以下を把握してください。
 
-1. **Your Product**
-   - Core value proposition
-   - Key differentiators
-   - Ideal customer profile
-   - Pricing model
-   - Strengths and honest weaknesses
+1. **自社プロダクト**
+   - 中核の価値提案
+   - 主要な差別化要素
+   - 理想顧客プロファイル
+   - 価格モデル
+   - 強みと、正直な弱み
 
-2. **Competitive Landscape**
-   - Direct competitors
-   - Indirect/adjacent competitors
-   - Market positioning of each
-   - Search volume for competitor terms
+2. **競争環境**
+   - 直接競合
+   - 間接/隣接競合
+   - 各社の市場ポジショニング
+   - 競合キーワードの検索ボリューム
 
-3. **Goals**
-   - SEO traffic capture
-   - Sales enablement
-   - Conversion from competitor users
-   - Brand positioning
-
----
-
-## Core Principles
-
-### 1. Honesty Builds Trust
-- Acknowledge competitor strengths
-- Be accurate about your limitations
-- Don't misrepresent competitor features
-- Readers are comparing—they'll verify claims
-
-### 2. Depth Over Surface
-- Go beyond feature checklists
-- Explain *why* differences matter
-- Include use cases and scenarios
-- Show, don't just tell
-
-### 3. Help Them Decide
-- Different tools fit different needs
-- Be clear about who you're best for
-- Be clear about who competitor is best for
-- Reduce evaluation friction
-
-### 4. Modular Content Architecture
-- Competitor data should be centralized
-- Updates propagate to all pages
-- Single source of truth per competitor
+3. **目標**
+   - SEO トラフィック獲得
+   - セールス支援
+   - 競合ユーザーからの転換
+   - ブランドポジショニング
 
 ---
 
-## Page Formats
+## コア原則
 
-### Format 1: [Competitor] Alternative (Singular)
+### 1. 正直さは信頼を生む
+- 競合の強みを認める
+- 自社の制約を正確に伝える
+- 競合機能を誤って表現しない
+- 読者は比較しており、主張は検証される
 
-**Search intent**: User is actively looking to switch from a specific competitor
+### 2. 表層より深さ
+- 機能チェックリストだけにしない
+- 違いが重要な理由を説明する
+- ユースケースとシナリオを入れる
+- 断言だけでなく根拠を示す
 
-**URL pattern**: `/alternatives/[competitor]` or `/[competitor]-alternative`
+### 3. 判断を助ける
+- ツールごとに適した用途は異なる
+- 自社に最適な顧客を明確にする
+- 競合に最適な顧客も明確にする
+- 比較検討の摩擦を減らす
 
-**Target keywords**: "[Competitor] alternative", "alternative to [Competitor]", "switch from [Competitor]"
+### 4. モジュール型コンテンツ設計
+- 競合データは一元管理する
+- 更新が全ページに反映される
+- 競合ごとに単一の正しい情報源を持つ
 
-**Page structure**:
-1. Why people look for alternatives (validate their pain)
-2. Summary: You as the alternative (quick positioning)
-3. Detailed comparison (features, service, pricing)
-4. Who should switch (and who shouldn't)
-5. Migration path
-6. Social proof from switchers
+---
+
+## ページ形式
+
+### 形式 1: [競合] 代替（単数）
+
+**検索意図**: 特定競合からの乗り換え先を積極的に探している
+
+**URL パターン**: `/alternatives/[competitor]` または `/[competitor]-alternative`
+
+**対象キーワード**: "[Competitor] alternative", "alternative to [Competitor]", "switch from [Competitor]"
+
+**ページ構成**:
+1. 代替を探す理由（痛みを言語化）
+2. 要約: 代替としての自社（短いポジショニング）
+3. 詳細比較（機能、サービス、価格）
+4. 乗り換えるべき人（乗り換えない方がよい人）
+5. 移行手順
+6. 乗り換えユーザーの社会的証明
 7. CTA
 
 ---
 
-### Format 2: [Competitor] Alternatives (Plural)
+### 形式 2: [競合] 代替候補（複数）
 
-**Search intent**: User is researching options, earlier in journey
+**検索意図**: 候補調査段階で選択肢を広く検討している
 
-**URL pattern**: `/alternatives/[competitor]-alternatives`
+**URL パターン**: `/alternatives/[competitor]-alternatives`
 
-**Target keywords**: "[Competitor] alternatives", "best [Competitor] alternatives", "tools like [Competitor]"
+**対象キーワード**: "[Competitor] alternatives", "best [Competitor] alternatives", "tools like [Competitor]"
 
-**Page structure**:
-1. Why people look for alternatives (common pain points)
-2. What to look for in an alternative (criteria framework)
-3. List of alternatives (you first, but include real options)
-4. Comparison table (summary)
-5. Detailed breakdown of each alternative
-6. Recommendation by use case
+**ページ構成**:
+1. 代替を探す理由（よくある課題）
+2. 代替選定時の確認ポイント（評価基準）
+3. 代替候補リスト（自社を先頭にするが実在の選択肢を含める）
+4. 比較表（要約）
+5. 各代替候補の詳細比較
+6. ユースケース別おすすめ
 7. CTA
 
-**Important**: Include 4-7 real alternatives. Being genuinely helpful builds trust and ranks better.
+**重要**: 実在する代替候補を 4〜7 件含めること。本当に役立つ構成が信頼と順位につながる。
 
 ---
 
-### Format 3: You vs [Competitor]
+### 形式 3: 自社 vs [競合]
 
-**Search intent**: User is directly comparing you to a specific competitor
+**検索意図**: 自社と特定競合を直接比較している
 
-**URL pattern**: `/vs/[competitor]` or `/compare/[you]-vs-[competitor]`
+**URL パターン**: `/vs/[competitor]` または `/compare/[you]-vs-[competitor]`
 
-**Target keywords**: "[You] vs [Competitor]", "[Competitor] vs [You]"
+**対象キーワード**: "[You] vs [Competitor]", "[Competitor] vs [You]"
 
-**Page structure**:
-1. TL;DR summary (key differences in 2-3 sentences)
-2. At-a-glance comparison table
-3. Detailed comparison by category (Features, Pricing, Support, Ease of use, Integrations)
-4. Who [You] is best for
-5. Who [Competitor] is best for (be honest)
-6. What customers say (testimonials from switchers)
-7. Migration support
+**ページ構成**:
+1. TL;DR 要約（主要差分を 2〜3 文）
+2. 一目で分かる比較表
+3. カテゴリ別詳細比較（機能、価格、サポート、使いやすさ、連携）
+4. 自社が向いている人
+5. 競合が向いている人（正直に）
+6. 顧客の声（乗り換え事例）
+7. 移行支援
 8. CTA
 
 ---
 
-### Format 4: [Competitor A] vs [Competitor B]
+### 形式 4: [競合 A] vs [競合 B]
 
-**Search intent**: User comparing two competitors (not you directly)
+**検索意図**: 2つの競合を比較している（自社は直接の比較対象ではない）
 
-**URL pattern**: `/compare/[competitor-a]-vs-[competitor-b]`
+**URL パターン**: `/compare/[competitor-a]-vs-[competitor-b]`
 
-**Page structure**:
-1. Overview of both products
-2. Comparison by category
-3. Who each is best for
-4. The third option (introduce yourself)
-5. Comparison table (all three)
+**ページ構成**:
+1. 両製品の概要
+2. カテゴリ別比較
+3. 各製品が向いている人
+4. 第3の選択肢として自社を提示
+5. 比較表（3者）
 6. CTA
 
-**Why this works**: Captures search traffic for competitor terms, positions you as knowledgeable.
+**この形式が機能する理由**: 競合キーワードの検索流入を獲得し、専門性の高いプレイヤーとして自社を位置づけられる。
 
 ---
 
-## Essential Sections
+## 必須セクション
 
-### TL;DR Summary
-Start every page with a quick summary for scanners—key differences in 2-3 sentences.
+### TL;DR 要約
+全ページの冒頭に、流し読み向けの短い要約を置く。主要差分を 2〜3 文で示す。
 
-### Paragraph Comparisons
-Go beyond tables. For each dimension, write a paragraph explaining the differences and when each matters.
+### 段落比較
+表だけに頼らない。各比較軸ごとに、違いとそれが重要になる場面を段落で説明する。
 
-### Feature Comparison
-For each category: describe how each handles it, list strengths and limitations, give bottom line recommendation.
+### 機能比較
+カテゴリごとに、各社の対応方法、強みと制約、最終的な判断指針を示す。
 
-### Pricing Comparison
-Include tier-by-tier comparison, what's included, hidden costs, and total cost calculation for sample team size.
+### 価格比較
+ティア別比較、含まれる内容、隠れコスト、想定チーム規模での総コストを含める。
 
-### Who It's For
-Be explicit about ideal customer for each option. Honest recommendations build trust.
+### 向いている人
+各選択肢の理想顧客を明示する。正直な推奨は信頼を高める。
 
-### Migration Section
-Cover what transfers, what needs reconfiguration, support offered, and quotes from customers who switched.
+### 移行セクション
+何が移行できるか、再設定が必要なもの、提供支援、乗り換え顧客の声を含める。
 
-**For detailed templates**: See [references/templates.md](references/templates.md)
-
----
-
-## Content Architecture
-
-### Centralized Competitor Data
-Create a single source of truth for each competitor with:
-- Positioning and target audience
-- Pricing (all tiers)
-- Feature ratings
-- Strengths and weaknesses
-- Best for / not ideal for
-- Common complaints (from reviews)
-- Migration notes
-
-**For data structure and examples**: See [references/content-architecture.md](references/content-architecture.md)
+**詳細テンプレート**: [references/templates.md](references/templates.md) を参照
 
 ---
 
-## Research Process
+## コンテンツ設計
 
-### Deep Competitor Research
+### 一元化された競合データ
+競合ごとに単一の正しい情報源を作成し、以下を保持する:
+- ポジショニングと対象顧客
+- 価格（全ティア）
+- 機能評価
+- 強みと弱み
+- 向いている/向いていないケース
+- よくある不満（レビュー由来）
+- 移行メモ
 
-For each competitor, gather:
-
-1. **Product research**: Sign up, use it, document features/UX/limitations
-2. **Pricing research**: Current pricing, what's included, hidden costs
-3. **Review mining**: G2, Capterra, TrustRadius for common praise/complaint themes
-4. **Customer feedback**: Talk to customers who switched (both directions)
-5. **Content research**: Their positioning, their comparison pages, their changelog
-
-### Ongoing Updates
-
-- **Quarterly**: Verify pricing, check for major feature changes
-- **When notified**: Customer mentions competitor change
-- **Annually**: Full refresh of all competitor data
+**データ構造と例**: [references/content-architecture.md](references/content-architecture.md) を参照
 
 ---
 
-## SEO Considerations
+## 調査プロセス
 
-### Keyword Targeting
+### 深い競合調査
 
-| Format | Primary Keywords |
+競合ごとに以下を収集:
+
+1. **プロダクト調査**: 実際に登録・利用し、機能/UX/制約を記録
+2. **価格調査**: 現行価格、含まれる内容、隠れコスト
+3. **レビュー分析**: G2、Capterra、TrustRadius で称賛/不満の共通テーマを抽出
+4. **顧客ヒアリング**: 乗り換え顧客に聞く（双方向）
+5. **コンテンツ調査**: 競合のポジショニング、比較ページ、更新履歴
+
+### 継続更新
+
+- **四半期ごと**: 価格検証、主要機能変更の確認
+- **都度**: 顧客から競合変更情報が入ったとき
+- **年次**: 競合データ全体のフル更新
+
+---
+
+## SEO 観点
+
+### キーワード設計
+
+| 形式 | 主要キーワード |
 |--------|-----------------|
-| Alternative (singular) | [Competitor] alternative, alternative to [Competitor] |
-| Alternatives (plural) | [Competitor] alternatives, best [Competitor] alternatives |
-| You vs Competitor | [You] vs [Competitor], [Competitor] vs [You] |
-| Competitor vs Competitor | [A] vs [B], [B] vs [A] |
+| 単数の代替 | [Competitor] alternative, alternative to [Competitor] |
+| 複数の代替 | [Competitor] alternatives, best [Competitor] alternatives |
+| 自社 vs 競合 | [You] vs [Competitor], [Competitor] vs [You] |
+| 競合 vs 競合 | [A] vs [B], [B] vs [A] |
 
-### Internal Linking
-- Link between related competitor pages
-- Link from feature pages to relevant comparisons
-- Create hub page linking to all competitor content
+### 内部リンク
+- 関連する競合ページ同士をリンク
+- 機能ページから関連比較ページへリンク
+- すべての競合コンテンツへのハブページを作成
 
-### Schema Markup
-Consider FAQ schema for common questions like "What is the best alternative to [Competitor]?"
-
----
-
-## Output Format
-
-### Competitor Data File
-Complete competitor profile in YAML format for use across all comparison pages.
-
-### Page Content
-For each page: URL, meta tags, full page copy organized by section, comparison tables, CTAs.
-
-### Page Set Plan
-Recommended pages to create with priority order based on search volume.
+### スキーママークアップ
+"What is the best alternative to [Competitor]?" のような質問には FAQ schema の活用を検討。
 
 ---
 
-## Task-Specific Questions
+## 出力形式
 
-1. What are common reasons people switch to you?
-2. Do you have customer quotes about switching?
-3. What's your pricing vs. competitors?
-4. Do you offer migration support?
+### 競合データファイル
+すべての比較ページで使えるよう、競合プロファイルを YAML 形式で作成。
+
+### ページコンテンツ
+ページごとに URL、メタタグ、セクション構成済み本文、比較表、CTA を出力。
+
+### ページセット計画
+検索ボリュームに基づく優先順位付きで、作成すべきページ一覧を提示。
 
 ---
 
-## Related Skills
+## タスク固有の質問
 
-- **programmatic-seo**: For building competitor pages at scale
-- **copywriting**: For writing compelling comparison copy
-- **seo-audit**: For optimizing competitor pages
-- **schema-markup**: For FAQ and comparison schema
+1. ユーザーが自社へ乗り換える主な理由は？
+2. 乗り換えに関する顧客コメントはあるか？
+3. 自社と競合の価格差は？
+4. 移行支援を提供しているか？
+
+---
+
+## 関連スキル
+
+- **programmatic-seo**: 競合ページをスケール展開するため
+- **copywriting**: 説得力のある比較コピー作成のため
+- **seo-audit**: 競合ページ最適化のため
+- **schema-markup**: FAQ と比較用スキーマのため

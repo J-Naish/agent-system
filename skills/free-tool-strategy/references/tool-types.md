@@ -1,208 +1,208 @@
-# Free Tool Types Reference
+# 無料ツールタイプ リファレンス
 
-Detailed guide to each type of marketing tool you can build.
+構築可能な各種マーケティングツールの詳細ガイドです。
 
-## Calculators
+## 計算ツール
 
-**Best for**: Decisions involving numbers, comparisons, estimates
+**適している用途**: 数値を伴う意思決定、比較、見積もり
 
-**Examples**:
-- ROI calculator
-- Savings calculator
-- Cost comparison tool
-- Salary calculator
-- Tax estimator
-- Pricing estimator
-- Compound interest calculator
-- Break-even calculator
+**例**:
+- ROI計算ツール
+- 節約額計算ツール
+- コスト比較ツール
+- 給与計算ツール
+- 税額見積もりツール
+- 料金見積もりツール
+- 複利計算ツール
+- 損益分岐点計算ツール
 
-**Why they work**:
-- Personalized output
-- High perceived value
-- Share-worthy results
-- Clear problem → solution
+**有効な理由**:
+- パーソナライズされた出力
+- 体感価値が高い
+- 結果が共有されやすい
+- 課題から解決への流れが明確
 
-**Implementation tips**:
-- Keep inputs simple
-- Show calculations transparently
-- Make results shareable
-- Add "powered by" branding
-
----
-
-## Generators
-
-**Best for**: Creating something useful quickly
-
-**Examples**:
-- Policy generator (privacy, terms)
-- Template generator
-- Name/tagline generator
-- Email subject line generator
-- Resume builder
-- Color palette generator
-- Logo maker
-- Contract generator
-
-**Why they work**:
-- Tangible output
-- Saves time
-- Easily shared
-- Repeat usage
-
-**Implementation tips**:
-- Output should be immediately usable
-- Allow customization
-- Offer download/export options
-- Include email gating for premium outputs
+**実装のポイント**:
+- 入力はシンプルに保つ
+- 計算過程を透明に示す
+- 結果を共有しやすくする
+- 「提供元」などのブランド表記を入れる
 
 ---
 
-## Analyzers/Auditors
+## 生成ツール
 
-**Best for**: Evaluating existing work or assets
+**適している用途**: 有用なものをすばやく作成する
 
-**Examples**:
-- Website grader
-- SEO analyzer
-- Email subject tester
-- Headline analyzer
-- Security checker
-- Performance auditor
-- Accessibility checker
-- Code quality analyzer
+**例**:
+- ポリシー生成ツール（プライバシー、利用規約）
+- テンプレート生成ツール
+- 名前/タグライン生成ツール
+- メール件名生成ツール
+- 履歴書作成ツール
+- カラーパレット生成ツール
+- ロゴ作成ツール
+- 契約書生成ツール
 
-**Why they work**:
-- Curiosity-driven
-- Personalized insights
-- Creates awareness of problems
-- Natural lead to solution
+**有効な理由**:
+- 具体的な成果物が得られる
+- 時間を節約できる
+- 共有しやすい
+- 繰り返し使われやすい
 
-**Implementation tips**:
-- Score or grade for gamification
-- Benchmark against averages
-- Provide actionable recommendations
-- Follow up with improvement offers
-
----
-
-## Testers/Validators
-
-**Best for**: Checking if something works
-
-**Examples**:
-- Meta tag preview
-- Email rendering test
-- Mobile-friendly test
-- Speed test
-- DNS checker
-- SSL certificate checker
-- Redirect checker
-- Broken link finder
-
-**Why they work**:
-- Immediate utility
-- Bookmark-worthy
-- Repeat usage
-- Professional necessity
-
-**Implementation tips**:
-- Fast results are essential
-- Show pass/fail clearly
-- Provide fix instructions
-- Integrate with your product where relevant
+**実装のポイント**:
+- 出力はすぐ使える状態にする
+- カスタマイズ可能にする
+- ダウンロード/エクスポートを提供する
+- プレミアム出力にはメールゲートを設ける
 
 ---
 
-## Libraries/Resources
+## 分析ツール/監査ツール
 
-**Best for**: Reference material
+**適している用途**: 既存の作業や資産を評価する
 
-**Examples**:
-- Icon library
-- Template library
-- Code snippet library
-- Example gallery
-- Industry directory
-- Resource list
-- Swipe file collection
-- Font pairing tool
+**例**:
+- ウェブサイト評価ツール
+- SEO分析ツール
+- メール件名テスターツール
+- 見出し分析ツール
+- セキュリティチェッカー
+- パフォーマンス監査ツール
+- アクセシビリティチェッカー
+- コード品質分析ツール
 
-**Why they work**:
-- High SEO value
-- Ongoing traffic
-- Establishes authority
-- Linkable asset
+**有効な理由**:
+- 好奇心を喚起しやすい
+- パーソナライズされた示唆を得られる
+- 課題認識を生み出せる
+- 解決策への自然な導線になる
 
-**Implementation tips**:
-- Make searchable/filterable
-- Allow easy copying/downloading
-- Update regularly
-- Accept community submissions
-
----
-
-## Interactive Educational
-
-**Best for**: Learning/understanding
-
-**Examples**:
-- Interactive tutorials
-- Code playgrounds
-- Visual explainers
-- Quizzes/assessments
-- Simulators
-- Comparison tools
-- Decision trees
-- Configurators
-
-**Why they work**:
-- Engages deeply
-- Demonstrates expertise
-- Shareable
-- Memory-creating
-
-**Implementation tips**:
-- Make it hands-on
-- Show immediate feedback
-- Lead to deeper resources
-- Capture engaged users
+**実装のポイント**:
+- ゲーミフィケーションのためスコアや等級を表示する
+- 平均値との比較を示す
+- 実行可能な改善提案を出す
+- 改善提案や支援オファーに接続する
 
 ---
 
-## Tool Concept Examples by Industry
+## テストツール/検証ツール
 
-### SaaS Product
-- Product ROI calculator
-- Competitor comparison tool
-- Readiness assessment quiz
-- Template library for use case
-- Feature configurator
+**適している用途**: 正しく動作するか確認する
 
-### Agency/Services
-- Industry benchmark tool
-- Project scoping calculator
-- Portfolio review tool
-- Cost estimator
-- Proposal generator
+**例**:
+- メタタグプレビュー
+- メールレンダリングテスト
+- モバイル対応テスト
+- 速度テスト
+- DNSチェッカー
+- SSL証明書チェッカー
+- リダイレクトチェッカー
+- リンク切れ検出ツール
 
-### E-commerce
-- Product finder quiz
-- Comparison tool
-- Size/fit calculator
-- Savings calculator
-- Gift finder
+**有効な理由**:
+- 即時性のある実用価値
+- ブックマークされやすい
+- 繰り返し利用される
+- 業務上の必要性が高い
 
-### Developer Tools
-- Code snippet library
-- Testing/preview tool
-- Documentation generator
-- Interactive tutorials
-- API playground
+**実装のポイント**:
+- 高速な結果表示が必須
+- 合格/不合格を明確に示す
+- 修正手順を提示する
+- 関連する箇所で自社プロダクトと連携する
 
-### Finance
-- Financial calculators
-- Investment comparison
-- Budget planner
-- Tax estimator
-- Loan calculator
+---
+
+## ライブラリ/リソース
+
+**適している用途**: 参照資料
+
+**例**:
+- アイコンライブラリ
+- テンプレートライブラリ
+- コードスニペットライブラリ
+- 事例ギャラリー
+- 業界ディレクトリ
+- リソース一覧
+- スワイプファイル集
+- フォントペアリングツール
+
+**有効な理由**:
+- SEO価値が高い
+- 継続的なトラフィックが見込める
+- 権威性を確立できる
+- リンクされやすい資産になる
+
+**実装のポイント**:
+- 検索/フィルター可能にする
+- コピー/ダウンロードを容易にする
+- 定期的に更新する
+- コミュニティ投稿を受け付ける
+
+---
+
+## インタラクティブ教育ツール
+
+**適している用途**: 学習/理解
+
+**例**:
+- インタラクティブチュートリアル
+- コードプレイグラウンド
+- ビジュアル解説
+- クイズ/診断
+- シミュレーター
+- 比較ツール
+- 意思決定ツリー
+- コンフィギュレーター
+
+**有効な理由**:
+- 深い関与を生む
+- 専門性を示せる
+- 共有しやすい
+- 記憶に残りやすい
+
+**実装のポイント**:
+- 手を動かせる体験にする
+- 即時フィードバックを示す
+- より深いリソースへ導く
+- 関与度の高いユーザーを獲得する
+
+---
+
+## 業界別ツールコンセプト例
+
+### SaaSプロダクト
+- プロダクトROI計算ツール
+- 競合比較ツール
+- 準備状況診断クイズ
+- ユースケース向けテンプレートライブラリ
+- 機能コンフィギュレーター
+
+### 代理店/サービス
+- 業界ベンチマークツール
+- プロジェクトスコープ計算ツール
+- ポートフォリオ評価ツール
+- コスト見積もりツール
+- 提案書生成ツール
+
+### Eコマース
+- 商品診断クイズ
+- 比較ツール
+- サイズ/フィット計算ツール
+- 節約額計算ツール
+- ギフト検索ツール
+
+### 開発者向けツール
+- コードスニペットライブラリ
+- テスト/プレビューツール
+- ドキュメント生成ツール
+- インタラクティブチュートリアル
+- APIプレイグラウンド
+
+### 金融
+- 金融計算ツール
+- 投資比較ツール
+- 予算計画ツール
+- 税額見積もりツール
+- ローン計算ツール

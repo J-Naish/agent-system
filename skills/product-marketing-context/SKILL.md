@@ -1,240 +1,240 @@
 ---
 name: product-marketing-context
 version: 1.0.0
-description: "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' or wants to avoid repeating foundational information across marketing tasks. Creates `.claude/product-marketing-context.md` that other marketing skills reference."
+description: "ユーザーがプロダクトマーケティング文脈ドキュメントを作成または更新したい場合に使用します。ユーザーが『プロダクト文脈（product context）』『マーケティング文脈（marketing context）』『文脈セットアップ（set up context）』『ポジショニング（positioning）』に言及した場合や、マーケティング作業で基礎情報の繰り返しを避けたい場合にも使用します。他のマーケティングスキルが参照する `.claude/product-marketing-context.md` を作成します。"
 ---
 
-# Product Marketing Context
+# プロダクトマーケティング文脈
 
-You help users create and maintain a product marketing context document. This captures foundational positioning and messaging information that other marketing skills reference, so users don't repeat themselves.
+あなたは、ユーザーがプロダクトマーケティング文脈ドキュメントを作成・維持するのを支援します。ここには、他のマーケティングスキルが参照する基礎的なポジショニング情報とメッセージ情報をまとめ、ユーザーの重複説明をなくします。
 
-The document is stored at `.claude/product-marketing-context.md`.
+ドキュメントの保存先は `.claude/product-marketing-context.md` です。
 
-## Workflow
+## ワークフロー
 
-### Step 1: Check for Existing Context
+### ステップ1: 既存文脈の確認
 
-First, check if `.claude/product-marketing-context.md` already exists.
+まず `.claude/product-marketing-context.md` がすでに存在するか確認します。
 
-**If it exists:**
-- Read it and summarize what's captured
-- Ask which sections they want to update
-- Only gather info for those sections
+**存在する場合:**
+- 内容を読み、何が記録されているか要約する
+- どのセクションを更新したいか確認する
+- そのセクションに必要な情報だけを集める
 
-**If it doesn't exist, offer two options:**
+**存在しない場合は、次の2つの選択肢を提示する:**
 
-1. **Auto-draft from codebase** (recommended): You'll study the repo—README, landing pages, marketing copy, package.json, etc.—and draft a V1 of the context document. The user then reviews, corrects, and fills gaps. This is faster than starting from scratch.
+1. **コードベースから自動ドラフト作成**（推奨）: README、ランディングページ、マーケティングコピー、package.json などを調査し、文脈ドキュメントのV1を作成する。ユーザーはそれをレビューして修正・補完する。ゼロから作るより速い。
 
-2. **Start from scratch**: Walk through each section conversationally, gathering info one section at a time.
+2. **ゼロから作成**: 各セクションを会話形式で、1つずつ情報収集しながら作成する。
 
-Most users prefer option 1. After presenting the draft, ask: "What needs correcting? What's missing?"
+多くのユーザーは選択肢1を好みます。ドラフト提示後に「どこを修正すべきですか？何が不足していますか？」と確認してください。
 
-### Step 2: Gather Information
+### ステップ2: 情報収集
 
-**If auto-drafting:**
-1. Read the codebase: README, landing pages, marketing copy, about pages, meta descriptions, package.json, any existing docs
-2. Draft all sections based on what you find
-3. Present the draft and ask what needs correcting or is missing
-4. Iterate until the user is satisfied
+**自動ドラフト作成の場合:**
+1. コードベースを読む: README、ランディングページ、マーケティングコピー、Aboutページ、メタディスクリプション、package.json、既存ドキュメント
+2. 見つかった情報に基づいて全セクションをドラフト
+3. ドラフトを提示し、修正点や不足点を確認
+4. ユーザーが満足するまで反復
 
-**If starting from scratch:**
-Walk through each section below conversationally, one at a time. Don't dump all questions at once.
+**ゼロから作成の場合:**
+以下の各セクションを会話形式で、1つずつ進める。質問を一度にすべて投げない。
 
-For each section:
-1. Briefly explain what you're capturing
-2. Ask relevant questions
-3. Confirm accuracy
-4. Move to the next
+各セクションで行うこと:
+1. 何を記録するかを短く説明
+2. 関連質問を行う
+3. 正確性を確認
+4. 次のセクションへ進む
 
-**Important:** Push for verbatim customer language. Exact phrases are more valuable than polished descriptions.
-
----
-
-## Sections to Capture
-
-### 1. Product Overview
-- One-line description
-- What it does (2-3 sentences)
-- Product category (what "shelf" you sit on—how customers search for you)
-- Product type (SaaS, marketplace, e-commerce, service, etc.)
-- Business model and pricing
-
-### 2. Target Audience
-- Target company type (industry, size, stage)
-- Target decision-makers (roles, departments)
-- Primary use case (the main problem you solve)
-- Jobs to be done (2-3 things customers "hire" you for)
-- Specific use cases or scenarios
-
-### 3. Personas (B2B only)
-If multiple stakeholders are involved in buying, capture for each:
-- User, Champion, Decision Maker, Financial Buyer, Technical Influencer
-- What each cares about, their challenge, and the value you promise them
-
-### 4. Problems & Pain Points
-- Core challenge customers face before finding you
-- Why current solutions fall short
-- What it costs them (time, money, opportunities)
-- Emotional tension (stress, fear, doubt)
-
-### 5. Competitive Landscape
-- **Direct competitors**: Same solution, same problem (e.g., Calendly vs SavvyCal)
-- **Secondary competitors**: Different solution, same problem (e.g., Calendly vs Superhuman scheduling)
-- **Indirect competitors**: Conflicting approach (e.g., Calendly vs personal assistant)
-- How each falls short for customers
-
-### 6. Differentiation
-- Key differentiators (capabilities alternatives lack)
-- How you solve it differently
-- Why that's better (benefits)
-- Why customers choose you over alternatives
-
-### 7. Objections & Anti-Personas
-- Top 3 objections heard in sales and how to address them
-- Who is NOT a good fit (anti-persona)
-
-### 8. Switching Dynamics
-The JTBD Four Forces:
-- **Push**: What frustrations drive them away from current solution
-- **Pull**: What attracts them to you
-- **Habit**: What keeps them stuck with current approach
-- **Anxiety**: What worries them about switching
-
-### 9. Customer Language
-- How customers describe the problem (verbatim)
-- How they describe your solution (verbatim)
-- Words/phrases to use
-- Words/phrases to avoid
-- Glossary of product-specific terms
-
-### 10. Brand Voice
-- Tone (professional, casual, playful, etc.)
-- Communication style (direct, conversational, technical)
-- Brand personality (3-5 adjectives)
-
-### 11. Proof Points
-- Key metrics or results to cite
-- Notable customers/logos
-- Testimonial snippets
-- Main value themes and supporting evidence
-
-### 12. Goals
-- Primary business goal
-- Key conversion action (what you want people to do)
-- Current metrics (if known)
+**重要:** 顧客の生の言葉を重視する。整った説明文より、実際の表現の方が価値が高い。
 
 ---
 
-## Step 3: Create the Document
+## 収集するセクション
 
-After gathering information, create `.claude/product-marketing-context.md` with this structure:
+### 1. プロダクト概要
+- 1行説明
+- 何をするプロダクトか（2-3文）
+- プロダクトカテゴリ（顧客がどの棚で探すか）
+- プロダクトタイプ（SaaS、マーケットプレイス、EC、サービスなど）
+- ビジネスモデルと価格体系
+
+### 2. ターゲットオーディエンス
+- 対象企業タイプ（業界、規模、成長段階）
+- 対象意思決定者（役職、部門）
+- 主要ユースケース（解くべき中心課題）
+- ジョブ理論（顧客があなたを「雇う」2-3の目的）
+- 具体的な利用シナリオ
+
+### 3. ペルソナ（B2Bのみ）
+購入に複数の利害関係者が関与する場合、各役割ごとに記録:
+- ユーザー、推進者、意思決定者、予算決裁者、技術的影響者
+- 各役割が重視すること、課題、約束する価値
+
+### 4. 問題とペインポイント
+- 顧客があなたを見つける前に抱えている核心課題
+- 既存解決策が足りない理由
+- それによる損失（時間、費用、機会）
+- 感情的な緊張（ストレス、不安、疑念）
+
+### 5. 競争環境
+- **直接競合**: 同じ解決策で同じ課題を解く（例: Calendly と SavvyCal）
+- **二次競合**: 別解決策で同じ課題を解く（例: Calendly と Superhuman scheduling）
+- **間接競合**: 相反するアプローチ（例: Calendly と personal assistant）
+- それぞれが顧客にとって不足する点
+
+### 6. 差別化
+- 主要な差別化要素（代替にない能力）
+- どう違って解くか
+- なぜそれが優れているか（便益）
+- 顧客が代替ではなくあなたを選ぶ理由
+
+### 7. 反論とアンチペルソナ
+- 営業でよく出る上位3つの反論と、その対応
+- 適合しない顧客像（アンチペルソナ）
+
+### 8. 乗り換えの力学
+ジョブ理論の4つの力:
+- **押し出し要因（Push）**: 現状ソリューションから離れたくなる不満
+- **引き寄せ要因（Pull）**: あなたへ引かれる要因
+- **慣性（Habit）**: 現状に留まらせる力
+- **不安（Anxiety）**: 乗り換えに対する不安
+
+### 9. 顧客言語
+- 顧客が問題をどう表現するか（原文）
+- 顧客があなたの解決策をどう表現するか（原文）
+- 使うべき語句
+- 避けるべき語句
+- 製品固有用語の用語集
+
+### 10. ブランドボイス
+- トーン（プロフェッショナル、カジュアル、遊び心など）
+- コミュニケーションスタイル（直接的、会話的、技術的）
+- ブランド人格（形容詞3-5個）
+
+### 11. 証拠要素
+- 引用すべき主要指標や成果
+- 代表顧客/ロゴ
+- 推薦コメント抜粋
+- 主要価値テーマと裏づけ証拠
+
+### 12. 目標
+- 主要な事業目標
+- 主要コンバージョン行動（ユーザーにしてほしい行動）
+- 現在指標（分かる範囲）
+
+---
+
+## ステップ3: ドキュメント作成
+
+情報収集後、次の構成で `.claude/product-marketing-context.md` を作成します:
 
 ```markdown
-# Product Marketing Context
+# プロダクトマーケティング文脈
 
-*Last updated: [date]*
+*最終更新: [日付]*
 
-## Product Overview
-**One-liner:**
-**What it does:**
-**Product category:**
-**Product type:**
-**Business model:**
+## プロダクト概要
+**1行説明:**
+**何をするか:**
+**プロダクトカテゴリ:**
+**プロダクトタイプ:**
+**ビジネスモデル:**
 
-## Target Audience
-**Target companies:**
-**Decision-makers:**
-**Primary use case:**
-**Jobs to be done:**
+## ターゲットオーディエンス
+**対象企業:**
+**意思決定者:**
+**主要ユースケース:**
+**ジョブ理論（Jobs to be done）:**
 -
-**Use cases:**
+**ユースケース:**
 -
 
-## Personas
-| Persona | Cares about | Challenge | Value we promise |
+## ペルソナ
+| ペルソナ | 重視すること | 課題 | 約束する価値 |
 |---------|-------------|-----------|------------------|
 | | | | |
 
-## Problems & Pain Points
-**Core problem:**
-**Why alternatives fall short:**
+## 問題とペインポイント
+**核心課題:**
+**代替が足りない理由:**
 -
-**What it costs them:**
-**Emotional tension:**
+**失っているもの:**
+**感情的緊張:**
 
-## Competitive Landscape
-**Direct:** [Competitor] — falls short because...
-**Secondary:** [Approach] — falls short because...
-**Indirect:** [Alternative] — falls short because...
+## 競争環境
+**直接競合:** [競合名] — 足りない理由...
+**二次競合:** [アプローチ] — 足りない理由...
+**間接競合:** [代替] — 足りない理由...
 
-## Differentiation
-**Key differentiators:**
+## 差別化
+**主要差別化要素:**
 -
-**How we do it differently:**
-**Why that's better:**
-**Why customers choose us:**
+**どう違って解くか:**
+**なぜ優れているか:**
+**なぜ選ばれるか:**
 
-## Objections
-| Objection | Response |
+## 反論
+| 反論 | 回答 |
 |-----------|----------|
 | | |
 
-**Anti-persona:**
+**アンチペルソナ:**
 
-## Switching Dynamics
-**Push:**
-**Pull:**
-**Habit:**
-**Anxiety:**
+## 乗り換えの力学
+**押し出し要因（Push）:**
+**引き寄せ要因（Pull）:**
+**慣性（Habit）:**
+**不安（Anxiety）:**
 
-## Customer Language
-**How they describe the problem:**
-- "[verbatim]"
-**How they describe us:**
-- "[verbatim]"
-**Words to use:**
-**Words to avoid:**
-**Glossary:**
-| Term | Meaning |
+## 顧客言語
+**問題の表現:**
+- "[原文]"
+**私たちの表現:**
+- "[原文]"
+**使う言葉:**
+**避ける言葉:**
+**用語集:**
+| 用語 | 意味 |
 |------|---------|
 | | |
 
-## Brand Voice
-**Tone:**
-**Style:**
-**Personality:**
+## ブランドボイス
+**トーン:**
+**スタイル:**
+**人格:**
 
-## Proof Points
-**Metrics:**
-**Customers:**
-**Testimonials:**
-> "[quote]" — [who]
-**Value themes:**
-| Theme | Proof |
+## 証拠要素
+**指標:**
+**顧客:**
+**推薦コメント:**
+> "[引用]" — [誰]
+**価値テーマ:**
+| テーマ | 証拠 |
 |-------|-------|
 | | |
 
-## Goals
-**Business goal:**
-**Conversion action:**
-**Current metrics:**
+## 目標
+**事業目標:**
+**コンバージョン行動:**
+**現状指標:**
 ```
 
 ---
 
-## Step 4: Confirm and Save
+## ステップ4: 確認して保存
 
-- Show the completed document
-- Ask if anything needs adjustment
-- Save to `.claude/product-marketing-context.md`
-- Tell them: "Other marketing skills will now use this context automatically. Run `/product-marketing-context` anytime to update it."
+- 完成ドキュメントを表示
+- 修正が必要か確認
+- `.claude/product-marketing-context.md` に保存
+- 次を案内: 「他のマーケティングスキルはこの文脈を自動参照します。更新はいつでも `/product-marketing-context` を実行してください。」
 
 ---
 
-## Tips
+## コツ
 
-- **Be specific**: Ask "What's the #1 frustration that brings them to you?" not "What problem do they solve?"
-- **Capture exact words**: Customer language beats polished descriptions
-- **Ask for examples**: "Can you give me an example?" unlocks better answers
-- **Validate as you go**: Summarize each section and confirm before moving on
-- **Skip what doesn't apply**: Not every product needs all sections (e.g., Personas for B2C)
+- **具体化する**: 「どんな問題を解きますか？」より「彼らが来る最大の不満は何ですか？」
+- **生の言葉を記録する**: 整った表現より顧客の実語彙が強い
+- **具体例を引き出す**: 「具体例を1つ教えてください」で回答品質が上がる
+- **都度検証する**: セクションごとに要約し、確認してから進む
+- **不要項目は省く**: すべての製品で全セクションが必要とは限らない（例: B2Cでのペルソナ）

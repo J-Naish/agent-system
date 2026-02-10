@@ -1,454 +1,454 @@
 ---
 name: marketing-psychology
 version: 1.0.0
-description: "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' or 'consumer behavior.' This skill provides 70+ mental models organized for marketing application."
+description: "ユーザーが心理学の原則、メンタルモデル、行動科学をマーケティングに適用したい場合に使用します。ユーザーが『心理学』『メンタルモデル』『認知バイアス』『説得』『行動科学』『なぜ人は買うのか』『意思決定』『消費者行動』に言及した場合にも使用します。このスキルは、マーケティング活用向けに整理した70以上のメンタルモデルを提供します。"
 ---
 
-# Marketing Psychology & Mental Models
+# マーケティング心理学とメンタルモデル
 
-You are an expert in applying psychological principles and mental models to marketing. Your goal is to help users understand why people buy, how to influence behavior ethically, and how to make better marketing decisions.
+あなたは、心理学の原則とメンタルモデルをマーケティングに適用する専門家です。目標は、人がなぜ買うのかを理解し、倫理的に行動へ影響を与え、より良いマーケティング判断ができるよう支援することです。
 
-## How to Use This Skill
+## このスキルの使い方
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before applying mental models. Use that context to tailor recommendations to the specific product and audience.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、メンタルモデルを適用する前にそれを読んでください。その文脈を使って、対象プロダクトとオーディエンスに合わせて提案を調整してください。
 
-Mental models are thinking tools that help you make better decisions, understand customer behavior, and create more effective marketing. When helping users:
+メンタルモデルは、より良い意思決定、顧客行動の理解、効果的なマーケティング設計のための思考ツールです。ユーザーを支援するときは:
 
-1. Identify which mental models apply to their situation
-2. Explain the psychology behind the model
-3. Provide specific marketing applications
-4. Suggest how to implement ethically
-
----
-
-## Foundational Thinking Models
-
-These models sharpen your strategy and help you solve the right problems.
-
-### First Principles
-Break problems down to basic truths and build solutions from there. Instead of copying competitors, ask "why" repeatedly to find root causes. Use the 5 Whys technique to tunnel down to what really matters.
-
-**Marketing application**: Don't assume you need content marketing because competitors do. Ask why you need it, what problem it solves, and whether there's a better solution.
-
-### Jobs to Be Done
-People don't buy products—they "hire" them to get a job done. Focus on the outcome customers want, not features.
-
-**Marketing application**: A drill buyer doesn't want a drill—they want a hole. Frame your product around the job it accomplishes, not its specifications.
-
-### Circle of Competence
-Know what you're good at and stay within it. Venture outside only with proper learning or expert help.
-
-**Marketing application**: Don't chase every channel. Double down where you have genuine expertise and competitive advantage.
-
-### Inversion
-Instead of asking "How do I succeed?", ask "What would guarantee failure?" Then avoid those things.
-
-**Marketing application**: List everything that would make your campaign fail—confusing messaging, wrong audience, slow landing page—then systematically prevent each.
-
-### Occam's Razor
-The simplest explanation is usually correct. Avoid overcomplicating strategies or attributing results to complex causes when simple ones suffice.
-
-**Marketing application**: If conversions dropped, check the obvious first (broken form, page speed) before assuming complex attribution issues.
-
-### Pareto Principle (80/20 Rule)
-Roughly 80% of results come from 20% of efforts. Identify and focus on the vital few.
-
-**Marketing application**: Find the 20% of channels, customers, or content driving 80% of results. Cut or reduce the rest.
-
-### Local vs. Global Optima
-A local optimum is the best solution nearby, but a global optimum is the best overall. Don't get stuck optimizing the wrong thing.
-
-**Marketing application**: Optimizing email subject lines (local) won't help if email isn't the right channel (global). Zoom out before zooming in.
-
-### Theory of Constraints
-Every system has one bottleneck limiting throughput. Find and fix that constraint before optimizing elsewhere.
-
-**Marketing application**: If your funnel converts well but traffic is low, more conversion optimization won't help. Fix the traffic bottleneck first.
-
-### Opportunity Cost
-Every choice has a cost—what you give up by not choosing alternatives. Consider what you're saying no to.
-
-**Marketing application**: Time spent on a low-ROI channel is time not spent on high-ROI activities. Always compare against alternatives.
-
-### Law of Diminishing Returns
-After a point, additional investment yields progressively smaller gains.
-
-**Marketing application**: The 10th blog post won't have the same impact as the first. Know when to diversify rather than double down.
-
-### Second-Order Thinking
-Consider not just immediate effects, but the effects of those effects.
-
-**Marketing application**: A flash sale boosts revenue (first order) but may train customers to wait for discounts (second order).
-
-### Map ≠ Territory
-Models and data represent reality but aren't reality itself. Don't confuse your analytics dashboard with actual customer experience.
-
-**Marketing application**: Your customer persona is a useful model, but real customers are more complex. Stay in touch with actual users.
-
-### Probabilistic Thinking
-Think in probabilities, not certainties. Estimate likelihoods and plan for multiple outcomes.
-
-**Marketing application**: Don't bet everything on one campaign. Spread risk and plan for scenarios where your primary strategy underperforms.
-
-### Barbell Strategy
-Combine extreme safety with small high-risk/high-reward bets. Avoid the mediocre middle.
-
-**Marketing application**: Put 80% of budget into proven channels, 20% into experimental bets. Avoid moderate-risk, moderate-reward middle.
+1. どのメンタルモデルが状況に当てはまるかを特定する
+2. そのモデルの心理学的背景を説明する
+3. 具体的なマーケティング適用を提示する
+4. 倫理的な実装方法を提案する
 
 ---
 
-## Understanding Buyers & Human Psychology
+## 基礎思考モデル
 
-These models explain how customers think, decide, and behave.
+これらのモデルは戦略を研ぎ澄まし、解くべき問題を正しく見極めるのに役立ちます。
 
-### Fundamental Attribution Error
-People attribute others' behavior to character, not circumstances. "They didn't buy because they're not serious" vs. "The checkout was confusing."
+### 第一原理思考
+問題を基本的な事実に分解し、そこから解決策を組み立てます。競合模倣ではなく、根本原因を見つけるために「なぜ」を繰り返し問います。「なぜを5回問う」手法で本質へ掘り下げます。
 
-**Marketing application**: When customers don't convert, examine your process before blaming them. The problem is usually situational, not personal.
+**マーケティングへの適用**: 競合がやっているからという理由でコンテンツマーケティングを始めない。なぜ必要か、何を解くか、より良い解がないかを先に問う。
 
-### Mere Exposure Effect
-People prefer things they've seen before. Familiarity breeds liking.
+### ジョブ理論（Jobs to Be Done）
+人は製品を買うのではなく、達成したい仕事のために製品を「雇用」します。機能ではなく、顧客が望む結果に焦点を当てます。
 
-**Marketing application**: Consistent brand presence builds preference over time. Repetition across channels creates comfort and trust.
+**マーケティングへの適用**: ドリル購入者が欲しいのはドリルではなく穴です。仕様ではなく、達成される仕事で製品を語る。
 
-### Availability Heuristic
-People judge likelihood by how easily examples come to mind. Recent or vivid events seem more common.
+### 能力圏（Circle of Competence）
+自分が得意な領域を理解し、その範囲で戦います。外へ出るなら、十分な学習か専門家支援を前提にします。
 
-**Marketing application**: Case studies and testimonials make success feel more achievable. Make positive outcomes easy to imagine.
+**マーケティングへの適用**: すべてのチャネルを追わない。実際の強みと競争優位がある領域に集中する。
 
-### Confirmation Bias
-People seek information confirming existing beliefs and ignore contradictory evidence.
+### 反転思考（Inversion）
+「どう成功するか」ではなく「確実に失敗するには何が必要か」を問います。次に、その条件を避けます。
 
-**Marketing application**: Understand what your audience already believes and align messaging accordingly. Fighting beliefs head-on rarely works.
+**マーケティングへの適用**: メッセージ不明瞭、誤ったオーディエンス、遅いランディングページなど、失敗要因を列挙し、順に潰す。
 
-### The Lindy Effect
-The longer something has survived, the longer it's likely to continue. Old ideas often outlast new ones.
+### オッカムの剃刀
+最も単純な説明が正しいことが多い。単純要因で説明できるのに、戦略や原因を過度に複雑化しない。
 
-**Marketing application**: Proven marketing principles (clear value props, social proof) outlast trendy tactics. Don't abandon fundamentals for fads.
+**マーケティングへの適用**: CVRが下がったら、複雑な計測要因より先に明白な要因（フォーム破損、表示速度）を確認する。
 
-### Mimetic Desire
-People want things because others want them. Desire is socially contagious.
+### パレートの法則（80/20）
+結果の約80%は、施策の20%から生まれます。重要少数を特定し、そこへ集中します。
 
-**Marketing application**: Show that desirable people want your product. Waitlists, exclusivity, and social proof trigger mimetic desire.
+**マーケティングへの適用**: 成果の80%を生むチャネル、顧客、コンテンツの20%を特定し、それ以外は削減または縮小する。
 
-### Sunk Cost Fallacy
-People continue investing in something because of past investment, even when it's no longer rational.
+### 局所最適と全体最適
+局所最適は近傍での最善、全体最適は全体での最善です。間違った対象を最適化し続けないことが重要です。
 
-**Marketing application**: Know when to kill underperforming campaigns. Past spend shouldn't justify future spend if results aren't there.
+**マーケティングへの適用**: メール件名の最適化（局所）は、メール自体が適切チャネルでない（全体）なら意味が薄い。先に俯瞰する。
 
-### Endowment Effect
-People value things more once they own them.
+### 制約理論
+あらゆるシステムには、全体の流量を制限するボトルネックが1つあります。まずその制約を特定し、解消します。
 
-**Marketing application**: Free trials, samples, and freemium models let customers "own" the product, making them reluctant to give it up.
+**マーケティングへの適用**: ファネルCVRが高くても流入が少なければ、CVR最適化より先に流入ボトルネックを解消する。
 
-### IKEA Effect
-People value things more when they've put effort into creating them.
+### 機会費用
+すべての選択には、他の選択肢を捨てるコストがあります。何を諦めるかを同時に評価します。
 
-**Marketing application**: Let customers customize, configure, or build something. Their investment increases perceived value and commitment.
+**マーケティングへの適用**: 低ROIチャネルに使う時間は、高ROI施策に使えない時間。常に代替案と比較する。
 
-### Zero-Price Effect
-Free isn't just a low price—it's psychologically different. "Free" triggers irrational preference.
+### 収穫逓減の法則
+ある時点を超えると、追加投資あたりの成果は小さくなります。
 
-**Marketing application**: Free tiers, free trials, and free shipping have disproportionate appeal. The jump from $1 to $0 is bigger than $2 to $1.
+**マーケティングへの適用**: 10本目のブログ記事は1本目と同じインパクトを持たない。集中継続か分散かの切替点を見極める。
 
-### Hyperbolic Discounting / Present Bias
-People strongly prefer immediate rewards over future ones, even when waiting is more rational.
+### 二次的思考（Second-Order Thinking）
+目先の効果だけでなく、その効果が生む次の効果まで考えます。
 
-**Marketing application**: Emphasize immediate benefits ("Start saving time today") over future ones ("You'll see ROI in 6 months").
+**マーケティングへの適用**: フラッシュセールは売上を押し上げる（一次効果）が、値引き待ち行動を学習させる（二次効果）ことがある。
 
-### Status-Quo Bias
-People prefer the current state of affairs. Change requires effort and feels risky.
+### 地図は領土ではない（Map ≠ Territory）
+モデルやデータは現実の表現であり、現実そのものではありません。分析ダッシュボードと実顧客体験を混同しない。
 
-**Marketing application**: Reduce friction to switch. Make the transition feel safe and easy. "Import your data in one click."
+**マーケティングへの適用**: ペルソナは有用なモデルだが、実顧客はもっと複雑。実ユーザーとの接触を維持する。
 
-### Default Effect
-People tend to accept pre-selected options. Defaults are powerful.
+### 確率的思考
+確実性ではなく確率で考えます。起こりやすさを見積もり、複数シナリオを前提に計画します。
 
-**Marketing application**: Pre-select the plan you want customers to choose. Opt-out beats opt-in for subscriptions (ethically applied).
+**マーケティングへの適用**: 1施策に全賭けしない。リスクを分散し、主戦略が外れた場合のシナリオを準備する。
 
-### Paradox of Choice
-Too many options overwhelm and paralyze. Fewer choices often lead to more decisions.
+### バーベル戦略
+極端に安全な配分と、小さな高リスク高リターン賭けを組み合わせます。中途半端を避けます。
 
-**Marketing application**: Limit options. Three pricing tiers beat seven. Recommend a single "best for most" option.
-
-### Goal-Gradient Effect
-People accelerate effort as they approach a goal. Progress visualization motivates action.
-
-**Marketing application**: Show progress bars, completion percentages, and "almost there" messaging to drive completion.
-
-### Peak-End Rule
-People judge experiences by the peak (best or worst moment) and the end, not the average.
-
-**Marketing application**: Design memorable peaks (surprise upgrades, delightful moments) and strong endings (thank you pages, follow-up emails).
-
-### Zeigarnik Effect
-Unfinished tasks occupy the mind more than completed ones. Open loops create tension.
-
-**Marketing application**: "You're 80% done" creates pull to finish. Incomplete profiles, abandoned carts, and cliffhangers leverage this.
-
-### Pratfall Effect
-Competent people become more likable when they show a small flaw. Perfection is less relatable.
-
-**Marketing application**: Admitting a weakness ("We're not the cheapest, but...") can increase trust and differentiation.
-
-### Curse of Knowledge
-Once you know something, you can't imagine not knowing it. Experts struggle to explain simply.
-
-**Marketing application**: Your product seems obvious to you but confusing to newcomers. Test copy with people unfamiliar with your space.
-
-### Mental Accounting
-People treat money differently based on its source or intended use, even though money is fungible.
-
-**Marketing application**: Frame costs in favorable mental accounts. "$3/day" feels different than "$90/month" even though it's the same.
-
-### Regret Aversion
-People avoid actions that might cause regret, even if the expected outcome is positive.
-
-**Marketing application**: Address regret directly. Money-back guarantees, free trials, and "no commitment" messaging reduce regret fear.
-
-### Bandwagon Effect / Social Proof
-People follow what others are doing. Popularity signals quality and safety.
-
-**Marketing application**: Show customer counts, testimonials, logos, reviews, and "trending" indicators. Numbers create confidence.
+**マーケティングへの適用**: 予算の80%を実証済みチャネル、20%を実験へ。中リスク中リターンの惰性的配分を避ける。
 
 ---
 
-## Influencing Behavior & Persuasion
+## 購買者理解と人間心理
 
-These models help you ethically influence customer decisions.
+これらのモデルは、顧客がどう考え、どう決め、どう行動するかを説明します。
 
-### Reciprocity Principle
-People feel obligated to return favors. Give first, and people want to give back.
+### 根本的な帰属の誤り
+人は他者の行動を状況より性格で説明しがちです。「本気でないから買わない」ではなく「決済導線が分かりにくい」が実態かもしれません。
 
-**Marketing application**: Free content, free tools, and generous free tiers create reciprocal obligation. Give value before asking for anything.
+**マーケティングへの適用**: 顧客が転換しないとき、まず顧客を責める前に体験設計を疑う。多くは性格ではなく状況要因。
 
-### Commitment & Consistency
-Once people commit to something, they want to stay consistent with that commitment.
+### 単純接触効果
+人は見慣れたものを好みます。接触頻度は好意につながります。
 
-**Marketing application**: Get small commitments first (email signup, free trial). People who've taken one step are more likely to take the next.
+**マーケティングへの適用**: 一貫したブランド露出は時間とともに選好を作る。複数チャネルでの反復は安心感と信頼を生む。
 
-### Authority Bias
-People defer to experts and authority figures. Credentials and expertise create trust.
+### 利用可能性ヒューリスティック
+思い出しやすい事例ほど、発生確率が高いと判断されます。最近の出来事や鮮明な出来事は過大評価されます。
 
-**Marketing application**: Feature expert endorsements, certifications, "featured in" logos, and thought leadership content.
+**マーケティングへの適用**: 事例と推薦コメントで「自分にもできそう」という感覚を作る。成功イメージを想起しやすくする。
 
-### Liking / Similarity Bias
-People say yes to those they like and those similar to themselves.
+### 確証バイアス
+人は既存信念を裏づける情報を探し、反証情報を無視しがちです。
 
-**Marketing application**: Use relatable spokespeople, founder stories, and community language. "Built by marketers for marketers" signals similarity.
+**マーケティングへの適用**: オーディエンスの既存信念を把握し、それに沿って訴求する。正面衝突は機能しにくい。
 
-### Unity Principle
-Shared identity drives influence. "One of us" is powerful.
+### リンディ効果
+長く存続してきたものほど、今後も存続する可能性が高い。古い原則は新しい流行より長生きしやすい。
 
-**Marketing application**: Position your brand as part of the customer's tribe. Use insider language and shared values.
+**マーケティングへの適用**: 明確な価値提案や社会的証明のような基本原則は流行より持続する。流行のために基礎を捨てない。
 
-### Scarcity / Urgency Heuristic
-Limited availability increases perceived value. Scarcity signals desirability.
+### 模倣的欲望
+人は他者が欲しがるものを欲しがります。欲望は社会的に伝播します。
 
-**Marketing application**: Limited-time offers, low-stock warnings, and exclusive access create urgency. Only use when genuine.
+**マーケティングへの適用**: 魅力的な人々が製品を求めている様子を示す。ウェイトリスト、限定性、社会的証明が効く。
 
-### Foot-in-the-Door Technique
-Start with a small request, then escalate. Compliance with small requests leads to compliance with larger ones.
+### サンクコストの誤謬
+過去投資のために、合理性のない継続投資をしてしまいます。
 
-**Marketing application**: Free trial → paid plan → annual plan → enterprise. Each step builds on the last.
+**マーケティングへの適用**: 成果が出ない施策を止める判断を持つ。過去支出は将来支出の正当化にならない。
 
-### Door-in-the-Face Technique
-Start with an unreasonably large request, then retreat to what you actually want. The contrast makes the second request seem reasonable.
+### 保有効果
+人は一度所有したものを高く評価します。
 
-**Marketing application**: Show enterprise pricing first, then reveal the affordable starter plan. The contrast makes it feel like a deal.
+**マーケティングへの適用**: 無料トライアル、サンプル、フリーミアムで製品を「自分のもの」にしてもらうと、手放しにくくなる。
 
-### Loss Aversion / Prospect Theory
-Losses feel roughly twice as painful as equivalent gains feel good. People will work harder to avoid losing than to gain.
+### IKEA効果
+自分で手をかけたものほど価値を高く感じます。
 
-**Marketing application**: Frame in terms of what they'll lose by not acting. "Don't miss out" beats "You could gain."
+**マーケティングへの適用**: カスタマイズや設定作成を体験させる。投資感が知覚価値とコミットメントを高める。
 
-### Anchoring Effect
-The first number people see heavily influences subsequent judgments.
+### ゼロ価格効果
+無料は単なる低価格ではなく、心理的に別カテゴリです。「無料」は非合理な好みを引き起こします。
 
-**Marketing application**: Show the higher price first (original price, competitor price, enterprise tier) to anchor expectations.
+**マーケティングへの適用**: 無料プラン、無料トライアル、送料無料は不均衡に強く効く。1ドルから0ドルへの差は、2ドルから1ドルより大きい。
 
-### Decoy Effect
-Adding a third, inferior option makes one of the original two look better.
+### 双曲割引 / 現在バイアス
+人は将来利益より即時利益を強く好みます。待つ方が合理的でも、今の報酬を選びがちです。
 
-**Marketing application**: A "decoy" pricing tier that's clearly worse value makes your preferred tier look like the obvious choice.
+**マーケティングへの適用**: 「今日から時間を節約」のように即時便益を強調する。「6か月後にROI」より効きやすい。
 
-### Framing Effect
-How something is presented changes how it's perceived. Same facts, different frames.
+### 現状維持バイアス
+人は現状を好みます。変化は手間とリスクを伴うと感じられます。
 
-**Marketing application**: "90% success rate" vs. "10% failure rate" are identical but feel different. Frame positively.
+**マーケティングへの適用**: 乗り換え摩擦を下げる。移行を安全かつ簡単に見せる。「ワンクリックでデータ移行」など。
 
-### Contrast Effect
-Things seem different depending on what they're compared to.
+### デフォルト効果
+人は事前選択された選択肢を受け入れやすい。デフォルトは強力です。
 
-**Marketing application**: Show the "before" state clearly. The contrast with your "after" makes improvements vivid.
+**マーケティングへの適用**: 選んでほしいプランを初期選択にする。購読ではオプトアウト設計がオプトインより強い（倫理的に適用）。
 
----
+### 選択肢過多のパラドックス
+選択肢が多すぎると、判断停止が起こります。選択肢を減らす方が意思決定を促進しやすい。
 
-## Pricing Psychology
+**マーケティングへの適用**: 選択肢を絞る。価格プランは7つより3つ。単一の「多くの人に最適」提案を置く。
 
-These models specifically address how people perceive and respond to prices.
+### ゴール勾配効果
+人は目標に近づくほど努力を加速します。進捗可視化は行動を促進します。
 
-### Charm Pricing / Left-Digit Effect
-Prices ending in 9 seem significantly lower than the next round number. $99 feels much cheaper than $100.
+**マーケティングへの適用**: 進捗バー、完了率、「あと少し」メッセージで完了を促す。
 
-**Marketing application**: Use .99 or .95 endings for value-focused products. The left digit dominates perception.
+### ピーク・エンドの法則
+人は体験全体の平均ではなく、ピーク（最良/最悪）と終わりで体験を評価します。
 
-### Rounded-Price (Fluency) Effect
-Round numbers feel premium and are easier to process. $100 signals quality; $99 signals value.
+**マーケティングへの適用**: 印象的なピーク（驚きのアップグレード、嬉しい演出）と強い終わり（サンクスページ、フォローアップメール）を設計する。
 
-**Marketing application**: Use round prices for premium products ($500/month), charm prices for value products ($497/month).
+### ツァイガルニク効果
+未完了タスクは完了タスクより記憶に残りやすい。未完のループは緊張を生みます。
 
-### Rule of 100
-For prices under $100, percentage discounts seem larger ("20% off"). For prices over $100, absolute discounts seem larger ("$50 off").
+**マーケティングへの適用**: 「80%完了」は完了欲求を生む。未完プロフィール、カゴ落ち、続きが気になる設計に活用できる。
 
-**Marketing application**: $80 product: "20% off" beats "$16 off." $500 product: "$100 off" beats "20% off."
+### プラットフォール効果
+有能な人は、小さな欠点を見せるとむしろ好感が上がることがあります。完璧は共感されにくい。
 
-### Price Relativity / Good-Better-Best
-People judge prices relative to options presented. A middle tier seems reasonable between cheap and expensive.
+**マーケティングへの適用**: 「最安ではないですが...」のような弱み開示が、信頼と差別化を高める場合がある。
 
-**Marketing application**: Three tiers where the middle is your target. The expensive tier makes it look reasonable; the cheap tier provides an anchor.
+### 知識の呪い
+一度知ったことは「知らない状態」を想像しづらい。専門家ほど平易説明が難しくなります。
 
-### Mental Accounting (Pricing)
-Framing the same price differently changes perception.
+**マーケティングへの適用**: 製品は自分には自明でも、新規には難解。業界外の人にコピーをテストする。
 
-**Marketing application**: "$1/day" feels cheaper than "$30/month." "Less than your morning coffee" reframes the expense.
+### メンタルアカウンティング
+お金は同一価値でも、出所や用途で別物として扱われます。
 
----
+**マーケティングへの適用**: コストを有利な勘定枠で提示する。「月90ドル」より「1日3ドル」は心理的負担が軽く感じられる。
 
-## Design & Delivery Models
+### 後悔回避
+期待値が正でも、後悔の可能性がある行動を避ける傾向があります。
 
-These models help you design effective marketing systems.
+**マーケティングへの適用**: 後悔を直接緩和する。返金保証、無料トライアル、「縛りなし」表現で不安を下げる。
 
-### Hick's Law
-Decision time increases with the number and complexity of choices. More options = slower decisions = more abandonment.
+### バンドワゴン効果 / 社会的証明
+人は他者の行動に追随します。人気は品質と安全のシグナルになります。
 
-**Marketing application**: Simplify choices. One clear CTA beats three. Fewer form fields beat more.
-
-### AIDA Funnel
-Attention → Interest → Desire → Action. The classic customer journey model.
-
-**Marketing application**: Structure pages and campaigns to move through each stage. Capture attention before building desire.
-
-### Rule of 7
-Prospects need roughly 7 touchpoints before converting. One ad rarely converts; sustained presence does.
-
-**Marketing application**: Build multi-touch campaigns across channels. Retargeting, email sequences, and consistent presence compound.
-
-### Nudge Theory / Choice Architecture
-Small changes in how choices are presented significantly influence decisions.
-
-**Marketing application**: Default selections, strategic ordering, and friction reduction guide behavior without restricting choice.
-
-### BJ Fogg Behavior Model
-Behavior = Motivation × Ability × Prompt. All three must be present for action.
-
-**Marketing application**: High motivation but hard to do = won't happen. Easy to do but no prompt = won't happen. Design for all three.
-
-### EAST Framework
-Make desired behaviors: Easy, Attractive, Social, Timely.
-
-**Marketing application**: Reduce friction (easy), make it appealing (attractive), show others doing it (social), ask at the right moment (timely).
-
-### COM-B Model
-Behavior requires: Capability, Opportunity, Motivation.
-
-**Marketing application**: Can they do it (capability)? Is the path clear (opportunity)? Do they want to (motivation)? Address all three.
-
-### Activation Energy
-The initial energy required to start something. High activation energy prevents action even if the task is easy overall.
-
-**Marketing application**: Reduce starting friction. Pre-fill forms, offer templates, show quick wins. Make the first step trivially easy.
-
-### North Star Metric
-One metric that best captures the value you deliver to customers. Focus creates alignment.
-
-**Marketing application**: Identify your North Star (active users, completed projects, revenue per customer) and align all efforts toward it.
-
-### The Cobra Effect
-When incentives backfire and produce the opposite of intended results.
-
-**Marketing application**: Test incentive structures. A referral bonus might attract low-quality referrals gaming the system.
+**マーケティングへの適用**: 顧客数、推薦文、ロゴ、レビュー、「人気」表示を見せる。数値は安心感を作る。
 
 ---
 
-## Growth & Scaling Models
+## 行動変容と説得
 
-These models explain how marketing compounds and scales.
+これらのモデルは、倫理的に顧客意思決定へ影響するのに役立ちます。
 
-### Feedback Loops
-Output becomes input, creating cycles. Positive loops accelerate growth; negative loops create decline.
+### 返報性の原理
+人は受け取った好意を返したくなります。先に与えることで返報が起きやすくなります。
 
-**Marketing application**: Build virtuous cycles: more users → more content → better SEO → more users. Identify and strengthen positive loops.
+**マーケティングへの適用**: 無料コンテンツ、無料ツール、寛大な無料プランで返報性を生む。何かを求める前に価値を渡す。
 
-### Compounding
-Small, consistent gains accumulate into large results over time. Early gains matter most.
+### コミットメントと一貫性
+人は一度コミットすると、その選択に一貫した行動を取りたくなります。
 
-**Marketing application**: Consistent content, SEO, and brand building compound. Start early; benefits accumulate exponentially.
+**マーケティングへの適用**: まず小さなコミットメント（メール登録、無料トライアル）を得る。最初の一歩を踏んだ人は次の一歩を踏みやすい。
 
-### Network Effects
-A product becomes more valuable as more people use it.
+### 権威バイアス
+人は専門家や権威ある立場の意見を重視します。資格や実績は信頼を生みます。
 
-**Marketing application**: Design features that improve with more users: shared workspaces, integrations, marketplaces, communities.
+**マーケティングへの適用**: 専門家推薦、認定、掲載実績ロゴ、ソートリーダーシップコンテンツを提示する。
 
-### Flywheel Effect
-Sustained effort creates momentum that eventually maintains itself. Hard to start, easy to maintain.
+### 好意 / 類似性バイアス
+人は、好感を持つ相手や自分に似た相手に「はい」と言いやすい。
 
-**Marketing application**: Content → traffic → leads → customers → case studies → more content. Each element powers the next.
+**マーケティングへの適用**: 共感しやすい発信者、創業者ストーリー、コミュニティ言語を使う。「マーケターがマーケターのために作った」は類似性を示す。
 
-### Switching Costs
-The price (time, money, effort, data) of changing to a competitor. High switching costs create retention.
+### ユニティ原理
+共有されたアイデンティティは強い影響力を持つ。「同じ仲間」は強力です。
 
-**Marketing application**: Increase switching costs ethically: integrations, data accumulation, workflow customization, team adoption.
+**マーケティングへの適用**: ブランドを顧客の属する部族の一員として位置づける。内輪言語と共有価値を使う。
 
-### Exploration vs. Exploitation
-Balance trying new things (exploration) with optimizing what works (exploitation).
+### 希少性 / 緊急性ヒューリスティック
+限定性は知覚価値を高めます。希少性は望ましさのシグナルになります。
 
-**Marketing application**: Don't abandon working channels for shiny new ones, but allocate some budget to experiments.
+**マーケティングへの適用**: 期間限定オファー、在庫僅少表示、限定アクセスで緊急性を作る。必ず実態があるときだけ使う。
 
-### Critical Mass / Tipping Point
-The threshold after which growth becomes self-sustaining.
+### フット・イン・ザ・ドア
+小さな依頼から始め、徐々に大きくします。小依頼への同意は、大依頼への同意を生みやすい。
 
-**Marketing application**: Focus resources on reaching critical mass in one segment before expanding. Depth before breadth.
+**マーケティングへの適用**: 無料トライアル → 有料プラン → 年間契約 → エンタープライズ。各段階が次を後押しする。
 
-### Survivorship Bias
-Focusing on successes while ignoring failures that aren't visible.
+### ドア・イン・ザ・フェイス
+最初に大きすぎる依頼を提示し、その後に本命へ下げる。対比で本命が合理的に見えます。
 
-**Marketing application**: Study failed campaigns, not just successful ones. The viral hit you're copying had 99 failures you didn't see.
+**マーケティングへの適用**: 先にエンタープライズ価格を示し、その後に手頃なスタータープランを見せると、割安感が生まれる。
+
+### 損失回避 / プロスペクト理論
+同等の利得より損失の痛みの方が約2倍強い。人は得ることより失うことを避けるために強く行動します。
+
+**マーケティングへの適用**: 行動しないことで失うものを明示する。「得られるかも」より「逃さないで」が効きやすい。
+
+### アンカリング効果
+最初に見た数値が、その後の判断に強く影響します。
+
+**マーケティングへの適用**: 高い価格（元値、競合価格、上位プラン）を先に提示し、価格期待の基準点を作る。
+
+### デコイ効果
+第三の劣った選択肢を加えると、もともとの選択肢の一方が魅力的に見えやすくなります。
+
+**マーケティングへの適用**: 明確に割高なデコイプランを置くと、本命プランが「妥当な選択」に見える。
+
+### フレーミング効果
+同じ事実でも提示方法で受け止め方が変わります。
+
+**マーケティングへの適用**: 「成功率90%」と「失敗率10%」は同義だが体感が異なる。望ましい文脈で枠づける。
+
+### コントラスト効果
+比較対象によって、物事は違って見えます。
+
+**マーケティングへの適用**: 導入前の状態を明確に見せる。導入後との差が改善を鮮明にする。
 
 ---
 
-## Quick Reference
+## 価格心理
 
-When facing a marketing challenge, consider:
+これらのモデルは、価格の知覚と反応を扱います。
 
-| Challenge | Relevant Models |
+### チャームプライシング / 左端数字効果
+9で終わる価格は、次の丸め価格より大幅に安く感じられます。99ドルは100ドルよりかなり安く見えます。
+
+**マーケティングへの適用**: 価値訴求型製品では .99 や .95 を活用する。左端の数字が知覚を支配しやすい。
+
+### 丸価格効果（処理流暢性）
+丸い数字はプレミアム感があり、処理しやすい。100ドルは品質感、99ドルはお得感を示しやすい。
+
+**マーケティングへの適用**: プレミアム製品は丸価格（500ドル/月）、価値訴求製品はチャーム価格（497ドル/月）を使い分ける。
+
+### 100の法則
+100ドル未満は割引率表示が大きく感じられ、100ドル超は値引き額表示が大きく感じられます。
+
+**マーケティングへの適用**: 80ドル商品は「20%オフ」が「16ドルオフ」より効く。500ドル商品は「100ドルオフ」が「20%オフ」より効く。
+
+### 価格の相対性 / 三段階比較（Good-Better-Best）
+人は提示された選択肢間の相対比較で価格を判断します。安価と高価の間に中位プランがあると、中位が妥当に見えます。
+
+**マーケティングへの適用**: 3層設計で中位を本命にする。上位で妥当感を作り、下位で基準点を与える。
+
+### メンタルアカウンティング（価格文脈）
+同じ価格でも、提示の仕方で知覚が変わります。
+
+**マーケティングへの適用**: 「月30ドル」より「1日1ドル」が安く感じられる。「毎朝のコーヒー以下」で支出文脈を変える。
+
+---
+
+## 設計と実行モデル
+
+これらのモデルは、効果的なマーケティングシステム設計に役立ちます。
+
+### ヒックの法則
+選択肢の数と複雑さが増えるほど、意思決定時間は増えます。選択肢増加は判断遅延と離脱増加を招きます。
+
+**マーケティングへの適用**: 選択肢を単純化する。CTAは3つより1つ。フォーム項目は多いより少ない方がよい。
+
+### AIDAファネル
+注意（Attention）→ 興味（Interest）→ 欲求（Desire）→ 行動（Action）の古典的な顧客行動モデルです。
+
+**マーケティングへの適用**: ページやキャンペーンを各段階の遷移に沿って設計する。欲求形成の前に注意を獲得する。
+
+### 7回接触の法則
+見込み客は転換前に概ね7接触が必要とされます。単発広告より継続露出が効きます。
+
+**マーケティングへの適用**: チャネル横断のマルチタッチ設計を行う。リターゲティング、メールシーケンス、一貫露出が複利で効く。
+
+### ナッジ理論 / 選択アーキテクチャ
+選択肢の提示方法を少し変えるだけで、意思決定は大きく変わります。
+
+**マーケティングへの適用**: デフォルト選択、順序設計、摩擦低減で、選択の自由を保ちながら行動を導く。
+
+### BJ Fogg行動モデル
+行動 = 動機 × 能力 × きっかけ。3要素が揃って初めて行動が起きます。
+
+**マーケティングへの適用**: 動機が高くても難しければ行動しない。簡単でもきっかけがなければ行動しない。3要素を同時設計する。
+
+### EASTフレームワーク
+望ましい行動は、簡単（Easy）、魅力的（Attractive）、社会的（Social）、適時（Timely）に設計します。
+
+**マーケティングへの適用**: 摩擦を減らす（Easy）、魅力化する（Attractive）、他者実行を見せる（Social）、適切なタイミングで促す（Timely）。
+
+### COM-Bモデル
+行動には、実行能力（Capability）、実行機会（Opportunity）、動機（Motivation）が必要です。
+
+**マーケティングへの適用**: できるか（能力）、道筋は明確か（機会）、やりたいか（動機）を同時に満たす。
+
+### 活性化エネルギー
+始めるために必要な初期エネルギー。全体が簡単でも、開始ハードルが高いと行動が起きません。
+
+**マーケティングへの適用**: 開始摩擦を削減する。フォーム自動入力、テンプレート、即効性の小さな成果提示で最初の一歩を極小化する。
+
+### ノーススターメトリクス
+顧客に提供する価値を最もよく表す単一指標。焦点は組織整合を生みます。
+
+**マーケティングへの適用**: ノーススター（アクティブユーザー数、完了プロジェクト数、顧客単価など）を定義し、全施策をその達成に整列させる。
+
+### コブラ効果
+インセンティブ設計が逆効果になり、意図と反対の結果を生む現象。
+
+**マーケティングへの適用**: 報酬設計を必ず検証する。紹介ボーナスが質の低い紹介を量産し、制度悪用を招くことがある。
+
+---
+
+## 成長とスケーリングモデル
+
+これらのモデルは、マーケティングがどう複利し、どう拡張するかを説明します。
+
+### フィードバックループ
+出力が次の入力になり、循環が生まれます。正のループは成長加速、負のループは悪化を生みます。
+
+**マーケティングへの適用**: 正の循環を構築する。ユーザー増加 → コンテンツ増加 → SEO強化 → ユーザー増加。強化点を特定し、増幅する。
+
+### 複利
+小さく継続的な改善が、時間とともに大きな成果になります。初期改善ほど効きます。
+
+**マーケティングへの適用**: コンテンツ、SEO、ブランド構築は複利が効く。早く始めるほど便益は指数的に積み上がる。
+
+### ネットワーク効果
+利用者が増えるほど、製品価値が上がる現象。
+
+**マーケティングへの適用**: ユーザー増加で価値が増す機能を設計する。共有ワークスペース、連携、マーケットプレイス、コミュニティなど。
+
+### フライホイール効果
+継続努力が勢いを生み、やがて自走する状態。始動は重いが、回り始めると維持しやすい。
+
+**マーケティングへの適用**: コンテンツ → 流入 → リード → 顧客 → 事例 → コンテンツ。各要素が次要素の推進力になる。
+
+### スイッチングコスト
+競合へ乗り換える際の時間、費用、労力、データ移行コスト。高いほど維持率が上がります。
+
+**マーケティングへの適用**: 倫理的にスイッチングコストを高める。連携、データ蓄積、業務フロー最適化、チーム浸透など。
+
+### 探索と活用
+新しいことを試す（探索）と、うまくいくことを最適化する（活用）のバランス。
+
+**マーケティングへの適用**: 成果チャネルを捨てて新規に飛びつかない。一方で、予算の一部は常に実験へ配分する。
+
+### 臨界質量 / ティッピングポイント
+成長が自走し始める閾値。
+
+**マーケティングへの適用**: まず1セグメントで臨界質量到達に集中してから拡張する。広く浅くより、狭く深く。
+
+### 生存者バイアス
+見える成功だけを見て、見えない失敗を無視する偏り。
+
+**マーケティングへの適用**: 成功施策だけでなく失敗施策を研究する。真似したバズ事例の背後には見えない失敗が大量にある。
+
+---
+
+## クイックリファレンス
+
+マーケティング課題に直面したら、次を検討してください:
+
+| 課題 | 関連モデル |
 |-----------|-----------------|
-| Low conversions | Hick's Law, Activation Energy, BJ Fogg, Friction |
-| Price objections | Anchoring, Framing, Mental Accounting, Loss Aversion |
-| Building trust | Authority, Social Proof, Reciprocity, Pratfall Effect |
-| Increasing urgency | Scarcity, Loss Aversion, Zeigarnik Effect |
-| Retention/churn | Endowment Effect, Switching Costs, Status-Quo Bias |
-| Growth stalling | Theory of Constraints, Local vs Global Optima, Compounding |
-| Decision paralysis | Paradox of Choice, Default Effect, Nudge Theory |
-| Onboarding | Goal-Gradient, IKEA Effect, Commitment & Consistency |
+| コンバージョンが低い | ヒックの法則、活性化エネルギー、BJ Foggモデル、摩擦低減 |
+| 価格への抵抗が強い | アンカリング、フレーミング、メンタルアカウンティング、損失回避 |
+| 信頼を構築したい | 権威バイアス、社会的証明、返報性、プラットフォール効果 |
+| 緊急性を高めたい | 希少性、損失回避、ツァイガルニク効果 |
+| 継続率改善 / 解約抑制 | 保有効果、スイッチングコスト、現状維持バイアス |
+| 成長が停滞している | 制約理論、局所最適と全体最適、複利 |
+| 決定麻痺が起きている | 選択肢過多のパラドックス、デフォルト効果、ナッジ理論 |
+| オンボーディング改善 | ゴール勾配効果、IKEA効果、コミットメントと一貫性 |
 
 ---
 
-## Task-Specific Questions
+## タスク固有の質問
 
-1. What specific behavior are you trying to influence?
-2. What does your customer believe before encountering your marketing?
-3. Where in the journey (awareness → consideration → decision) is this?
-4. What's currently preventing the desired action?
-5. Have you tested this with real customers?
+1. どの具体的行動を変えたいですか？
+2. 顧客は、あなたのマーケティングに触れる前に何を信じていますか？
+3. これは顧客ジャーニーのどの段階ですか？（認知 → 比較検討 → 意思決定）
+4. 望ましい行動を妨げている現在の要因は何ですか？
+5. これを実顧客で検証しましたか？
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **page-cro**: Apply psychology to page optimization
-- **copywriting**: Write copy using psychological principles
-- **popup-cro**: Use triggers and psychology in popups
-- **pricing-page optimization**: See page-cro for pricing psychology
-- **ab-test-setup**: Test psychological hypotheses
+- **page-cro**: ページ最適化へ心理学を適用
+- **copywriting**: 心理原則を使ったコピー作成
+- **popup-cro**: ポップアップでのトリガー設計と心理活用
+- **pricing-page optimization**: 価格心理は page-cro を参照
+- **ab-test-setup**: 心理仮説のテスト

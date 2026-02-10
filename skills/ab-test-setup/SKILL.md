@@ -1,265 +1,265 @@
 ---
 name: ab-test-setup
 version: 1.0.0
-description: When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," or "hypothesis." For tracking implementation, see analytics-tracking.
+description: ユーザーが A/B テストや実験を計画・設計・実装したいときに使用します。ユーザーが「A/B テスト」「スプリットテスト」「実験」「この変更をテスト」「バリアントコピー」「多変量テスト」または「仮説」に言及した場合にも使用します。トラッキング実装については analytics-tracking を参照してください。
 ---
 
 # A/B Test Setup
 
-You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results.
+あなたは実験設計と A/B テストの専門家です。目標は、統計的に妥当で実行可能な結果を生むテストを設計できるよう支援することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Before designing a test, understand:
+テストを設計する前に、以下を把握してください。
 
-1. **Test Context** - What are you trying to improve? What change are you considering?
-2. **Current State** - Baseline conversion rate? Current traffic volume?
-3. **Constraints** - Technical complexity? Timeline? Tools available?
-
----
-
-## Core Principles
-
-### 1. Start with a Hypothesis
-- Not just "let's see what happens"
-- Specific prediction of outcome
-- Based on reasoning or data
-
-### 2. Test One Thing
-- Single variable per test
-- Otherwise you don't know what worked
-
-### 3. Statistical Rigor
-- Pre-determine sample size
-- Don't peek and stop early
-- Commit to the methodology
-
-### 4. Measure What Matters
-- Primary metric tied to business value
-- Secondary metrics for context
-- Guardrail metrics to prevent harm
+1. **テストの文脈** - 何を改善しようとしていますか？どの変更を検討していますか？
+2. **現在の状態** - ベースラインのコンバージョン率は？現在のトラフィック量は？
+3. **制約条件** - 技術的な複雑さは？期限は？利用可能なツールは？
 
 ---
 
-## Hypothesis Framework
+## コア原則
 
-### Structure
+### 1. 仮説から始める
+- 単に「何が起きるか見てみよう」ではない
+- 結果に対する具体的な予測を立てる
+- 推論またはデータに基づく
+
+### 2. 一度に 1 つだけテストする
+- 1 テストにつき 1 変数
+- そうしないと何が効いたか分からない
+
+### 3. 統計的厳密性
+- サンプルサイズを事前に決める
+- 途中で覗いて早期停止しない
+- 手法を事前に決めて守る
+
+### 4. 重要な指標を測る
+- ビジネス価値に直結する主要指標
+- 文脈把握のための副次指標
+- 悪化を防ぐためのガードレール指標
+
+---
+
+## 仮説フレームワーク
+
+### 構造
 
 ```
-Because [observation/data],
-we believe [change]
-will cause [expected outcome]
-for [audience].
-We'll know this is true when [metrics].
+[観察/データ] という理由から、
+私たちは [変更] が
+[対象オーディエンス] に対して
+[期待する結果] をもたらすと考える。
+これが正しいと判断する指標は [指標] である。
 ```
 
-### Example
+### 例
 
-**Weak**: "Changing the button color might increase clicks."
+**弱い**: "ボタン色を変えるとクリックが増えるかもしれない。"
 
-**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe making the button larger and using contrasting color will increase CTA clicks by 15%+ for new visitors. We'll measure click-through rate from page view to signup start."
+**強い**: "ユーザーが CTA を見つけづらいという報告があるため（ヒートマップとフィードバックより）、ボタンを大きくし、コントラストの高い色にすることで、新規訪問者の CTA クリックが 15% 以上増えると考える。ページ表示からサインアップ開始までのクリック率を測定する。"
 
 ---
 
-## Test Types
+## テストの種類
 
-| Type | Description | Traffic Needed |
+| 種類 | 説明 | 必要トラフィック |
 |------|-------------|----------------|
-| A/B | Two versions, single change | Moderate |
-| A/B/n | Multiple variants | Higher |
-| MVT | Multiple changes in combinations | Very high |
-| Split URL | Different URLs for variants | Moderate |
+| A/B | 2 バージョン、単一変更 | 中程度 |
+| A/B/n | 複数バリアント | より多い |
+| MVT | 複数変更の組み合わせ | 非常に多い |
+| URL 分割 | バリアントごとに別 URL | 中程度 |
 
 ---
 
-## Sample Size
+## サンプルサイズ
 
-### Quick Reference
+### クイックリファレンス
 
-| Baseline | 10% Lift | 20% Lift | 50% Lift |
+| ベースライン | 10% リフト | 20% リフト | 50% リフト |
 |----------|----------|----------|----------|
-| 1% | 150k/variant | 39k/variant | 6k/variant |
-| 3% | 47k/variant | 12k/variant | 2k/variant |
-| 5% | 27k/variant | 7k/variant | 1.2k/variant |
-| 10% | 12k/variant | 3k/variant | 550/variant |
+| 1% | 150k/バリアント | 39k/バリアント | 6k/バリアント |
+| 3% | 47k/バリアント | 12k/バリアント | 2k/バリアント |
+| 5% | 27k/バリアント | 7k/バリアント | 1.2k/バリアント |
+| 10% | 12k/バリアント | 3k/バリアント | 550/バリアント |
 
-**Calculators:**
+**計算ツール:**
 - [Evan Miller's](https://www.evanmiller.org/ab-testing/sample-size.html)
 - [Optimizely's](https://www.optimizely.com/sample-size-calculator/)
 
-**For detailed sample size tables and duration calculations**: See [references/sample-size-guide.md](references/sample-size-guide.md)
+**詳細なサンプルサイズ表と期間計算について**: [references/sample-size-guide.md](references/sample-size-guide.md) を参照
 
 ---
 
-## Metrics Selection
+## 指標選定
 
-### Primary Metric
-- Single metric that matters most
-- Directly tied to hypothesis
-- What you'll use to call the test
+### 主要指標
+- 最も重要な単一指標
+- 仮説に直接紐づく
+- テスト判定に使う指標
 
-### Secondary Metrics
-- Support primary metric interpretation
-- Explain why/how the change worked
+### 副次指標
+- 主要指標の解釈を補助する
+- なぜ/どのように変更が効いたかを説明する
 
-### Guardrail Metrics
-- Things that shouldn't get worse
-- Stop test if significantly negative
+### ガードレール指標
+- 悪化してはいけないもの
+- 有意に悪化したらテストを停止する
 
-### Example: Pricing Page Test
-- **Primary**: Plan selection rate
-- **Secondary**: Time on page, plan distribution
-- **Guardrail**: Support tickets, refund rate
+### 例: 価格ページテスト
+- **主要**: プラン選択率
+- **副次**: ページ滞在時間、プラン分布
+- **ガードレール**: サポートチケット数、返金率
 
 ---
 
-## Designing Variants
+## バリアント設計
 
-### What to Vary
+### 何を変えるか
 
-| Category | Examples |
+| カテゴリ | 例 |
 |----------|----------|
-| Headlines/Copy | Message angle, value prop, specificity, tone |
-| Visual Design | Layout, color, images, hierarchy |
-| CTA | Button copy, size, placement, number |
-| Content | Information included, order, amount, social proof |
+| 見出し/コピー | メッセージ角度、価値提案、具体性、トーン |
+| ビジュアルデザイン | レイアウト、色、画像、情報階層 |
+| CTA | ボタン文言、サイズ、配置、数 |
+| コンテンツ | 含める情報、順序、量、社会的証明 |
 
-### Best Practices
-- Single, meaningful change
-- Bold enough to make a difference
-- True to the hypothesis
+### ベストプラクティス
+- 単一で意味のある変更
+- 差が出るのに十分大胆であること
+- 仮説に忠実であること
 
 ---
 
-## Traffic Allocation
+## トラフィック配分
 
-| Approach | Split | When to Use |
+| アプローチ | 配分 | 使用する場面 |
 |----------|-------|-------------|
-| Standard | 50/50 | Default for A/B |
-| Conservative | 90/10, 80/20 | Limit risk of bad variant |
-| Ramping | Start small, increase | Technical risk mitigation |
+| 標準 | 50/50 | A/B のデフォルト |
+| 保守的 | 90/10, 80/20 | 悪いバリアントのリスクを抑える |
+| ランピング | 小さく始めて増やす | 技術的リスクの緩和 |
 
-**Considerations:**
-- Consistency: Users see same variant on return
-- Balanced exposure across time of day/week
-
----
-
-## Implementation
-
-### Client-Side
-- JavaScript modifies page after load
-- Quick to implement, can cause flicker
-- Tools: PostHog, Optimizely, VWO
-
-### Server-Side
-- Variant determined before render
-- No flicker, requires dev work
-- Tools: PostHog, LaunchDarkly, Split
+**考慮事項:**
+- 一貫性: 再訪時も同じバリアントを表示する
+- 時間帯/曜日をまたいで露出を均等にする
 
 ---
 
-## Running the Test
+## 実装
 
-### Pre-Launch Checklist
-- [ ] Hypothesis documented
-- [ ] Primary metric defined
-- [ ] Sample size calculated
-- [ ] Variants implemented correctly
-- [ ] Tracking verified
-- [ ] QA completed on all variants
+### クライアントサイド
+- JavaScript が読み込み後にページを変更する
+- 実装は速いが、ちらつきが発生する可能性がある
+- ツール: PostHog, Optimizely, VWO
 
-### During the Test
-
-**DO:**
-- Monitor for technical issues
-- Check segment quality
-- Document external factors
-
-**DON'T:**
-- Peek at results and stop early
-- Make changes to variants
-- Add traffic from new sources
-
-### The Peeking Problem
-Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.
+### サーバーサイド
+- 描画前にバリアントを決定する
+- ちらつきなし、開発作業が必要
+- ツール: PostHog, LaunchDarkly, Split
 
 ---
 
-## Analyzing Results
+## テスト運用
 
-### Statistical Significance
-- 95% confidence = p-value < 0.05
-- Means <5% chance result is random
-- Not a guarantee—just a threshold
+### 事前チェックリスト
+- [ ] 仮説が文書化されている
+- [ ] 主要指標が定義されている
+- [ ] サンプルサイズが計算されている
+- [ ] バリアントが正しく実装されている
+- [ ] トラッキングが検証されている
+- [ ] すべてのバリアントで QA が完了している
 
-### Analysis Checklist
+### テスト中
 
-1. **Reach sample size?** If not, result is preliminary
-2. **Statistically significant?** Check confidence intervals
-3. **Effect size meaningful?** Compare to MDE, project impact
-4. **Secondary metrics consistent?** Support the primary?
-5. **Guardrail concerns?** Anything get worse?
-6. **Segment differences?** Mobile vs. desktop? New vs. returning?
+**実施すること:**
+- 技術的問題を監視する
+- セグメント品質を確認する
+- 外部要因を記録する
 
-### Interpreting Results
+**実施しないこと:**
+- 結果を覗き見して早期停止する
+- バリアントを途中で変更する
+- 新しい流入元のトラフィックを追加する
 
-| Result | Conclusion |
+### 途中確認問題
+サンプルサイズ到達前に結果を見て早期停止すると、偽陽性と誤った意思決定につながります。サンプルサイズを事前に確定し、プロセスを信頼してください。
+
+---
+
+## 結果分析
+
+### 統計的有意性
+- 95% 信頼水準 = p-value < 0.05
+- 結果が偶然である確率が 5% 未満であることを意味する
+- 保証ではなく、あくまで閾値
+
+### 分析チェックリスト
+
+1. **サンプルサイズに到達したか？** 未到達なら結果は暫定
+2. **統計的に有意か？** 信頼区間を確認
+3. **効果量に実務的意味があるか？** MDE と想定インパクトを比較
+4. **副次指標は一貫しているか？** 主要指標を裏付けるか？
+5. **ガードレール懸念はないか？** 何か悪化していないか？
+6. **セグメント差はあるか？** モバイル vs デスクトップ？新規 vs リピーター？
+
+### 結果の解釈
+
+| 結果 | 結論 |
 |--------|------------|
-| Significant winner | Implement variant |
-| Significant loser | Keep control, learn why |
-| No significant difference | Need more traffic or bolder test |
-| Mixed signals | Dig deeper, maybe segment |
+| 有意な勝者 | バリアントを実装 |
+| 有意な敗者 | コントロール維持、理由を学ぶ |
+| 有意差なし | 追加トラフィックか、より大胆なテストが必要 |
+| シグナルが混在 | 深掘り、必要ならセグメント分析 |
 
 ---
 
-## Documentation
+## ドキュメント化
 
-Document every test with:
-- Hypothesis
-- Variants (with screenshots)
-- Results (sample, metrics, significance)
-- Decision and learnings
+各テストで以下を記録する:
+- 仮説
+- バリアント（スクリーンショット付き）
+- 結果（サンプル数、指標、有意性）
+- 意思決定と学び
 
-**For templates**: See [references/test-templates.md](references/test-templates.md)
-
----
-
-## Common Mistakes
-
-### Test Design
-- Testing too small a change (undetectable)
-- Testing too many things (can't isolate)
-- No clear hypothesis
-
-### Execution
-- Stopping early
-- Changing things mid-test
-- Not checking implementation
-
-### Analysis
-- Ignoring confidence intervals
-- Cherry-picking segments
-- Over-interpreting inconclusive results
+**テンプレートについて**: [references/test-templates.md](references/test-templates.md) を参照
 
 ---
 
-## Task-Specific Questions
+## よくあるミス
 
-1. What's your current conversion rate?
-2. How much traffic does this page get?
-3. What change are you considering and why?
-4. What's the smallest improvement worth detecting?
-5. What tools do you have for testing?
-6. Have you tested this area before?
+### テスト設計
+- 変化が小さすぎるテスト（検出不能）
+- 要素を変えすぎるテスト（切り分け不能）
+- 明確な仮説がない
+
+### 実行
+- 早期停止
+- テスト途中で変更する
+- 実装確認をしない
+
+### 分析
+- 信頼区間を無視する
+- セグメントを都合よく切り取る
+- 結論が出ない結果を過剰解釈する
 
 ---
 
-## Related Skills
+## タスク固有の質問
 
-- **page-cro**: For generating test ideas based on CRO principles
-- **analytics-tracking**: For setting up test measurement
-- **copywriting**: For creating variant copy
+1. 現在のコンバージョン率は？
+2. このページのトラフィック量はどれくらい？
+3. どんな変更を、なぜ検討していますか？
+4. 検出したい最小改善幅は？
+5. テストに使えるツールは？
+6. この領域を以前にテストしたことはありますか？
+
+---
+
+## 関連スキル
+
+- **page-cro**: CRO 原則に基づくテストアイデアの生成
+- **analytics-tracking**: テスト計測の設定
+- **copywriting**: バリアントコピーの作成

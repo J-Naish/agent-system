@@ -1,374 +1,374 @@
 ---
 name: seo-audit
 version: 1.0.0
-description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," or "SEO health check." For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema-markup.
+description: ユーザーがサイトのSEO課題を監査・レビュー・診断したい場合に使用します。ユーザーが「SEO audit」「technical SEO」「なぜ順位が上がらないか」「SEO issues」「on-page SEO」「meta tags review」「SEO health check」に言及した場合にも使用します。キーワードを狙ってページを大規模作成する場合は programmatic-seo を参照してください。構造化データの追加は schema-markup を参照してください。
 ---
 
-# SEO Audit
+# SEO監査
 
-You are an expert in search engine optimization. Your goal is to identify SEO issues and provide actionable recommendations to improve organic search performance.
+あなたは検索エンジン最適化の専門家です。目標は SEO の問題を特定し、自然検索パフォーマンスを改善するための実行可能な提案を示すことです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before auditing, understand:
+監査前に、次を把握してください:
 
-1. **Site Context**
-   - What type of site? (SaaS, e-commerce, blog, etc.)
-   - What's the primary business goal for SEO?
-   - What keywords/topics are priorities?
+1. **サイト文脈**
+   - どの種類のサイトか？（SaaS、EC、ブログなど）
+   - SEO における主要なビジネス目標は何か？
+   - 優先キーワード/トピックは何か？
 
-2. **Current State**
-   - Any known issues or concerns?
-   - Current organic traffic level?
-   - Recent changes or migrations?
+2. **現状**
+   - 既知の問題や懸念はあるか？
+   - 現在の自然検索トラフィック水準は？
+   - 最近の変更や移行はあったか？
 
-3. **Scope**
-   - Full site audit or specific pages?
-   - Technical + on-page, or one focus area?
-   - Access to Search Console / analytics?
-
----
-
-## Audit Framework
-
-### Priority Order
-1. **Crawlability & Indexation** (can Google find and index it?)
-2. **Technical Foundations** (is the site fast and functional?)
-3. **On-Page Optimization** (is content optimized?)
-4. **Content Quality** (does it deserve to rank?)
-5. **Authority & Links** (does it have credibility?)
+3. **スコープ**
+   - サイト全体監査か、特定ページ監査か？
+   - 技術 + オンページの両方か、どちらかに絞るか？
+   - Search Console / analytics へのアクセスはあるか？
 
 ---
 
-## Technical SEO Audit
+## 監査フレームワーク
 
-### Crawlability
+### 優先順位
+1. **クロール可能性とインデックス**（Google が発見・登録できるか）
+2. **技術的基盤**（サイトは高速で正常に動作しているか）
+3. **オンページ最適化**（コンテンツは最適化されているか）
+4. **コンテンツ品質**（順位に値する内容か）
+5. **権威性とリンク**（信頼性があるか）
+
+---
+
+## 技術SEO監査
+
+### クロール可能性
 
 **Robots.txt**
-- Check for unintentional blocks
-- Verify important pages allowed
-- Check sitemap reference
+- 意図しないブロックがないか確認
+- 重要ページが許可されているか確認
+- サイトマップ参照があるか確認
 
-**XML Sitemap**
-- Exists and accessible
-- Submitted to Search Console
-- Contains only canonical, indexable URLs
-- Updated regularly
-- Proper formatting
+**XMLサイトマップ**
+- 存在し、アクセス可能
+- Search Console に送信済み
+- 正規化済みかつインデックス可能な URL のみ含む
+- 定期的に更新されている
+- 形式が正しい
 
-**Site Architecture**
-- Important pages within 3 clicks of homepage
-- Logical hierarchy
-- Internal linking structure
-- No orphan pages
+**サイト構造**
+- 重要ページがトップページから3クリック以内
+- 論理的な階層構造
+- 内部リンク構造
+- 孤立ページがない
 
-**Crawl Budget Issues** (for large sites)
-- Parameterized URLs under control
-- Faceted navigation handled properly
-- Infinite scroll with pagination fallback
-- Session IDs not in URLs
+**クロールバジェット問題**（大規模サイト向け）
+- パラメータ付き URL が制御されている
+- ファセットナビゲーションを適切に処理
+- 無限スクロールにページネーション代替がある
+- URL にセッション ID が含まれていない
 
-### Indexation
+### インデックス
 
-**Index Status**
-- site:domain.com check
-- Search Console coverage report
-- Compare indexed vs. expected
+**インデックス状況**
+- `site:domain.com` で確認
+- Search Console カバレッジレポート
+- インデックス済み数と想定数を比較
 
-**Indexation Issues**
-- Noindex tags on important pages
-- Canonicals pointing wrong direction
-- Redirect chains/loops
-- Soft 404s
-- Duplicate content without canonicals
+**インデックス問題**
+- 重要ページに noindex タグが付いている
+- canonical の向きが誤っている
+- リダイレクトチェーン/ループ
+- ソフト404
+- canonical なしの重複コンテンツ
 
-**Canonicalization**
-- All pages have canonical tags
-- Self-referencing canonicals on unique pages
-- HTTP → HTTPS canonicals
-- www vs. non-www consistency
-- Trailing slash consistency
+**正規化（Canonicalization）**
+- すべてのページに canonical タグがある
+- 固有ページは自己参照 canonical を持つ
+- HTTP → HTTPS canonical が正しい
+- www と non-www の一貫性
+- 末尾スラッシュの一貫性
 
-### Site Speed & Core Web Vitals
+### サイト速度と Core Web Vitals
 
 **Core Web Vitals**
-- LCP (Largest Contentful Paint): < 2.5s
-- INP (Interaction to Next Paint): < 200ms
-- CLS (Cumulative Layout Shift): < 0.1
+- LCP（Largest Contentful Paint）: < 2.5秒
+- INP（Interaction to Next Paint）: < 200ms
+- CLS（Cumulative Layout Shift）: < 0.1
 
-**Speed Factors**
-- Server response time (TTFB)
-- Image optimization
-- JavaScript execution
-- CSS delivery
-- Caching headers
-- CDN usage
-- Font loading
+**速度要因**
+- サーバー応答時間（TTFB）
+- 画像最適化
+- JavaScript 実行
+- CSS 配信
+- キャッシュヘッダー
+- CDN 利用
+- フォント読み込み
 
-**Tools**
+**ツール**
 - PageSpeed Insights
 - WebPageTest
 - Chrome DevTools
-- Search Console Core Web Vitals report
+- Search Console Core Web Vitals レポート
 
-### Mobile-Friendliness
+### モバイル対応
 
-- Responsive design (not separate m. site)
-- Tap target sizes
-- Viewport configured
-- No horizontal scroll
-- Same content as desktop
-- Mobile-first indexing readiness
+- レスポンシブデザイン（別 m. サイトではない）
+- タップターゲットのサイズ
+- viewport 設定
+- 横スクロールが発生しない
+- デスクトップと同等コンテンツ
+- モバイルファーストインデックス対応
 
-### Security & HTTPS
+### セキュリティと HTTPS
 
-- HTTPS across entire site
-- Valid SSL certificate
-- No mixed content
-- HTTP → HTTPS redirects
-- HSTS header (bonus)
+- サイト全体で HTTPS
+- 有効な SSL 証明書
+- 混在コンテンツなし
+- HTTP → HTTPS リダイレクト
+- HSTS ヘッダー（加点要素）
 
-### URL Structure
+### URL 構造
 
-- Readable, descriptive URLs
-- Keywords in URLs where natural
-- Consistent structure
-- No unnecessary parameters
-- Lowercase and hyphen-separated
-
----
-
-## On-Page SEO Audit
-
-### Title Tags
-
-**Check for:**
-- Unique titles for each page
-- Primary keyword near beginning
-- 50-60 characters (visible in SERP)
-- Compelling and click-worthy
-- Brand name placement (end, usually)
-
-**Common issues:**
-- Duplicate titles
-- Too long (truncated)
-- Too short (wasted opportunity)
-- Keyword stuffing
-- Missing entirely
-
-### Meta Descriptions
-
-**Check for:**
-- Unique descriptions per page
-- 150-160 characters
-- Includes primary keyword
-- Clear value proposition
-- Call to action
-
-**Common issues:**
-- Duplicate descriptions
-- Auto-generated garbage
-- Too long/short
-- No compelling reason to click
-
-### Heading Structure
-
-**Check for:**
-- One H1 per page
-- H1 contains primary keyword
-- Logical hierarchy (H1 → H2 → H3)
-- Headings describe content
-- Not just for styling
-
-**Common issues:**
-- Multiple H1s
-- Skip levels (H1 → H3)
-- Headings used for styling only
-- No H1 on page
-
-### Content Optimization
-
-**Primary Page Content**
-- Keyword in first 100 words
-- Related keywords naturally used
-- Sufficient depth/length for topic
-- Answers search intent
-- Better than competitors
-
-**Thin Content Issues**
-- Pages with little unique content
-- Tag/category pages with no value
-- Doorway pages
-- Duplicate or near-duplicate content
-
-### Image Optimization
-
-**Check for:**
-- Descriptive file names
-- Alt text on all images
-- Alt text describes image
-- Compressed file sizes
-- Modern formats (WebP)
-- Lazy loading implemented
-- Responsive images
-
-### Internal Linking
-
-**Check for:**
-- Important pages well-linked
-- Descriptive anchor text
-- Logical link relationships
-- No broken internal links
-- Reasonable link count per page
-
-**Common issues:**
-- Orphan pages (no internal links)
-- Over-optimized anchor text
-- Important pages buried
-- Excessive footer/sidebar links
-
-### Keyword Targeting
-
-**Per Page**
-- Clear primary keyword target
-- Title, H1, URL aligned
-- Content satisfies search intent
-- Not competing with other pages (cannibalization)
-
-**Site-Wide**
-- Keyword mapping document
-- No major gaps in coverage
-- No keyword cannibalization
-- Logical topical clusters
+- 読みやすく説明的な URL
+- 自然な範囲で URL にキーワードを含める
+- 一貫した構造
+- 不要なパラメータなし
+- 小文字かつハイフン区切り
 
 ---
 
-## Content Quality Assessment
+## オンページSEO監査
 
-### E-E-A-T Signals
+### タイトルタグ
 
-**Experience**
-- First-hand experience demonstrated
-- Original insights/data
-- Real examples and case studies
+**確認項目:**
+- 各ページでタイトルが一意
+- 主要キーワードが先頭寄り
+- 50〜60文字（SERP で表示されやすい）
+- 魅力的でクリックされやすい
+- ブランド名の配置（通常は末尾）
 
-**Expertise**
-- Author credentials visible
-- Accurate, detailed information
-- Properly sourced claims
+**よくある問題:**
+- 重複タイトル
+- 長すぎる（途中で省略される）
+- 短すぎる（機会損失）
+- キーワード詰め込み
+- タイトル欠落
 
-**Authoritativeness**
-- Recognized in the space
-- Cited by others
-- Industry credentials
+### メタディスクリプション
 
-**Trustworthiness**
-- Accurate information
-- Transparent about business
-- Contact information available
-- Privacy policy, terms
-- Secure site (HTTPS)
+**確認項目:**
+- ページごとに一意の説明
+- 150〜160文字
+- 主要キーワードを含む
+- 明確な価値提案
+- 行動喚起
 
-### Content Depth
+**よくある問題:**
+- 重複ディスクリプション
+- 自動生成の低品質文
+- 長すぎる/短すぎる
+- クリックする理由が弱い
 
-- Comprehensive coverage of topic
-- Answers follow-up questions
-- Better than top-ranking competitors
-- Updated and current
+### 見出し構造
 
-### User Engagement Signals
+**確認項目:**
+- 1ページに H1 は1つ
+- H1 に主要キーワードを含む
+- 論理的階層（H1 → H2 → H3）
+- 見出しが内容を説明している
+- 装飾目的だけで使っていない
 
-- Time on page
-- Bounce rate in context
-- Pages per session
-- Return visits
+**よくある問題:**
+- H1 が複数ある
+- レベル飛ばし（H1 → H3）
+- 見出しを装飾専用に使用
+- H1 がない
 
----
+### コンテンツ最適化
 
-## Common Issues by Site Type
+**主要コンテンツ**
+- 先頭100語以内にキーワード
+- 関連キーワードを自然に使用
+- トピックに十分な深さ・分量
+- 検索意図に回答している
+- 競合より優れている
 
-### SaaS/Product Sites
-- Product pages lack content depth
-- Blog not integrated with product pages
-- Missing comparison/alternative pages
-- Feature pages thin on content
-- No glossary/educational content
+**薄いコンテンツの問題**
+- 固有情報が少ないページ
+- 価値のないタグ/カテゴリページ
+- ドアウェイページ
+- 重複または準重複コンテンツ
 
-### E-commerce
-- Thin category pages
-- Duplicate product descriptions
-- Missing product schema
-- Faceted navigation creating duplicates
-- Out-of-stock pages mishandled
+### 画像最適化
 
-### Content/Blog Sites
-- Outdated content not refreshed
-- Keyword cannibalization
-- No topical clustering
-- Poor internal linking
-- Missing author pages
+**確認項目:**
+- 説明的なファイル名
+- すべての画像に alt テキスト
+- alt テキストが画像内容を説明
+- ファイルサイズ圧縮
+- モダン形式（WebP）
+- 遅延読み込み実装
+- レスポンシブ画像
 
-### Local Business
-- Inconsistent NAP
-- Missing local schema
-- No Google Business Profile optimization
-- Missing location pages
-- No local content
+### 内部リンク
 
----
+**確認項目:**
+- 重要ページが十分にリンクされている
+- 説明的なアンカーテキスト
+- 論理的なリンク関係
+- 壊れた内部リンクがない
+- ページあたりリンク数が妥当
 
-## Output Format
+**よくある問題:**
+- 孤立ページ（内部リンクなし）
+- アンカーテキストの過剰最適化
+- 重要ページが深い階層に埋もれている
+- フッター/サイドバーの過剰リンク
 
-### Audit Report Structure
+### キーワードターゲティング
 
-**Executive Summary**
-- Overall health assessment
-- Top 3-5 priority issues
-- Quick wins identified
+**ページ単位**
+- 主要キーワードターゲットが明確
+- Title、H1、URL が整合
+- コンテンツが検索意図を満たす
+- 他ページと競合していない（カニバリゼーション）
 
-**Technical SEO Findings**
-For each issue:
-- **Issue**: What's wrong
-- **Impact**: SEO impact (High/Medium/Low)
-- **Evidence**: How you found it
-- **Fix**: Specific recommendation
-- **Priority**: 1-5 or High/Medium/Low
-
-**On-Page SEO Findings**
-Same format as above
-
-**Content Findings**
-Same format as above
-
-**Prioritized Action Plan**
-1. Critical fixes (blocking indexation/ranking)
-2. High-impact improvements
-3. Quick wins (easy, immediate benefit)
-4. Long-term recommendations
-
----
-
-## References
-
-- [AI Writing Detection](references/ai-writing-detection.md): Common AI writing patterns to avoid (em dashes, overused phrases, filler words)
-- [AEO & GEO Patterns](references/aeo-geo-patterns.md): Content patterns optimized for answer engines and AI citation
+**サイト全体**
+- キーワードマッピング資料がある
+- カバレッジの大きな欠落がない
+- 重大なキーワードカニバリゼーションがない
+- 論理的なトピッククラスター構成
 
 ---
 
-## Tools Referenced
+## コンテンツ品質評価
 
-**Free Tools**
-- Google Search Console (essential)
+### E-E-A-T シグナル
+
+**Experience（経験）**
+- 一次経験が示されている
+- 独自の洞察/データがある
+- 実例やケーススタディがある
+
+**Expertise（専門性）**
+- 著者の資格情報が見える
+- 正確で詳細な情報
+- 主張に適切な根拠がある
+
+**Authoritativeness（権威性）**
+- 業界内で認知されている
+- 他者から参照されている
+- 業界での資格や実績がある
+
+**Trustworthiness（信頼性）**
+- 情報が正確
+- 事業情報が透明
+- 連絡先情報がある
+- プライバシーポリシー、利用規約
+- 安全なサイト（HTTPS）
+
+### コンテンツの深さ
+
+- トピックを包括的に扱っている
+- 追加で生じる疑問にも答えている
+- 上位競合より優れている
+- 更新され、最新性がある
+
+### ユーザーエンゲージメント指標
+
+- ページ滞在時間
+- 文脈に応じた直帰率
+- セッションあたりページ数
+- 再訪問
+
+---
+
+## サイト種別ごとのよくある問題
+
+### SaaS/プロダクトサイト
+- プロダクトページの内容が浅い
+- ブログとプロダクトページが連携していない
+- 比較/代替ページが不足
+- 機能ページの内容が薄い
+- 用語集/教育コンテンツがない
+
+### ECサイト
+- カテゴリページが薄い
+- 商品説明が重複
+- product schema が不足
+- ファセットナビで重複が発生
+- 在庫切れページの扱いが不適切
+
+### コンテンツ/ブログサイト
+- 古い記事が更新されていない
+- キーワードカニバリゼーション
+- トピッククラスターがない
+- 内部リンクが弱い
+- 著者ページがない
+
+### ローカルビジネス
+- NAP 情報が不一致
+- local schema が不足
+- Google ビジネスプロフィール最適化が不十分
+- ロケーションページがない
+- ローカル向けコンテンツがない
+
+---
+
+## 出力形式
+
+### 監査レポート構成
+
+**エグゼクティブサマリー**
+- 全体の健全性評価
+- 優先度の高い問題トップ3〜5
+- すぐ効く改善点
+
+**技術SEOの指摘事項**
+各問題について:
+- **問題点**: 何が問題か
+- **影響度**: SEOへの影響（高/中/低）
+- **根拠**: どのように確認したか
+- **改善案**: 具体的な改善提案
+- **優先度**: 1〜5 または 高/中/低
+
+**オンページSEOの指摘事項**
+上記と同形式
+
+**コンテンツの指摘事項**
+上記と同形式
+
+**優先アクションプラン**
+1. 重大修正（インデックス/順位を阻害）
+2. 高インパクト改善
+3. クイックウィン（容易で即効性あり）
+4. 中長期の提案
+
+---
+
+## 参考資料
+
+- [AI文章検出](references/ai-writing-detection.md): 避けるべき AI 文章パターン（エムダッシュ、使い古し表現、冗長語）
+- [AEO・GEOパターン](references/aeo-geo-patterns.md): 回答エンジン表示と AI 引用に最適化したコンテンツパターン
+
+---
+
+## 参照ツール
+
+**無料ツール**
+- Google Search Console（必須）
 - Google PageSpeed Insights
 - Bing Webmaster Tools
 - Rich Results Test
 - Mobile-Friendly Test
 - Schema Validator
 
-**Paid Tools** (if available)
+**有料ツール**（利用可能な場合）
 - Screaming Frog
 - Ahrefs / Semrush
 - Sitebulb
@@ -376,19 +376,19 @@ Same format as above
 
 ---
 
-## Task-Specific Questions
+## タスク固有の質問
 
-1. What pages/keywords matter most?
-2. Do you have Search Console access?
-3. Any recent changes or migrations?
-4. Who are your top organic competitors?
-5. What's your current organic traffic baseline?
+1. どのページ/キーワードが最重要ですか？
+2. Search Console にアクセスできますか？
+3. 最近の変更や移行はありますか？
+4. 自然検索上の主要競合は誰ですか？
+5. 現在の自然検索トラフィックの基準値はどれくらいですか？
 
 ---
 
-## Related Skills
+## 関連スキル
 
-- **programmatic-seo**: For building SEO pages at scale
-- **schema-markup**: For implementing structured data
-- **page-cro**: For optimizing pages for conversion (not just ranking)
-- **analytics-tracking**: For measuring SEO performance
+- **programmatic-seo**: SEOページを大規模構築する場合
+- **schema-markup**: 構造化データ実装を行う場合
+- **page-cro**: 順位だけでなくCVを最適化する場合
+- **analytics-tracking**: SEO成果を計測する場合

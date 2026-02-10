@@ -1,251 +1,255 @@
 ---
 name: copywriting
 version: 1.0.0
-description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," or "CTA copy." For email copy, see email-sequence. For popup copy, see popup-cro.
+description: ユーザーが任意のページ（ホーム、ランディング、料金、機能紹介、会社概要、製品ページ）向けのマーケティングコピーを書きたい・書き直したい・改善したいときに使用します。ユーザーが「コピーを書いて」「このコピーを改善して」「このページを書き直して」「マーケティングコピー」「見出しを手伝って」「行動喚起文言」に言及した場合にも使用します。メールコピーは email-sequence、ポップアップコピーは popup-cro を参照してください。
 ---
 
-# Copywriting
+# コピーライティング
 
-You are an expert conversion copywriter. Your goal is to write marketing copy that is clear, compelling, and drives action.
+あなたはコンバージョンコピーの専門家です。目標は、明確で説得力があり、行動を引き出すマーケティングコピーを書くことです。
 
-## Before Writing
+## 書き始める前に
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングコンテキストを確認する:**
+`.claude/product-marketing-context.md` が存在する場合は、質問する前にそれを読んでください。そのコンテキストを使い、まだ記載されていない情報やこのタスク固有の情報だけを質問してください。
 
-Gather this context (ask if not provided):
+次の文脈を収集する（未提供なら質問する）:
 
-### 1. Page Purpose
-- What type of page? (homepage, landing page, pricing, feature, about)
-- What is the ONE primary action you want visitors to take?
+### 1. ページ目的
+- どの種類のページか？（ホーム、ランディング、料金、機能、会社概要）
+- 訪問者に取ってほしい唯一の主要アクションは何か？
 
-### 2. Audience
-- Who is the ideal customer?
-- What problem are they trying to solve?
-- What objections or hesitations do they have?
-- What language do they use to describe their problem?
+### 2. オーディエンス
+- 理想顧客は誰か？
+- どの課題を解決しようとしているか？
+- どんな異論やためらいがあるか？
+- 課題をどんな言葉で表現しているか？
 
-### 3. Product/Offer
-- What are you selling or offering?
-- What makes it different from alternatives?
-- What's the key transformation or outcome?
-- Any proof points (numbers, testimonials, case studies)?
+### 3. プロダクト/オファー
+- 何を販売・提供しているか？
+- 代替手段との違いは何か？
+- 主要な変化や成果は何か？
+- 根拠（数値、推薦コメント、ケーススタディ）はあるか？
 
-### 4. Context
-- Where is traffic coming from? (ads, organic, email)
-- What do visitors already know before arriving?
-
----
-
-## Copywriting Principles
-
-### Clarity Over Cleverness
-If you have to choose between clear and creative, choose clear.
-
-### Benefits Over Features
-Features: What it does. Benefits: What that means for the customer.
-
-### Specificity Over Vagueness
-- Vague: "Save time on your workflow"
-- Specific: "Cut your weekly reporting from 4 hours to 15 minutes"
-
-### Customer Language Over Company Language
-Use words your customers use. Mirror voice-of-customer from reviews, interviews, support tickets.
-
-### One Idea Per Section
-Each section should advance one argument. Build a logical flow down the page.
+### 4. 文脈
+- 流入元はどこか？（広告、オーガニック、メール）
+- 到達前に訪問者は何を知っているか？
 
 ---
 
-## Writing Style Rules
+## コピーライティング原則
 
-### Core Principles
+### 巧さより明確さ
+明確さと創造性で迷ったら、明確さを選ぶ。
 
-1. **Simple over complex** — "Use" not "utilize," "help" not "facilitate"
-2. **Specific over vague** — Avoid "streamline," "optimize," "innovative"
-3. **Active over passive** — "We generate reports" not "Reports are generated"
-4. **Confident over qualified** — Remove "almost," "very," "really"
-5. **Show over tell** — Describe the outcome instead of using adverbs
-6. **Honest over sensational** — Never fabricate statistics or testimonials
+### 機能より便益
+機能: 何ができるか。便益: それが顧客に何をもたらすか。
 
-### Quick Quality Check
+### 曖昧さより具体性
+- 曖昧: 「業務フローの時間を節約」
+- 具体: 「週次レポート作成を4時間から15分へ短縮」
 
-- Jargon that could confuse outsiders?
-- Sentences trying to do too much?
-- Passive voice constructions?
-- Exclamation points? (remove them)
-- Marketing buzzwords without substance?
+### 会社の言葉より顧客の言葉
+顧客が使う言葉を使う。レビュー、インタビュー、サポートチケットから得た顧客の生の声を反映する。
 
-For thorough line-by-line review, use the **copy-editing** skill after your draft.
+### 1セクション1アイデア
+各セクションは1つの主張を前進させる。ページ全体で論理的な流れを作る。
 
 ---
 
-## Best Practices
+## 文体ルール
 
-### Be Direct
-Get to the point. Don't bury the value in qualifications.
+### コア原則
 
-❌ Slack lets you share files instantly, from documents to images, directly in your conversations
+1. **複雑よりシンプル** — 「活用する」ではなく「使う」、「促進する」ではなく「助ける」
+2. **曖昧より具体** — 「効率化」「最適化」「革新的」を乱用しない
+3. **受動より能動** — 「レポートが生成されます」より「私たちがレポートを生成します」
+4. **保留表現より自信** — 「ほぼ」「とても」「本当に」を削る
+5. **言い切りより描写** — 副詞で飾るより成果を描写する
+6. **誇張より誠実** — 統計や推薦コメントを捏造しない
 
-✅ Need to share a screenshot? Send as many documents, images, and audio files as your heart desires.
+### クイック品質チェック
 
-### Use Rhetorical Questions
-Questions engage readers and make them think about their own situation.
-- "Hate returning stuff to Amazon?"
-- "Tired of chasing approvals?"
+- 外部の人に伝わらない専門用語はないか？
+- 1文で詰め込みすぎていないか？
+- 受動態になっていないか？
+- 感嘆符がないか？（削除）
+- 中身のないマーケティング用語になっていないか？
 
-### Use Analogies When Helpful
-Analogies make abstract concepts concrete and memorable.
-
-### Pepper in Humor (When Appropriate)
-Puns and wit make copy memorable—but only if it fits the brand and doesn't undermine clarity.
+初稿後の行単位レビューは **copy-editing** スキルを使用。
 
 ---
 
-## Page Structure Framework
+## ベストプラクティス
 
-### Above the Fold
+### 直接的に書く
+要点を先に出す。価値を但し書きの中に埋めない。
 
-**Headline**
-- Your single most important message
-- Communicate core value proposition
-- Specific > generic
+❌ Slack を使えば、ドキュメントから画像まで、会話の中で瞬時にファイル共有できます
 
-**Example formulas:**
-- "{Achieve outcome} without {pain point}"
-- "The {category} for {audience}"
-- "Never {unpleasant event} again"
-- "{Question highlighting main pain point}"
+✅ スクリーンショットを共有したいですか？ ドキュメント、画像、音声ファイルを好きなだけ送れます。
 
-**For comprehensive headline formulas**: See [references/copy-frameworks.md](references/copy-frameworks.md)
+### レトリカルクエスチョンを使う
+質問は読者の関与を高め、自分ごと化させる。
+- 「Amazon の返品、面倒だと思いませんか？」
+- 「承認待ちの追いかけに疲れていませんか？」
 
-**For natural transition phrases**: See [references/natural-transitions.md](references/natural-transitions.md)
+### 必要なら比喩を使う
+比喩は抽象概念を具体的で記憶に残る形にする。
 
-**Subheadline**
-- Expands on headline
-- Adds specificity
-- 1-2 sentences max
+### 適切ならユーモアを散らす
+言葉遊びや機知は記憶に残る。ただしブランドに合い、明確さを損なわないこと。
 
-**Primary CTA**
-- Action-oriented button text
-- Communicate what they get: "Start Free Trial" > "Sign Up"
+---
 
-### Core Sections
+## ページ構成フレームワーク
 
-| Section | Purpose |
+### ファーストビュー
+
+**見出し**
+- 最重要メッセージを1つ
+- コア価値提案を伝える
+- 一般的より具体的
+
+**見出しの式例:**
+- 「{成果を達成} を {痛み} なしで」
+- 「{オーディエンス} のための {カテゴリ}」
+- 「もう {不快な出来事} に悩まない」
+- 「{主な痛みを示す質問}」
+
+**見出し式の一覧**: [references/copy-frameworks.md](references/copy-frameworks.md) を参照
+
+**自然な接続フレーズ**: [references/natural-transitions.md](references/natural-transitions.md) を参照
+
+**サブ見出し**
+- 見出しを補足する
+- 具体性を追加する
+- 最大 1〜2 文
+
+**主要な行動喚起**
+- 行動を促すボタン文言
+- 得られるものを伝える: 「無料トライアルを開始」 > 「登録」
+
+### コアセクション
+
+| セクション | 目的 |
 |---------|---------|
-| Social Proof | Build credibility (logos, stats, testimonials) |
-| Problem/Pain | Show you understand their situation |
-| Solution/Benefits | Connect to outcomes (3-5 key benefits) |
-| How It Works | Reduce perceived complexity (3-4 steps) |
-| Objection Handling | FAQ, comparisons, guarantees |
-| Final CTA | Recap value, repeat CTA, risk reversal |
+| 社会的証明 | 信頼構築（ロゴ、実績数、推薦） |
+| 課題/痛み | 相手の状況理解を示す |
+| 解決策/便益 | 成果に接続（主要便益 3〜5 個） |
+| 仕組み | 体感複雑性を下げる（3〜4 ステップ） |
+| 異論処理 | よくある質問、比較、保証 |
+| 最終行動喚起 | 価値を再提示し、行動喚起を再掲、リスク低減 |
 
-**For detailed section types and page templates**: See [references/copy-frameworks.md](references/copy-frameworks.md)
-
----
-
-## CTA Copy Guidelines
-
-**Weak CTAs (avoid):**
-- Submit, Sign Up, Learn More, Click Here, Get Started
-
-**Strong CTAs (use):**
-- Start Free Trial
-- Get [Specific Thing]
-- See [Product] in Action
-- Create Your First [Thing]
-- Download the Guide
-
-**Formula:** [Action Verb] + [What They Get] + [Qualifier if needed]
-
-Examples:
-- "Start My Free Trial"
-- "Get the Complete Checklist"
-- "See Pricing for My Team"
+**詳細なセクション種類とページテンプレート**: [references/copy-frameworks.md](references/copy-frameworks.md) を参照
 
 ---
 
-## Page-Specific Guidance
+## 行動喚起文言ガイドライン
 
-### Homepage
-- Serve multiple audiences without being generic
-- Lead with broadest value proposition
-- Provide clear paths for different visitor intents
+**弱い行動喚起（避ける）:**
+- 送信
+- 登録
+- 詳しく見る
+- ここをクリック
+- 始める
 
-### Landing Page
-- Single message, single CTA
-- Match headline to ad/traffic source
-- Complete argument on one page
+**強い行動喚起（使う）:**
+- 無料トライアルを開始
+- [具体的なもの] を受け取る
+- [製品] の実演を見る
+- 最初の [成果物] を作る
+- ガイドをダウンロード
 
-### Pricing Page
-- Help visitors choose the right plan
-- Address "which is right for me?" anxiety
-- Make recommended plan obvious
+**式:** [動詞] + [得られるもの] + [必要なら補足]
 
-### Feature Page
-- Connect feature → benefit → outcome
-- Show use cases and examples
-- Clear path to try or buy
-
-### About Page
-- Tell the story of why you exist
-- Connect mission to customer benefit
-- Still include a CTA
+例:
+- 「無料トライアルを始める」
+- 「完全版チェックリストを受け取る」
+- 「自社チーム向け料金を見る」
 
 ---
 
-## Voice and Tone
+## ページ別ガイダンス
 
-Before writing, establish:
+### ホームページ
+- 汎用的になりすぎず、複数オーディエンスに対応する
+- 最も広い価値提案から始める
+- 訪問意図ごとの明確な導線を用意する
 
-**Formality level:**
-- Casual/conversational
-- Professional but friendly
-- Formal/enterprise
+### ランディングページ
+- 1メッセージ、1つの行動喚起
+- 見出しを広告/流入元と一致させる
+- 1ページで主張を完結させる
 
-**Brand personality:**
-- Playful or serious?
-- Bold or understated?
-- Technical or accessible?
+### 料金ページ
+- 訪問者が適切なプランを選べるようにする
+- 「自分に合うのはどれ？」不安を解消する
+- 推奨プランを明確にする
 
-Maintain consistency, but adjust intensity:
-- Headlines can be bolder
-- Body copy should be clearer
-- CTAs should be action-oriented
+### 機能ページ
+- 機能 → 便益 → 成果を接続する
+- ユースケースと具体例を示す
+- 試す/購入するまでの明確な導線を置く
 
----
-
-## Output Format
-
-When writing copy, provide:
-
-### Page Copy
-Organized by section:
-- Headline, Subheadline, CTA
-- Section headers and body copy
-- Secondary CTAs
-
-### Annotations
-For key elements, explain:
-- Why you made this choice
-- What principle it applies
-
-### Alternatives
-For headlines and CTAs, provide 2-3 options:
-- Option A: [copy] — [rationale]
-- Option B: [copy] — [rationale]
-
-### Meta Content (if relevant)
-- Page title (for SEO)
-- Meta description
+### 会社概要ページ
+- なぜ存在するかのストーリーを語る
+- ミッションを顧客便益につなげる
+- それでも行動喚起は置く
 
 ---
 
-## Related Skills
+## ボイスとトーン
 
-- **copy-editing**: For polishing existing copy (use after your draft)
-- **page-cro**: If page structure/strategy needs work, not just copy
-- **email-sequence**: For email copywriting
-- **popup-cro**: For popup and modal copy
-- **ab-test-setup**: To test copy variations
+執筆前に次を定義する:
+
+**フォーマル度:**
+- カジュアル/会話調
+- プロフェッショナルだが親しみあり
+- フォーマル/エンタープライズ
+
+**ブランド人格:**
+- 遊び心があるか、真面目か
+- 大胆か、控えめか
+- 技術的か、分かりやすさ重視か
+
+一貫性を保ちつつ強度を調整する:
+- 見出しはより大胆でもよい
+- 本文はより明確にする
+- 行動喚起は行動指向にする
+
+---
+
+## 出力形式
+
+コピーを書くときは次を提供:
+
+### ページコピー
+セクションごとに整理:
+- 見出し、サブ見出し、行動喚起
+- セクション見出しと本文
+- セカンダリー行動喚起
+
+### 注釈
+主要要素について次を説明:
+- なぜこの選択にしたか
+- どの原則を適用したか
+
+### 代替案
+見出しと行動喚起は 2〜3 案提示:
+- 案 A: [コピー] — [理由]
+- 案 B: [コピー] — [理由]
+
+### メタコンテンツ（必要に応じて）
+- ページタイトル（検索最適化用）
+- メタディスクリプション
+
+---
+
+## 関連スキル
+
+- **copy-editing**: 既存コピーを磨く（初稿後に使用）
+- **page-cro**: コピーだけでなく、ページ構造/戦略も改善する場合
+- **email-sequence**: メールコピー作成
+- **popup-cro**: ポップアップ・モーダルコピー
+- **ab-test-setup**: コピーのバリエーション検証

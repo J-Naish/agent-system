@@ -1,428 +1,428 @@
 ---
 name: form-cro
 version: 1.0.0
-description: When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," or "contact form." For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
+description: ユーザーがサインアップ/登録ではないフォームを最適化したい場合に使用します。対象には、リード獲得フォーム、問い合わせフォーム、デモ依頼フォーム、応募フォーム、アンケートフォーム、チェックアウトフォームが含まれます。また、ユーザーが「フォーム最適化」「リードフォームのコンバージョン」「フォームの摩擦」「フォーム項目」「フォーム完了率」「問い合わせフォーム」に言及した場合にも使用します。サインアップ/登録フォームは signup-flow-cro を参照してください。フォームを含むポップアップは popup-cro を参照してください。
 ---
 
-# Form CRO
+# フォームCRO
 
-You are an expert in form optimization. Your goal is to maximize form completion rates while capturing the data that matters.
+あなたはフォーム最適化の専門家です。目標は、重要なデータを取得しながらフォーム完了率を最大化することです。
 
-## Initial Assessment
+## 初期評価
 
-**Check for product marketing context first:**
-If `.claude/product-marketing-context.md` exists, read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**まずプロダクトマーケティングの文脈を確認する:**
+`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
 
-Before providing recommendations, identify:
+推奨案を提示する前に、以下を特定してください:
 
-1. **Form Type**
-   - Lead capture (gated content, newsletter)
-   - Contact form
-   - Demo/sales request
-   - Application form
-   - Survey/feedback
-   - Checkout form
-   - Quote request
+1. **フォームの種類**
+   - リード獲得（限定コンテンツ、ニュースレター）
+   - 問い合わせフォーム
+   - デモ/営業依頼
+   - 応募フォーム
+   - アンケート/フィードバック
+   - チェックアウトフォーム
+   - 見積もり依頼
 
-2. **Current State**
-   - How many fields?
-   - What's the current completion rate?
-   - Mobile vs. desktop split?
-   - Where do users abandon?
+2. **現状**
+   - 項目数はいくつか？
+   - 現在の完了率は？
+   - モバイルとデスクトップの比率は？
+   - ユーザーはどこで離脱しているか？
 
-3. **Business Context**
-   - What happens with form submissions?
-   - Which fields are actually used in follow-up?
-   - Are there compliance/legal requirements?
-
----
-
-## Core Principles
-
-### 1. Every Field Has a Cost
-Each field reduces completion rate. Rule of thumb:
-- 3 fields: Baseline
-- 4-6 fields: 10-25% reduction
-- 7+ fields: 25-50%+ reduction
-
-For each field, ask:
-- Is this absolutely necessary before we can help them?
-- Can we get this information another way?
-- Can we ask this later?
-
-### 2. Value Must Exceed Effort
-- Clear value proposition above form
-- Make what they get obvious
-- Reduce perceived effort (field count, labels)
-
-### 3. Reduce Cognitive Load
-- One question per field
-- Clear, conversational labels
-- Logical grouping and order
-- Smart defaults where possible
+3. **ビジネス文脈**
+   - フォーム送信後はどう処理されるか？
+   - フォローアップで実際に使われる項目はどれか？
+   - コンプライアンス/法的要件はあるか？
 
 ---
 
-## Field-by-Field Optimization
+## 基本原則
 
-### Email Field
-- Single field, no confirmation
-- Inline validation
-- Typo detection (did you mean gmail.com?)
-- Proper mobile keyboard
+### 1. すべての項目にはコストがある
+各項目は完了率を下げます。経験則:
+- 3項目: 基準値
+- 4-6項目: 10-25%低下
+- 7項目以上: 25-50%以上低下
 
-### Name Fields
-- Single "Name" vs. First/Last — test this
-- Single field reduces friction
-- Split needed only if personalization requires it
+各項目について、次を確認してください:
+- これがないと相手を支援できない、というほど本当に必須か？
+- この情報を別の方法で取得できないか？
+- 後で聞けないか？
 
-### Phone Number
-- Make optional if possible
-- If required, explain why
-- Auto-format as they type
-- Country code handling
+### 2. 価値は負担を上回らなければならない
+- フォーム上部に明確な価値提案を置く
+- 得られるものを明確にする
+- 認知される負担を減らす（項目数、ラベル）
 
-### Company/Organization
-- Auto-suggest for faster entry
-- Enrichment after submission (Clearbit, etc.)
-- Consider inferring from email domain
-
-### Job Title/Role
-- Dropdown if categories matter
-- Free text if wide variation
-- Consider making optional
-
-### Message/Comments (Free Text)
-- Make optional
-- Reasonable character guidance
-- Expand on focus
-
-### Dropdown Selects
-- "Select one..." placeholder
-- Searchable if many options
-- Consider radio buttons if < 5 options
-- "Other" option with text field
-
-### Checkboxes (Multi-select)
-- Clear, parallel labels
-- Reasonable number of options
-- Consider "Select all that apply" instruction
+### 3. 認知負荷を下げる
+- 1項目1質問
+- 明確で会話調のラベル
+- 論理的なグルーピングと順序
+- 可能な限りスマートなデフォルト
 
 ---
 
-## Form Layout Optimization
+## 項目別最適化
 
-### Field Order
-1. Start with easiest fields (name, email)
-2. Build commitment before asking more
-3. Sensitive fields last (phone, company size)
-4. Logical grouping if many fields
+### メール項目
+- 単一項目にし、確認入力は不要
+- インラインバリデーション
+- タイプミス検出（gmail.com のつもりですか？）
+- モバイルに適したキーボード
 
-### Labels and Placeholders
-- Labels: Always visible (not just placeholder)
-- Placeholders: Examples, not labels
-- Help text: Only when genuinely helpful
+### 氏名項目
+- 単一の「氏名」か、姓/名分割かをテスト
+- 単一項目の方が摩擦は小さい
+- 分割が必要なのは、パーソナライズに必須な場合のみ
 
-**Good:**
+### 電話番号
+- 可能なら任意項目にする
+- 必須にする場合は理由を説明する
+- 入力中に自動フォーマット
+- 国番号の扱い
+
+### 会社/組織
+- 入力を速めるためのオートサジェスト
+- 送信後に補完（Clearbit など）
+- メールドメインからの推定を検討
+
+### 役職/職種
+- 区分が重要ならドロップダウン
+- ばらつきが大きいなら自由入力
+- 任意項目化を検討
+
+### メッセージ/コメント（自由記述）
+- 任意項目にする
+- 適切な文字数ガイダンス
+- フォーカス時に入力欄を拡張
+
+### ドロップダウン選択
+- 「1つ選択してください...」プレースホルダー
+- 選択肢が多い場合は検索可能にする
+- 選択肢が5未満ならラジオボタンを検討
+- テキスト入力付きの「その他」選択肢
+
+### チェックボックス（複数選択）
+- 明確で並列なラベル
+- 妥当な選択肢数
+- 「当てはまるものをすべて選択」の案内を検討
+
+---
+
+## フォームレイアウト最適化
+
+### 項目順序
+1. 最も簡単な項目（氏名、メール）から始める
+2. 先にコミットメントを高めてから追加情報を聞く
+3. センシティブな項目は最後（電話、会社規模）
+4. 項目が多い場合は論理的にグルーピング
+
+### ラベルとプレースホルダー
+- ラベル: 常に表示する（プレースホルダーのみは不可）
+- プレースホルダー: ラベルではなく例を示す
+- ヘルプテキスト: 本当に有用な場合のみ
+
+**良い例:**
 ```
-Email
+メールアドレス
 [name@company.com]
 ```
 
-**Bad:**
+**悪い例:**
 ```
-[Enter your email address]  ← Disappears on focus
+[メールアドレスを入力してください]  ← フォーカス時に消える
 ```
 
-### Visual Design
-- Sufficient spacing between fields
-- Clear visual hierarchy
-- CTA button stands out
-- Mobile-friendly tap targets (44px+)
+### 視覚デザイン
+- 項目間の十分な余白
+- 明確な視覚的階層
+- CTAボタンを目立たせる
+- モバイルで押しやすいタップターゲット（44px以上）
 
-### Single Column vs. Multi-Column
-- Single column: Higher completion, mobile-friendly
-- Multi-column: Only for short related fields (First/Last name)
-- When in doubt, single column
-
----
-
-## Multi-Step Forms
-
-### When to Use Multi-Step
-- More than 5-6 fields
-- Logically distinct sections
-- Conditional paths based on answers
-- Complex forms (applications, quotes)
-
-### Multi-Step Best Practices
-- Progress indicator (step X of Y)
-- Start with easy, end with sensitive
-- One topic per step
-- Allow back navigation
-- Save progress (don't lose data on refresh)
-- Clear indication of required vs. optional
-
-### Progressive Commitment Pattern
-1. Low-friction start (just email)
-2. More detail (name, company)
-3. Qualifying questions
-4. Contact preferences
+### 1カラムと複数カラム
+- 1カラム: 完了率が高く、モバイル向き
+- 複数カラム: 関連する短い項目のみ（姓/名など）
+- 迷ったら1カラム
 
 ---
 
-## Error Handling
+## マルチステップフォーム
 
-### Inline Validation
-- Validate as they move to next field
-- Don't validate too aggressively while typing
-- Clear visual indicators (green check, red border)
+### マルチステップを使う場面
+- 5-6項目を超える場合
+- 論理的に異なるセクションがある場合
+- 回答に基づく条件分岐がある場合
+- 複雑なフォーム（応募、見積もりなど）
 
-### Error Messages
-- Specific to the problem
-- Suggest how to fix
-- Positioned near the field
-- Don't clear their input
+### マルチステップのベストプラクティス
+- 進捗表示（全Yステップ中のXステップ）
+- 簡単なものから始め、センシティブな項目で終える
+- 1ステップ1トピック
+- 戻る操作を許可
+- 進捗保存（リロードでデータ喪失しない）
+- 必須/任意を明確に表示
 
-**Good:** "Please enter a valid email address (e.g., name@company.com)"
-**Bad:** "Invalid input"
-
-### On Submit
-- Focus on first error field
-- Summarize errors if multiple
-- Preserve all entered data
-- Don't clear form on error
-
----
-
-## Submit Button Optimization
-
-### Button Copy
-Weak: "Submit" | "Send"
-Strong: "[Action] + [What they get]"
-
-Examples:
-- "Get My Free Quote"
-- "Download the Guide"
-- "Request Demo"
-- "Send Message"
-- "Start Free Trial"
-
-### Button Placement
-- Immediately after last field
-- Left-aligned with fields
-- Sufficient size and contrast
-- Mobile: Sticky or clearly visible
-
-### Post-Submit States
-- Loading state (disable button, show spinner)
-- Success confirmation (clear next steps)
-- Error handling (clear message, focus on issue)
+### 段階的コミットメントパターン
+1. 低摩擦で開始（メールのみ）
+2. 詳細を追加（氏名、会社）
+3. 適格性確認の質問
+4. 連絡希望の設定
 
 ---
 
-## Trust and Friction Reduction
+## エラー処理
 
-### Near the Form
-- Privacy statement: "We'll never share your info"
-- Security badges if collecting sensitive data
-- Testimonial or social proof
-- Expected response time
+### インライン検証
+- 次の項目に移るタイミングで検証
+- 入力中に過度に厳しく検証しない
+- 明確な視覚インジケーター（緑チェック、赤枠）
 
-### Reducing Perceived Effort
-- "Takes 30 seconds"
-- Field count indicator
-- Remove visual clutter
-- Generous white space
+### エラーメッセージ
+- 問題に対して具体的である
+- 修正方法を示す
+- 項目の近くに表示する
+- 入力済み内容を消さない
 
-### Addressing Objections
-- "No spam, unsubscribe anytime"
-- "We won't share your number"
-- "No credit card required"
+**良い例:** 「有効なメールアドレスを入力してください（例: name@company.com）」
+**悪い例:** 「入力が無効です」
 
----
-
-## Form Types: Specific Guidance
-
-### Lead Capture (Gated Content)
-- Minimum viable fields (often just email)
-- Clear value proposition for what they get
-- Consider asking enrichment questions post-download
-- Test email-only vs. email + name
-
-### Contact Form
-- Essential: Email/Name + Message
-- Phone optional
-- Set response time expectations
-- Offer alternatives (chat, phone)
-
-### Demo Request
-- Name, Email, Company required
-- Phone: Optional with "preferred contact" choice
-- Use case/goal question helps personalize
-- Calendar embed can increase show rate
-
-### Quote/Estimate Request
-- Multi-step often works well
-- Start with easy questions
-- Technical details later
-- Save progress for complex forms
-
-### Survey Forms
-- Progress bar essential
-- One question per screen for engagement
-- Skip logic for relevance
-- Consider incentive for completion
+### 送信時
+- 最初のエラー項目にフォーカス
+- 複数ある場合はエラーを要約
+- 入力済みデータはすべて保持
+- エラー時にフォームをクリアしない
 
 ---
 
-## Mobile Optimization
+## 送信ボタン最適化
 
-- Larger touch targets (44px minimum height)
-- Appropriate keyboard types (email, tel, number)
-- Autofill support
-- Single column only
-- Sticky submit button
-- Minimal typing (dropdowns, buttons)
+### ボタン文言
+弱い: 「送信」 | 「送る」
+強い: 「[行動] + [得られるもの]」
 
----
+例:
+- 「無料見積もりを受け取る」
+- 「ガイドをダウンロード」
+- 「デモを依頼する」
+- 「メッセージを送信」
+- 「無料トライアルを開始」
 
-## Measurement
+### ボタン配置
+- 最後の項目の直後に配置
+- 項目と左端を揃える
+- 十分なサイズとコントラスト
+- モバイル: 固定表示または常に見える配置
 
-### Key Metrics
-- **Form start rate**: Page views → Started form
-- **Completion rate**: Started → Submitted
-- **Field drop-off**: Which fields lose people
-- **Error rate**: By field
-- **Time to complete**: Total and by field
-- **Mobile vs. desktop**: Completion by device
-
-### What to Track
-- Form views
-- First field focus
-- Each field completion
-- Errors by field
-- Submit attempts
-- Successful submissions
+### 送信後の状態
+- ローディング状態（ボタン無効化、スピナー表示）
+- 成功確認（次のステップを明確化）
+- エラー処理（明確なメッセージ、問題箇所にフォーカス）
 
 ---
 
-## Output Format
+## 信頼性向上と摩擦低減
 
-### Form Audit
-For each issue:
-- **Issue**: What's wrong
-- **Impact**: Estimated effect on conversions
-- **Fix**: Specific recommendation
-- **Priority**: High/Medium/Low
+### フォーム付近
+- プライバシー文言: 「あなたの情報を第三者と共有することはありません」
+- 機微情報を扱う場合はセキュリティバッジ
+- 推薦文やソーシャルプルーフ
+- 想定返信時間
 
-### Recommended Form Design
-- **Required fields**: Justified list
-- **Optional fields**: With rationale
-- **Field order**: Recommended sequence
-- **Copy**: Labels, placeholders, button
-- **Error messages**: For each field
-- **Layout**: Visual guidance
+### 体感負担を減らす
+- 「30秒で完了」
+- 項目数インジケーター
+- 視覚的ノイズを削減
+- 十分なホワイトスペース
 
-### Test Hypotheses
-Ideas to A/B test with expected outcomes
-
----
-
-## Experiment Ideas
-
-### Form Structure Experiments
-
-**Layout & Flow**
-- Single-step form vs. multi-step with progress bar
-- 1-column vs. 2-column field layout
-- Form embedded on page vs. separate page
-- Vertical vs. horizontal field alignment
-- Form above fold vs. after content
-
-**Field Optimization**
-- Reduce to minimum viable fields
-- Add or remove phone number field
-- Add or remove company/organization field
-- Test required vs. optional field balance
-- Use field enrichment to auto-fill known data
-- Hide fields for returning/known visitors
-
-**Smart Forms**
-- Add real-time validation for emails and phone numbers
-- Progressive profiling (ask more over time)
-- Conditional fields based on earlier answers
-- Auto-suggest for company names
+### 懸念への対処
+- 「スパム送信はしません。いつでも配信停止できます」
+- 「電話番号を第三者に共有することはありません」
+- 「クレジットカードは不要です」
 
 ---
 
-### Copy & Design Experiments
+## フォーム種類別ガイダンス
 
-**Labels & Microcopy**
-- Test field label clarity and length
-- Placeholder text optimization
-- Help text: show vs. hide vs. on-hover
-- Error message tone (friendly vs. direct)
+### リード獲得（ゲート付きコンテンツ）
+- 実用最小限の項目（多くはメールのみ）
+- 得られるものの価値提案を明確に示す
+- ダウンロード後の情報補完質問を検討
+- メールのみ vs メール+氏名をテスト
 
-**CTAs & Buttons**
-- Button text variations ("Submit" vs. "Get My Quote" vs. specific action)
-- Button color and size testing
-- Button placement relative to fields
+### 問い合わせフォーム
+- 必須: メール/氏名 + メッセージ
+- 電話は任意
+- 返信時間の目安を提示
+- 代替手段（チャット、電話）を提示
 
-**Trust Elements**
-- Add privacy assurance near form
-- Show trust badges next to submit
-- Add testimonial near form
-- Display expected response time
+### デモ依頼
+- 氏名、メール、会社は必須
+- 電話は「希望連絡方法」選択付きで任意化
+- 利用目的/課題の質問はパーソナライズに有効
+- カレンダー埋め込みは参加率向上につながる
 
----
+### 見積もり依頼
+- マルチステップが有効なことが多い
+- 簡単な質問から開始
+- 技術的な詳細は後半
+- 複雑なフォームでは進捗保存
 
-### Form Type-Specific Experiments
-
-**Demo Request Forms**
-- Test with/without phone number requirement
-- Add "preferred contact method" choice
-- Include "What's your biggest challenge?" question
-- Test calendar embed vs. form submission
-
-**Lead Capture Forms**
-- Email-only vs. email + name
-- Test value proposition messaging above form
-- Gated vs. ungated content strategies
-- Post-submission enrichment questions
-
-**Contact Forms**
-- Add department/topic routing dropdown
-- Test with/without message field requirement
-- Show alternative contact methods (chat, phone)
-- Expected response time messaging
+### アンケートフォーム
+- 進捗バーは必須
+- エンゲージメントのため1画面1質問
+- 関連性を高めるスキップロジック
+- 完了インセンティブを検討
 
 ---
 
-### Mobile & UX Experiments
+## モバイル最適化
 
-- Larger touch targets for mobile
-- Test appropriate keyboard types by field
-- Sticky submit button on mobile
-- Auto-focus first field on page load
-- Test form container styling (card vs. minimal)
-
----
-
-## Task-Specific Questions
-
-1. What's your current form completion rate?
-2. Do you have field-level analytics?
-3. What happens with the data after submission?
-4. Which fields are actually used in follow-up?
-5. Are there compliance/legal requirements?
-6. What's the mobile vs. desktop split?
+- より大きいタップターゲット（最小高さ44px）
+- 項目に応じた適切なキーボードタイプ（メール、電話、数値）
+- オートフィル対応
+- 1カラムのみ
+- 送信ボタンの固定表示
+- タイピング量の最小化（ドロップダウン、ボタン）
 
 ---
 
-## Related Skills
+## 計測
 
-- **signup-flow-cro**: For account creation forms
-- **popup-cro**: For forms inside popups/modals
-- **page-cro**: For the page containing the form
-- **ab-test-setup**: For testing form changes
+### 主要指標
+- **フォーム開始率**: ページビュー → フォーム開始
+- **完了率**: 開始 → 送信
+- **項目別離脱**: どの項目で離脱するか
+- **エラー率**: 項目別
+- **完了までの時間**: 合計および項目別
+- **モバイルとデスクトップ**: デバイス別完了率
+
+### 追跡項目
+- フォーム表示
+- 最初の項目へのフォーカス
+- 各項目の入力完了
+- 項目別エラー
+- 送信試行
+- 送信成功
+
+---
+
+## 出力形式
+
+### フォーム監査
+各課題について:
+- **課題**: 何が問題か
+- **影響**: コンバージョンへの推定影響
+- **改善策**: 具体的な改善提案
+- **優先度**: 高/中/低
+
+### 推奨フォーム設計
+- **必須項目**: 根拠付きの必須項目リスト
+- **任意項目**: 理由付きの任意項目
+- **項目順序**: 推奨順序
+- **文言**: ラベル、プレースホルダー、ボタン文言
+- **エラーメッセージ**: 各項目のエラーメッセージ
+- **レイアウト**: 視覚設計のガイダンス
+
+### テスト仮説
+期待される結果付きのA/Bテスト案
+
+---
+
+## 実験アイデア
+
+### フォーム構成の実験
+
+**レイアウトとフロー**
+- シングルステップフォームと進捗バー付きマルチステップの比較
+- 1カラムと2カラムの項目レイアウトの比較
+- ページ内埋め込みフォームと独立ページフォームの比較
+- 垂直配置と水平配置の比較
+- ファーストビュー内配置とコンテンツ後配置の比較
+
+**項目最適化**
+- 実用最小限の項目まで削減
+- 電話番号項目を追加または削除
+- 会社/組織項目を追加または削除
+- 必須項目と任意項目のバランスをテスト
+- 項目補完で既知データを自動入力
+- 再訪/既知ユーザーの項目を非表示化
+
+**スマートフォーム**
+- メールと電話番号のリアルタイム検証を追加
+- プログレッシブプロファイリング（時間をかけて追加質問）
+- 先の回答に基づく条件付き項目
+- 会社名のオートサジェスト
+
+---
+
+### コピーとデザインの実験
+
+**ラベルとマイクロコピー**
+- 項目ラベルの明瞭さと長さをテスト
+- プレースホルダーテキストの最適化
+- ヘルプテキスト: 常時表示、非表示、ホバー表示の比較
+- エラーメッセージのトーン（親しみやすい表現と直接的な表現の比較）
+
+**CTAとボタン**
+- ボタン文言のバリエーション（「送信」「見積もりを受け取る」「具体的な行動文言」）
+- ボタン色とサイズのテスト
+- 項目に対するボタン配置のテスト
+
+**信頼要素**
+- フォーム付近にプライバシー保証を追加
+- 送信ボタン横に信頼バッジを表示
+- フォーム付近に推薦文を追加
+- 想定返信時間を表示
+
+---
+
+### フォーム種類別の実験
+
+**デモ依頼フォーム**
+- 電話番号必須の有無をテスト
+- 「希望連絡方法」選択を追加
+- 「最大の課題は何ですか？」質問を追加
+- カレンダー埋め込みとフォーム送信を比較テスト
+
+**リード獲得フォーム**
+- メールのみとメール+氏名を比較
+- フォーム上部の価値提案メッセージをテスト
+- ゲート有りとゲート無しのコンテンツ戦略を比較
+- 送信後の情報補完質問
+
+**問い合わせフォーム**
+- 部署/トピック振り分けのドロップダウンを追加
+- メッセージ項目必須の有無をテスト
+- 代替連絡手段（チャット、電話）を表示
+- 想定返信時間メッセージ
+
+---
+
+### モバイルとUXの実験
+
+- モバイル向けにタップターゲットを拡大
+- 項目ごとに適切なキーボードタイプをテスト
+- モバイルで送信ボタンを固定表示
+- ページ読み込み時に最初の項目へオートフォーカス
+- フォームコンテナのスタイルをテスト（カード型とミニマル）
+
+---
+
+## タスク固有の質問
+
+1. 現在のフォーム完了率はどれくらいですか？
+2. 項目レベルの分析データはありますか？
+3. 送信後のデータはどのように扱われますか？
+4. フォローアップで実際に使われる項目はどれですか？
+5. コンプライアンス/法的要件はありますか？
+6. モバイルとデスクトップの比率はどうなっていますか？
+
+---
+
+## 関連スキル
+
+- **signup-flow-cro**: アカウント作成フォーム向け
+- **popup-cro**: ポップアップ/モーダル内フォーム向け
+- **page-cro**: フォームを含むページ向け
+- **ab-test-setup**: フォーム変更のテスト向け

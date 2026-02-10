@@ -1,146 +1,146 @@
-# Pricing Research Methods
+# 価格調査手法
 
-## Van Westendorp Price Sensitivity Meter
+## Van Westendorp 価格感度メーター
 
-The Van Westendorp survey identifies the acceptable price range for your product.
+Van Westendorp 調査は、製品の許容価格帯を特定する手法です。
 
-### The Four Questions
+### 4つの質問
 
-Ask each respondent:
-1. "At what price would you consider [product] to be so expensive that you would not consider buying it?" (Too expensive)
-2. "At what price would you consider [product] to be priced so low that you would question its quality?" (Too cheap)
-3. "At what price would you consider [product] to be starting to get expensive, but you still might consider it?" (Expensive/high side)
-4. "At what price would you consider [product] to be a bargain—a great buy for the money?" (Cheap/good value)
+各回答者に次を質問します:
+1. 「[製品] がいくらなら、高すぎて購入対象から外れますか？」（高すぎる）
+2. 「[製品] がいくらなら、安すぎて品質に不安を感じますか？」（安すぎる）
+3. 「[製品] がいくらなら、高いがまだ検討しますか？」（高い/上限寄り）
+4. 「[製品] がいくらなら、お買い得だと感じますか？」（安い/価値あり）
 
-### How to Analyze
+### 分析方法
 
-1. Plot cumulative distributions for each question
-2. Find the intersections:
-   - **Point of Marginal Cheapness (PMC):** "Too cheap" crosses "Expensive"
-   - **Point of Marginal Expensiveness (PME):** "Too expensive" crosses "Cheap"
-   - **Optimal Price Point (OPP):** "Too cheap" crosses "Too expensive"
-   - **Indifference Price Point (IDP):** "Expensive" crosses "Cheap"
+1. 各質問の累積分布をプロット
+2. 交点を特定:
+   - **Point of Marginal Cheapness（PMC）:** 「安すぎる」と「高い」が交差
+   - **Point of Marginal Expensiveness（PME）:** 「高すぎる」と「安い」が交差
+   - **Optimal Price Point（OPP）:** 「安すぎる」と「高すぎる」が交差
+   - **Indifference Price Point（IDP）:** 「高い」と「安い」が交差
 
-**The acceptable price range:** PMC to PME
-**Optimal pricing zone:** Between OPP and IDP
+**許容価格帯:** PMC から PME
+**最適価格ゾーン:** OPP と IDP の間
 
-### Survey Tips
-- Need 100-300 respondents for reliable data
-- Segment by persona (different willingness to pay)
-- Use realistic product descriptions
-- Consider adding purchase intent questions
+### 調査のコツ
+- 信頼性確保には回答者100-300人が目安
+- ペルソナ別に分割する（支払い意思が異なる）
+- 現実的な製品説明を使う
+- 購入意向の質問追加を検討
 
-### Sample Output
+### 出力例
 
 ```
-Price Sensitivity Analysis Results:
+価格感度分析の結果:
 ─────────────────────────────────
-Point of Marginal Cheapness:  $29/mo
-Optimal Price Point:          $49/mo
-Indifference Price Point:     $59/mo
-Point of Marginal Expensiveness: $79/mo
+限界的に安い点（PMC）:        $29/月
+最適価格点（OPP）:            $49/月
+無差別価格点（IDP）:          $59/月
+限界的に高い点（PME）:        $79/月
 
-Recommended range: $49-59/mo
-Current price: $39/mo (below optimal)
-Opportunity: 25-50% price increase without significant demand impact
+推奨レンジ: $49-59/月
+現行価格: $39/月（最適より低い）
+示唆: 需要への大きな悪影響なく、25-50%の値上げ余地
 ```
 
 ---
 
-## MaxDiff Analysis (Best-Worst Scaling)
+## MaxDiff 分析（Best-Worst Scaling）
 
-MaxDiff identifies which features customers value most, informing packaging decisions.
+MaxDiff は、顧客が最も価値を感じる機能を特定し、パッケージング判断に活用する手法です。
 
-### How It Works
+### 進め方
 
-1. List 8-15 features you could include
-2. Show respondents sets of 4-5 features at a time
-3. Ask: "Which is MOST important? Which is LEAST important?"
-4. Repeat across multiple sets until all features compared
-5. Statistical analysis produces importance scores
+1. 候補機能を8-15個列挙
+2. 1回につき4-5機能の組み合わせを提示
+3. 「最も重要」と「最も重要でない」を選んでもらう
+4. すべての機能が比較されるまで複数セットで繰り返す
+5. 統計分析で重要度スコアを算出
 
-### Example Survey Question
+### 設問例
 
 ```
-Which feature is MOST important to you?
-Which feature is LEAST important to you?
+あなたにとって最も重要な機能はどれですか？
+最も重要でない機能はどれですか？
 
-□ Unlimited projects
-□ Custom branding
-□ Priority support
-□ API access
-□ Advanced analytics
+□ プロジェクト無制限
+□ カスタムブランディング
+□ 優先サポート
+□ APIアクセス
+□ 高度分析
 ```
 
-### Analyzing Results
+### 結果の見方
 
-Features are ranked by utility score:
-- High utility = Must-have (include in base tier)
-- Medium utility = Differentiator (use for tier separation)
-- Low utility = Nice-to-have (premium tier or cut)
+機能は効用スコアで順位づけされます:
+- 高効用 = 必須（ベースティアに含める）
+- 中効用 = 差別化要素（ティア分離に使う）
+- 低効用 = あるとよい（上位ティアか削除候補）
 
-### Using MaxDiff for Packaging
+### MaxDiff をパッケージングに使う
 
-| Utility Score | Packaging Decision |
+| 効用スコア | パッケージ判断 |
 |---------------|-------------------|
-| Top 20% | Include in all tiers (table stakes) |
-| 20-50% | Use to differentiate tiers |
-| 50-80% | Higher tiers only |
-| Bottom 20% | Consider cutting or premium add-on |
+| 上位20% | 全ティアに含める（最低条件） |
+| 20-50% | ティア差別化に使う |
+| 50-80% | 上位ティア限定 |
+| 下位20% | 削除または有料アドオンを検討 |
 
 ---
 
-## Willingness to Pay Surveys
+## 支払い意思額（WTP）調査
 
-**Direct method (simple but biased):**
-"How much would you pay for [product]?"
+**直接法（簡単だがバイアスが強い）:**
+「[製品] にいくら払いますか？」
 
-**Better: Gabor-Granger method:**
-"Would you buy [product] at [$X]?" (Yes/No)
-Vary price across respondents to build demand curve.
+**より良い方法: Gabor-Granger 手法:**
+「[製品] が [$X] なら買いますか？」（はい/いいえ）
+回答者ごとに価格を変え、需要曲線を作る。
 
-**Even better: Conjoint analysis:**
-Show product bundles at different prices
-Respondents choose preferred option
-Statistical analysis reveals price sensitivity per feature
+**さらに高度: コンジョイント分析:**
+異なる価格と機能束の製品案を提示
+回答者に好ましい案を選んでもらう
+統計分析で機能別の価格感度を推定
 
 ---
 
-## Usage-Value Correlation Analysis
+## 利用と価値の相関分析
 
-### 1. Instrument usage data
-Track how customers use your product:
-- Feature usage frequency
-- Volume metrics (users, records, API calls)
-- Outcome metrics (revenue generated, time saved)
+### 1. 利用データを計測
+顧客の利用状況を追跡:
+- 機能利用頻度
+- ボリューム指標（ユーザー数、レコード数、API呼び出し数）
+- 成果指標（創出売上、削減時間）
 
-### 2. Correlate with customer success
-- Which usage patterns predict retention?
-- Which usage patterns predict expansion?
-- Which customers pay the most, and why?
+### 2. 顧客成功との相関を見る
+- どの利用パターンが継続利用を予測するか？
+- どの利用パターンがアップセルを予測するか？
+- 最も支払う顧客は誰で、なぜ支払うか？
 
-### 3. Identify value thresholds
-- At what usage level do customers "get it"?
-- At what usage level do they expand?
-- At what usage level should price increase?
+### 3. 価値の閾値を特定
+- どの利用水準で顧客は価値を実感するか？
+- どの利用水準でアップセルが起きるか？
+- どの利用水準で価格を上げるべきか？
 
-### Example Analysis
+### 分析例
 
 ```
-Usage-Value Correlation Analysis:
+利用-価値 相関分析:
 ─────────────────────────────────
-Segment: High-LTV customers (>$10k ARR)
-Average monthly active users: 15
-Average projects: 8
-Average integrations: 4
+セグメント: 高LTV顧客（ARR > $10k）
+月間アクティブユーザー平均: 15
+平均プロジェクト数: 8
+平均連携数: 4
 
-Segment: Churned customers
-Average monthly active users: 3
-Average projects: 2
-Average integrations: 0
+セグメント: 離脱顧客
+月間アクティブユーザー平均: 3
+平均プロジェクト数: 2
+平均連携数: 0
 
-Insight: Value correlates with team adoption (users)
-        and depth of use (integrations)
+示唆: 価値はチーム導入（ユーザー数）と
+      利用の深さ（連携数）に相関する
 
-Recommendation: Price per user, gate integrations to higher tiers
+推奨: ユーザー単位課金を採用し、連携機能は上位ティアで提供
 ```

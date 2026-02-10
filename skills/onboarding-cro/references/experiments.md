@@ -1,248 +1,248 @@
-# Onboarding Experiment Ideas
+# オンボーディング実験アイデア
 
-Comprehensive list of A/B tests and experiments for user onboarding and activation.
+ユーザーオンボーディングと活性化のための、包括的なA/Bテストと実験リストです。
 
-## Flow Simplification Experiments
+## フロー簡素化の実験
 
-### Reduce Friction
+### 摩擦を減らす
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Email verification timing | During vs. after onboarding |
-| Empty states vs. dummy data | Pre-populated examples |
-| Pre-filled templates | Accelerate setup with templates |
-| OAuth options | Faster account linking |
-| Required step count | Fewer required steps |
-| Optional vs. required fields | Minimize requirements |
-| Skip options | Allow bypassing non-critical steps |
+| メール認証のタイミング | オンボーディング中か後か |
+| 空状態とダミーデータの比較 | 事前投入された例データの有効性 |
+| 事前入力テンプレート | テンプレートでセットアップを高速化できるか |
+| OAuthの選択肢 | アカウント連携を速くできるか |
+| 必須ステップ数 | 必須手順を減らすと完了率が上がるか |
+| 任意項目と必須項目の比率 | 必須要件最小化の効果 |
+| スキップ選択肢 | 重要度の低い手順を迂回可能にする効果 |
 
-### Step Sequencing
+### ステップ順序
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Step ordering | Test different sequences |
-| Value-first ordering | Highest-value features first |
-| Friction placement | Move hard steps later |
-| Required vs. optional balance | Ratio of required steps |
-| Single vs. branching paths | One path vs. personalized |
-| Quick start vs. full setup | Minimal path to value |
+| ステップ順序 | 異なる順番の比較 |
+| 価値先行の順序 | 高価値機能を先に見せる効果 |
+| 摩擦の配置 | 難しい手順を後ろに移す効果 |
+| 必須/任意のバランス | 必須ステップ比率の最適化 |
+| 単一路線と分岐路線 | 1ルートか個別化ルートか |
+| クイック開始とフルセットアップ | 最短価値導線の有効性 |
 
-### Progress & Motivation
+### 進捗と動機づけ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Progress bars | Show completion percentage |
-| Checklist length | 3-5 items vs. 5-7 items |
-| Gamification | Badges, rewards, achievements |
-| Completion messaging | "X% complete" visibility |
-| Starting point | Begin at 20% vs. 0% |
-| Celebration moments | Acknowledge completions |
+| 進捗バー | 完了率表示の効果 |
+| チェックリスト長 | 3-5項目と5-7項目の比較 |
+| ゲーミフィケーション | バッジ、報酬、達成表示の効果 |
+| 完了メッセージ | 「X%完了」表示の効果 |
+| 開始地点 | 0%開始と20%開始の比較 |
+| お祝い演出 | 完了を承認する演出の効果 |
 
 ---
 
-## Guided Experience Experiments
+## ガイド体験の実験
 
-### Product Tours
+### プロダクトツアー
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Interactive tours | Tools like Navattic, Storylane |
-| Tooltip vs. modal guidance | Subtle vs. attention-grabbing |
-| Video tutorials | For complex workflows |
-| Self-paced vs. guided | User control vs. structured |
-| Tour length | Shorter vs. comprehensive |
-| Tour triggering | Automatic vs. user-initiated |
+| インタラクティブツアー | Navattic、Storylane などの効果 |
+| ツールチップとモーダルガイド | 目立たない案内と強い案内の比較 |
+| 動画チュートリアル | 複雑ワークフローでの有効性 |
+| 自走型とガイド型 | ユーザー主導と構造化案内の比較 |
+| ツアー長 | 短い案内と包括的案内の比較 |
+| ツアートリガー | 自動開始とユーザー開始の比較 |
 
-### CTA Optimization
+### 行動喚起（CTA）最適化
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| CTA text variations | Action-oriented copy testing |
-| CTA placement | Position within screens |
-| In-app tooltips | Feature discovery prompts |
-| Sticky CTAs | Persist during onboarding |
-| CTA contrast | Visual prominence |
-| Secondary CTAs | "Learn more" vs. primary only |
+| 行動喚起（CTA）文言バリエーション | 行動志向コピーの比較 |
+| 行動喚起（CTA）配置 | 画面内配置の比較 |
+| アプリ内ツールチップ | 機能発見プロンプトの効果 |
+| 固定行動喚起（CTA） | オンボーディング中に常時表示する効果 |
+| 行動喚起（CTA）コントラスト | 視覚的目立ち度の効果 |
+| 二次行動喚起（CTA） | 「詳しく見る」併記と主CTAのみの比較 |
 
-### UI Guidance
+### UIガイダンス
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Hotspot highlights | Draw attention to key features |
-| Coachmarks | Contextual tips |
-| Feature announcements | New feature discovery |
-| Contextual help | Help where users need it |
-| Search vs. guided | Self-service vs. directed |
+| ホットスポット強調 | 重要機能への注意喚起効果 |
+| コーチマーク | 文脈依存ヒントの効果 |
+| 機能告知 | 新機能発見率への影響 |
+| 文脈ヘルプ | 必要な場所での支援効果 |
+| 検索とガイド | 自己解決と誘導型の比較 |
 
 ---
 
-## Personalization Experiments
+## パーソナライズ実験
 
-### User Segmentation
+### ユーザーセグメント
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Role-based onboarding | Different paths by role |
-| Goal-based paths | Customize by stated goal |
-| Role-specific dashboards | Relevant default views |
-| Use-case question | Personalize based on answer |
-| Industry-specific paths | Vertical customization |
-| Experience-based | Beginner vs. expert paths |
+| 役割別オンボーディング | 役割ごとに別導線にする効果 |
+| 目標別ルート | 宣言目標に合わせた導線の効果 |
+| 役割別ダッシュボード | 関連性の高い初期表示の効果 |
+| ユースケース質問 | 回答ベース個別化の効果 |
+| 業界別ルート | 業種別カスタマイズの効果 |
+| 経験レベル別 | 初級者ルートと上級者ルートの比較 |
 
-### Dynamic Content
+### 動的コンテンツ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Personalized welcome | Name, company, role |
-| Industry examples | Relevant use cases |
-| Dynamic recommendations | Based on user answers |
-| Template suggestions | Pre-filled for segment |
-| Feature highlighting | Relevant to stated goals |
-| Benchmark data | Industry-specific metrics |
+| 個別化ウェルカム | 氏名、会社、役割表示の効果 |
+| 業界別サンプル | 関連ユースケース提示の効果 |
+| 動的レコメンド | 回答に基づく推奨の効果 |
+| テンプレート提案 | セグメント別事前入力テンプレートの効果 |
+| 機能ハイライト | 宣言目標に合う機能提示の効果 |
+| ベンチマークデータ | 業界別指標提示の効果 |
 
 ---
 
-## Quick Wins & Engagement Experiments
+## クイックウィンとエンゲージメント実験
 
-### Time-to-Value
+### 価値到達時間
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| First quick win | "Complete your first X" |
-| Success messages | After key actions |
-| Progress celebrations | Milestone moments |
-| Next step suggestions | After each completion |
-| Value demonstration | Show what they achieved |
-| Outcome preview | What success looks like |
+| 最初のクイックウィン | 「最初のXを完了」の効果 |
+| 成功メッセージ | 主要行動後の表示効果 |
+| 進捗お祝い | マイルストーン演出の効果 |
+| 次ステップ提案 | 各完了後の次行動提示効果 |
+| 価値の可視化 | 達成内容の表示効果 |
+| 成果プレビュー | 成功状態の見せ方の効果 |
 
-### Motivation Mechanics
+### 動機づけメカニクス
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Achievement badges | Gamification elements |
-| Streaks | Consecutive day engagement |
-| Leaderboards | Social comparison (if appropriate) |
-| Rewards | Incentives for completion |
-| Unlock mechanics | Features revealed progressively |
+| 達成バッジ | ゲーミフィケーション要素の効果 |
+| 連続達成日数 | 連続利用促進の効果 |
+| リーダーボード | 社会的比較の効果（適切な場合） |
+| 報酬 | 完了インセンティブの効果 |
+| アンロック設計 | 段階的な機能開放の効果 |
 
-### Support & Help
+### サポートとヘルプ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Free onboarding calls | For complex products |
-| Contextual help | Throughout onboarding |
-| Chat support | Availability during onboarding |
-| Proactive outreach | For stuck users |
-| Self-service resources | Help docs, videos |
-| Community access | Peer support early |
+| 無料オンボーディング通話 | 複雑製品での効果 |
+| 文脈ヘルプ | オンボーディング全体での支援効果 |
+| チャットサポート | オンボーディング中の即時支援効果 |
+| 先回り連絡 | 停滞ユーザーへの能動支援効果 |
+| セルフサービス資料 | ヘルプ記事、動画の効果 |
+| コミュニティ参加導線 | 初期段階でのピアサポート効果 |
 
 ---
 
-## Email & Multi-Channel Experiments
+## メールとマルチチャネル実験
 
-### Onboarding Emails
+### オンボーディングメール
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Founder welcome email | Personal vs. generic |
-| Behavior-based triggers | Action/inaction based |
-| Email timing | Immediate vs. delayed |
-| Email frequency | More vs. fewer touches |
-| Quick tips format | Short actionable content |
-| Video in email | More engaging format |
+| 創業者ウェルカムメール | 個人的文面と汎用文面の比較 |
+| 行動ベーストリガー | 行動/未行動トリガーの効果 |
+| メール送信タイミング | 即時と遅延の比較 |
+| メール頻度 | 接触回数を増減した効果 |
+| クイックヒント形式 | 短く実行可能な内容の効果 |
+| メール内動画 | より関与を高めるか |
 
-### Email Content
+### メール内容
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Subject lines | Open rate optimization |
-| Personalization depth | Name vs. behavior-based |
-| CTA prominence | Single clear action |
-| Social proof inclusion | Testimonials in email |
-| Urgency messaging | Trial reminders |
-| Plain text vs. designed | Format testing |
+| 件名 | 開封率最適化 |
+| 個別化の深さ | 名前差し込みと行動ベースの比較 |
+| 行動喚起（CTA）強調度 | 単一で明確な行動導線の効果 |
+| 社会的証明の挿入 | メール内推薦文の効果 |
+| 緊急性メッセージ | トライアル期限リマインドの効果 |
+| プレーンテキストとデザインメール | 形式比較 |
 
-### Feedback Loops
+### フィードバックループ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| NPS during onboarding | When to ask |
-| Blocking question | "What's stopping you?" |
-| NPS follow-up | Actions based on score |
-| In-app feedback | Thumbs up/down on features |
-| Survey timing | When to request feedback |
-| Feedback incentives | Reward for completing |
+| オンボーディング中の正味推奨度（NPS） | いつ聞くべきか |
+| 障害質問 | 「何が妨げになっていますか？」の効果 |
+| 正味推奨度（NPS）フォローアップ | スコア別アクションの効果 |
+| アプリ内フィードバック | 機能ごとの良い/悪い評価の効果 |
+| アンケートタイミング | 依頼時点の最適化 |
+| フィードバック報酬 | 回答インセンティブの効果 |
 
 ---
 
-## Re-engagement Experiments
+## 再エンゲージメント実験
 
-### Stalled User Recovery
+### 停滞ユーザーの回復
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Re-engagement email timing | When to send |
-| Personal outreach | Human vs. automated |
-| Simplified path | Reduced steps for returners |
-| Incentive offers | Discount or extended trial |
-| Problem identification | Ask what's blocking |
-| Demo offer | Live walkthrough |
+| 再エンゲージメールのタイミング | 送信時期の最適化 |
+| 個別連絡 | 人的対応と自動対応の比較 |
+| 簡略化ルート | 復帰ユーザー向け手順削減の効果 |
+| インセンティブ提示 | 割引またはトライアル延長の効果 |
+| 問題特定質問 | 阻害要因ヒアリングの効果 |
+| デモ提案 | ライブ案内の効果 |
 
-### Return Experience
+### 復帰体験
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Welcome back message | Acknowledge return |
-| Progress resume | Pick up where left off |
-| Changed state | What happened while away |
-| Re-onboarding | Fresh start option |
-| Urgency messaging | Trial time remaining |
+| おかえりメッセージ | 復帰承認表示の効果 |
+| 進捗再開 | 中断地点から再開できる効果 |
+| 変更点表示 | 不在中の更新説明の効果 |
+| 再オンボーディング | 初期化オプションの効果 |
+| 緊急性メッセージ | 残りトライアル時間の提示効果 |
 
 ---
 
-## Technical & UX Experiments
+## 技術・UX実験
 
-### Performance
+### パフォーマンス
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Load time optimization | Faster = higher completion |
-| Progressive loading | Perceived performance |
-| Offline capability | Mobile experience |
-| Error handling | Graceful failure recovery |
+| 読み込み速度最適化 | 高速化で完了率が上がるか |
+| 段階的読み込み | 体感速度改善の効果 |
+| オフライン対応 | モバイル体験改善の効果 |
+| エラーハンドリング | 失敗時の回復しやすさの効果 |
 
-### Mobile Onboarding
+### モバイルオンボーディング
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Touch targets | Size and spacing |
-| Swipe navigation | Mobile-native patterns |
-| Screen count | Fewer screens needed |
-| Input optimization | Mobile-friendly forms |
-| Permission timing | When to ask |
+| タップ領域 | サイズと間隔の最適化 |
+| スワイプ遷移 | モバイル向け操作パターンの効果 |
+| 画面数 | 必要画面数削減の効果 |
+| 入力最適化 | モバイル向けフォーム最適化の効果 |
+| 権限リクエストのタイミング | いつ聞くべきか |
 
-### Accessibility
+### アクセシビリティ
 
-| Test | Hypothesis |
+| テスト | 仮説 |
 |------|------------|
-| Screen reader support | Accessibility impact |
-| Keyboard navigation | Non-mouse users |
-| Color contrast | Visibility |
-| Font sizing | Readability |
+| スクリーンリーダー対応 | アクセシビリティ改善の影響 |
+| キーボード操作 | 非マウス利用者への影響 |
+| 色コントラスト | 視認性改善の効果 |
+| フォントサイズ | 可読性改善の効果 |
 
 ---
 
-## Metrics to Track
+## 追跡すべき指標
 
-For all experiments, measure:
+すべての実験で、次を計測する:
 
-| Metric | Description |
+| 指標 | 説明 |
 |--------|-------------|
-| Activation rate | % reaching activation event |
-| Time to activation | Hours/days to first value |
-| Step completion rate | % completing each step |
-| Drop-off points | Where users abandon |
-| Return rate | Users who come back |
-| Day 1/7/30 retention | Engagement over time |
-| Feature adoption | Which features get used |
-| Support requests | Volume during onboarding |
+| 活性化率 | 活性化イベント到達率 |
+| 活性化までの時間 | 初回価値到達までの時間（時間/日） |
+| ステップ完了率 | 各ステップ完了率 |
+| 離脱ポイント | どこで離脱したか |
+| 再訪率 | 戻ってくるユーザーの割合 |
+| 1日目/7日目/30日目のリテンション | 時間経過でのエンゲージメント |
+| 機能採用率 | どの機能が使われたか |
+| サポート問い合わせ数 | オンボーディング中の問い合わせ量 |

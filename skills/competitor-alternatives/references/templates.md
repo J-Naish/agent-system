@@ -1,212 +1,212 @@
-# Section Templates for Competitor Pages
+# 競合ページ向けセクションテンプレート
 
-Ready-to-use templates for each section of competitor comparison pages.
+競合比較ページの各セクションでそのまま使えるテンプレート集。
 
-## TL;DR Summary
+## TL;DR 要約
 
-Start every page with a quick summary for scanners:
+流し読みユーザー向けに、各ページ冒頭へ短い要約を配置:
 
 ```markdown
-**TL;DR**: [Competitor] excels at [strength] but struggles with [weakness].
-[Your product] is built for [your focus], offering [key differentiator].
-Choose [Competitor] if [their ideal use case]. Choose [You] if [your ideal use case].
+**TL;DR**: [競合名] は [強み] に優れる一方で [弱み] に課題がある。
+[自社製品] は [注力領域] のために設計され、[主要な差別化要素] を提供する。
+[競合が向くユースケース] なら [競合名]、[自社が向くユースケース] なら [自社製品] を選ぶべき。
 ```
 
 ---
 
-## Paragraph Comparison (Not Just Tables)
+## 段落比較（表だけにしない）
 
-For each major dimension, write a paragraph:
+主要比較軸ごとに、段落で説明:
 
 ```markdown
-## Features
+## 機能
 
-[Competitor] offers [description of their feature approach].
-Their strength is [specific strength], which works well for [use case].
-However, [limitation] can be challenging for [user type].
+[競合名] は [機能アプローチの説明] を提供している。
+その強みは [具体的な強み] であり、[ユースケース] で有効に機能する。
+ただし、[制約] は [ユーザータイプ] には課題になりやすい。
 
-[Your product] takes a different approach with [your approach].
-This means [benefit], though [honest tradeoff].
-Teams who [specific need] often find this more effective.
+[自社製品] は [自社のアプローチ] という異なるアプローチを取る。
+その結果 [メリット] が得られる一方で、[正直なトレードオフ] がある。
+[具体的なニーズ] のあるチームには、こちらの方が効果的なことが多い。
 ```
 
 ---
 
-## Feature Comparison Section
+## 機能比較セクション
 
-Go beyond checkmarks:
+チェックマーク表にとどめない:
 
 ```markdown
-## Feature Comparison
+## 機能比較
 
-### [Feature Category]
+### [機能カテゴリ]
 
-**[Competitor]**: [2-3 sentence description of how they handle this]
-- Strengths: [specific]
-- Limitations: [specific]
+**[競合名]**: [この領域の対応について2-3文で説明]
+- 強み: [具体的内容]
+- 制約: [具体的内容]
 
-**[Your product]**: [2-3 sentence description]
-- Strengths: [specific]
-- Limitations: [specific]
+**[自社製品]**: [この領域の対応について2-3文で説明]
+- 強み: [具体的内容]
+- 制約: [具体的内容]
 
-**Bottom line**: Choose [Competitor] if [scenario]. Choose [You] if [scenario].
+**結論**: [シナリオ] なら [競合名]。 [シナリオ] なら [自社製品]。
 ```
 
 ---
 
-## Pricing Comparison Section
+## 価格比較セクション
 
 ```markdown
-## Pricing
+## 価格
 
-| | [Competitor] | [Your Product] |
+| | [競合名] | [自社製品] |
 |---|---|---|
-| Free tier | [Details] | [Details] |
-| Starting price | $X/user/mo | $X/user/mo |
-| Business tier | $X/user/mo | $X/user/mo |
-| Enterprise | Custom | Custom |
+| 無料プラン | [詳細] | [詳細] |
+| 開始価格 | $X/user/mo | $X/user/mo |
+| ビジネスプラン | $X/user/mo | $X/user/mo |
+| エンタープライズ | 個別見積もり | 個別見積もり |
 
-**What's included**: [Competitor]'s $X plan includes [features], while
-[Your product]'s $X plan includes [features].
+**含まれる内容**: [競合名] の $X プランには [機能] が含まれ、
+[自社製品] の $X プランには [機能] が含まれる。
 
-**Total cost consideration**: Beyond per-seat pricing, consider [hidden costs,
-add-ons, implementation]. [Competitor] charges extra for [X], while
-[Your product] includes [Y] in base pricing.
+**総コストの観点**: 席単価以外にも [隠れコスト、
+アドオン、実装コスト] を考慮すること。[競合名] は [X] が追加課金で、
+[自社製品] は [Y] を基本料金に含む。
 
-**Value comparison**: For a 10-person team, [Competitor] costs approximately
-$X/year while [Your product] costs $Y/year, with [key differences in what you get].
+**価値比較**: 10人チームの場合、[競合名] は概算で
+年額 $X、[自社製品] は年額 $Y で、主な差分は [得られる価値の主要差分]。
 ```
 
 ---
 
-## Service & Support Comparison
+## サービス・サポート比較
 
 ```markdown
-## Service & Support
+## サービスとサポート
 
-| | [Competitor] | [Your Product] |
+| | [競合名] | [自社製品] |
 |---|---|---|
-| Documentation | [Quality assessment] | [Quality assessment] |
-| Response time | [SLA if known] | [Your SLA] |
-| Support channels | [List] | [List] |
-| Onboarding | [What they offer] | [What you offer] |
-| CSM included | [At what tier] | [At what tier] |
+| ドキュメント | [品質評価] | [品質評価] |
+| 応答時間 | [既知ならSLA] | [自社SLA] |
+| サポートチャネル | [一覧] | [一覧] |
+| オンボーディング | [提供内容] | [提供内容] |
+| CSM 提供 | [提供ティア] | [提供ティア] |
 
-**Support quality**: Based on [G2/Capterra reviews, your research],
-[Competitor] support is described as [assessment]. Common feedback includes
-[quotes or themes].
+**サポート品質**: [G2/Capterraレビュー、自社調査] に基づくと、
+[競合名] のサポートは [評価] とされることが多い。よく見られる声は
+[引用または傾向]。
 
-[Your product] offers [your support approach]. [Specific differentiator like
-response time, dedicated CSM, implementation help].
+[自社製品] は [自社サポート方針] を提供する。[応答時間、
+専任CSM、導入支援] などの具体的差別化がある。
 ```
 
 ---
 
-## Who It's For Section
+## 向いている人セクション
 
 ```markdown
-## Who Should Choose [Competitor]
+## [競合名] を選ぶべき人
 
-[Competitor] is the right choice if:
-- [Specific use case or need]
-- [Team type or size]
-- [Workflow or requirement]
-- [Budget or priority]
+[競合名] が適しているのは、次に当てはまる場合:
+- [具体的なユースケース/課題]
+- [チームタイプ/規模]
+- [ワークフロー/要件]
+- [予算または優先事項]
 
-**Ideal [Competitor] customer**: [Persona description in 1-2 sentences]
+**理想的な [競合名] 顧客**: [1-2文のペルソナ説明]
 
-## Who Should Choose [Your Product]
+## [自社製品] を選ぶべき人
 
-[Your product] is built for teams who:
-- [Specific use case or need]
-- [Team type or size]
-- [Workflow or requirement]
-- [Priority or value]
+[自社製品] は、次のようなチーム向けに設計されている:
+- [具体的なユースケース/課題]
+- [チームタイプ/規模]
+- [ワークフロー/要件]
+- [優先事項/価値観]
 
-**Ideal [Your product] customer**: [Persona description in 1-2 sentences]
+**理想的な [自社製品] 顧客**: [1-2文のペルソナ説明]
 ```
 
 ---
 
-## Migration Section
+## 移行セクション
 
 ```markdown
-## Switching from [Competitor]
+## [競合名] からの移行
 
-### What transfers
-- [Data type]: [How easily, any caveats]
-- [Data type]: [How easily, any caveats]
+### 移行できるもの
+- [データ種別]: [容易さ、注意点]
+- [データ種別]: [容易さ、注意点]
 
-### What needs reconfiguration
-- [Thing]: [Why and effort level]
-- [Thing]: [Why and effort level]
+### 再設定が必要なもの
+- [項目]: [理由と工数目安]
+- [項目]: [理由と工数目安]
 
-### Migration support
+### 移行サポート
 
-We offer [migration support details]:
-- [Free data import tool / white-glove migration]
-- [Documentation / migration guide]
-- [Timeline expectation]
-- [Support during transition]
+当社は [移行サポート内容] を提供:
+- [無料データインポートツール / 手厚い移行支援]
+- [ドキュメント / 移行ガイド]
+- [想定スケジュール]
+- [移行中サポート]
 
-### What customers say about switching
+### 乗り換えに関する顧客の声
 
-> "[Quote from customer who switched]"
-> — [Name], [Role] at [Company]
+> "[乗り換え顧客のコメント]"
+> — [名前], [役職] at [会社名]
 ```
 
 ---
 
-## Social Proof Section
+## 社会的証明セクション
 
-Focus on switchers:
+乗り換え事例に焦点を当てる:
 
 ```markdown
-## What Customers Say
+## 顧客の声
 
-### Switched from [Competitor]
+### [競合名] から乗り換え
 
-> "[Specific quote about why they switched and outcome]"
-> — [Name], [Role] at [Company]
+> "[乗り換え理由と成果に関する具体的なコメント]"
+> — [名前], [役職] at [会社名]
 
-> "[Another quote]"
-> — [Name], [Role] at [Company]
+> "[別のコメント]"
+> — [名前], [役職] at [会社名]
 
-### Results after switching
-- [Company] saw [specific result]
-- [Company] reduced [metric] by [amount]
+### 乗り換え後の成果
+- [会社名] は [具体的成果] を達成
+- [会社名] は [指標] を [改善量] 改善
 ```
 
 ---
 
-## Comparison Table Best Practices
+## 比較表のベストプラクティス
 
-### Beyond Checkmarks
+### チェックマーク以上にする
 
-Instead of:
-| Feature | You | Competitor |
+次のようにせず:
+| 機能 | 自社 | 競合 |
 |---------|-----|-----------|
-| Feature A | ✓ | ✓ |
-| Feature B | ✓ | ✗ |
+| 機能 A | ✓ | ✓ |
+| 機能 B | ✓ | ✗ |
 
-Do this:
-| Feature | You | Competitor |
+次のようにする:
+| 機能 | 自社 | 競合 |
 |---------|-----|-----------|
-| Feature A | Full support with [detail] | Basic support, [limitation] |
-| Feature B | [Specific capability] | Not available |
+| 機能 A | [詳細] を含むフル対応 | 基本対応、[制約] あり |
+| 機能 B | [具体的な対応能力] | 非対応 |
 
-### Organize by Category
+### カテゴリごとに整理
 
-Group features into meaningful categories:
-- Core functionality
-- Collaboration
-- Integrations
-- Security & compliance
-- Support & service
+意味のあるカテゴリに機能を分類:
+- コア機能
+- コラボレーション
+- 連携
+- セキュリティとコンプライアンス
+- サポートとサービス
 
-### Include Ratings Where Useful
+### 必要なら評価を併記
 
-| Category | You | Competitor | Notes |
+| カテゴリ | 自社 | 競合 | 補足 |
 |----------|-----|-----------|-------|
-| Ease of use | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [Brief note] |
-| Feature depth | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [Brief note] |
+| 使いやすさ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [簡単な補足] |
+| 機能の深さ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [簡単な補足] |
