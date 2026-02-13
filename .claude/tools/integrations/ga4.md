@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/ga4.md
+../../../.agents/tools/integrations/ga4.md

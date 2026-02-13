@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/social-content/references/reverse-engineering.md
+../../../../.agents/skills/social-content/references/reverse-engineering.md

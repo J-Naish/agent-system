@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/remotion-best-practices/rules/import-srt-captions.md
+../../../../.agents/skills/remotion-best-practices/rules/import-srt-captions.md

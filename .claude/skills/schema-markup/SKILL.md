@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/schema-markup/SKILL.md
+../../../.agents/skills/schema-markup/SKILL.md

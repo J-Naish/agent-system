@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/pricing-strategy/references/research-methods.md
+../../../../.agents/skills/pricing-strategy/references/research-methods.md

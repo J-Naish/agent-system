@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx
+../../../../../.agents/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx

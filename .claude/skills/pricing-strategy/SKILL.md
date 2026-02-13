@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/pricing-strategy/SKILL.md
+../../../.agents/skills/pricing-strategy/SKILL.md

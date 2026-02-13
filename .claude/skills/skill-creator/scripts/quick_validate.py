@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/skill-creator/scripts/quick_validate.py
+../../../../.agents/skills/skill-creator/scripts/quick_validate.py

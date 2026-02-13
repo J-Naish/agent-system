@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/INSTRUCTIONS.md
+../.agents/INSTRUCTIONS.md

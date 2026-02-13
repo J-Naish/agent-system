@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/competitor-alternatives/references/content-architecture.md
+../../../../.agents/skills/competitor-alternatives/references/content-architecture.md

@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/resend.md
+../../../.agents/tools/integrations/resend.md

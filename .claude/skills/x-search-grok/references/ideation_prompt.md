@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/x-search-grok/references/ideation_prompt.md
+../../../../.agents/skills/x-search-grok/references/ideation_prompt.md

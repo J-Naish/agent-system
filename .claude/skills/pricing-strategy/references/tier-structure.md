@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/pricing-strategy/references/tier-structure.md
+../../../../.agents/skills/pricing-strategy/references/tier-structure.md

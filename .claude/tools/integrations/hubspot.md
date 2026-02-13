@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/hubspot.md
+../../../.agents/tools/integrations/hubspot.md

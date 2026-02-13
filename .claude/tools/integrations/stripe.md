@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/stripe.md
+../../../.agents/tools/integrations/stripe.md

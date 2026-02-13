@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/copy-editing/SKILL.md
+../../../.agents/skills/copy-editing/SKILL.md

@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/programmatic-seo/references/playbooks.md
+../../../../.agents/skills/programmatic-seo/references/playbooks.md

@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/competitor-alternatives/SKILL.md
+../../../.agents/skills/competitor-alternatives/SKILL.md

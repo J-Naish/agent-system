@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/analytics-tracking/references/event-library.md
+../../../../.agents/skills/analytics-tracking/references/event-library.md

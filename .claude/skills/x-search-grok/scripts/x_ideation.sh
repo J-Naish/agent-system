@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/x-search-grok/scripts/x_ideation.sh
+../../../../.agents/skills/x-search-grok/scripts/x_ideation.sh

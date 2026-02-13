@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/schema-markup/references/schema-examples.md
+../../../../.agents/skills/schema-markup/references/schema-examples.md

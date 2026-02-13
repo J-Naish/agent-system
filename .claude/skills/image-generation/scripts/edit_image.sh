@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/image-generation/scripts/edit_image.sh
+../../../../.agents/skills/image-generation/scripts/edit_image.sh

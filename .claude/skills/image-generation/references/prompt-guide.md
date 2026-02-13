@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/image-generation/references/prompt-guide.md
+../../../../.agents/skills/image-generation/references/prompt-guide.md

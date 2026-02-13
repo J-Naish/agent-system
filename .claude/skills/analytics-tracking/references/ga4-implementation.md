@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/analytics-tracking/references/ga4-implementation.md
+../../../../.agents/skills/analytics-tracking/references/ga4-implementation.md

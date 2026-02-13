@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/zapier.md
+../../../.agents/tools/integrations/zapier.md

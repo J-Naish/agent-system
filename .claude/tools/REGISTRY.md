@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/REGISTRY.md
+../../.agents/tools/REGISTRY.md

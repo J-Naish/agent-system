@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/landing-page-composition/references/composition-template.md
+../../../../.agents/skills/landing-page-composition/references/composition-template.md

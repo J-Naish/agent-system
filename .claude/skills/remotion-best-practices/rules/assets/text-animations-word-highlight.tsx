@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx
+../../../../../.agents/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx

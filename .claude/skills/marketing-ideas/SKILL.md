@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/marketing-ideas/SKILL.md
+../../../.agents/skills/marketing-ideas/SKILL.md

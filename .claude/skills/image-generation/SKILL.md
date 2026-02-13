@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/image-generation/SKILL.md
+../../../.agents/skills/image-generation/SKILL.md

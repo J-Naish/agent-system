@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/paid-ads/references/ad-copy-templates.md
+../../../../.agents/skills/paid-ads/references/ad-copy-templates.md

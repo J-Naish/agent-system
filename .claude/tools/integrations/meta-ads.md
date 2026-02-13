@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/meta-ads.md
+../../../.agents/tools/integrations/meta-ads.md

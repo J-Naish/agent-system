@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/tools/integrations/wordpress.md
+../../../.agents/tools/integrations/wordpress.md

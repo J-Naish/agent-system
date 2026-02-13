@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/market-research/references/competitor-analysis.md
+../../../../.agents/skills/market-research/references/competitor-analysis.md

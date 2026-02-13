@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/social-content/references/platforms.md
+../../../../.agents/skills/social-content/references/platforms.md

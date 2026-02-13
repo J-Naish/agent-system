@@ -1,1 +1,1 @@
-/Users/nash/dev/production/meme/project-template/.agents/skills/email-sequence/SKILL.md
+../../../.agents/skills/email-sequence/SKILL.md
