@@ -14,7 +14,7 @@ Web検索（WebSearch / WebFetch）とブラウザ自動操作（Claude in Chrom
 0. **Ground Zero リサーチ（前提知識調査）** → [references/ground-zero-research.md](references/ground-zero-research.md)
 1. **市場調査** → [references/market-research.md](references/market-research.md)
 2. **競合分析** → [references/competitor-analysis.md](references/competitor-analysis.md)
-3. **法規制・関連法令** → [references/regulatory-research.md](references/regulatory-research.md)
+3. **法規制・公的支援** → [references/regulatory-research.md](references/regulatory-research.md)
 4. **価格調査** → [references/pricing-research.md](references/pricing-research.md)
 5. **トレンド分析** → [references/trend-analysis.md](references/trend-analysis.md)
 
