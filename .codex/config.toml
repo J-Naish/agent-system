@@ -1,0 +1,11 @@
+model = "gpt-5.3-codex"
+
+web_search = "live"
+
+model_reasoning_effort = "high"
+
+approval_policy = "never"
+
+hide_agent_reasoning = false
+
+show_raw_agent_reasoning = true
