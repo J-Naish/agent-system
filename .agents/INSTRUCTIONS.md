@@ -1,6 +1,66 @@
-# CLAUDE.md — プロジェクト共通指示書
+# プロジェクト共通指示書
 
-Claude Code / Codex など各AIエージェントが会話開始時に自動で読み込むプロジェクトレベルの指示書です。
+あなたはマーケティング、開発、デザイン、クリエイティブなどの全てのビジネスモジュールの計画・実行を支援するAIエージェントです。
+
+---
+
+## プロジェクト構造
+
+```
+agent-system/
+├── .agents/                  # エージェントシステム本体（Single Source of Truth）
+│   ├── INSTRUCTIONS.md       # このファイル。プロジェクト共通指示書
+│   ├── skills/               # マーケティング・開発などに関するスキル
+│   │   ├── <skill-name>/
+│   │   │   ├── SKILL.md      # スキル定義・プロンプト
+│   │   │   ├── references/   # 参考資料（任意）
+│   │   │   └── scripts/      # 自動化スクリプト（任意）
+│   │   └── ...
+│   └── tools/                # 外部ツール連携
+│       ├── REGISTRY.md       # ツール一覧・能力マトリクス
+│       └── integrations/     # 16サービスの連携ガイド（*.md）
+│
+├── contexts/                 # 事業に関する情報（項目ごとに整理）
+│   ├── research/             # 市場調査・競合分析などのリサーチ成果物
+│   └── strategy/             # 戦略ドキュメント・意思決定の記録
+|   └── meetings/             # 会議ドキュメント・会議の記録
+│
+├── apps/                     # プログラミング成果物
+│   │                         # LP、Webアプリ、ホームページ、サーバーなど
+│   │                         # 各アプリは独立したサブディレクトリとして管理
+│   └── <app-name>/           # 例: lp-product-a/, homepage/, api-server/
+│
+├── .claude/                  # Claude Code 用設定（.agents/ へのシンボリックリンク）
+│   ├── CLAUDE.md → ../.agents/INSTRUCTIONS.md
+│   ├── settings.json         # 権限・フック設定
+│   ├── skills → ../.agents/skills
+│   └── tools → ../.agents/tools
+│
+├── .codex/                   # Codex 用設定（.agents/ へのシンボリックリンク）
+│   ├── AGENTS.md → ../.agents/INSTRUCTIONS.md
+│   ├── config.toml           # モデル・承認ポリシー設定
+│   ├── skills → ../.agents/skills
+│   └── tools → ../.agents/tools
+│
+├── .env                      # APIキー（GEMINI_API_KEY, XAI_API_KEY）
+└── .gitignore
+```
+
+### 設計原則
+
+- **Single Source of Truth**: `.agents/` が実体。`.claude/` と `.codex/` はシンボリックリンクで参照する
+- **マルチプラットフォーム**: Claude Code と Codex の両方から同じスキル・ツールを利用可能
+- **contexts/ と apps/ の分離**: 事業情報（リサーチ・戦略）とプログラミング成果物を明確に分離する
+
+### ディレクトリの役割
+
+| ディレクトリ | 役割 | 格納するもの |
+|---|---|---|
+| `.agents/` | エージェントの頭脳 | スキル定義、ツール連携ガイド、指示書 |
+| `contexts/` | 事業のナレッジベース | 市場調査、競合分析、戦略文書、価格調査、法規制調査など |
+| `apps/` | プログラミング成果物 | LP、Webアプリ、ホームページ、APIサーバー、動画プロジェクトなど |
+
+---
 
 ## 基本の使い方
 
