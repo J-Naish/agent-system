@@ -1,1 +1,0 @@
-../../../../.agents/skills/email-sequence/references/email-types.md

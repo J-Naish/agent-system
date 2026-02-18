@@ -10,9 +10,6 @@ description: "ユーザーが Google Ads、Meta（Facebook/Instagram）、Linked
 
 ## 開始前
 
-**まずプロダクトマーケティングの文脈を確認する:**
-`.claude/product-marketing-context.md` が存在する場合、質問する前にそれを読んでください。その文脈を活用し、すでに含まれている情報ではなく、このタスク固有で未カバーの情報だけを質問してください。
-
 この文脈情報を集めてください（未提供なら質問する）:
 
 ### 1. キャンペーン目標
@@ -309,5 +306,4 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 - **copywriting**: 広告流入を転換するランディングページコピー向け
 - **analytics-tracking**: 正しいコンバージョントラッキング設定向け
-- **ab-test-setup**: ROAS 改善のためのランディングページ検証向け
 - **page-cro**: クリック後コンバージョン率の最適化向け

@@ -1,1 +1,0 @@
-../../../../.agents/skills/email-sequence/references/copy-guidelines.md

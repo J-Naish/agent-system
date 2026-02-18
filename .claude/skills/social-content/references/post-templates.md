@@ -1,1 +1,0 @@
-../../../../.agents/skills/social-content/references/post-templates.md

@@ -1,1 +1,0 @@
-../../../../.agents/skills/email-sequence/references/sequence-templates.md
