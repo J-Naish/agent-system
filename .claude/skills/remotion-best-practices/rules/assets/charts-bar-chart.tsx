@@ -1,1 +1,0 @@
-../../../../../.agents/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx

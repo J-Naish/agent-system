@@ -1,1 +1,0 @@
-../../../../../.agents/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx

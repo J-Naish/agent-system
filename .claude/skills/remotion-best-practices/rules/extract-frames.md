@@ -1,1 +1,0 @@
-../../../../.agents/skills/remotion-best-practices/rules/extract-frames.md
