@@ -53,7 +53,7 @@ Step 2: WebFetchまたはplaywright-browserのscrapeで本文を取得
 
 ## 広告ライブラリの活用
 
-競合の広告・マーケティング戦略を調べるために、以下のツールをClaude in Chromeで閲覧すること。
+競合の広告・マーケティング戦略を調べるために、`playwright-browser` スキルを使って以下のツールにアクセスすること。
 
 | ツール | URL | 用途 |
 |--------|-----|------|
@@ -64,7 +64,7 @@ Step 2: WebFetchまたはplaywright-browserのscrapeで本文を取得
 
 ### 調査手順
 
-1. Claude in Chromeで対象ツールにアクセスする
+1. `playwright-browser` スキルで対象ツールにアクセスする
 2. 競合の企業名・ブランド名で検索する
 3. 以下の観点で情報を収集する：
    - **広告ライブラリ**: どのようなLPを出しているか、広告クリエイティブの内容、訴求ポイント
