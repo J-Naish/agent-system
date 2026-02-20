@@ -5,20 +5,23 @@ description: Web検索とブラウザ自動操作を活用した包括的な市�
 
 # マーケットリサーチ
 
-Web検索（WebSearch / WebFetch）とブラウザ自動操作（Claude in Chrome）を組み合わせ、4つの調査領域を段階的に実施する。
+Web検索（WebSearch / WebFetch）とブラウザ自動操作（Claude in Chrome）を組み合わせ、3つの調査領域を段階的に実施する。
 
 ## 前提条件
 
-このスキルを実行する前に、`industry-landscape` スキルで対象業界の前提知識調査が完了していること。同一業界について過去に調査済みのファイルが存在する場合は、その内容を確認し、再調査の必要がなければスキップしてよい。
+このスキルを実行する前に、以下のスキルが完了していること:
+- `industry-landscape` — 対象業界の前提知識調査
+- `market-analysis` — 市場規模・顧客セグメント・市場構造の調査
+
+過去に調査済みのファイルが存在する場合は、その内容を確認し、再調査の必要がなければスキップしてよい。
 
 ## リサーチの全体フロー
 
-以下の4ステップを順番に実行する。各ステップの詳細はreferencesファイルを参照すること。
+以下の3ステップを順番に実行する。各ステップの詳細はreferencesファイルを参照すること。
 
-1. **市場調査** → [references/market-research.md](references/market-research.md)
-2. **競合分析** → [references/competitor-analysis.md](references/competitor-analysis.md)
-3. **法規制・公的支援** → [references/regulatory-research.md](references/regulatory-research.md)
-4. **価格調査** → [references/pricing-research.md](references/pricing-research.md)
+1. **競合分析** → [references/competitor-analysis.md](references/competitor-analysis.md)
+2. **法規制・公的支援** → [references/regulatory-research.md](references/regulatory-research.md)
+3. **価格調査** → [references/pricing-research.md](references/pricing-research.md)
 
 ## 検索の基本ルール
 
@@ -107,10 +110,10 @@ Step 2: WebFetchで上位の有望なURLの中身を読み込む → 詳細な�
 
 **具体的なフロー：**
 
-1. ステップ1（市場調査）の調査を実施する
-2. 調査完了後、直ちに `1-market-research.md` に書き出す
-3. ステップ2（競合分析）の調査を実施する
-4. 調査完了後、直ちに `2-competitor-analysis.md` に書き出す
+1. ステップ1（競合分析）の調査を実施する
+2. 調査完了後、直ちに `1-competitor-analysis.md` に書き出す
+3. ステップ2（法規制・公的支援）の調査を実施する
+4. 調査完了後、直ちに `2-regulatory-research.md` に書き出す
 5. 以降、各ステップ完了のたびに同様に個別ファイルへ書き出す
 
 ### 網羅的な記述
@@ -131,10 +134,9 @@ Step 2: WebFetchで上位の有望なURLの中身を読み込む → 詳細な�
 
 ```
 research/
-├── 1-market-research.md       # 市場調査
-├── 2-competitor-analysis.md   # 競合分析
-├── 3-regulatory-research.md   # 法規制・関連法令
-└── 4-pricing-research.md      # 価格調査
+├── 1-competitor-analysis.md   # 競合分析
+├── 2-regulatory-research.md   # 法規制・関連法令
+└── 3-pricing-research.md      # 価格調査
 ```
 
 ### ソースURLの記載
