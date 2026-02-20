@@ -5,21 +5,20 @@ description: Web検索とブラウザ自動操作を活用した包括的な市�
 
 # マーケットリサーチ
 
-Web検索（WebSearch / WebFetch）とブラウザ自動操作（Claude in Chrome）を組み合わせ、前提知識調査（Ground Zero リサーチ）+ 4つの調査領域を段階的に実施する。
+Web検索（WebSearch / WebFetch）とブラウザ自動操作（Claude in Chrome）を組み合わせ、4つの調査領域を段階的に実施する。
+
+## 前提条件
+
+このスキルを実行する前に、`industry-landscape` スキルで対象業界の前提知識調査が完了していること。同一業界について過去に調査済みのファイルが存在する場合は、その内容を確認し、再調査の必要がなければスキップしてよい。
 
 ## リサーチの全体フロー
 
-以下の5ステップを順番に実行する。各ステップの詳細はreferencesファイルを参照すること。
+以下の4ステップを順番に実行する。各ステップの詳細はreferencesファイルを参照すること。
 
-0. **Ground Zero リサーチ（前提知識調査）** → `industry-landscape` スキルを使用
 1. **市場調査** → [references/market-research.md](references/market-research.md)
 2. **競合分析** → [references/competitor-analysis.md](references/competitor-analysis.md)
 3. **法規制・公的支援** → [references/regulatory-research.md](references/regulatory-research.md)
 4. **価格調査** → [references/pricing-research.md](references/pricing-research.md)
-
-**Step 0（Ground Zero リサーチ）は全ての調査の前に必ず実行すること。** `industry-landscape` スキルを呼び出して実行する。このステップで業界の基本構造、専門用語、ビジネスモデル、バリューチェーン、顧客構造、規制環境、市場の数字感覚を先に把握することで、後続ステップの検索クエリの精度と調査の深さが格段に向上する。
-
-ユーザーが特定の領域のみを依頼した場合でも、Step 0は省略せず実行する。ただし、同一業界について過去にGround Zeroリサーチ済みのファイルが存在する場合は、その内容を確認し、再調査の必要がなければスキップしてよい。
 
 ## 検索の基本ルール
 
@@ -108,13 +107,11 @@ Step 2: WebFetchで上位の有望なURLの中身を読み込む → 詳細な�
 
 **具体的なフロー：**
 
-1. ステップ0（Ground Zero リサーチ）の調査を実施する
-2. 調査完了後、直ちに `0-ground-zero.md` に書き出す
-3. ステップ1（市場調査）の調査を実施する
-4. 調査完了後、直ちに `1-market-research.md` に書き出す
-5. ステップ2（競合分析）の調査を実施する
-6. 調査完了後、直ちに `2-competitor-analysis.md` に書き出す
-7. 以降、各ステップ完了のたびに同様に個別ファイルへ書き出す
+1. ステップ1（市場調査）の調査を実施する
+2. 調査完了後、直ちに `1-market-research.md` に書き出す
+3. ステップ2（競合分析）の調査を実施する
+4. 調査完了後、直ちに `2-competitor-analysis.md` に書き出す
+5. 以降、各ステップ完了のたびに同様に個別ファイルへ書き出す
 
 ### 網羅的な記述
 
@@ -134,7 +131,6 @@ Step 2: WebFetchで上位の有望なURLの中身を読み込む → 詳細な�
 
 ```
 research/
-├── 0-ground-zero.md          # 前提知識（Ground Zero リサーチ）
 ├── 1-market-research.md       # 市場調査
 ├── 2-competitor-analysis.md   # 競合分析
 ├── 3-regulatory-research.md   # 法規制・関連法令
@@ -146,12 +142,6 @@ research/
 すべての発見事項・データには、情報源のURLを必ず記載すること。URLのないデータは信頼性が担保できないため、出力に含めてはならない。
 
 ### ファイルテンプレート
-
-#### 0-ground-zero.md
-
-`industry-landscape` スキルの出力テンプレートに従う。
-
-#### 1〜4の各ステップファイル（共通形式）
 
 ```markdown
 # [調査テーマ] [ステップ名]
