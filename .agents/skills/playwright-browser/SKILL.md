@@ -8,7 +8,8 @@ description: >-
   「Webサイトをスクレイピング」「Google検索して」「検索結果を取得」
   「競合サイトを見て」「LPを確認して」「広告ライブラリを調べて」
   「ブラウザで操作して」「ページのmeta情報を取得」「サイト構造を調査」。
-  market-researchスキルと組み合わせてリサーチの情報収集に活用できる。
+  各リサーチスキル（market-analysis、competitor-analysis、regulatory-research）と
+  組み合わせてリサーチの情報収集に活用できる。
   seo-auditスキルと組み合わせて実際のページ構造を取得する際にも有用。
 ---
 

@@ -7,7 +7,8 @@ description: >-
   「業界を調べて」「業界構造を理解したい」「前提知識を調査して」「業界の全体像を把握したい」
   「用語を調べて」「ビジネスモデルを理解したい」「バリューチェーンを調べて」
   「キープレイヤーを知りたい」「業界入門」「Ground Zeroリサーチ」。
-  market-researchスキルの前段階として、または単独で業界理解のために使用できる。
+  各リサーチスキル（market-analysis、competitor-analysis、regulatory-research）の前段階として、
+  または単独で業界理解のために使用できる。
 ---
 
 # 業界全体像調査（Industry Landscape）

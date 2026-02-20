@@ -1,1 +1,0 @@
-../../../../.agents/skills/market-research/references/trend-analysis.md

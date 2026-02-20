@@ -1,1 +1,0 @@
-../../../../.agents/skills/market-research/references/ground-zero-research.md
