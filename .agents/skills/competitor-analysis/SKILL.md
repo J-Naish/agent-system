@@ -27,7 +27,8 @@ description: >-
 1. **競合の特定** — 直接競合・間接競合のリストアップ
 2. **競合企業の基本情報** — 売上規模、従業員数、事業内容、代表者、URL
 3. **Google検索での競合比較** — 主要キーワードでの検索順位と自社との比較
-4. **広告運用の調査** — 広告ライブラリで確認できる広告・LP、スクリーンショット撮影
+4. **サイトパフォーマンス比較** — PageSpeed Insightsで自社・各競合のスコアを比較
+5. **広告運用の調査** — 広告ライブラリで確認できる広告・LP、スクリーンショット撮影
 
 ## 検索ルール
 
@@ -51,6 +52,28 @@ Web検索（WebSearch）とWebFetchに加え、`playwright-browser` スキルの
 Step 1: WebSearchで検索 → URLリストを取得
 Step 2: WebFetchまたはplaywright-browserのscrapeで本文を取得
 ```
+
+## サイトパフォーマンス比較（PageSpeed Insights）
+
+PageSpeed Insights APIを使用して、自社と各競合のサイトパフォーマンスを比較する。
+
+**対象URL:**
+- 自社のホームページ・LP
+- 各競合のホームページ・LP（競合企業の基本情報で取得したURL）
+
+**取得コマンド:**
+
+```bash
+source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > research/data/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
+```
+
+- モバイル（`strategy=mobile`）を基本とし、必要に応じてデスクトップも取得する
+- レスポンスJSONから以下を記録する:
+  - **Performance スコア** (`lighthouseResult.categories.performance.score * 100`)
+  - **SEO スコア** (`lighthouseResult.categories.seo.score * 100`)
+  - **Accessibility スコア** (`lighthouseResult.categories.accessibility.score * 100`)
+  - **Core Web Vitals**: LCP、INP、CLS
+- 自社と各競合のスコアを一覧テーブルにまとめ、強み・弱みを比較する
 
 ## 広告ライブラリの活用
 
@@ -123,6 +146,8 @@ research/
     ├── [競合名]-ad-01.png                    # 広告クリエイティブ
     ├── [競合名]-lp-01.png                    # ランディングページ
     └── [競合名]-hp-01.png                    # ホームページ
+data/competitor-analysis/
+    └── psi-[企業名]-[ページ種別]-mobile.json  # PageSpeed Insights結果
 ```
 
 ### 出力テンプレート
@@ -169,6 +194,24 @@ research/
 - [自社と競合のSEOポジショニング比較]
 - [競合が強いキーワード領域]
 - [自社が勝てる可能性のあるキーワード]
+
+## サイトパフォーマンス比較（PageSpeed Insights）
+
+| 企業 | ページ | Performance | SEO | Accessibility | LCP | INP | CLS |
+|------|--------|-------------|-----|---------------|-----|-----|-----|
+| 自社 | HP | | | | | | |
+| 自社 | LP | | | | | | |
+| [競合1] | HP | | | | | | |
+| [競合1] | LP | | | | | | |
+| [競合2] | HP | | | | | | |
+| [競合2] | LP | | | | | | |
+
+- **生データ**: `data/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json`
+
+### 所見
+- [自社と競合のパフォーマンス差]
+- [競合が優れている点・劣っている点]
+- [改善の余地がある領域]
 
 ## 広告運用の調査
 

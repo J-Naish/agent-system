@@ -147,6 +147,33 @@ node $SKILL_DIR/../playwright-browser/scripts/browser.mjs interact "https://www.
 - 広告枠への自社・競合の出稿有無
 - リッチリザルト（FAQ、レビュー等）の表示有無
 
+#### PageSpeed Insightsによるサイトパフォーマンス調査
+
+PageSpeed Insights APIを使用して、自社サイトのパフォーマンス・SEO・アクセシビリティのスコアを取得する。
+
+**対象URL:**
+- ホームページ
+- 主要なLP
+- サービスサイトのトップページ
+
+**取得コマンド:**
+
+```bash
+source .env && curl "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile"
+```
+
+- `strategy=mobile` でモバイル結果を取得する。デスクトップも必要な場合は `strategy=desktop` で再取得する
+- レスポンスJSONから以下を記録する:
+  - **Performance スコア** (`lighthouseResult.categories.performance.score * 100`)
+  - **SEO スコア** (`lighthouseResult.categories.seo.score * 100`)
+  - **Accessibility スコア** (`lighthouseResult.categories.accessibility.score * 100`)
+  - **Core Web Vitals**: LCP、FID/INP、CLS
+- 結果はJSON全体を `contexts/data/business-profile/` に保存する
+
+```bash
+source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > contexts/data/business-profile/psi-[ページ種別]-mobile.json
+```
+
 #### 広告運用の調査
 
 `playwright-browser` スキルで以下の広告ライブラリにアクセスし、自社の広告出稿状況を調査する。
@@ -197,7 +224,10 @@ contexts/
     ├── lp-01.png                            # ランディングページ
     ├── serp-[keyword-slug].png              # Google検索結果
     ├── ad-01.png                            # 広告クリエイティブ
-    └── ad-lp-01.png                         # 広告のLP
+    ├── ad-lp-01.png                         # 広告のLP
+data/business-profile/
+    ├── psi-hp-mobile.json                   # PageSpeed Insights（HP・モバイル）
+    └── psi-lp-mobile.json                   # PageSpeed Insights（LP・モバイル）
 ```
 
 ### 出力テンプレート
@@ -296,6 +326,17 @@ contexts/
 - [指名検索の状況]
 - [カテゴリ系キーワードでの位置づけ]
 - [競合との比較で気づいた点]
+
+## サイトパフォーマンス（PageSpeed Insights）
+
+| ページ | Strategy | Performance | SEO | Accessibility | LCP | INP | CLS |
+|--------|----------|-------------|-----|---------------|-----|-----|-----|
+| HP | Mobile | | | | | | |
+| HP | Desktop | | | | | | |
+| LP | Mobile | | | | | | |
+| LP | Desktop | | | | | | |
+
+- **生データ**: `data/business-profile/psi-[ページ種別]-[strategy].json`
 
 ## マーケティング施策
 
