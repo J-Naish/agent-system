@@ -1,1 +1,0 @@
-../../../../.agents/skills/schema-markup/references/schema-examples.md
