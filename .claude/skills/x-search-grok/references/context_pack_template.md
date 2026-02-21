@@ -1,1 +1,0 @@
-../../../../.agents/skills/x-search-grok/references/context_pack_template.md

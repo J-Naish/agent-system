@@ -1,1 +1,0 @@
-../../../.agents/skills/x-search-grok/SKILL.md

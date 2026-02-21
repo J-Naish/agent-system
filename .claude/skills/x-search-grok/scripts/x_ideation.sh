@@ -1,1 +1,0 @@
-../../../../.agents/skills/x-search-grok/scripts/x_ideation.sh
