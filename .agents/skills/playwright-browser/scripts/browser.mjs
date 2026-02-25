@@ -34,6 +34,7 @@ const { values: flags, positionals } = parseArgs({
     actions: { type: 'string' },
     headful: { type: 'boolean', default: false },
     timeout: { type: 'string', default: '30000' },
+    wait: { type: 'string', default: '800' },
     'user-agent': { type: 'string' },
     help: { type: 'boolean', default: false },
   },
@@ -41,6 +42,7 @@ const { values: flags, positionals } = parseArgs({
 
 const [command, ...rest] = positionals;
 const timeout = parseInt(flags.timeout, 10);
+const extraWait = parseInt(flags.wait, 10) || 0;
 
 // --- 定数 ---
 
@@ -59,6 +61,7 @@ function printUsage() {
 Common options:
   --headful            Show browser window
   --timeout <ms>       Timeout (default: 30000)
+  --wait <ms>          Extra wait after networkidle before screenshot (default: 0)
   --user-agent <str>   Custom User-Agent`);
 }
 
@@ -166,6 +169,18 @@ async function scrape(url, selector) {
   }
 }
 
+async function waitForRender(page, additionalMs = 0) {
+  // ネットワークが安定するまで待つ（最大5秒、タイムアウトしても続行）
+  try {
+    await page.waitForLoadState('networkidle', { timeout: 5000 });
+  } catch {
+    // networkidle タイムアウトは無視（WebSocketやポーリングで発生しうる）
+  }
+  if (additionalMs > 0) {
+    await page.waitForTimeout(additionalMs);
+  }
+}
+
 async function screenshot(url, outputPath, fullPage) {
   const filePath = outputPath || `./screenshots/${Date.now()}.png`;
   await ensureDir(filePath);
@@ -174,6 +189,7 @@ async function screenshot(url, outputPath, fullPage) {
   try {
     const page = await newPage(browser);
     await page.goto(url, { waitUntil: 'load', timeout });
+    await waitForRender(page, extraWait);
     await page.screenshot({
       path: resolve(filePath),
       fullPage: !!fullPage,
@@ -305,6 +321,7 @@ async function interact(url, actionsJson) {
         case 'screenshot': {
           const ssPath = path || `./screenshots/${Date.now()}.png`;
           await ensureDir(ssPath);
+          await waitForRender(page, step.wait || 0);
           await page.screenshot({
             path: resolve(ssPath),
             fullPage: step.fullPage || false,

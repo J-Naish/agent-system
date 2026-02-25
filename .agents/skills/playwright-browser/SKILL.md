@@ -59,10 +59,12 @@ node $SKILL_DIR/scripts/browser.mjs scrape https://example.com --selector "main"
 ### screenshot — スクリーンショット撮影
 
 ```bash
-node $SKILL_DIR/scripts/browser.mjs screenshot <url> [--output <path>] [--full-page]
+node $SKILL_DIR/scripts/browser.mjs screenshot <url> [--output <path>] [--full-page] [--wait <ms>]
 ```
 
 デフォルト保存先: `./screenshots/<timestamp>.png`
+ページ読み込み後、自動的にネットワークが安定するまで待機してからスクリーンショットを撮影する（SPAや動的サイトでもレンダリング完了後の状態をキャプチャ）。
+`--wait` で追加の待機時間を指定可能（アニメーションや遅延ロードが多いサイト向け）。
 
 ```bash
 # ビューポートのみ
@@ -70,6 +72,9 @@ node $SKILL_DIR/scripts/browser.mjs screenshot https://example.com --output ./sc
 
 # ページ全体
 node $SKILL_DIR/scripts/browser.mjs screenshot https://example.com --output ./screenshots/example-full.png --full-page
+
+# アニメーション完了まで追加で2秒待機
+node $SKILL_DIR/scripts/browser.mjs screenshot https://example.com --output ./screenshots/example.png --wait 2000
 ```
 
 ### search — Google検索
@@ -113,7 +118,7 @@ node $SKILL_DIR/scripts/browser.mjs interact "https://adstransparency.google.com
 | `fill` | `selector`, `value` | テキスト入力 |
 | `select` | `selector`, `value` | セレクトボックス選択 |
 | `wait` | `selector` or `time` | 要素出現待ち or ms待機 |
-| `screenshot` | `path`, `fullPage` | スクリーンショット |
+| `screenshot` | `path`, `fullPage`, `wait`(ms) | スクリーンショット（自動でnetworkidle待機） |
 | `scrape` | `selector`（任意） | コンテンツ抽出 |
 | `scroll` | `to`(`bottom`/`top`) / `y` / `selector` | スクロール |
 | `evaluate` | `expression` | 任意JS実行 |
@@ -124,6 +129,7 @@ node $SKILL_DIR/scripts/browser.mjs interact "https://adstransparency.google.com
 |-----------|-----------|------|
 | `--headful` | false | ブラウザウィンドウを表示 |
 | `--timeout <ms>` | 30000 | タイムアウト |
+| `--wait <ms>` | 800 | networkidle後の追加待機時間（screenshotコマンド用） |
 | `--user-agent <str>` | Chrome UA | カスタムUser-Agent |
 
 ## よくあるワークフロー
