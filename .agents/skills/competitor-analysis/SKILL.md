@@ -61,18 +61,31 @@ PageSpeed Insights APIを使用して、自社と各競合のサイトパフォ�
 - 自社のホームページ・LP
 - 各競合のホームページ・LP（競合企業の基本情報で取得したURL）
 
-**取得コマンド:**
+**取得・保存・スコア抽出コマンド:**
+
+モバイル（`strategy=mobile`）を基本とし、必要に応じてデスクトップも取得する。
 
 ```bash
-source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > research/data/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
+# 1. JSON取得＆保存
+source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > contexts/research/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
+
+# 2. 全体スコアの抽出
+jq '.lighthouseResult.categories | to_entries[] | {(.key): (.value.score * 100)}' contexts/research/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
+
+# 3. Core Web Vitals の抽出
+jq '{LCP: .lighthouseResult.audits["largest-contentful-paint"].displayValue, FCP: .lighthouseResult.audits["first-contentful-paint"].displayValue, TBT: .lighthouseResult.audits["total-blocking-time"].displayValue, CLS: .lighthouseResult.audits["cumulative-layout-shift"].displayValue, SI: .lighthouseResult.audits["speed-index"].displayValue}' contexts/research/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
+
+# 4. 改善の機会（削減可能な時間が大きい順）
+jq '[.lighthouseResult.audits | to_entries[] | select(.value.details.type == "opportunity") | {id: .key, title: .value.title, savings_ms: .value.details.overallSavingsMs}] | sort_by(-.savings_ms)' contexts/research/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json
 ```
 
-- モバイル（`strategy=mobile`）を基本とし、必要に応じてデスクトップも取得する
-- レスポンスJSONから以下を記録する:
+- レスポンスJSONは巨大なため、`jq` で必要なデータを抽出して確認する
+- 記録する項目:
   - **Performance スコア** (`lighthouseResult.categories.performance.score * 100`)
   - **SEO スコア** (`lighthouseResult.categories.seo.score * 100`)
   - **Accessibility スコア** (`lighthouseResult.categories.accessibility.score * 100`)
-  - **Core Web Vitals**: LCP、INP、CLS
+  - **Core Web Vitals**: LCP、FCP、TBT、CLS、SI
+  - **改善の機会**: 削減可能な時間が大きい順
 - 自社と各競合のスコアを一覧テーブルにまとめ、強み・弱みを比較する
 
 ## 広告ライブラリの活用
@@ -141,13 +154,13 @@ source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespe
 ```
 research/
 ├── competitor-analysis.md                    # 競合分析レポート
+├── competitor-analysis/                      # 関連データ
+│   └── psi-[企業名]-[ページ種別]-mobile.json  # PageSpeed Insights結果
 └── screenshots/competitor-analysis/          # スクリーンショット
     ├── serp-[keyword-slug].png              # Google検索結果
     ├── [競合名]-ad-01.png                    # 広告クリエイティブ
     ├── [競合名]-lp-01.png                    # ランディングページ
     └── [競合名]-hp-01.png                    # ホームページ
-data/competitor-analysis/
-    └── psi-[企業名]-[ページ種別]-mobile.json  # PageSpeed Insights結果
 ```
 
 ### 出力テンプレート
@@ -206,7 +219,7 @@ data/competitor-analysis/
 | [競合2] | HP | | | | | | |
 | [競合2] | LP | | | | | | |
 
-- **生データ**: `data/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json`
+- **生データ**: `contexts/research/competitor-analysis/psi-[企業名]-[ページ種別]-mobile.json`
 
 ### 所見
 - [自社と競合のパフォーマンス差]

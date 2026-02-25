@@ -156,23 +156,31 @@ PageSpeed Insights APIを使用して、自社サイトのパフォーマンス�
 - 主要なLP
 - サービスサイトのトップページ
 
-**取得コマンド:**
+**取得・保存・スコア抽出コマンド:**
+
+`strategy=mobile` でモバイル結果を取得する。デスクトップも必要な場合は `strategy=desktop` で再取得する。
 
 ```bash
-source .env && curl "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile"
+# 1. JSON取得＆保存
+source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > contexts/business-profile/psi-[ページ種別]-mobile.json
+
+# 2. 全体スコアの抽出
+jq '.lighthouseResult.categories | to_entries[] | {(.key): (.value.score * 100)}' contexts/business-profile/psi-[ページ種別]-mobile.json
+
+# 3. Core Web Vitals の抽出
+jq '{LCP: .lighthouseResult.audits["largest-contentful-paint"].displayValue, FCP: .lighthouseResult.audits["first-contentful-paint"].displayValue, TBT: .lighthouseResult.audits["total-blocking-time"].displayValue, CLS: .lighthouseResult.audits["cumulative-layout-shift"].displayValue, SI: .lighthouseResult.audits["speed-index"].displayValue}' contexts/business-profile/psi-[ページ種別]-mobile.json
+
+# 4. 改善の機会（削減可能な時間が大きい順）
+jq '[.lighthouseResult.audits | to_entries[] | select(.value.details.type == "opportunity") | {id: .key, title: .value.title, savings_ms: .value.details.overallSavingsMs}] | sort_by(-.savings_ms)' contexts/business-profile/psi-[ページ種別]-mobile.json
 ```
 
-- `strategy=mobile` でモバイル結果を取得する。デスクトップも必要な場合は `strategy=desktop` で再取得する
-- レスポンスJSONから以下を記録する:
+- レスポンスJSONは巨大なため、`jq` で必要なデータを抽出して確認する
+- 記録する項目:
   - **Performance スコア** (`lighthouseResult.categories.performance.score * 100`)
   - **SEO スコア** (`lighthouseResult.categories.seo.score * 100`)
   - **Accessibility スコア** (`lighthouseResult.categories.accessibility.score * 100`)
-  - **Core Web Vitals**: LCP、FID/INP、CLS
-- 結果はJSON全体を `contexts/data/business-profile/` に保存する
-
-```bash
-source .env && curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=[対象URL]&key=$PAGE_SPEED_INSIGHTS_API_KEY&category=performance&category=seo&category=accessibility&strategy=mobile" > contexts/data/business-profile/psi-[ページ種別]-mobile.json
-```
+  - **Core Web Vitals**: LCP、FCP、TBT、CLS、SI
+  - **改善の機会**: 削減可能な時間が大きい順
 
 #### 広告運用の調査
 
@@ -219,15 +227,15 @@ node $SKILL_DIR/../playwright-browser/scripts/browser.mjs screenshot <LP URL> --
 ```
 contexts/
 ├── business-profile.md                      # ビジネスプロファイル
+├── business-profile/                        # 関連データ
+│   ├── psi-hp-mobile.json                   # PageSpeed Insights（HP・モバイル）
+│   └── psi-lp-mobile.json                   # PageSpeed Insights（LP・モバイル）
 └── screenshots/business-profile/            # スクリーンショット
     ├── hp-01.png                            # ホームページ
     ├── lp-01.png                            # ランディングページ
     ├── serp-[keyword-slug].png              # Google検索結果
     ├── ad-01.png                            # 広告クリエイティブ
-    ├── ad-lp-01.png                         # 広告のLP
-data/business-profile/
-    ├── psi-hp-mobile.json                   # PageSpeed Insights（HP・モバイル）
-    └── psi-lp-mobile.json                   # PageSpeed Insights（LP・モバイル）
+    └── ad-lp-01.png                         # 広告のLP
 ```
 
 ### 出力テンプレート
@@ -336,7 +344,7 @@ data/business-profile/
 | LP | Mobile | | | | | | |
 | LP | Desktop | | | | | | |
 
-- **生データ**: `data/business-profile/psi-[ページ種別]-[strategy].json`
+- **生データ**: `contexts/business-profile/psi-[ページ種別]-[strategy].json`
 
 ## マーケティング施策
 
